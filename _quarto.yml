@@ -8,7 +8,6 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - electrostatics
     - summary.qmd
     - references.qmd
 
