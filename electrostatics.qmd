@@ -27,12 +27,6 @@ where one inanimate object is "aware\" that another has arrived.
 <!-- ::: -->
 
 
-```{r echo=FALSE, blueredCircs, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Two objects 'feeling' each other's prescence."}
-
-knitr::include_graphics("Figures/blue_red_circs.png")
-
-```
-
 
 We understand that the first body sets up a field and the second body
 interacts with the first via this field. There is no need for action at
@@ -41,15 +35,6 @@ whether or not the second object is there.
 
 HAHA I love EM
 
-<!-- ::: figurehere -->
-<!-- ![image](Figures/blue_red_FIELD.png){width="80mm"} -->
-<!-- ::: -->
-
-```{r echo=FALSE, blueredField, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Two objects 'feeling' each other's prescence with the help of a field."}
-
-knitr::include_graphics("Figures/blue_red_FIELD.png")
-
-```
 
 ### Charges
 
@@ -93,15 +78,10 @@ A scalar field is characterized at each point by a single number. e.g.
 the temperature, $T$, at each position in a block of metal heated at
 some places and cooled at others.
 
-<!-- ::: figurehere -->
-<!-- ![image](Figures/isotherms.png){width="80mm"} -->
-<!-- ::: -->
+::: figurehere -->
+![image](Figures/isotherms.png){width="80mm"}
+:::
 
-```{r echo=FALSE, isotherms, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Contours of constant temperature i.e. isotherms. Temperature fields are scalar fields, having one value of temperature at each point in space. Heat flow, however, has an associated vector field, as it has a direction and magnitude for each point in space (blue arrows)."}
-
-knitr::include_graphics("Figures/isotherms.png")
-
-```
 
 $T$ is a function of position i.e. $T = T(x,y,z)$. At every point we can
 measure the scalar value of the temperature $T$. The black lines
@@ -213,12 +193,6 @@ same magnitude.
 <!-- ![image](Figures/Efield_like.jpg){width="80mm"} -->
 <!-- ::: -->
 
-
-```{r echo=FALSE, EfieldLike, out.width='70%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="Representation of the electric field of two positive charges (like charges) placed close together."}
-
-knitr::include_graphics("Figures/Efield_like.jpg")
-
-```
 
 Note that the field lines are symmetric as they leave the charges. They
 do not cross.
