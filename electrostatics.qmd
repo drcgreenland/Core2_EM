@@ -39,6 +39,8 @@ interacts with the first via this field. There is no need for action at
 a distance because the field of the 1st object is present in space
 whether or not the second object is there.
 
+HAHA I love EM
+
 <!-- ::: figurehere -->
 <!-- ![image](Figures/blue_red_FIELD.png){width="80mm"} -->
 <!-- ::: -->
