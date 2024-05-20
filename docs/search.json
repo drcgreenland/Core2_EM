@@ -20,83 +20,73 @@
     ]
   },
   {
-    "objectID": "testFile.html",
-    "href": "testFile.html",
-    "title": "Electromagnetism",
-    "section": "",
-    "text": "Hello this is a test file, what is wrong with qmd.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>testFile.html</span>"
-    ]
-  },
-  {
-    "objectID": "electrostatics.html",
-    "href": "electrostatics.html",
-    "title": "3  Electrostatics",
+    "objectID": "L1_electrostatics.html",
+    "href": "L1_electrostatics.html",
+    "title": "2  Electrostatics",
     "section": "",
     "text": "Aims of this section\nAt the end of this section you should be able to",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Electrostatics</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Electrostatics</span>"
     ]
   },
   {
-    "objectID": "electrostatics.html#aims-of-this-section",
-    "href": "electrostatics.html#aims-of-this-section",
-    "title": "3  Electrostatics",
+    "objectID": "L1_electrostatics.html#aims-of-this-section",
+    "href": "L1_electrostatics.html#aims-of-this-section",
+    "title": "2  Electrostatics",
     "section": "",
     "text": "Describe the concept of a field\nState the link between potential and fields and calculate field strength from potentials.\nSketch electric field lines for distributions of charges.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Electrostatics</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Electrostatics</span>"
     ]
   },
   {
-    "objectID": "electrostatics.html#what-is-a-field",
-    "href": "electrostatics.html#what-is-a-field",
-    "title": "3  Electrostatics",
-    "section": "3.1 What is a field?",
-    "text": "3.1 What is a field?\nRecommended reading: Tipler & Mosca 4.2, 21-4\nA field is a region of space, where property of that space is characterized by either a number (a scalar field) or by three numbers (a vector field).\nThe concept of a field circumvents the problem of action at a distance where one inanimate object is “aware\" that another has arrived.\n\n\n\nWe understand that the first body sets up a field and the second body interacts with the first via this field. There is no need for action at a distance because the field of the 1st object is present in space whether or not the second object is there.\nHAHA I love EM\n\n3.1.1 Charges\nWhy does object 1 set up a field? Fields arise when objects have charge. Electric charges cause electromagnetic fields, but other fields arise from different types of charge for example gravitational fields arise from mass. (And the strong field that is responsible for holding quarks inside protons and neutrons arises from the colour charge – see Inside The Atom.)\nThere are two types of electric charge, \\(+\\) and \\(-\\). “Like\" charges repel, while”unlike\" charges attract. Electric charge is quantized: the elementary charge is \\(1.6021773 \\times 10^{-19}\\) C and is the charge on the electron and the proton. Charges measured in laboratories are always multiples of this but the quarks inside protons and neutrons and other hadrons have charges that fractions of this elementary charge. Charge is conserved in all interactions we have observed. Most everyday objects are electrically neutral with the number of protons and electrons balanced, which hides the fact that they contain enormous amounts of \\(+\\) and \\(-\\) charge. Things that we would describe as “charged objects\", have a small imbalance in charge.\nGravitational charge: there is one type of gravitational charge, which is mass/energy. Gravitational charges attract. We don’t know about quantization of mass. (You can probably spend many hours on the internet reading different opinions on this). Mass/Energy is conserved and all everyday objects are gravitationally charged so they all attract each other but gravity is very weak – we can easily pick up bits of paper with an electrically charged rod when rather few electrons have been moved.\nStrong field charge: there are three types of fundamental strong charge (red, green and blue) + three anticharges. Charges attract. Colour is quantised and colour is conserved in interactions. All everyday objects are colour neutral. Colour fields are confined within subatomic particles i.e. to length scales of \\(\\sim 10^{-15}\\) m.",
+    "objectID": "L1_electrostatics.html#what-is-a-field",
+    "href": "L1_electrostatics.html#what-is-a-field",
+    "title": "2  Electrostatics",
+    "section": "2.1 What is a field?",
+    "text": "2.1 What is a field?\nRecommended reading: Tipler & Mosca 4.2, 21-4\nA field is a region of space, where property of that space is characterized by either a number (a scalar field) or by three numbers (a vector field).\nThe concept of a field circumvents the problem of action at a distance where one inanimate object is “aware\" that another has arrived.\n\n\n\nWe understand that the first body sets up a field and the second body interacts with the first via this field. There is no need for action at a distance because the field of the 1st object is present in space whether or not the second object is there.\nHAHA I love EM\n\n2.1.1 Charges\nWhy does object 1 set up a field? Fields arise when objects have charge. Electric charges cause electromagnetic fields, but other fields arise from different types of charge for example gravitational fields arise from mass. (And the strong field that is responsible for holding quarks inside protons and neutrons arises from the colour charge – see Inside The Atom.)\nThere are two types of electric charge, \\(+\\) and \\(-\\). “Like\" charges repel, while”unlike\" charges attract. Electric charge is quantized: the elementary charge is \\(1.6021773 \\times 10^{-19}\\) C and is the charge on the electron and the proton. Charges measured in laboratories are always multiples of this but the quarks inside protons and neutrons and other hadrons have charges that fractions of this elementary charge. Charge is conserved in all interactions we have observed. Most everyday objects are electrically neutral with the number of protons and electrons balanced, which hides the fact that they contain enormous amounts of \\(+\\) and \\(-\\) charge. Things that we would describe as “charged objects\", have a small imbalance in charge.\nGravitational charge: there is one type of gravitational charge, which is mass/energy. Gravitational charges attract. We don’t know about quantization of mass. (You can probably spend many hours on the internet reading different opinions on this). Mass/Energy is conserved and all everyday objects are gravitationally charged so they all attract each other but gravity is very weak – we can easily pick up bits of paper with an electrically charged rod when rather few electrons have been moved.\nStrong field charge: there are three types of fundamental strong charge (red, green and blue) + three anticharges. Charges attract. Colour is quantised and colour is conserved in interactions. All everyday objects are colour neutral. Colour fields are confined within subatomic particles i.e. to length scales of \\(\\sim 10^{-15}\\) m.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Electrostatics</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Electrostatics</span>"
     ]
   },
   {
-    "objectID": "electrostatics.html#scalar-and-vector-fields",
-    "href": "electrostatics.html#scalar-and-vector-fields",
-    "title": "3  Electrostatics",
-    "section": "3.2 Scalar and vector fields",
-    "text": "3.2 Scalar and vector fields\nA scalar field is characterized at each point by a single number. e.g. the temperature, \\(T\\), at each position in a block of metal heated at some places and cooled at others.\n::: figurehere –&gt;  :::\n\\(T\\) is a function of position i.e. \\(T = T(x,y,z)\\). At every point we can measure the scalar value of the temperature \\(T\\). The black lines represent isotherms i.e. lines where the temperature is constant (\\(T_1 &lt; T_2 &lt; T_3 &lt; T_4 &lt; T_5\\)). Heat flow (blue arrows) is perpendicular to the contours of constant temperature - the isotherms (\\(T_1\\), \\(T_2\\) etc). The magnitude of the heat flow is proportional to the temperature gradient so that the heat flow is larger when isotherms are closer together.\nThe scalar temperature field has an associated vector field because at any point, the heat flow is a vector, the magnitude and direction of which depend on position. Heat flow is therefore a vector field which is related to the scalar field of temperature. The vector gradient of the field of heat flow depends on the temperature at each point.",
+    "objectID": "L1_electrostatics.html#scalar-and-vector-fields",
+    "href": "L1_electrostatics.html#scalar-and-vector-fields",
+    "title": "2  Electrostatics",
+    "section": "2.2 Scalar and vector fields",
+    "text": "2.2 Scalar and vector fields\nA scalar field is characterized at each point by a single number. e.g. the temperature, \\(T\\), at each position in a block of metal heated at some places and cooled at others.\n::: figurehere –&gt;  :::\n\\(T\\) is a function of position i.e. \\(T = T(x,y,z)\\). At every point we can measure the scalar value of the temperature \\(T\\). The black lines represent isotherms i.e. lines where the temperature is constant (\\(T_1 &lt; T_2 &lt; T_3 &lt; T_4 &lt; T_5\\)). Heat flow (blue arrows) is perpendicular to the contours of constant temperature - the isotherms (\\(T_1\\), \\(T_2\\) etc). The magnitude of the heat flow is proportional to the temperature gradient so that the heat flow is larger when isotherms are closer together.\nThe scalar temperature field has an associated vector field because at any point, the heat flow is a vector, the magnitude and direction of which depend on position. Heat flow is therefore a vector field which is related to the scalar field of temperature. The vector gradient of the field of heat flow depends on the temperature at each point.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Electrostatics</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Electrostatics</span>"
     ]
   },
   {
-    "objectID": "electrostatics.html#link-between-scalar-and-vector-field",
-    "href": "electrostatics.html#link-between-scalar-and-vector-field",
-    "title": "3  Electrostatics",
-    "section": "3.3 Link between scalar and vector field",
-    "text": "3.3 Link between scalar and vector field\nRecommended reading: Tipler & Mosca 23-3.\nFor the scalar temperature field \\(T(x,y,z)\\) the vector describing the direction and the magnitude of the maximum temperature gradient is:\n\\[\\begin{equation}\n(\\#eq:tempGrad)\n\\text{Grad} \\; T = \\nabla T = \\frac{\\partial T} {\\partial x} \\hat{\\mathbf{i}} + \\frac{\\partial T}{\\partial y} \\hat{\\mathbf{j}} + \\frac{\\partial T}{\\partial y} \\hat{\\mathbf{k}}\n\\end{equation}\\]\nThe heat flow is a vector given by \\(\\mathbf{Q} = -k \\nabla T\\); the minus sign is because heat flows from high temperature to low temperature.\nIn general, for a scalar potential \\(-\\nabla \\phi = \\frac{\\partial \\phi} {\\partial x} \\hat{\\mathbf{i}} + \\frac{\\partial \\phi}{\\partial y} \\hat{\\mathbf{j}} + \\frac{\\partial \\phi}{\\partial y} \\hat{\\mathbf{k}}\\) describes the magnitude and direction of the physical effects of the potential, with an appropriate constant if needed. In the case of the electric field if the electric potential is \\(V\\) then the vector field \\(\\mathbf{E} = -\\nabla V\\).\nAs an example, the gravitational field can be obtained from the gravitational potential. The scalar gravitational potential energy is given by \\(U = mgz\\) near the Earth’s surface, where \\(z\\) is the height. The gravitational potential is \\(U/m = gz\\). The gravitational field is \\(-\\nabla(gz)=-g \\hat{\\mathbf{k}}\\).\n\n\n\n\n3.3.1 Other operations on vectors\nThe vector operator \\(\\nabla\\) behaves as a vector. We have looked at grad \\(\\nabla\\phi\\) where \\(\\phi\\) is a scalar field. In Maxwell’s equations, which you cover next year, you will also meet \\(\\nabla\\) operating on the electric field \\(\\mathbf{E}\\):\n\\(\\nabla \\cdot \\mathbf{E}\\) (div or divergence)\n\\(\\nabla \\times \\mathbf{E}\\) (curl or rotation)\nMaxwell’s equations are one of the great achievements of 19th century Physics. They link the phenomena of electricity and magnetism and can be used to derive an expression for the speed of light. Einstein said that the theory of Relativity was rooted in Maxwell’s equations. The equations in their differential form are shown below and we will meet most of the concepts in this course and integral versions of some of the laws. You can read more about Maxwell’s Equations in Chapter 30 of Tipler and Mosca.\n\\[\\begin{equation}\n(\\#eq:maxwell1)\n\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\epsilon_0}\n\\end{equation}\\]\n\\[\\begin{equation}\n(\\#eq:maxwell2)\n\\nabla \\times \\mathbf{E} = - \\frac{\\partial \\mathbf{B}}{\\partial t}\n\\end{equation}\\]\n\\[\\begin{equation}\n(\\#eq:maxwell3)\n\\nabla \\cdot \\mathbf{B} = 0\n\\end{equation}\\]\n\\[\\begin{equation}\n(\\#eq:maxwell4)\n\\nabla \\times \\mathbf{B} = \\frac{\\mathbf{j}}{c^2 \\epsilon_0} + \\frac{1}{c^2} \\frac{\\partial \\mathbf{E}}{\\partial t}\n\\end{equation}\\]\nSource: http://www.clerkmaxwellfoundation.org/html/about_maxwell.html ; https://maxwells-equations.com/",
+    "objectID": "L1_electrostatics.html#link-between-scalar-and-vector-field",
+    "href": "L1_electrostatics.html#link-between-scalar-and-vector-field",
+    "title": "2  Electrostatics",
+    "section": "2.3 Link between scalar and vector field",
+    "text": "2.3 Link between scalar and vector field\nRecommended reading: Tipler & Mosca 23-3.\nFor the scalar temperature field \\(T(x,y,z)\\) the vector describing the direction and the magnitude of the maximum temperature gradient is:\n\\[\\begin{equation}\n(\\#eq:tempGrad)\n\\text{Grad} \\; T = \\nabla T = \\frac{\\partial T} {\\partial x} \\hat{\\mathbf{i}} + \\frac{\\partial T}{\\partial y} \\hat{\\mathbf{j}} + \\frac{\\partial T}{\\partial y} \\hat{\\mathbf{k}}\n\\end{equation}\\]\nThe heat flow is a vector given by \\(\\mathbf{Q} = -k \\nabla T\\); the minus sign is because heat flows from high temperature to low temperature.\nIn general, for a scalar potential \\(-\\nabla \\phi = \\frac{\\partial \\phi} {\\partial x} \\hat{\\mathbf{i}} + \\frac{\\partial \\phi}{\\partial y} \\hat{\\mathbf{j}} + \\frac{\\partial \\phi}{\\partial y} \\hat{\\mathbf{k}}\\) describes the magnitude and direction of the physical effects of the potential, with an appropriate constant if needed. In the case of the electric field if the electric potential is \\(V\\) then the vector field \\(\\mathbf{E} = -\\nabla V\\).\nAs an example, the gravitational field can be obtained from the gravitational potential. The scalar gravitational potential energy is given by \\(U = mgz\\) near the Earth’s surface, where \\(z\\) is the height. The gravitational potential is \\(U/m = gz\\). The gravitational field is \\(-\\nabla(gz)=-g \\hat{\\mathbf{k}}\\).\n\n\n\n\n2.3.1 Other operations on vectors\nThe vector operator \\(\\nabla\\) behaves as a vector. We have looked at grad \\(\\nabla\\phi\\) where \\(\\phi\\) is a scalar field. In Maxwell’s equations, which you cover next year, you will also meet \\(\\nabla\\) operating on the electric field \\(\\mathbf{E}\\):\n\\(\\nabla \\cdot \\mathbf{E}\\) (div or divergence)\n\\(\\nabla \\times \\mathbf{E}\\) (curl or rotation)\nMaxwell’s equations are one of the great achievements of 19th century Physics. They link the phenomena of electricity and magnetism and can be used to derive an expression for the speed of light. Einstein said that the theory of Relativity was rooted in Maxwell’s equations. The equations in their differential form are shown below and we will meet most of the concepts in this course and integral versions of some of the laws. You can read more about Maxwell’s Equations in Chapter 30 of Tipler and Mosca.\n\\[\\begin{equation}\n(\\#eq:maxwell1)\n\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\epsilon_0}\n\\end{equation}\\]\n\\[\\begin{equation}\n(\\#eq:maxwell2)\n\\nabla \\times \\mathbf{E} = - \\frac{\\partial \\mathbf{B}}{\\partial t}\n\\end{equation}\\]\n\\[\\begin{equation}\n(\\#eq:maxwell3)\n\\nabla \\cdot \\mathbf{B} = 0\n\\end{equation}\\]\n\\[\\begin{equation}\n(\\#eq:maxwell4)\n\\nabla \\times \\mathbf{B} = \\frac{\\mathbf{j}}{c^2 \\epsilon_0} + \\frac{1}{c^2} \\frac{\\partial \\mathbf{E}}{\\partial t}\n\\end{equation}\\]\nSource: http://www.clerkmaxwellfoundation.org/html/about_maxwell.html ; https://maxwells-equations.com/",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Electrostatics</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Electrostatics</span>"
     ]
   },
   {
-    "objectID": "electrostatics.html#representing-the-electric-field",
-    "href": "electrostatics.html#representing-the-electric-field",
-    "title": "3  Electrostatics",
-    "section": "3.4 Representing the electric field",
-    "text": "3.4 Representing the electric field\nRecommended reading: Tipler & Mosca 21-5.\nThe vector electric field, \\(\\mathbf{E}\\), at a particular point in space, associated with a collection of charges, is defined in terms of the force, \\(\\mathbf{F}\\), exerted on a positive test charge, \\(q_0\\), at that point \\(E = F/q_0\\).\n\\(\\mathbf{E}\\) has units of Vm\\(^{-1}\\) or NC\\(^{-1}\\). The electric field is normally represented by field lines that indicate what a positive test charge will do. The arrows indicate the direction of the field and the density of lines indicates the strength of the field at a point. The diagram shows the electric field lines for two positive point charges of the same magnitude.\n\n\n\nNote that the field lines are symmetric as they leave the charges. They do not cross.",
+    "objectID": "L1_electrostatics.html#representing-the-electric-field",
+    "href": "L1_electrostatics.html#representing-the-electric-field",
+    "title": "2  Electrostatics",
+    "section": "2.4 Representing the electric field",
+    "text": "2.4 Representing the electric field\nRecommended reading: Tipler & Mosca 21-5.\nThe vector electric field, \\(\\mathbf{E}\\), at a particular point in space, associated with a collection of charges, is defined in terms of the force, \\(\\mathbf{F}\\), exerted on a positive test charge, \\(q_0\\), at that point \\(E = F/q_0\\).\n\\(\\mathbf{E}\\) has units of Vm\\(^{-1}\\) or NC\\(^{-1}\\). The electric field is normally represented by field lines that indicate what a positive test charge will do. The arrows indicate the direction of the field and the density of lines indicates the strength of the field at a point. The diagram shows the electric field lines for two positive point charges of the same magnitude.\n\n\n\nNote that the field lines are symmetric as they leave the charges. They do not cross.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Electrostatics</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Electrostatics</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "4  Summary",
+    "title": "17  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
