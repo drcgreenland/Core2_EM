@@ -8,8 +8,21 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - testFile.qmd
-    - electrostatics.qmd
+    - L1_electrostatics.qmd
+    - L2_potential.qmd
+    - L3_workenergy.qmd
+    - L4_magfields.qmd
+    - L5_magfieldscurrents.qmd
+    - L6_magvectorpotential.qmd
+    - L7_gausslaw.qmd
+    - L8_amperelaw.qmd
+    - L9_faradaylaw.qmd
+    - L10_maxwellfreespace.qmd
+    - L11_magnetisationpolar.qmd
+    - L12_maxwellmatter.qmd
+    - L13_capacitorsinductors.qmd
+    - L14_circuits.qmd
+    - L15_impedance.qmd 
     - summary.qmd
     - references.qmd
 
