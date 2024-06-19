@@ -58,11 +58,6 @@ of lines indicates the strength of the field at a point. The diagram
 shows the electric field lines for two positive point charges of the
 same magnitude.
 
-<!-- ::: figurehere -->
-<!-- ![image](Figures/Efield_like.jpg){width="80mm"} -->
-<!-- ::: -->
-
-
 Note that the field lines are symmetric as they leave the charges. They
 do not cross.
 
