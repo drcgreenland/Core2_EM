@@ -21,11 +21,11 @@ Here I will briefly explain some notation and definitions I will use in this cou
 
 Consider the following ensemble of charges: 
 
-![](sourcetest_definitions.png)
+![Some charges.](sourcetest_definitions.png)
 
-We define the charges $q_1$, $q_2$, $q_3$... $q_i$ as source charges, meaning that these are the charges that produce the electric field for the purpose of the problem. We define $Q$ as the test charge, which means it is the charge that is experiencing the effects of the electric field produced by the source charge(s). 
+We define the charges $q_1$, $q_2$, $q_3$... $q_i$ as source charges, meaning that these are the charges that produce the electric field for the purpose of the problem. We define $Q$ as the test charge, which means it is the charge that is experiencing the effects of the electric field produced by the source charge(s). Of course, any charge can be a source or a test charge, there is no fundamental difference between them. "Source" and "test" are simply names that we give charges when setting up a problem, so that we can more easily define and solve the problem.
 
-![](axes_r_definitions.png)
+![Some charges, overlaid with axes showing the definition of $r$, the separation between the source and test charges. ](Figures/axes_r_definitions.png)
 
 ## Electric Forces & Coulomb's Law
 
@@ -44,11 +44,9 @@ If $q$ and $Q$ have the same sign (like charges) the force is repulsive ($\F$ is
 
 
 
-3. Electric Field
+## Electric Field
 
-The vector electric field, $\mathbf{E}$, at a particular point in space,
-associated with a collection of charges, is defined in terms of the
-force, $\mathbf{F}$, exerted on a positive test charge, $q_0$, at that point
+The vector electric field, $\mathbf{E}$, at a particular point in space, associated with a collection of charges, is defined in terms of the force, $\mathbf{F}$, exerted on a positive test charge, $q_0$, at that point
 $E = F/q_0$.
 
 $\mathbf{E}$ has units of Vm$^{-1}$ or NC$^{-1}$. The electric field is normally
@@ -61,57 +59,19 @@ same magnitude.
 Note that the field lines are symmetric as they leave the charges. They
 do not cross.
 
-The electric field $\mathbf{\mathrm{𝐸}}$ is a vector field that represents the force experienced by a positive test charge placed at a point in space:
+The electric field $\mathbf{\mathrm{𝐸}}$ is a vector field that represents the force per unit charge experienced by a positive test charge placed at a point in space:
 
 $$ \E = \frac{\F}{Q} $$
 
-\noindent which can be rearranged to the more familiar form $\F = q \E$. 
+\noindent which can be rearranged to the more familiar form $\F = Q \E$. 
 ​
- 
 
-5. Electric Field Lines
-Electric field lines provide a visual representation of electric fields. Key properties include:
+### Electric field lines provide a visual representation of electric fields. Key properties include:
 
 Lines begin on positive charges and end on negative charges.
 The number of lines is proportional to the magnitude of the charge.
 Lines never intersect.
 The density of lines indicates the field's strength.
-
-9. Electric Potential
-The electric potential 
-𝑉
-V at a point is the work done to bring a unit positive charge from infinity to that point:
-𝑉
-=
-−
-∫
-∞
-𝑟
-𝐸
-⋅
-𝑑
-𝑙
-V=−∫ 
-∞
-r
-​
- E⋅dl
-
-For a point charge 
-𝑞
-q, the electric potential is:
-𝑉
-=
-𝑘
-𝑒
-𝑞
-𝑟
-V=k 
-e
-​
-  
-r
-q
 ​
 ## Superposition Principle
 The principle of superposition states that "the interaction between any two charges is completely unaffected by the presence of others". This means that the total force on a test charge can be computed by calculating the force on the charge due to each source charge separately, then adding up the contributions, as follows: 
