@@ -238,15 +238,36 @@ charges.
 
 Consider the following ensemble of charges:
 
-\includegraphics{sourcetest_definitions.png}
+\begin{figure}[H]
+
+{\centering \includegraphics{sourcetest_definitions.png}
+
+}
+
+\caption{Some charges.}
+
+\end{figure}%
 
 We define the charges \(q_1\), \(q_2\), \(q_3\)\ldots{} \(q_i\) as
 source charges, meaning that these are the charges that produce the
 electric field for the purpose of the problem. We define \(Q\) as the
 test charge, which means it is the charge that is experiencing the
-effects of the electric field produced by the source charge(s).
+effects of the electric field produced by the source charge(s). Of
+course, any charge can be a source or a test charge, there is no
+fundamental difference between them. ``Source'' and ``test'' are simply
+names that we give charges when setting up a problem, so that we can
+more easily define and solve the problem.
 
-\includegraphics{axes_r_definitions.png}
+\begin{figure}[H]
+
+{\centering \includegraphics{Figures/axes_r_definitions.png}
+
+}
+
+\caption{Some charges, overlaid with axes showing the definition of
+\(r\), the separation between the source and test charges.}
+
+\end{figure}%
 
 \section{Electric Forces \& Coulomb's
 Law}\label{electric-forces-coulombs-law}
@@ -277,13 +298,7 @@ repulsive (\(\mathrm{\mathbf{F}}\) is a positive quantity); if \(q\) and
 \(Q\) have different signs, the force is attractive
 (\(\mathrm{\mathbf{F}}\) is a negative quantity).
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Electric Field
-\end{enumerate}
+\section{Electric Field}\label{electric-field}
 
 The vector electric field, \(\mathbf{E}\), at a particular point in
 space, associated with a collection of charges, is defined in terms of
@@ -301,46 +316,27 @@ Note that the field lines are symmetric as they leave the charges. They
 do not cross.
 
 The electric field \(\mathbf{\mathrm{𝐸}}\) is a vector field that
-represents the force experienced by a positive test charge placed at a
-point in space:
+represents the force per unit charge experienced by a positive test
+charge placed at a point in space:
 
 \[ \mathrm{\mathbf{E}}= \frac{\mathrm{\mathbf{F}}}{Q} \]
 
 \noindent which can be rearranged to the more familiar form
-\(\mathrm{\mathbf{F}}= q \mathrm{\mathbf{E}}\). \hspace{0pt}
+\(\mathrm{\mathbf{F}}= Q \mathrm{\mathbf{E}}\). \hspace{0pt}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\tightlist
-\item
-  Electric Field Lines Electric field lines provide a visual
-  representation of electric fields. Key properties include:
-\end{enumerate}
+\subsection{Electric field lines provide a visual representation of
+electric fields. Key properties
+include:}\label{electric-field-lines-provide-a-visual-representation-of-electric-fields.-key-properties-include}
 
 Lines begin on positive charges and end on negative charges. The number
 of lines is proportional to the magnitude of the charge. Lines never
 intersect. The density of lines indicates the field's strength.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
-\tightlist
-\item
-  Electric Potential The electric potential 𝑉 V at a point is the work
-  done to bring a unit positive charge from infinity to that point: 𝑉 =
-  − ∫ ∞ 𝑟 𝐸 ⋅ 𝑑 𝑙 V=−∫ ∞ r \hspace{0pt} E⋅dl
-\end{enumerate}
-
-For a point charge 𝑞 q, the electric potential is: 𝑉 = 𝑘 𝑒 𝑞 𝑟 V=k e
-\hspace{0pt}
-
-r q \hspace{0pt} \#\# Superposition Principle The principle of
-superposition states that ``the interaction between any two charges is
-completely unaffected by the presence of others''. This means that the
-total force on a test charge can be computed by calculating the force on
-the charge due to each source charge separately, then adding up the
-contributions, as follows:
+\hspace{0pt} \#\# Superposition Principle The principle of superposition
+states that ``the interaction between any two charges is completely
+unaffected by the presence of others''. This means that the total force
+on a test charge can be computed by calculating the force on the charge
+due to each source charge separately, then adding up the contributions,
+as follows:
 
 \[ \mathrm{\mathbf{F}}_{tot} = \sum_i \mathrm{\mathbf{F}}_i \]
 
