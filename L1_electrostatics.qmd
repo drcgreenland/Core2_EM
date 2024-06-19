@@ -60,34 +60,26 @@ If $q$ and $Q$ have the same sign (like charges) the force is repulsive ($\F$ is
 
 ## Electric Field
 
-The vector electric field, $\mathbf{E}$, at a particular point in space, associated with a collection of charges, is defined in terms of the force, $\mathbf{F}$, exerted on a positive test charge, $q_0$, at that point
-$E = F/q_0$.
-
-$\mathbf{E}$ has units of Vm$^{-1}$ or NC$^{-1}$. The electric field is normally
-represented by field lines that indicate what a positive test charge
-will do. The arrows indicate the direction of the field and the density
-of lines indicates the strength of the field at a point. The diagram
-shows the electric field lines for two positive point charges of the
-same magnitude.
-
-Note that the field lines are symmetric as they leave the charges. They
-do not cross.
-
-The electric field $\mathbf{\mathrm{𝐸}}$ is a vector field that represents the force per unit charge experienced by a positive test charge placed at a point in space:
+The electric field $\mathbf{\mathrm{𝐸}}$ produced by a charge (or charged object/charge distribution) is a vector field that represents the force per unit charge experienced by a positive test charge placed at a particular point in space:
 
 $$ \E = \frac{\F}{Q} $$
 
 \noindent which can be rearranged to the more familiar form $\F = Q \E$. 
-​
 
-Electric field lines provide a visual representation of electric fields. Key properties include:
+$\mathbf{E}$ has units of Vm$^{-1}$ or NC$^{-1}$. 
 
+The electric field is normally represented by field lines that indicate the direction of the field. The direction of the field is determined by what a positive test charge will do. That's why field lines point towards negative charges - that's the direction a positive charge would travel if it encountered the field of a negative charge.
+The density of lines/arrows indicates the strength of the field at a point. You may also see fields drawn where the size of the arrows represents the electric field strength. The diagram below shows the electric field lines for two positive point charges of the same magnitude.
+
+![Representation of the electric field surrounding two positive charges.](Figures/Efield_like.png)
+
+Most important rules for field lines: 
 * Lines begin on positive charges and end on negative charges.
-* The density of the lines/arrows indicates the electric field strength. You may also see fields drawn where the size of the arrows represents the electric field strength. 
 * Lines never intersect.
-​
+* Lines are symmetric as they leave the charges. 
+
 ## Superposition Principle
-The principle of superposition states that "the interaction between any two charges is completely unaffected by the presence of others". This means that the total force on a test charge can be computed by calculating the force on the charge due to each source charge separately, then adding up the contributions, as follows: 
+The principle of superposition states that "the interaction between any two charges is completely unaffected by the presence of others". This means that the total force on a test charge can be computed by calculating the force on the test charge due to each source charge separately, then adding up the contributions, as follows: 
 
 $$ \F_{tot} = \sum_i \F_i $$
 

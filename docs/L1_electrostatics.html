@@ -257,13 +257,14 @@ window.Quarto = {
   <li><a href="#some-definitions-and-important-notation" id="toc-some-definitions-and-important-notation" class="nav-link" data-scroll-target="#some-definitions-and-important-notation"><span class="header-section-number">1.2</span> Some definitions and important notation</a></li>
   <li><a href="#electric-forces-coulombs-law" id="toc-electric-forces-coulombs-law" class="nav-link" data-scroll-target="#electric-forces-coulombs-law"><span class="header-section-number">1.3</span> Electric Forces &amp; Coulomb’s Law</a></li>
   <li><a href="#electric-field" id="toc-electric-field" class="nav-link" data-scroll-target="#electric-field"><span class="header-section-number">1.4</span> Electric Field</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">1.5</span> Summary</a></li>
-  <li><a href="#bonus-content-vector-fields" id="toc-bonus-content-vector-fields" class="nav-link" data-scroll-target="#bonus-content-vector-fields"><span class="header-section-number">1.6</span> Bonus content: vector fields</a>
+  <li><a href="#superposition-principle" id="toc-superposition-principle" class="nav-link" data-scroll-target="#superposition-principle"><span class="header-section-number">1.5</span> Superposition Principle</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">1.6</span> Summary</a></li>
+  <li><a href="#bonus-content-vector-fields" id="toc-bonus-content-vector-fields" class="nav-link" data-scroll-target="#bonus-content-vector-fields"><span class="header-section-number">1.7</span> Bonus content: vector fields</a>
   <ul class="collapse">
-  <li><a href="#what-is-a-field" id="toc-what-is-a-field" class="nav-link" data-scroll-target="#what-is-a-field"><span class="header-section-number">1.6.1</span> What is a field?</a></li>
-  <li><a href="#scalar-and-vector-fields" id="toc-scalar-and-vector-fields" class="nav-link" data-scroll-target="#scalar-and-vector-fields"><span class="header-section-number">1.6.2</span> Scalar and vector fields</a></li>
-  <li><a href="#link-between-scalar-and-vector-field" id="toc-link-between-scalar-and-vector-field" class="nav-link" data-scroll-target="#link-between-scalar-and-vector-field"><span class="header-section-number">1.6.3</span> Link between scalar and vector field</a></li>
-  <li><a href="#other-operations-on-vectors" id="toc-other-operations-on-vectors" class="nav-link" data-scroll-target="#other-operations-on-vectors"><span class="header-section-number">1.6.4</span> Other operations on vectors</a></li>
+  <li><a href="#what-is-a-field" id="toc-what-is-a-field" class="nav-link" data-scroll-target="#what-is-a-field"><span class="header-section-number">1.7.1</span> What is a field?</a></li>
+  <li><a href="#scalar-and-vector-fields" id="toc-scalar-and-vector-fields" class="nav-link" data-scroll-target="#scalar-and-vector-fields"><span class="header-section-number">1.7.2</span> Scalar and vector fields</a></li>
+  <li><a href="#link-between-scalar-and-vector-field" id="toc-link-between-scalar-and-vector-field" class="nav-link" data-scroll-target="#link-between-scalar-and-vector-field"><span class="header-section-number">1.7.3</span> Link between scalar and vector field</a></li>
+  <li><a href="#other-operations-on-vectors" id="toc-other-operations-on-vectors" class="nav-link" data-scroll-target="#other-operations-on-vectors"><span class="header-section-number">1.7.4</span> Other operations on vectors</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -337,35 +338,39 @@ subatomic particles i.e. to length scales of $\sim 10^{-15}$ m.
 </section>
 <section id="electric-field" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="electric-field"><span class="header-section-number">1.4</span> Electric Field</h2>
-<p>The vector electric field, <span class="math inline">\(\mathbf{E}\)</span>, at a particular point in space, associated with a collection of charges, is defined in terms of the force, <span class="math inline">\(\mathbf{F}\)</span>, exerted on a positive test charge, <span class="math inline">\(q_0\)</span>, at that point <span class="math inline">\(E = F/q_0\)</span>.</p>
-<p><span class="math inline">\(\mathbf{E}\)</span> has units of Vm<span class="math inline">\(^{-1}\)</span> or NC<span class="math inline">\(^{-1}\)</span>. The electric field is normally represented by field lines that indicate what a positive test charge will do. The arrows indicate the direction of the field and the density of lines indicates the strength of the field at a point. The diagram shows the electric field lines for two positive point charges of the same magnitude.</p>
-<p>Note that the field lines are symmetric as they leave the charges. They do not cross.</p>
-<p>The electric field <span class="math inline">\(\mathbf{\mathrm{𝐸}}\)</span> is a vector field that represents the force per unit charge experienced by a positive test charge placed at a point in space:</p>
+<p>The electric field <span class="math inline">\(\mathbf{\mathrm{𝐸}}\)</span> produced by a charge (or charged object/charge distribution) is a vector field that represents the force per unit charge experienced by a positive test charge placed at a particular point in space:</p>
 <p><span class="math display">\[ \mathrm{\mathbf{E}}= \frac{\mathrm{\mathbf{F}}}{Q} \]</span></p>
-<p>which can be rearranged to the more familiar form <span class="math inline">\(\mathrm{\mathbf{F}}= Q \mathrm{\mathbf{E}}\)</span>. ​</p>
-<p>Electric field lines provide a visual representation of electric fields. Key properties include:</p>
-<ul>
-<li>Lines begin on positive charges and end on negative charges.</li>
-<li>The density of the lines/arrows indicates the electric field strength. You may also see fields drawn where the size of the arrows represents the electric field strength.</li>
-<li>Lines never intersect. ​ ## Superposition Principle The principle of superposition states that “the interaction between any two charges is completely unaffected by the presence of others”. This means that the total force on a test charge can be computed by calculating the force on the charge due to each source charge separately, then adding up the contributions, as follows:</li>
-</ul>
+<p>which can be rearranged to the more familiar form <span class="math inline">\(\mathrm{\mathbf{F}}= Q \mathrm{\mathbf{E}}\)</span>.</p>
+<p><span class="math inline">\(\mathbf{E}\)</span> has units of Vm<span class="math inline">\(^{-1}\)</span> or NC<span class="math inline">\(^{-1}\)</span>.</p>
+<p>The electric field is normally represented by field lines that indicate the direction of the field. The direction of the field is determined by what a positive test charge will do. That’s why field lines point towards negative charges - that’s the direction a positive charge would travel if it encountered the field of a negative charge. The density of lines/arrows indicates the strength of the field at a point. You may also see fields drawn where the size of the arrows represents the electric field strength. The diagram below shows the electric field lines for two positive point charges of the same magnitude.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figures/Efield_like.png" class="img-fluid figure-img"></p>
+<figcaption>Representation of the electric field surrounding two positive charges.</figcaption>
+</figure>
+</div>
+<p>Most important rules for field lines: * Lines begin on positive charges and end on negative charges. * Lines never intersect. * Lines are symmetric as they leave the charges.</p>
+</section>
+<section id="superposition-principle" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="superposition-principle"><span class="header-section-number">1.5</span> Superposition Principle</h2>
+<p>The principle of superposition states that “the interaction between any two charges is completely unaffected by the presence of others”. This means that the total force on a test charge can be computed by calculating the force on the charge due to each source charge separately, then adding up the contributions, as follows:</p>
 <p><span class="math display">\[ \mathrm{\mathbf{F}}_{tot} = \sum_i \mathrm{\mathbf{F}}_i \]</span></p>
 <p>The same applies to the electric field, which can be calculated for any given point in space as a sum of the electric field at that point from all the source charges: <span class="math display">\[ \mathrm{\mathbf{E}}_{tot} = \sum_i \mathrm{\mathbf{E}}_i \]</span></p>
 </section>
-<section id="summary" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.5</span> Summary</h2>
+<section id="summary" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.6</span> Summary</h2>
 <p>Electric charges create electric fields, which exert forces on other charges. Coulomb’s Law describes the force between point charges.</p>
 </section>
-<section id="bonus-content-vector-fields" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="bonus-content-vector-fields"><span class="header-section-number">1.6</span> Bonus content: vector fields</h2>
-<section id="what-is-a-field" class="level3" data-number="1.6.1">
-<h3 data-number="1.6.1" class="anchored" data-anchor-id="what-is-a-field"><span class="header-section-number">1.6.1</span> What is a field?</h3>
+<section id="bonus-content-vector-fields" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="bonus-content-vector-fields"><span class="header-section-number">1.7</span> Bonus content: vector fields</h2>
+<section id="what-is-a-field" class="level3" data-number="1.7.1">
+<h3 data-number="1.7.1" class="anchored" data-anchor-id="what-is-a-field"><span class="header-section-number">1.7.1</span> What is a field?</h3>
 <p><em>Recommended reading:</em></p>
 <p>A field is a region of space, where property of that space is characterized by either a number (a scalar field) or by three numbers (a vector field).</p>
 <p>The concept of a field circumvents the problem of action at a distance, where one inanimate object is “aware” that another has arrived. We understand that the first body sets up a field and the second body interacts with the first via this field.</p>
 </section>
-<section id="scalar-and-vector-fields" class="level3" data-number="1.6.2">
-<h3 data-number="1.6.2" class="anchored" data-anchor-id="scalar-and-vector-fields"><span class="header-section-number">1.6.2</span> Scalar and vector fields</h3>
+<section id="scalar-and-vector-fields" class="level3" data-number="1.7.2">
+<h3 data-number="1.7.2" class="anchored" data-anchor-id="scalar-and-vector-fields"><span class="header-section-number">1.7.2</span> Scalar and vector fields</h3>
 <p>A scalar field is characterized at each point by a single number. e.g.&nbsp;the temperature, <span class="math inline">\(T\)</span>, at each position in a block of metal heated at some places and cooled at others.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -376,8 +381,8 @@ subatomic particles i.e. to length scales of $\sim 10^{-15}$ m.
 <p><span class="math inline">\(T\)</span> is a function of position i.e.&nbsp;<span class="math inline">\(T = T(x,y,z)\)</span>. At every point we can measure the scalar value of the temperature <span class="math inline">\(T\)</span>. The black lines represent isotherms i.e.&nbsp;lines where the temperature is constant (<span class="math inline">\(T_1 &lt; T_2 &lt; T_3 &lt; T_4 &lt; T_5\)</span>). Heat flow (blue arrows) is perpendicular to the contours of constant temperature - the isotherms (<span class="math inline">\(T_1\)</span>, <span class="math inline">\(T_2\)</span> etc). The magnitude of the heat flow is proportional to the temperature gradient, so that the heat flow is larger when isotherms are closer together.</p>
 <p>The scalar temperature field has an associated vector field, because at any point, the heat flow is a vector, the <strong>magnitude</strong> and <strong>direction</strong> of which depend on position. Heat flow is therefore a vector field which is related to the scalar field of temperature. The vector gradient of the field of heat flow depends on the temperature at each point.</p>
 </section>
-<section id="link-between-scalar-and-vector-field" class="level3" data-number="1.6.3">
-<h3 data-number="1.6.3" class="anchored" data-anchor-id="link-between-scalar-and-vector-field"><span class="header-section-number">1.6.3</span> Link between scalar and vector field</h3>
+<section id="link-between-scalar-and-vector-field" class="level3" data-number="1.7.3">
+<h3 data-number="1.7.3" class="anchored" data-anchor-id="link-between-scalar-and-vector-field"><span class="header-section-number">1.7.3</span> Link between scalar and vector field</h3>
 <p><em>Recommended reading:</em></p>
 <p>For the scalar temperature field <span class="math inline">\(T(x,y,z)\)</span> the vector describing the direction and the magnitude of the maximum temperature gradient is:</p>
 <p><span class="math display">\[\begin{equation}
@@ -387,8 +392,8 @@ subatomic particles i.e. to length scales of $\sim 10^{-15}$ m.
 <p>In general, for a scalar potential <span class="math inline">\(-\nabla \phi = \frac{\partial \phi} {\partial x} \hat{\mathbf{i}} + \frac{\partial \phi}{\partial y} \hat{\mathbf{j}} + \frac{\partial \phi}{\partial y} \hat{\mathbf{k}}\)</span> describes the magnitude and direction of the physical effects of the potential, with an appropriate constant if needed. In the case of the electric field if the electric potential is <span class="math inline">\(V\)</span> then the vector field <span class="math inline">\(\mathbf{E} = -\nabla V\)</span>.</p>
 <p>As an example, the gravitational field can be obtained from the gravitational potential. The scalar gravitational potential energy is given by <span class="math inline">\(U = mgz\)</span> near the Earth’s surface, where <span class="math inline">\(z\)</span> is the height. The gravitational potential is <span class="math inline">\(U/m = gz\)</span>. The gravitational field is <span class="math inline">\(-\nabla(gz)=-g \hat{\mathbf{k}}\)</span>.</p>
 </section>
-<section id="other-operations-on-vectors" class="level3" data-number="1.6.4">
-<h3 data-number="1.6.4" class="anchored" data-anchor-id="other-operations-on-vectors"><span class="header-section-number">1.6.4</span> Other operations on vectors</h3>
+<section id="other-operations-on-vectors" class="level3" data-number="1.7.4">
+<h3 data-number="1.7.4" class="anchored" data-anchor-id="other-operations-on-vectors"><span class="header-section-number">1.7.4</span> Other operations on vectors</h3>
 <p>The vector operator <span class="math inline">\(\nabla\)</span> behaves as a vector. We have looked at grad <span class="math inline">\(\nabla\phi\)</span> where <span class="math inline">\(\phi\)</span> is a scalar field. In Maxwell’s equations, which you cover next year, you will also meet <span class="math inline">\(\nabla\)</span> operating on the electric field <span class="math inline">\(\mathbf{E}\)</span>:</p>
 <p><span class="math inline">\(\nabla \cdot \mathbf{E}\)</span> (div or divergence)</p>
 <p><span class="math inline">\(\nabla \times \mathbf{E}\)</span> (curl or rotation)</p>
