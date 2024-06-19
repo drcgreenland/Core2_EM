@@ -198,30 +198,176 @@ This is a Quarto book.
 To learn more about Quarto books visit
 \url{https://quarto.org/docs/books}.
 
+Put a nice introduction here introducing the subject of electromagnetism
+:D
+
 \bookmarksetup{startatroot}
 
-\chapter{Electrostatics}\label{electrostatics}
+\chapter{Lecture 1: Electric Charges, Forces \&
+Fields}\label{lecture-1-electric-charges-forces-fields}
 
-\section*{Aims of this section}\label{aims-of-this-section}
-\addcontentsline{toc}{section}{Aims of this section}
+\newcommand{\E}{\mathrm{\mathbf{E}}}
+\newcommand{\F}{\mathrm{\mathbf{F}}}
+\newcommand{\r}{\mathrm{\mathbf{r}}}
 
-\markright{Aims of this section}
+\section{Electric Charges}\label{electric-charges}
 
-At the end of this section you should be able to
+Electric charge is a fundamental property of matter.Many fundamental
+particles, such as electrons, have charge, but macroscopic objects or
+surfaces can also have a net charge due to having a distribution of
+charged particles on them. Charge gives rise to electric fields, and
+hence to the electric forces experienced between charged particles and
+objects. Charge can be either a positive or negative quantity. Like
+charges (charges with the same sign) repel each other, and opposite
+charges attract.
+
+Charge is quantized and comes in integer multiples of the elementary
+charge \$ e \approx 1.602 \times 10 \^{}\{-19\}\$ Coulombs. Electrons
+carry a charge of \(-e\), and protons carry a charge of \(+e\).
+
+Charge is also conserved - the total charge in an isolated system is
+conserved. The consequence of this is that charge can neither be created
+nor destroyed but can only be transferred from one object to another.
+
+\section{Some definitions and important
+notation}\label{some-definitions-and-important-notation}
+
+Here I will briefly explain some notation and definitions I will use in
+this course for setting up and solving problems involving electric
+charges.
+
+Consider the following ensemble of charges:
+
+\includegraphics{sourcetest_definitions.png}
+
+We define the charges \(q_1\), \(q_2\), \(q_3\)\ldots{} \(q_i\) as
+source charges, meaning that these are the charges that produce the
+electric field for the purpose of the problem. We define \(Q\) as the
+test charge, which means it is the charge that is experiencing the
+effects of the electric field produced by the source charge(s).
+
+\includegraphics{axes_r_definitions.png}
+
+\section{Electric Forces \& Coulomb's
+Law}\label{electric-forces-coulombs-law}
+
+All charges produce electric fields, and other charges that are in the
+prescence of this field experience a force as a result.
+
+The force on a test charge \(Q\), exerted by a source charge \(q\), is
+given by Coulomb's Law, which is as follows:
+\[ F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r^2} \hat{\mathrm{\mathbf{r}}} \]
+
+where:
 
 \begin{itemize}
+\tightlist
 \item
-  Describe the concept of a field
+  \(\hat{\mathrm{\mathbf{r}}}\) is the unit vector in the direction of
+  the force, which points from \(q\) to \(Q\).
 \item
-  State the link between potential and fields and calculate field
-  strength from potentials.
+  \(r\) is the separation between \(q\) and \(Q\).
 \item
-  Sketch electric field lines for distributions of charges.
+  \(\epsilon_0\) is a physical constant known as the
+  \bf{permittivity of free space}.  $\epsilon_0 \approx 8.85 \times 10^{-12}$ Fm $^{-1}$ (farads per metre). 
 \end{itemize}
 
-\section{What is a field?}\label{what-is-a-field}
+If \(q\) and \(Q\) have the same sign (like charges) the force is
+repulsive (\(\mathrm{\mathbf{F}}\) is a positive quantity); if \(q\) and
+\(Q\) have different signs, the force is attractive
+(\(\mathrm{\mathbf{F}}\) is a negative quantity).
 
-\emph{Recommended reading:} Tipler \& Mosca 4.2, 21-4
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Electric Field
+\end{enumerate}
+
+The vector electric field, \(\mathbf{E}\), at a particular point in
+space, associated with a collection of charges, is defined in terms of
+the force, \(\mathbf{F}\), exerted on a positive test charge, \(q_0\),
+at that point \(E = F/q_0\).
+
+\(\mathbf{E}\) has units of Vm\(^{-1}\) or NC\(^{-1}\). The electric
+field is normally represented by field lines that indicate what a
+positive test charge will do. The arrows indicate the direction of the
+field and the density of lines indicates the strength of the field at a
+point. The diagram shows the electric field lines for two positive point
+charges of the same magnitude.
+
+Note that the field lines are symmetric as they leave the charges. They
+do not cross.
+
+The electric field \(\mathbf{\mathrm{𝐸}}\) is a vector field that
+represents the force experienced by a positive test charge placed at a
+point in space:
+
+\[ \mathrm{\mathbf{E}}= \frac{\mathrm{\mathbf{F}}}{Q} \]
+
+\noindent which can be rearranged to the more familiar form
+\(\mathrm{\mathbf{F}}= q \mathrm{\mathbf{E}}\). \hspace{0pt}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Electric Field Lines Electric field lines provide a visual
+  representation of electric fields. Key properties include:
+\end{enumerate}
+
+Lines begin on positive charges and end on negative charges. The number
+of lines is proportional to the magnitude of the charge. Lines never
+intersect. The density of lines indicates the field's strength.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  Electric Potential The electric potential 𝑉 V at a point is the work
+  done to bring a unit positive charge from infinity to that point: 𝑉 =
+  − ∫ ∞ 𝑟 𝐸 ⋅ 𝑑 𝑙 V=−∫ ∞ r \hspace{0pt} E⋅dl
+\end{enumerate}
+
+For a point charge 𝑞 q, the electric potential is: 𝑉 = 𝑘 𝑒 𝑞 𝑟 V=k e
+\hspace{0pt}
+
+r q \hspace{0pt} \#\# Superposition Principle The principle of
+superposition states that ``the interaction between any two charges is
+completely unaffected by the presence of others''. This means that the
+total force on a test charge can be computed by calculating the force on
+the charge due to each source charge separately, then adding up the
+contributions, as follows:
+
+\[ \mathrm{\mathbf{F}}_{tot} = \sum_i \mathrm{\mathbf{F}}_i \]
+
+The same applies to the electric field, which can be calculated for any
+given point in space as a sum of the electric field at that point from
+all the source charges:
+\[ \mathrm{\mathbf{E}}_{tot} = \sum_i \mathrm{\mathbf{E}}_i \]
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  Summary Electric charges create electric fields, which exert forces on
+  other charges. Coulomb's Law describes the force between point
+  charges, while Gauss's Law relates the electric field to the
+  distribution of charge. The electric potential provides a scalar
+  measure of the potential energy per unit charge in an electric field.
+  Understanding these concepts is crucial for studying electrostatics
+  and its applications.
+\end{enumerate}
+
+\section{A bit about vector fields}\label{a-bit-about-vector-fields}
+
+\subsection{What is a field?}\label{what-is-a-field}
+
+\emph{Recommended reading:}
 
 A field is a region of space, where property of that space is
 characterized by either a number (a scalar field) or by three numbers (a
@@ -234,8 +380,6 @@ We understand that the first body sets up a field and the second body
 interacts with the first via this field. There is no need for action at
 a distance because the field of the 1st object is present in space
 whether or not the second object is there.
-
-HAHA I love EM
 
 \subsection{Charges}\label{charges}
 
@@ -380,24 +524,22 @@ field}\label{representing-the-electric-field}
 
 \emph{Recommended reading:} Tipler \& Mosca 21-5.
 
-The vector electric field, \(\mathbf{E}\), at a particular point in
-space, associated with a collection of charges, is defined in terms of
-the force, \(\mathbf{F}\), exerted on a positive test charge, \(q_0\),
-at that point \(E = F/q_0\).
-
-\(\mathbf{E}\) has units of Vm\(^{-1}\) or NC\(^{-1}\). The electric
-field is normally represented by field lines that indicate what a
-positive test charge will do. The arrows indicate the direction of the
-field and the density of lines indicates the strength of the field at a
-point. The diagram shows the electric field lines for two positive point
-charges of the same magnitude.
-
-Note that the field lines are symmetric as they leave the charges. They
-do not cross.
-
 \bookmarksetup{startatroot}
 
-\chapter{Electric Potential}\label{electric-potential}
+\chapter{Lecture 2: Electric
+Potential}\label{lecture-2-electric-potential}
+
+\section{Introduction to potential - relationship with electric
+field}\label{introduction-to-potential---relationship-with-electric-field}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  Relationship Between Electric Field and Potential The electric field
+  is the negative gradient of the electric potential: 𝐸 = − ∇ 𝑉 E=−∇V
+\end{enumerate}
 
 \bookmarksetup{startatroot}
 

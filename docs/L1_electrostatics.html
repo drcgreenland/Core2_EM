@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Electromagnetism - 1&nbsp; Electrostatics</title>
+<title>Electromagnetism - 1&nbsp; Lecture 1: Electric Charges, Forces &amp; Fields</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./L1_electrostatics.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Electrostatics</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./L1_electrostatics.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lecture 1: Electric Charges, Forces &amp; Fields</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -144,13 +144,13 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./L1_electrostatics.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Electrostatics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lecture 1: Electric Charges, Forces &amp; Fields</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./L2_potential.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Electric Potential</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Lecture 2: Electric Potential</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -253,17 +253,20 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#aims-of-this-section" id="toc-aims-of-this-section" class="nav-link active" data-scroll-target="#aims-of-this-section">Aims of this section</a></li>
-  <li><a href="#what-is-a-field" id="toc-what-is-a-field" class="nav-link" data-scroll-target="#what-is-a-field"><span class="header-section-number">1.1</span> What is a field?</a>
+  <li><a href="#electric-charges" id="toc-electric-charges" class="nav-link active" data-scroll-target="#electric-charges"><span class="header-section-number">1.1</span> Electric Charges</a></li>
+  <li><a href="#some-definitions-and-important-notation" id="toc-some-definitions-and-important-notation" class="nav-link" data-scroll-target="#some-definitions-and-important-notation"><span class="header-section-number">1.2</span> Some definitions and important notation</a></li>
+  <li><a href="#electric-forces-coulombs-law" id="toc-electric-forces-coulombs-law" class="nav-link" data-scroll-target="#electric-forces-coulombs-law"><span class="header-section-number">1.3</span> Electric Forces &amp; Coulomb’s Law</a></li>
+  <li><a href="#a-bit-about-vector-fields" id="toc-a-bit-about-vector-fields" class="nav-link" data-scroll-target="#a-bit-about-vector-fields"><span class="header-section-number">1.4</span> A bit about vector fields</a>
   <ul class="collapse">
-  <li><a href="#charges" id="toc-charges" class="nav-link" data-scroll-target="#charges"><span class="header-section-number">1.1.1</span> Charges</a></li>
+  <li><a href="#what-is-a-field" id="toc-what-is-a-field" class="nav-link" data-scroll-target="#what-is-a-field"><span class="header-section-number">1.4.1</span> What is a field?</a></li>
+  <li><a href="#charges" id="toc-charges" class="nav-link" data-scroll-target="#charges"><span class="header-section-number">1.4.2</span> Charges</a></li>
   </ul></li>
-  <li><a href="#scalar-and-vector-fields" id="toc-scalar-and-vector-fields" class="nav-link" data-scroll-target="#scalar-and-vector-fields"><span class="header-section-number">1.2</span> Scalar and vector fields</a></li>
-  <li><a href="#link-between-scalar-and-vector-field" id="toc-link-between-scalar-and-vector-field" class="nav-link" data-scroll-target="#link-between-scalar-and-vector-field"><span class="header-section-number">1.3</span> Link between scalar and vector field</a>
+  <li><a href="#scalar-and-vector-fields" id="toc-scalar-and-vector-fields" class="nav-link" data-scroll-target="#scalar-and-vector-fields"><span class="header-section-number">1.5</span> Scalar and vector fields</a></li>
+  <li><a href="#link-between-scalar-and-vector-field" id="toc-link-between-scalar-and-vector-field" class="nav-link" data-scroll-target="#link-between-scalar-and-vector-field"><span class="header-section-number">1.6</span> Link between scalar and vector field</a>
   <ul class="collapse">
-  <li><a href="#other-operations-on-vectors" id="toc-other-operations-on-vectors" class="nav-link" data-scroll-target="#other-operations-on-vectors"><span class="header-section-number">1.3.1</span> Other operations on vectors</a></li>
+  <li><a href="#other-operations-on-vectors" id="toc-other-operations-on-vectors" class="nav-link" data-scroll-target="#other-operations-on-vectors"><span class="header-section-number">1.6.1</span> Other operations on vectors</a></li>
   </ul></li>
-  <li><a href="#representing-the-electric-field" id="toc-representing-the-electric-field" class="nav-link" data-scroll-target="#representing-the-electric-field"><span class="header-section-number">1.4</span> Representing the electric field</a></li>
+  <li><a href="#representing-the-electric-field" id="toc-representing-the-electric-field" class="nav-link" data-scroll-target="#representing-the-electric-field"><span class="header-section-number">1.7</span> Representing the electric field</a></li>
   </ul>
 </nav>
     </div>
@@ -272,7 +275,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Electrostatics</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Lecture 1: Electric Charges, Forces &amp; Fields</span></h1>
 </div>
 
 
@@ -289,42 +292,84 @@ window.Quarto = {
 </header>
 
 
-<section id="aims-of-this-section" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="aims-of-this-section">Aims of this section</h2>
-<p>At the end of this section you should be able to</p>
-<ul>
-<li><p>Describe the concept of a field</p></li>
-<li><p>State the link between potential and fields and calculate field strength from potentials.</p></li>
-<li><p>Sketch electric field lines for distributions of charges.</p></li>
-</ul>
+<section id="electric-charges" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="electric-charges"><span class="header-section-number">1.1</span> Electric Charges</h2>
+<p>Electric charge is a fundamental property of matter.Many fundamental particles, such as electrons, have charge, but macroscopic objects or surfaces can also have a net charge due to having a distribution of charged particles on them. Charge gives rise to electric fields, and hence to the electric forces experienced between charged particles and objects. Charge can be either a positive or negative quantity. Like charges (charges with the same sign) repel each other, and opposite charges attract.</p>
+<p>Charge is quantized and comes in integer multiples of the elementary charge $ e ^{-19}$ Coulombs. Electrons carry a charge of <span class="math inline">\(-e\)</span>, and protons carry a charge of <span class="math inline">\(+e\)</span>.</p>
+<p>Charge is also conserved - the total charge in an isolated system is conserved. The consequence of this is that charge can neither be created nor destroyed but can only be transferred from one object to another.</p>
 </section>
-<section id="what-is-a-field" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="what-is-a-field"><span class="header-section-number">1.1</span> What is a field?</h2>
-<p><em>Recommended reading:</em> Tipler &amp; Mosca 4.2, 21-4</p>
+<section id="some-definitions-and-important-notation" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="some-definitions-and-important-notation"><span class="header-section-number">1.2</span> Some definitions and important notation</h2>
+<p>Here I will briefly explain some notation and definitions I will use in this course for setting up and solving problems involving electric charges.</p>
+<p>Consider the following ensemble of charges:</p>
+<p><img src="sourcetest_definitions.png" class="img-fluid"></p>
+<p>We define the charges <span class="math inline">\(q_1\)</span>, <span class="math inline">\(q_2\)</span>, <span class="math inline">\(q_3\)</span>… <span class="math inline">\(q_i\)</span> as source charges, meaning that these are the charges that produce the electric field for the purpose of the problem. We define <span class="math inline">\(Q\)</span> as the test charge, which means it is the charge that is experiencing the effects of the electric field produced by the source charge(s).</p>
+<p><img src="axes_r_definitions.png" class="img-fluid"></p>
+</section>
+<section id="electric-forces-coulombs-law" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="electric-forces-coulombs-law"><span class="header-section-number">1.3</span> Electric Forces &amp; Coulomb’s Law</h2>
+<p>All charges produce electric fields, and other charges that are in the prescence of this field experience a force as a result.</p>
+<p>The force on a test charge <span class="math inline">\(Q\)</span>, exerted by a source charge <span class="math inline">\(q\)</span>, is given by Coulomb’s Law, which is as follows: <span class="math display">\[ F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r^2} \hat{\mathrm{\mathbf{r}}} \]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\hat{\mathrm{\mathbf{r}}}\)</span> is the unit vector in the direction of the force, which points from <span class="math inline">\(q\)</span> to <span class="math inline">\(Q\)</span>.</li>
+<li><span class="math inline">\(r\)</span> is the separation between <span class="math inline">\(q\)</span> and <span class="math inline">\(Q\)</span>.</li>
+<li><span class="math inline">\(\epsilon_0\)</span> is a physical constant known as the </li>
+</ul>
+<p>If <span class="math inline">\(q\)</span> and <span class="math inline">\(Q\)</span> have the same sign (like charges) the force is repulsive (<span class="math inline">\(\mathrm{\mathbf{F}}\)</span> is a positive quantity); if <span class="math inline">\(q\)</span> and <span class="math inline">\(Q\)</span> have different signs, the force is attractive (<span class="math inline">\(\mathrm{\mathbf{F}}\)</span> is a negative quantity).</p>
+<ol start="3" type="1">
+<li>Electric Field</li>
+</ol>
+<p>The vector electric field, <span class="math inline">\(\mathbf{E}\)</span>, at a particular point in space, associated with a collection of charges, is defined in terms of the force, <span class="math inline">\(\mathbf{F}\)</span>, exerted on a positive test charge, <span class="math inline">\(q_0\)</span>, at that point <span class="math inline">\(E = F/q_0\)</span>.</p>
+<p><span class="math inline">\(\mathbf{E}\)</span> has units of Vm<span class="math inline">\(^{-1}\)</span> or NC<span class="math inline">\(^{-1}\)</span>. The electric field is normally represented by field lines that indicate what a positive test charge will do. The arrows indicate the direction of the field and the density of lines indicates the strength of the field at a point. The diagram shows the electric field lines for two positive point charges of the same magnitude.</p>
+<p>Note that the field lines are symmetric as they leave the charges. They do not cross.</p>
+<p>The electric field <span class="math inline">\(\mathbf{\mathrm{𝐸}}\)</span> is a vector field that represents the force experienced by a positive test charge placed at a point in space:</p>
+<p><span class="math display">\[ \mathrm{\mathbf{E}}= \frac{\mathrm{\mathbf{F}}}{Q} \]</span></p>
+<p>which can be rearranged to the more familiar form <span class="math inline">\(\mathrm{\mathbf{F}}= q \mathrm{\mathbf{E}}\)</span>. ​</p>
+<ol start="5" type="1">
+<li>Electric Field Lines Electric field lines provide a visual representation of electric fields. Key properties include:</li>
+</ol>
+<p>Lines begin on positive charges and end on negative charges. The number of lines is proportional to the magnitude of the charge. Lines never intersect. The density of lines indicates the field’s strength.</p>
+<ol start="9" type="1">
+<li>Electric Potential The electric potential 𝑉 V at a point is the work done to bring a unit positive charge from infinity to that point: 𝑉 = − ∫ ∞ 𝑟 𝐸 ⋅ 𝑑 𝑙 V=−∫ ∞ r ​ E⋅dl</li>
+</ol>
+<p>For a point charge 𝑞 q, the electric potential is: 𝑉 = 𝑘 𝑒 𝑞 𝑟 V=k e ​</p>
+<p>r q ​ ## Superposition Principle The principle of superposition states that “the interaction between any two charges is completely unaffected by the presence of others”. This means that the total force on a test charge can be computed by calculating the force on the charge due to each source charge separately, then adding up the contributions, as follows:</p>
+<p><span class="math display">\[ \mathrm{\mathbf{F}}_{tot} = \sum_i \mathrm{\mathbf{F}}_i \]</span></p>
+<p>The same applies to the electric field, which can be calculated for any given point in space as a sum of the electric field at that point from all the source charges: <span class="math display">\[ \mathrm{\mathbf{E}}_{tot} = \sum_i \mathrm{\mathbf{E}}_i \]</span></p>
+<ol start="11" type="1">
+<li>Summary Electric charges create electric fields, which exert forces on other charges. Coulomb’s Law describes the force between point charges, while Gauss’s Law relates the electric field to the distribution of charge. The electric potential provides a scalar measure of the potential energy per unit charge in an electric field. Understanding these concepts is crucial for studying electrostatics and its applications.</li>
+</ol>
+</section>
+<section id="a-bit-about-vector-fields" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="a-bit-about-vector-fields"><span class="header-section-number">1.4</span> A bit about vector fields</h2>
+<section id="what-is-a-field" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="what-is-a-field"><span class="header-section-number">1.4.1</span> What is a field?</h3>
+<p><em>Recommended reading:</em></p>
 <p>A field is a region of space, where property of that space is characterized by either a number (a scalar field) or by three numbers (a vector field).</p>
 <p>The concept of a field circumvents the problem of action at a distance where one inanimate object is “aware" that another has arrived.</p>
 <!-- ::: figurehere -->
 <!-- ![image](Figures/blue_red_circs.png){width="80mm"} -->
 <!-- ::: -->
 <p>We understand that the first body sets up a field and the second body interacts with the first via this field. There is no need for action at a distance because the field of the 1st object is present in space whether or not the second object is there.</p>
-<p>HAHA I love EM</p>
-<section id="charges" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="charges"><span class="header-section-number">1.1.1</span> Charges</h3>
+</section>
+<section id="charges" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="charges"><span class="header-section-number">1.4.2</span> Charges</h3>
 <p>Why does object 1 set up a field? Fields arise when objects have charge. Electric charges cause electromagnetic fields, but other fields arise from different types of charge for example gravitational fields arise from mass. (And the strong field that is responsible for holding quarks inside protons and neutrons arises from the colour charge – see Inside The Atom.)</p>
 <p>There are two types of <strong>electric charge</strong>, <span class="math inline">\(+\)</span> and <span class="math inline">\(-\)</span>. “Like" charges repel, while”unlike" charges attract. Electric charge is quantized: the <strong>elementary charge</strong> is <span class="math inline">\(1.6021773 \times 10^{-19}\)</span> C and is the charge on the electron and the proton. Charges measured in laboratories are always multiples of this but the quarks inside protons and neutrons and other hadrons have charges that fractions of this elementary charge. Charge is conserved in all interactions we have observed. Most everyday objects are electrically neutral with the number of protons and electrons balanced, which hides the fact that they contain enormous amounts of <span class="math inline">\(+\)</span> and <span class="math inline">\(-\)</span> charge. Things that we would describe as “charged objects", have a small imbalance in charge.</p>
 <p><strong>Gravitational charge:</strong> there is one type of gravitational charge, which is mass/energy. Gravitational charges attract. We don’t know about quantization of mass. (You can probably spend many hours on the internet reading different opinions on this). Mass/Energy is conserved and all everyday objects are gravitationally charged so they all attract each other but gravity is very weak – we can easily pick up bits of paper with an electrically charged rod when rather few electrons have been moved.</p>
 <p><strong>Strong field charge:</strong> there are three types of fundamental strong charge (red, green and blue) + three anticharges. Charges attract. Colour is quantised and colour is conserved in interactions. All everyday objects are colour neutral. Colour fields are confined within subatomic particles i.e.&nbsp;to length scales of <span class="math inline">\(\sim 10^{-15}\)</span> m.</p>
 </section>
 </section>
-<section id="scalar-and-vector-fields" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="scalar-and-vector-fields"><span class="header-section-number">1.2</span> Scalar and vector fields</h2>
+<section id="scalar-and-vector-fields" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="scalar-and-vector-fields"><span class="header-section-number">1.5</span> Scalar and vector fields</h2>
 <p>A scalar field is characterized at each point by a single number. e.g. the temperature, <span class="math inline">\(T\)</span>, at each position in a block of metal heated at some places and cooled at others.</p>
 <p>::: figurehere –&gt; <img src="Figures/isotherms.png" class="img-fluid" style="width:80mm" alt="image"> :::</p>
 <p><span class="math inline">\(T\)</span> is a function of position i.e.&nbsp;<span class="math inline">\(T = T(x,y,z)\)</span>. At every point we can measure the scalar value of the temperature <span class="math inline">\(T\)</span>. The black lines represent isotherms i.e.&nbsp;lines where the temperature is constant (<span class="math inline">\(T_1 &lt; T_2 &lt; T_3 &lt; T_4 &lt; T_5\)</span>). Heat flow (blue arrows) is perpendicular to the contours of constant temperature - the isotherms (<span class="math inline">\(T_1\)</span>, <span class="math inline">\(T_2\)</span> etc). The magnitude of the heat flow is proportional to the temperature gradient so that the heat flow is larger when isotherms are closer together.</p>
 <p>The scalar temperature field has an associated vector field because at any point, the heat flow is a vector, the <strong>magnitude</strong> and <strong>direction</strong> of which depend on position. Heat flow is therefore a vector field which is related to the scalar field of temperature. The vector gradient of the field of heat flow depends on the temperature at each point.</p>
 </section>
-<section id="link-between-scalar-and-vector-field" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="link-between-scalar-and-vector-field"><span class="header-section-number">1.3</span> Link between scalar and vector field</h2>
+<section id="link-between-scalar-and-vector-field" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="link-between-scalar-and-vector-field"><span class="header-section-number">1.6</span> Link between scalar and vector field</h2>
 <p><em>Recommended reading:</em> Tipler &amp; Mosca 23-3.</p>
 <p>For the scalar temperature field <span class="math inline">\(T(x,y,z)\)</span> the vector describing the direction and the magnitude of the maximum temperature gradient is:</p>
 <p><span class="math display">\[\begin{equation}
@@ -337,8 +382,8 @@ window.Quarto = {
 <div class="flushleft">
 
 </div>
-<section id="other-operations-on-vectors" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="other-operations-on-vectors"><span class="header-section-number">1.3.1</span> Other operations on vectors</h3>
+<section id="other-operations-on-vectors" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="other-operations-on-vectors"><span class="header-section-number">1.6.1</span> Other operations on vectors</h3>
 <p>The vector operator <span class="math inline">\(\nabla\)</span> behaves as a vector. We have looked at grad <span class="math inline">\(\nabla\phi\)</span> where <span class="math inline">\(\phi\)</span> is a scalar field. In Maxwell’s equations, which you cover next year, you will also meet <span class="math inline">\(\nabla\)</span> operating on the electric field <span class="math inline">\(\mathbf{E}\)</span>:</p>
 <p><span class="math inline">\(\nabla \cdot \mathbf{E}\)</span> (div or divergence)</p>
 <p><span class="math inline">\(\nabla \times \mathbf{E}\)</span> (curl or rotation)</p>
@@ -362,15 +407,9 @@ window.Quarto = {
 <p>Source: <a href="http://www.clerkmaxwellfoundation.org/html/about_maxwell.html" class="uri">http://www.clerkmaxwellfoundation.org/html/about_maxwell.html</a> ; <a href="https://maxwells-equations.com/" class="uri">https://maxwells-equations.com/</a></p>
 </section>
 </section>
-<section id="representing-the-electric-field" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="representing-the-electric-field"><span class="header-section-number">1.4</span> Representing the electric field</h2>
+<section id="representing-the-electric-field" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="representing-the-electric-field"><span class="header-section-number">1.7</span> Representing the electric field</h2>
 <p><em>Recommended reading:</em> Tipler &amp; Mosca 21-5.</p>
-<p>The vector electric field, <span class="math inline">\(\mathbf{E}\)</span>, at a particular point in space, associated with a collection of charges, is defined in terms of the force, <span class="math inline">\(\mathbf{F}\)</span>, exerted on a positive test charge, <span class="math inline">\(q_0\)</span>, at that point <span class="math inline">\(E = F/q_0\)</span>.</p>
-<p><span class="math inline">\(\mathbf{E}\)</span> has units of Vm<span class="math inline">\(^{-1}\)</span> or NC<span class="math inline">\(^{-1}\)</span>. The electric field is normally represented by field lines that indicate what a positive test charge will do. The arrows indicate the direction of the field and the density of lines indicates the strength of the field at a point. The diagram shows the electric field lines for two positive point charges of the same magnitude.</p>
-<!-- ::: figurehere -->
-<!-- ![image](Figures/Efield_like.jpg){width="80mm"} -->
-<!-- ::: -->
-<p>Note that the field lines are symmetric as they leave the charges. They do not cross.</p>
 
 
 </section>
@@ -792,8 +831,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./L2_potential.html" class="pagination-link" aria-label="Electric Potential">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Electric Potential</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./L2_potential.html" class="pagination-link" aria-label="Lecture 2: Electric Potential">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Lecture 2: Electric Potential</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
