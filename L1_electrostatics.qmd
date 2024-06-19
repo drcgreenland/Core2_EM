@@ -7,13 +7,27 @@
 
 ## Electric Charges
 
-Electric charge is a fundamental property of matter.Many fundamental particles, such as electrons, have charge, but macroscopic objects or surfaces can also have a net charge due to having a distribution of charged particles on them. Charge gives rise to electric fields, and hence to the electric forces experienced between charged particles and objects.
-Charge can be either a positive or negative quantity. Like charges (charges with the same sign) repel each other, and opposite charges attract.
+Electric charge is a fundamental property of matter. Many fundamental particles (such as electrons and protons) have charge. However, macroscopic objects can also be charged due to having a distribution of charged particles on them that has a small imbalance in charge - we might describe these as "charged objects". 
 
-Charge is quantized and comes in integer multiples of the elementary charge 
-$ e \approx 1.602 \times 10 ^{-19}$ Coulombs. Electrons carry a charge of $-e$, and protons carry a charge of $+e$. 
+Charge gives rise to electric fields, and hence to the electric forces experienced between charged particles or objects.
 
-Charge is also conserved - the total charge in an isolated system is conserved. The consequence of this is that charge can neither be created nor destroyed but can only be transferred from one object to another.
+Charge can be either a positive or negative quantity. "Like" charges (charges with the same sign) repel each other, and opposite charges attract.
+
+
+Charge is quantized and comes in integer multiples of the elementary charge $e$ which has an approximate value of $1.602 \times 10 ^{-19}$ Coulombs. Electrons carry a charge of $-e$, and protons carry a charge of $+e$. Charges measured in laboratories are always multiples of $e$ but the quarks inside protons and neutrons and other hadrons have charges that are fractions of this elementary charge. 
+
+Charge is conserved - or more specifically, the total charge in an isolated system is conserved. (At least, this has been the case in all the particle interactions physicists have so far observed.) Hence, charge can be neither created nor destroyed, but can only be transferred from one object to another.
+
+
+**Gravitational charge:** there is one type of gravitational charge, which is mass/energy. Gravitational charges attract. We don't know about quantization of mass. (You can probably spend many hours on the internet reading different opinions on this). Mass/Energy is conserved and all everyday objects are gravitationally charged so they all attract each other, but gravity is very weak--we can easily pick up bits of paper with an electrically charged rod when rather few electrons have been
+moved.
+
+<!--
+**Strong field charge:** there are three types of fundamental strong charge (red, green and blue) + three anticharges. Charges attract.
+Colour is quantised and colour is conserved in interactions. All
+everyday objects are colour neutral. Colour fields are confined within
+subatomic particles i.e. to length scales of $\sim 10^{-15}$ m.
+--> 
 
 ## Some definitions and important notation
 
@@ -21,11 +35,11 @@ Here I will briefly explain some notation and definitions I will use in this cou
 
 Consider the following ensemble of charges: 
 
-![Some charges.](sourcetest_definitions.png)
+![Some charges.](Figures/sourcetest_definitions.png)
 
 We define the charges $q_1$, $q_2$, $q_3$... $q_i$ as source charges, meaning that these are the charges that produce the electric field for the purpose of the problem. We define $Q$ as the test charge, which means it is the charge that is experiencing the effects of the electric field produced by the source charge(s). Of course, any charge can be a source or a test charge, there is no fundamental difference between them. "Source" and "test" are simply names that we give charges when setting up a problem, so that we can more easily define and solve the problem.
 
-![Some charges, overlaid with axes showing the definition of $r$, the separation between the source and test charges. ](Figures/axes_r_definitions.png)
+![Some charges, overlaid with axes showing the definition of $\r$, the vector separation between the source and test charges. ](Figures/axes_r_definitions.png)
 
 ## Electric Forces & Coulomb's Law
 
@@ -66,12 +80,11 @@ $$ \E = \frac{\F}{Q} $$
 \noindent which can be rearranged to the more familiar form $\F = Q \E$. 
 ​
 
-### Electric field lines provide a visual representation of electric fields. Key properties include:
+Electric field lines provide a visual representation of electric fields. Key properties include:
 
-Lines begin on positive charges and end on negative charges.
-The number of lines is proportional to the magnitude of the charge.
-Lines never intersect.
-The density of lines indicates the field's strength.
+* Lines begin on positive charges and end on negative charges.
+* The density of the lines/arrows indicates the electric field strength. You may also see fields drawn where the size of the arrows represents the electric field strength. 
+* Lines never intersect.
 ​
 ## Superposition Principle
 The principle of superposition states that "the interaction between any two charges is completely unaffected by the presence of others". This means that the total force on a test charge can be computed by calculating the force on the charge due to each source charge separately, then adding up the contributions, as follows: 
@@ -82,107 +95,42 @@ The same applies to the electric field, which can be calculated for any given po
 $$ \E_{tot} = \sum_i \E_i $$ 
 
 
-11. Summary
-Electric charges create electric fields, which exert forces on other charges. Coulomb's Law describes the force between point charges, while Gauss's Law relates the electric field to the distribution of charge. The electric potential provides a scalar measure of the potential energy per unit charge in an electric field. Understanding these concepts is crucial for studying electrostatics and its applications.
+## Summary
+Electric charges create electric fields, which exert forces on other charges. Coulomb's Law describes the force between point charges. 
 
-## A bit about vector fields
+## Bonus content: vector fields
 
 ### What is a field?
 
 *Recommended reading:* 
 
-A field is a region of space, where property of that space is
-characterized by either a number (a scalar field) or by three numbers (a
-vector field).
+A field is a region of space, where property of that space is characterized by either a number (a scalar field) or by three numbers (a vector field).
 
-The concept of a field circumvents the problem of action at a distance
-where one inanimate object is "aware\" that another has arrived.
-
-<!-- ::: figurehere -->
-<!-- ![image](Figures/blue_red_circs.png){width="80mm"} -->
-<!-- ::: -->
+The concept of a field circumvents the problem of action at a distance, where one inanimate object is "aware" that another has arrived. We understand that the first body sets up a field and the second body interacts with the first via this field.
 
 
+### Scalar and vector fields
 
-We understand that the first body sets up a field and the second body
-interacts with the first via this field. There is no need for action at
-a distance because the field of the 1st object is present in space
-whether or not the second object is there.
+A scalar field is characterized at each point by a single number. e.g. the temperature, $T$, at each position in a block of metal heated at some places and cooled at others.
+
+
+![A representation of a temperature field. Isotherms at different temperatures are black lines; blue arrows show the direction of heat flow, which is always perpendicular to the isotherms.](Figures/isotherms.png){width="80mm"}
 
 
 
-### Charges
+$T$ is a function of position i.e. $T = T(x,y,z)$. At every point we can measure the scalar value of the temperature $T$. The black lines represent isotherms i.e. lines where the temperature is constant ($T_1 < T_2 < T_3 < T_4 < T_5$). Heat flow (blue arrows) is perpendicular to the contours of constant temperature - the isotherms ($T_1$, $T_2$ etc). The magnitude of the heat flow is proportional to
+the temperature gradient, so that the heat flow is larger when isotherms are closer together.
 
-Why does object 1 set up a field? Fields arise when objects have charge.
-Electric charges cause electromagnetic fields, but other fields arise
-from different types of charge for example gravitational fields arise
-from mass. (And the strong field that is responsible for holding quarks
-inside protons and neutrons arises from the colour charge -- see Inside
-The Atom.)
+The scalar temperature field has an associated vector field, because at any point, the heat flow is a vector, the **magnitude** and **direction** of which depend on position. Heat flow is therefore a
+vector field which is related to the scalar field of temperature. The vector gradient of the field of heat flow depends on the temperature at each point.
 
-There are two types of **electric charge**, $+$ and $-$. "Like\" charges
-repel, while "unlike\" charges attract. Electric charge is quantized:
-the **elementary charge** is $1.6021773 \times 10^{-19}$ C and is the
-charge on the electron and the proton. Charges measured in laboratories
-are always multiples of this but the quarks inside protons and neutrons
-and other hadrons have charges that fractions of this elementary charge.
-Charge is conserved in all interactions we have observed. Most everyday
-objects are electrically neutral with the number of protons and
-electrons balanced, which hides the fact that they contain enormous
-amounts of $+$ and $-$ charge. Things that we would describe as "charged
-objects\", have a small imbalance in charge.
+### Link between scalar and vector field
 
-**Gravitational charge:** there is one type of gravitational charge,
-which is mass/energy. Gravitational charges attract. We don't know about
-quantization of mass. (You can probably spend many hours on the internet
-reading different opinions on this). Mass/Energy is conserved and all
-everyday objects are gravitationally charged so they all attract each
-other but gravity is very weak -- we can easily pick up bits of paper
-with an electrically charged rod when rather few electrons have been
-moved.
+*Recommended reading:* 
 
-**Strong field charge:** there are three types of fundamental strong
-charge (red, green and blue) + three anticharges. Charges attract.
-Colour is quantised and colour is conserved in interactions. All
-everyday objects are colour neutral. Colour fields are confined within
-subatomic particles i.e. to length scales of $\sim 10^{-15}$ m.
-
-## Scalar and vector fields
-
-A scalar field is characterized at each point by a single number. e.g.
-the temperature, $T$, at each position in a block of metal heated at
-some places and cooled at others.
-
-::: figurehere -->
-![image](Figures/isotherms.png){width="80mm"}
-:::
-
-
-$T$ is a function of position i.e. $T = T(x,y,z)$. At every point we can
-measure the scalar value of the temperature $T$. The black lines
-represent isotherms i.e. lines where the temperature is constant
-($T_1 < T_2 < T_3 < T_4 < T_5$). Heat flow (blue arrows) is
-perpendicular to the contours of constant temperature - the isotherms
-($T_1$, $T_2$ etc). The magnitude of the heat flow is proportional to
-the temperature gradient so that the heat flow is larger when isotherms
-are closer together.
-
-The scalar temperature field has an associated vector field because at
-any point, the heat flow is a vector, the **magnitude** and
-**direction** of which depend on position. Heat flow is therefore a
-vector field which is related to the scalar field of temperature. The
-vector gradient of the field of heat flow depends on the temperature at
-each point.
-
-## Link between scalar and vector field
-
-*Recommended reading:* Tipler & Mosca 23-3.
-
-For the scalar temperature field $T(x,y,z)$ the vector describing the
-direction and the magnitude of the maximum temperature gradient is:
+For the scalar temperature field $T(x,y,z)$ the vector describing the direction and the magnitude of the maximum temperature gradient is:
 
 \begin{equation}
-(\#eq:tempGrad)
  \text{Grad} \; T = \nabla T = \frac{\partial T} {\partial x} \hat{\mathbf{i}} + \frac{\partial T}{\partial y} \hat{\mathbf{j}} + \frac{\partial T}{\partial y} \hat{\mathbf{k}}
 \end{equation}
 
@@ -202,8 +150,6 @@ given by $U = mgz$ near the Earth's surface, where $z$ is the height.
 The gravitational potential is $U/m = gz$. The gravitational field is
 $-\nabla(gz)=-g \hat{\mathbf{k}}$.
 
-::: flushleft
-:::
 
 ### Other operations on vectors
 
@@ -226,31 +172,25 @@ laws. You can read more about Maxwell's Equations in Chapter 30 of
 Tipler and Mosca.
 
 \begin{equation}
-(\#eq:maxwell1)
+
 \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}
 \end{equation}
 
 \begin{equation}
-(\#eq:maxwell2)
 \nabla \times \mathbf{E} = - \frac{\partial \mathbf{B}}{\partial t} 
 \end{equation}
 
 \begin{equation}
-(\#eq:maxwell3)
 \nabla \cdot \mathbf{B} = 0
 \end{equation}
 
 \begin{equation}
-(\#eq:maxwell4)
 \nabla \times \mathbf{B} = \frac{\mathbf{j}}{c^2 \epsilon_0} + \frac{1}{c^2} \frac{\partial \mathbf{E}}{\partial t}
 \end{equation}
 
 Source: <http://www.clerkmaxwellfoundation.org/html/about_maxwell.html>
 ; <https://maxwells-equations.com/>
 
-## Representing the electric field
-
-*Recommended reading:* Tipler & Mosca 21-5.
 
 
 
