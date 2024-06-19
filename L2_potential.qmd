@@ -1,1 +1,13 @@
-# Electric Potential
+# Lecture 2: Electric Potential
+
+## Introduction to potential - relationship with electric field
+
+
+10. Relationship Between Electric Field and Potential
+The electric field is the negative gradient of the electric potential:
+𝐸
+=
+−
+∇
+𝑉
+E=−∇V
