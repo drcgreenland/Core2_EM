@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -224,7 +253,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction-to-potential---relationship-with-electric-field" id="toc-introduction-to-potential---relationship-with-electric-field" class="nav-link active" data-scroll-target="#introduction-to-potential---relationship-with-electric-field"><span class="header-section-number">2.1</span> Introduction to potential - relationship with electric field</a></li>
+  <li><a href="#introduction-to-electric-potential" id="toc-introduction-to-electric-potential" class="nav-link active" data-scroll-target="#introduction-to-electric-potential"><span class="header-section-number">2.1</span> Introduction to Electric Potential</a></li>
+  <li><a href="#definition-of-electric-potential" id="toc-definition-of-electric-potential" class="nav-link" data-scroll-target="#definition-of-electric-potential"><span class="header-section-number">2.2</span> Definition of Electric Potential</a></li>
+  <li><a href="#electric-potential-due-to-a-point-charge" id="toc-electric-potential-due-to-a-point-charge" class="nav-link" data-scroll-target="#electric-potential-due-to-a-point-charge"><span class="header-section-number">2.3</span> Electric Potential Due to a Point Charge</a></li>
   </ul>
 </nav>
     </div>
@@ -250,10 +281,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction-to-potential---relationship-with-electric-field" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="introduction-to-potential---relationship-with-electric-field"><span class="header-section-number">2.1</span> Introduction to potential - relationship with electric field</h2>
-<ol start="10" type="1">
-<li>Relationship Between Electric Field and Potential The electric field is the negative gradient of the electric potential: 𝐸 = − ∇ 𝑉 E=−∇V</li>
+<section id="introduction-to-electric-potential" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introduction-to-electric-potential"><span class="header-section-number">2.1</span> Introduction to Electric Potential</h2>
+<p>Electric potential is a scalar quantity associated with the electric field. It is defined as the potential energy per unit charge at a particular point in space (for example, at the location of a test charge <span class="math inline">\(Q\)</span>). The concept of electric potential simplifies many calculations in electrostatics, particularly when dealing with electric fields and potential energy.</p>
+</section>
+<section id="definition-of-electric-potential" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="definition-of-electric-potential"><span class="header-section-number">2.2</span> Definition of Electric Potential</h2>
+<p>The electric potential <span class="math inline">\(V\)</span>, at a particular point in space, is defined as the work <span class="math inline">\(W\)</span> done by an external force to bring a unit positive charge from infinity to that point without any acceleration:</p>
+<p><span class="math display">\[ V(r)=−\int_\infty^r \E \cdot \mathrm{d}\mathrm{\mathbf{l}}\]</span></p>
+<p>where <span class="math inline">\(\E\)</span> is the electric field, <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{l}}\)</span> is an infinitesimal displacement vector along the path of the charge.</p>
+<ol start="3" type="1">
+<li>Potential Difference The potential difference VABV_{AB}VAB between two points AAA and BBB is given by:</li>
+</ol>
+<p><span class="math display">\[ V_{AB} = V(A)−V(B) = -\int_{B}^{A} \E \cdot \mathrm{d} \mathrm{\mathbf{l}}\]</span></p>
+<p>This quantity represents the work done per unit charge by the electric field in moving a charge from point B to point A.</p>
+</section>
+<section id="electric-potential-due-to-a-point-charge" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="electric-potential-due-to-a-point-charge"><span class="header-section-number">2.3</span> Electric Potential Due to a Point Charge</h2>
+<p>For a point charge <span class="math inline">\(q\)</span> located at the origin, the electric potential at a distance <span class="math inline">\(r\)</span> is: <span class="math display">\[ V(r) = k_e \frac{q}{r} \]</span> where <span class="math inline">\(k_e\)</span> is Coulomb’s constant (<span class="math inline">\(k_e \approx 8.99×109 \times 10^9\)</span> =Nm<span class="math inline">\(^2\)</span> / C<span class="math inline">\(^2\)</span>).</p>
+<ol start="5" type="1">
+<li><p>Electric Potential Due to Multiple Point Charges The principle of superposition applies to electric potential, just as it does to electric fields. For multiple point charges qiq_iqi located at positions ri<em>iri, the total potential at a point rr is the sum of the potentials due to each charge: V(r)=ke∑iqi∣r−ri∣V() = k_e </em>{i} V(r)=ke∑i∣r−ri∣qi</p></li>
+<li><p>Relationship Between Electric Field and Potential The electric field is related to the electric potential by the gradient: E=−∇V = -VE=−∇V This relationship implies that the electric field points in the direction of the greatest decrease of potential.</p></li>
+<li><p>Equipotential Surfaces Equipotential surfaces are surfaces on which the electric potential is constant. Key properties include: • No work is required to move a charge along an equipotential surface. • Electric field lines are always perpendicular to equipotential surfaces.</p></li>
+<li><p>Calculating Electric Potential Example 1: Uniform Electric Field For a uniform electric field E=E0x^ = E_0 E=E0x^, the potential difference between two points along the x-axis is: V(x)=−E0x+V0V(x) = -E_0 x + V_0V(x)=−E0x+V0 where V0V_0V0 is the potential at x=0x = 0x=0. Example 2: Potential Due to a Continuous Charge Distribution For a continuous charge distribution with volume charge density ρ(r′)()ρ(r′), the electric potential at a point rr is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V() = k_e d^3V(r)=ke∫∣r−r′∣ρ(r′)d3r′</p></li>
+<li><p>Potential of a Charged Sphere Example: Solid Sphere For a uniformly charged solid sphere of radius RRR and total charge QQQ: • Inside the sphere (r &lt; R): V(r)=keQ2R(3−r2R2)V(r) = k_e ( 3 - )V(r)=ke2RQ(3−R2r2) • Outside the sphere (r &gt; R): V(r)=keQrV(r) = k_e V(r)=kerQ Example: Thin Spherical Shell For a thin spherical shell of radius RRR and total charge QQQ: • Inside the shell (r &lt; R): V(r)=keQRV(r) = k_e V(r)=keRQ • Outside the shell (r &gt; R): V(r)=keQrV(r) = k_e V(r)=kerQ</p></li>
+<li><p>Summary Electric potential is a crucial concept in electrostatics, simplifying the analysis of electric fields and the work done by (or on) charges. It is ~intimately related~?? to the electric field and provides a scalar measure of potential energy per unit charge. Understanding electric potential is essential for solving a wide range of problems in electrostatics.</p></li>
 </ol>
 
 

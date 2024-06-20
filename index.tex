@@ -320,7 +320,7 @@ repulsive (\(\mathrm{\mathbf{F}}\) is a positive quantity); if \(q\) and
 
 \section{Electric Field}\label{electric-field}
 
-The electric field \(\mathbf{\mathrm{𝐸}}\) produced by a charge (or
+The electric field \(\mathrm{\mathbf{E}}\) produced by a charge (or
 charged object/charge distribution) is a vector field that represents
 the force per unit charge experienced by a positive test charge placed
 at a particular point in space:
@@ -362,7 +362,7 @@ symmetric as they leave the charges.
 The principle of superposition states that ``the interaction between any
 two charges is completely unaffected by the presence of others''. This
 means that the total force on a test charge can be computed by
-calculating the force on the charge due to each source charge
+calculating the force on the test charge due to each source charge
 separately, then adding up the contributions, as follows:
 
 \[ \mathrm{\mathbf{F}}_{tot} = \sum_i \mathrm{\mathbf{F}}_i \]
@@ -503,22 +503,128 @@ Source:
 \chapter{Lecture 2: Electric
 Potential}\label{lecture-2-electric-potential}
 
-\section{Introduction to potential - relationship with electric
-field}\label{introduction-to-potential---relationship-with-electric-field}
+\newcommand{\l}{\mathrm{\mathbf{l}}}
+
+\section{Introduction to Electric
+Potential}\label{introduction-to-electric-potential}
+
+Electric potential is a scalar quantity associated with the electric
+field. It is defined as the potential energy per unit charge at a
+particular point in space (for example, at the location of a test charge
+\(Q\)). The concept of electric potential simplifies many calculations
+in electrostatics, particularly when dealing with electric fields and
+potential energy.
+
+\section{Definition of Electric
+Potential}\label{definition-of-electric-potential}
+
+The electric potential \(V\), at a particular point in space, is defined
+as the work \(W\) done by an external force to bring a unit positive
+charge from infinity to that point without any acceleration:
+
+\[ V(r)=−\int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\]
+
+where \(\mathrm{\mathbf{E}}\) is the electric field,
+\(\mathrm{d}\mathrm{\mathbf{l}}\) is an infinitesimal displacement
+vector along the path of the charge.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
+\setcounter{enumi}{2}
 \tightlist
 \item
+  Potential Difference The potential difference VABV\_\{AB\}VAB between
+  two points AAA and BBB is given by:
+\end{enumerate}
+
+\[ V_{AB} = V(A)−V(B) = -\int_{B}^{A} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]
+
+This quantity represents the work done per unit charge by the electric
+field in moving a charge from point B to point A.
+
+\section{Electric Potential Due to a Point
+Charge}\label{electric-potential-due-to-a-point-charge}
+
+For a point charge \(q\) located at the origin, the electric potential
+at a distance \(r\) is: \[ V(r) = k_e \frac{q}{r} \] where \(k_e\) is
+Coulomb's constant (\(k_e \approx 8.99×109 \times 10^9\) =Nm\(^2\) /
+C\(^2\)).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\item
+  Electric Potential Due to Multiple Point Charges The principle of
+  superposition applies to electric potential, just as it does to
+  electric fields. For multiple point charges qiq\_iqi located at
+  positions ri\mathbf{r}\emph{iri, the total potential at a point
+  r\mathbf{r}r is the sum of the potentials due to each charge:
+  V(r)=ke∑iqi∣r−ri∣V(\mathbf{r}) = k\_e \sum}\{i\}
+  \frac{q_i}{|\mathbf{r} - \mathbf{r}_i|}V(r)=ke∑i∣r−ri∣qi
+\item
   Relationship Between Electric Field and Potential The electric field
-  is the negative gradient of the electric potential: 𝐸 = − ∇ 𝑉 E=−∇V
+  is related to the electric potential by the gradient: E=−∇V\mathbf{E}
+  = -\nabla VE=−∇V This relationship implies that the electric field
+  points in the direction of the greatest decrease of potential.
+\item
+  Equipotential Surfaces Equipotential surfaces are surfaces on which
+  the electric potential is constant. Key properties include: • No work
+  is required to move a charge along an equipotential surface. •
+  Electric field lines are always perpendicular to equipotential
+  surfaces.
+\item
+  Calculating Electric Potential Example 1: Uniform Electric Field For a
+  uniform electric field E=E0x\^{}\mathbf{E} = E\_0
+  \hat{\mathbf{x}}E=E0x\^{}, the potential difference between two points
+  along the x-axis is: V(x)=−E0x+V0V(x) = -E\_0 x + V\_0V(x)=−E0x+V0
+  where V0V\_0V0 is the potential at x=0x = 0x=0. Example 2: Potential
+  Due to a Continuous Charge Distribution For a continuous charge
+  distribution with volume charge density ρ(r′)\rho(\mathbf{r'})ρ(r′),
+  the electric potential at a point r\mathbf{r}r is:
+  V(r)=ke∫ρ(r′)∣r−r′∣d3r′V(\mathbf{r}) = k\_e
+  \int \frac{\rho(\mathbf{r'})}{|\mathbf{r} - \mathbf{r'}|}
+  d\^{}3\mathbf{r'}V(r)=ke∫∣r−r′∣ρ(r′)d3r′
+\item
+  Potential of a Charged Sphere Example: Solid Sphere For a uniformly
+  charged solid sphere of radius RRR and total charge QQQ: • Inside the
+  sphere (r \textless{} R): V(r)=keQ2R(3−r2R2)V(r) = k\_e \frac{Q}{2R}
+  \left( 3 - \frac{r^2}{R^2} \right)V(r)=ke2RQ(3−R2r2) • Outside the
+  sphere (r \textgreater{} R): V(r)=keQrV(r) = k\_e \frac{Q}{r}V(r)=kerQ
+  Example: Thin Spherical Shell For a thin spherical shell of radius RRR
+  and total charge QQQ: • Inside the shell (r \textless{} R):
+  V(r)=keQRV(r) = k\_e \frac{Q}{R}V(r)=keRQ • Outside the shell (r
+  \textgreater{} R): V(r)=keQrV(r) = k\_e \frac{Q}{r}V(r)=kerQ
+\item
+  Summary Electric potential is a crucial concept in electrostatics,
+  simplifying the analysis of electric fields and the work done by (or
+  on) charges. It is \textasciitilde intimately related\textasciitilde??
+  to the electric field and provides a scalar measure of potential
+  energy per unit charge. Understanding electric potential is essential
+  for solving a wide range of problems in electrostatics.
 \end{enumerate}
 
 \bookmarksetup{startatroot}
 
 \chapter{Work and Energy in
 Electrostatics}\label{work-and-energy-in-electrostatics}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\item
+  Work and Energy in Electrostatics The work done to assemble a system
+  of charges is related to the potential energy stored in the system.
+  For point charges, the electrostatic potential energy UUU is given by:
+  U=12∑i≠jkeqiqjrijU = \frac{1}{2} \sum\emph{\{i \neq j\} k\_e
+  \frac{q_i q_j}{r_{ij}}U=21∑i=jkerijqiqj where rijr}\{ij\}rij is the
+  distance between charges qiq\_iqi and qjq\_jqj.
+\item
+  Energy Density of the Electric Field The energy density uuu of the
+  electric field is: u=12ϵ0E2u = \frac{1}{2} \epsilon\_0 E\^{}2u=21ϵ0E2
+  where ϵ0\epsilon\_0ϵ0 is the permittivity of free space. The total
+  electrostatic energy stored in a volume VVV is: U=12ϵ0∫VE2 d3rU =
+  \frac{1}{2} \epsilon\_0 \int\_V E\^{}2 , d\^{}3rU=21ϵ0∫VE2d3r
+\end{enumerate}
 
 \bookmarksetup{startatroot}
 

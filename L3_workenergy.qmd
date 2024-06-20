@@ -1,1 +1,8 @@
 # Work and Energy in Electrostatics
+
+10. Work and Energy in Electrostatics
+The work done to assemble a system of charges is related to the potential energy stored in the system. For point charges, the electrostatic potential energy UUU is given by: U=12∑i≠jkeqiqjrijU = \frac{1}{2} \sum_{i \neq j} k_e \frac{q_i q_j}{r_{ij}}U=21∑i=jkerijqiqj where rijr_{ij}rij is the distance between charges qiq_iqi and qjq_jqj.
+
+11. Energy Density of the Electric Field
+The energy density uuu of the electric field is: u=12ϵ0E2u = \frac{1}{2} \epsilon_0 E^2u=21ϵ0E2 where ϵ0\epsilon_0ϵ0 is the permittivity of free space.
+The total electrostatic energy stored in a volume VVV is: U=12ϵ0∫VE2 d3rU = \frac{1}{2} \epsilon_0 \int_V E^2 \, d^3rU=21ϵ0∫VE2d3r

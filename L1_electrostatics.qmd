@@ -60,7 +60,7 @@ If $q$ and $Q$ have the same sign (like charges) the force is repulsive ($\F$ is
 
 ## Electric Field
 
-The electric field $\mathbf{\mathrm{𝐸}}$ produced by a charge (or charged object/charge distribution) is a vector field that represents the force per unit charge experienced by a positive test charge placed at a particular point in space:
+The electric field $\E$ produced by a charge (or charged object/charge distribution) is a vector field that represents the force per unit charge experienced by a positive test charge placed at a particular point in space:
 
 $$ \E = \frac{\F}{Q} $$
 
