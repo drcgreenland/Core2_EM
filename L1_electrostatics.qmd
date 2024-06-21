@@ -2,8 +2,11 @@
 \newcommand{\F}{\mathrm{\mathbf{F}}}
 \newcommand{\r}{\mathrm{\mathbf{r}}}
 
-# Lecture 1: Electric Charges, Forces & Fields
+# Lecture 1: Electrostatics - Charges, Forces & Fields
 
+*Recommended reading*: Griffiths Section 2.1 (and 2.2 if you want some bonus reading about stuff that will be important later)
+
+*A problem to try before attending the lecture*: Griffiths Problem 1.7
 
 ## Electric Charges
 

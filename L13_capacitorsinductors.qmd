@@ -1,1 +1,10 @@
-# Capacitors and Inductors
+# Lecture 12: Capacitors and Inductors
+
+## Capacitors
+
+*Recommended reading*: Griffiths Section 4.4; Tipler & Mosca...
+
+## Inductors
+
+
+*Recommended reading*: Griffiths Section 7.2.3 & 7.2.4; Tipler & Mosca...

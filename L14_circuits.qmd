@@ -1,1 +1,5 @@
-# Circuits
+# Lecture 14: Circuits
+
+
+*Recommended reading*: Griffiths Section 7.1.1 & 7.1.2; Tipler & Mosca...
+

@@ -1,1 +1,3 @@
-# Impedance
+# Lecture 15: Impedance
+
+*Recommended reading*: Tipler & Mosca...

@@ -1,9 +1,17 @@
 \newcommand{\l}{\mathrm{\mathbf{l}}}
-
+\newcommand{\E}{\mathrm{\mathbf{E}}}
+\newcommand{\F}{\mathrm{\mathbf{F}}}
+\newcommand{\r}{\mathrm{\mathbf{r}}}
 
 # Lecture 2: Electric Potential
 
-## Introduction to Electric Potential
+*Recommended reading*: Griffiths Section 2.3
+
+
+*A problem to try before attending the lecture*: Griffiths Problem 2.2
+
+## Introduction to electric potential
+
 
 Electric potential is a scalar quantity associated with the electric field. It is defined as the potential energy per unit charge at a particular point in space (for example, at the location of a test charge $Q$). The concept of electric potential simplifies many calculations in electrostatics, particularly when dealing with electric fields and potential energy.
 
@@ -16,8 +24,8 @@ $$ V(r)=−\int_\infty^r \E \cdot \mathrm{d}\l $$
 
 where $\E$ is the electric field, $\mathrm{d}\l$  is an infinitesimal displacement vector along the path of the charge.
 
-3. Potential Difference
-The potential difference VABV_{AB}VAB between two points AAA and BBB is given by: 
+## Potential Difference
+The potential difference V_{AB} between two points AAA and BBB is given by: 
 
 $$ V_{AB} = V(A) − V(B) = -\int_{B}^{A} \E \cdot \mathrm{d} \l $$
 
@@ -25,26 +33,41 @@ This quantity represents the work done per unit charge by the electric field in 
 
 ## Electric Potential Due to a Point Charge
 For a point charge $q$ located at the origin, the electric potential at a distance $r$ is: 
-$$ V(r) = k_e \frac{q}{r} $$ 
-where $k_e$ is Coulomb's constant ($k_e \approx 8.99×109 \times 10^9$ =Nm$^2$ / C$^2$).
+$$ V(r) = \frac{1}{4\pi\epsilon_0} \frac{q}{r} $$ 
 
-5. Electric Potential Due to Multiple Point Charges
-The principle of superposition applies to electric potential, just as it does to electric fields. For multiple point charges qiq_iqi located at positions ri\mathbf{r}_iri, the total potential at a point r\mathbf{r}r is the sum of the potentials due to each charge: V(r)=ke∑iqi∣r−ri∣V(\mathbf{r}) = k_e \sum_{i} \frac{q_i}{|\mathbf{r} - \mathbf{r}_i|}V(r)=ke∑i∣r−ri∣qi
+where $$\epsilon_0$ is the permittivity of free space as defined in Section [?].
 
-6. Relationship Between Electric Field and Potential
-The electric field is related to the electric potential by the gradient: E=−∇V\mathbf{E} = -\nabla VE=−∇V This relationship implies that the electric field points in the direction of the greatest decrease of potential.
+## Electric Potential Due to Multiple Point Charges
+The principle of superposition applies to electric potential, just as it does to electric fields and forces. For multiple point charges $q_i$ located at positions $\r_i$, the total potential at a point \r is the sum of the potentials due to each charge: 
 
-7. Equipotential Surfaces
+$$ V(r) = k_e \sum_{i} \frac{q_i}{|\r - \r_i|} $$
+
+## Relationship Between Electric Field and Potential (Poisson's and Laplace's equation)
+
+The electric field is related to the electric potential by the gradient: $\E = -\nabla V$. This relationship implies that the electric field points in the direction of the greatest decrease of potential.
+
+## Potential of a continuous charge distribution
+
+## Equipotential Surfaces
 Equipotential surfaces are surfaces on which the electric potential is constant. Key properties include:
 •	No work is required to move a charge along an equipotential surface.
 •	Electric field lines are always perpendicular to equipotential surfaces.
 
-8. Calculating Electric Potential
-Example 1: Uniform Electric Field For a uniform electric field E=E0x^\mathbf{E} = E_0 \hat{\mathbf{x}}E=E0x^, the potential difference between two points along the x-axis is: V(x)=−E0x+V0V(x) = -E_0 x + V_0V(x)=−E0x+V0 where V0V_0V0 is the potential at x=0x = 0x=0.
-Example 2: Potential Due to a Continuous Charge Distribution For a continuous charge distribution with volume charge density ρ(r′)\rho(\mathbf{r'})ρ(r′), the electric potential at a point r\mathbf{r}r is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V(\mathbf{r}) = k_e \int \frac{\rho(\mathbf{r'})}{|\mathbf{r} - \mathbf{r'}|} d^3\mathbf{r'}V(r)=ke∫∣r−r′∣ρ(r′)d3r′
+## Example 1: Potential of a uniformly charged sphere
 
-9. Potential of a Charged Sphere
-Example: Solid Sphere For a uniformly charged solid sphere of radius RRR and total charge QQQ:
+
+
+<!--
+Example 2.7 in Griffiths ed3. ADD DERIVATION HERE 
+-->
+For a continuous charge distribution with volume charge density $\rho(\r')$, the electric potential at a point r\mathbf{r}r is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V(\mathbf{r}) = k_e \int \frac{\rho(\mathbf{r'})}{|\mathbf{r} - \mathbf{r'}|} d^3\mathbf{r'}V(r)=ke∫∣r−r′∣ρ(r′)d3r′
+
+
+<!--
+ADD DERIVATION HERE 
+-->
+
+For a uniformly charged solid sphere of radius RRR and total charge QQQ:
 •	Inside the sphere (r < R): V(r)=keQ2R(3−r2R2)V(r) = k_e \frac{Q}{2R} \left( 3 - \frac{r^2}{R^2} \right)V(r)=ke2RQ(3−R2r2)
 •	Outside the sphere (r > R): V(r)=keQrV(r) = k_e \frac{Q}{r}V(r)=kerQ
 Example: Thin Spherical Shell For a thin spherical shell of radius RRR and total charge QQQ:
@@ -52,6 +75,8 @@ Example: Thin Spherical Shell For a thin spherical shell of radius RRR and total
 •	Outside the shell (r > R): V(r)=keQrV(r) = k_e \frac{Q}{r}V(r)=kerQ
 
 
+## Post-lecture problem
 
-13. Summary
+
+## Summary
 Electric potential is a crucial concept in electrostatics, simplifying the analysis of electric fields and the work done by (or on) charges. It is ~intimately related~?? to the electric field and provides a scalar measure of potential energy per unit charge. Understanding electric potential is essential for solving a wide range of problems in electrostatics.

@@ -1,1 +1,5 @@
-# Magnetic Vector Potential
+# Lecture 6: Magnetic Vector Potential
+
+*Recommended reading*: Griffiths Section 5.4
+
+*A problem to try before attending the lecture*: Griffiths Problem 1.18

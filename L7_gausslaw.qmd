@@ -1,1 +1,5 @@
-# Gauss's Law
+# Lecture 7: Gauss's Law
+
+*Recommended reading*: Griffiths Section 2.2
+
+*A problem to try before attending the lecture*: Griffiths [insert problem no.]
