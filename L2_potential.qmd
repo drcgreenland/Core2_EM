@@ -3,12 +3,20 @@
 \newcommand{\F}{\mathrm{\mathbf{F}}}
 \newcommand{\r}{\mathrm{\mathbf{r}}}
 
+\newcommand{\x}{\mathrm{\mathbf{x}}}
+\newcommand{\y}{\mathrm{\mathbf{y}}}
+\newcommand{\z}{\mathrm{\mathbf{z}}}
+
+
 # Lecture 2: Electric Potential
 
 *Recommended reading*: Griffiths Section 2.3
 
+## Pre-lecture problem
 
-*A problem to try before attending the lecture*: Griffiths Problem 2.2
+One of these is an impossible electrostatic field. Which one?
+(a) \E = k[xy \hat{\x} + 2yz\hat{\y} + 3xz \hat{\z} ]
+(b) \E = k[y^2 \hat{\x} + (2xy + z^2)\hat{\y} + 2yz \hat{\z} ]
 
 ## Introduction to electric potential
 
@@ -75,8 +83,14 @@ Example: Thin Spherical Shell For a thin spherical shell of radius RRR and total
 •	Outside the shell (r > R): V(r)=keQrV(r) = k_e \frac{Q}{r}V(r)=kerQ
 
 
-## Post-lecture problem
 
 
 ## Summary
 Electric potential is a crucial concept in electrostatics, simplifying the analysis of electric fields and the work done by (or on) charges. It is ~intimately related~?? to the electric field and provides a scalar measure of potential energy per unit charge. Understanding electric potential is essential for solving a wide range of problems in electrostatics.
+
+## Post-lecture problem
+In the pre-lecture problem, hopefully you had a think about how we might go about finding out which of the following two functions is an impossible one.
+For the *possible* one, find the potential. Use the origin as your reference point. 
+Check your answer by computing $\nabla V$.
+
+[Hint: you must select a specific path to integrate along. The answer is **path-independent**, meaning that you will get the same answer no matter what path you choose--however, it is simply not possible to integrate unless you have a particular path in mind.]
