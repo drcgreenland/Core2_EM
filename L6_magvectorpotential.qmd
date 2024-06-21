@@ -1,4 +1,4 @@
-# Lecture 6: Magnetic Vector Potential
+# Magnetic Vector Potential
 
 *Recommended reading*: Griffiths Section 5.4
 

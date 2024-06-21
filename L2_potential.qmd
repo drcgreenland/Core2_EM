@@ -8,7 +8,7 @@
 \newcommand{\z}{\mathrm{\mathbf{z}}}
 
 
-# Lecture 2: Electric Potential
+# Electric Potential
 
 *Recommended reading*: Griffiths Section 2.3
 

@@ -1,4 +1,4 @@
-# Lecture 4: Magnetic Fields and the Lorentz Force Law
+# Magnetic Fields and the Lorentz Force Law
 
 *Recommended reading*: Griffiths Section 5.1
 

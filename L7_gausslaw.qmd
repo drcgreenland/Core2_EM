@@ -1,4 +1,4 @@
-# Lecture 7: Gauss's Law
+# Gauss's Law
 
 *Recommended reading*: Griffiths Section 2.2
 

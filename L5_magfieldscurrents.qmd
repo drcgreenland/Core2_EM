@@ -1,4 +1,4 @@
-# Lecture 5: The Biot-Savart Law - Magnetic Fields of Currents
+# The Biot-Savart Law - Magnetic Fields of Currents
 
 *Recommended reading*: Griffiths Section 5.2
 
