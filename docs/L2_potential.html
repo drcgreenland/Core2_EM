@@ -216,7 +216,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./L13_capacitorsinductors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Lecture 12:</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Capacitors and Inductors</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -228,7 +228,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./L15_impedance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Impedance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">L15_impedance.html</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -293,7 +293,7 @@ window.Quarto = {
 <p><em>Recommended reading</em>: Griffiths Section 2.3</p>
 <section id="pre-lecture-problem" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="pre-lecture-problem"><span class="header-section-number">2.1</span> Pre-lecture problem</h2>
-<p>One of these is an impossible electrostatic field. Which one? (a) $= k[xy + 2yz + 3xz ] $ (b) <span class="math inline">\(\E = k[y^2 \hat{\x} + (2xy + z^2)\hat{\y} + 2yz \hat{\z} ]\)</span></p>
+<p>One of these is an impossible electrostatic field. Which one? (a) $= k[xy + 2yz + 3xz ] $ (b) <span class="math inline">\(\mathrm{\mathbf{E}}= k[y^2 \hat{\mathrm{\mathbf{x}}} + (2xy + z^2)\hat{\mathrm{\mathbf{y}}} + 2yz \hat{\mathrm{\mathbf{z}}} ]\)</span></p>
 </section>
 <section id="introduction-to-electric-potential" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="introduction-to-electric-potential"><span class="header-section-number">2.2</span> Introduction to electric potential</h2>
@@ -302,13 +302,13 @@ window.Quarto = {
 <section id="definition-of-electric-potential" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="definition-of-electric-potential"><span class="header-section-number">2.3</span> Definition of Electric Potential</h2>
 <p>The electric potential <span class="math inline">\(V\)</span>, at a particular point in space, is defined as the work <span class="math inline">\(W\)</span> done by an external force to bring a unit positive charge from infinity to that point without any acceleration:</p>
-<p><span class="math display">\[ V(r)=−\int_\infty^r \E \cdot \mathrm{d}\l \]</span></p>
-<p>where <span class="math inline">\(\E\)</span> is the electric field, <span class="math inline">\(\mathrm{d}\l\)</span> is an infinitesimal displacement vector along the path of the charge.</p>
+<p><span class="math display">\[ V(r)=−\int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\]</span></p>
+<p>where <span class="math inline">\(\mathrm{\mathbf{E}}\)</span> is the electric field, <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{l}}\)</span> is an infinitesimal displacement vector along the path of the charge.</p>
 </section>
 <section id="potential-difference" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="potential-difference"><span class="header-section-number">2.4</span> Potential Difference</h2>
 <p>The potential difference V_{AB} between two points AAA and BBB is given by:</p>
-<p><span class="math display">\[ V_{AB} = V(A) − V(B) = -\int_{B}^{A} \E \cdot \mathrm{d} \l \]</span></p>
+<p><span class="math display">\[ V_{AB} = V(A) − V(B) = -\int_{B}^{A} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]</span></p>
 <p>This quantity represents the work done per unit charge by the electric field in moving a charge from point B to point A.</p>
 </section>
 <section id="electric-potential-due-to-a-point-charge" class="level2" data-number="2.5">
@@ -318,12 +318,12 @@ window.Quarto = {
 </section>
 <section id="electric-potential-due-to-multiple-point-charges" class="level2" data-number="2.6">
 <h2 data-number="2.6" class="anchored" data-anchor-id="electric-potential-due-to-multiple-point-charges"><span class="header-section-number">2.6</span> Electric Potential Due to Multiple Point Charges</h2>
-<p>The principle of superposition applies to electric potential, just as it does to electric fields and forces. For multiple point charges <span class="math inline">\(q_i\)</span> located at positions <span class="math inline">\(\r_i\)</span>, the total potential at a point s the sum of the potentials due to each charge:</p>
-<p><span class="math display">\[ V(r) = k_e \sum_{i} \frac{q_i}{|\r - \r_i|} \]</span></p>
+<p>The principle of superposition applies to electric potential, just as it does to electric fields and forces. For multiple point charges <span class="math inline">\(q_i\)</span> located at positions <span class="math inline">\(\mathrm{\mathbf{r}}_i\)</span>, the total potential at a point s the sum of the potentials due to each charge:</p>
+<p><span class="math display">\[ V(r) = k_e \sum_{i} \frac{q_i}{|\mathrm{\mathbf{r}}- \mathrm{\mathbf{r}}_i|} \]</span></p>
 </section>
 <section id="relationship-between-electric-field-and-potential-poissons-and-laplaces-equation" class="level2" data-number="2.7">
 <h2 data-number="2.7" class="anchored" data-anchor-id="relationship-between-electric-field-and-potential-poissons-and-laplaces-equation"><span class="header-section-number">2.7</span> Relationship Between Electric Field and Potential (Poisson’s and Laplace’s equation)</h2>
-<p>The electric field is related to the electric potential by the gradient: <span class="math inline">\(\E = -\nabla V\)</span>. This relationship implies that the electric field points in the direction of the greatest decrease of potential.</p>
+<p>The electric field is related to the electric potential by the gradient: <span class="math inline">\(\mathrm{\mathbf{E}}= -\nabla V\)</span>. This relationship implies that the electric field points in the direction of the greatest decrease of potential.</p>
 </section>
 <section id="potential-of-a-continuous-charge-distribution" class="level2" data-number="2.8">
 <h2 data-number="2.8" class="anchored" data-anchor-id="potential-of-a-continuous-charge-distribution"><span class="header-section-number">2.8</span> Potential of a continuous charge distribution</h2>
@@ -337,7 +337,7 @@ window.Quarto = {
 <!--
 Example 2.7 in Griffiths ed3. ADD DERIVATION HERE 
 -->
-<p>For a continuous charge distribution with volume charge density <span class="math inline">\(\rho(\r')\)</span>, the electric potential at a point rr is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V() = k_e d^3V(r)=ke∫∣r−r′∣ρ(r′)d3r′</p>
+<p>For a continuous charge distribution with volume charge density <span class="math inline">\(\rho(\mathrm{\mathbf{r}}')\)</span>, the electric potential at a point rr is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V() = k_e d^3V(r)=ke∫∣r−r′∣ρ(r′)d3r′</p>
 <!--
 ADD DERIVATION HERE 
 -->

@@ -1,3 +1,12 @@
+\newcommand{\l}{\mathrm{\mathbf{l}}}
+\newcommand{\E}{\mathrm{\mathbf{E}}}
+\newcommand{\F}{\mathrm{\mathbf{F}}}
+\newcommand{\r}{\mathrm{\mathbf{r}}}
+
+\newcommand{\x}{\mathrm{\mathbf{x}}}
+\newcommand{\y}{\mathrm{\mathbf{y}}}
+\newcommand{\z}{\mathrm{\mathbf{z}}}
+
 # Gauss's Law
 
 *Recommended reading*: Griffiths Section 2.2
