@@ -1,14 +1,7 @@
-\newcommand{\l}{\mathrm{\mathbf{l}}}
-\newcommand{\E}{\mathrm{\mathbf{E}}}
-\newcommand{\F}{\mathrm{\mathbf{F}}}
-\newcommand{\r}{\mathrm{\mathbf{r}}}
-
-\newcommand{\x}{\mathrm{\mathbf{x}}}
-\newcommand{\y}{\mathrm{\mathbf{y}}}
-\newcommand{\z}{\mathrm{\mathbf{z}}}
 
 
-# Lecture 1: Electrostatics - Charges, Forces & Fields
+
+# Electrostatics - Charges, Forces & Fields
 
 *Recommended reading*: Griffiths Section 2.1 (and 2.2 if you want some bonus reading about stuff that will be important later)
 
