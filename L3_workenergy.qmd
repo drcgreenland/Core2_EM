@@ -25,4 +25,5 @@ As discussed in the lecture, consider a collection of 3 charges that form 3 side
 ![](Figures/L3_3charges.png)
 
 In the lecture, we calculated the amount of work it takes to bring in a 4th charge $+q$ from far away and place it in the 4th corner of the square.
-Now, your task is to calculate the total work it takes to assemble all 4 charges into the square configuration.  
+
+**Q:** Your task is to calculate the total work it takes to assemble all 4 charges into the square configuration.  

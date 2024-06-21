@@ -90,7 +90,8 @@ Electric potential is a crucial concept in electrostatics, simplifying the analy
 
 ## Post-lecture problem
 In the pre-lecture problem, hopefully you had a think about how we might go about finding out which of the following two functions is an impossible one.
-For the *possible* one, find the potential. Use the origin as your reference point. 
+
+**Q:** For the *possible* one, find the potential. Use the origin as your reference point. 
 Check your answer by computing $\nabla V$.
 
 [Hint: you must select a specific path to integrate along. The answer is **path-independent**, meaning that you will get the same answer no matter what path you choose--however, it is simply not possible to integrate unless you have a particular path in mind.]

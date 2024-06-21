@@ -2,4 +2,15 @@
 
 *Recommended reading*: Griffiths Section 5.1
 
-*A problem to try before attending the lecture*: Griffiths Problem 5.1.
+## Pre-lecture problem 
+
+Griffiths, Problem 5.1
+
+
+## Post-lecture problem 
+
+In the lecture we sketched the trajectory of the particle in Example 5.2 at a starting velocity of $(E/B) \hat{\y}$. We found that the particle travels in a straight line at a constant speed. 
+
+**Q:** Find and sketch the trajectory of the particle in Example 5.2, if it starts at the origin with velocity:
+(a) $(E/2B) \hat{\y}$
+(b) $(E/B) (\hat{\y} + \hat{\z}$)

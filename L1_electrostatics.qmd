@@ -6,7 +6,9 @@
 
 *Recommended reading*: Griffiths Section 2.1 (and 2.2 if you want some bonus reading about stuff that will be important later)
 
-*A problem to try before attending the lecture*: Griffiths Problem 1.7
+## Pre-lecture problem 
+
+Griffiths Problem 1.7
 
 ## Electric Charges
 
@@ -192,4 +194,5 @@ Source: <http://www.clerkmaxwellfoundation.org/html/about_maxwell.html>
 In the lecture, we found the electric field (magnitude and direction) a distance $z$ above the midpoint between two equal charges, $q$, a distance $d$ apart.
 We found that for distances $z$ >> $a$, as we might expect the field appears like that of a single charge $2q$. 
 
-Now repeat the calculation of the electric field, but replace one of the positive charges with a negative charge (so we now have a dipole).
+**Q:** Repeat the calculation of the electric field, but replace one of the positive charges with a negative charge (so we now have a dipole). 
+Is there anything interesting about this result [hint: try computing the field for different ranges of $z$-values]?
