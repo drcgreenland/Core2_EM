@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.6.19)  21 JUN 2024 22:20
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.6.19)  21 JUN 2024 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -928,14 +928,14 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface.
 
 
-! LaTeX Error: Command \r already defined.
+! LaTeX Error: Command \l already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.211 \newcommand{\r}{\mathrm{\mathbf{r}}}
+l.209 \newcommand{\l}{\mathrm{\mathbf{l}}}
                                            
 Here is how much of TeX's memory you used:
  23332 strings out of 476193
