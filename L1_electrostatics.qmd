@@ -86,8 +86,11 @@ The density of lines/arrows indicates the strength of the field at a point. You 
 ![Representation of the electric field surrounding two positive charges.](Figures/Efield_like.png)
 
 Most important rules for field lines: 
+
 * Lines begin on positive charges and end on negative charges.
+
 * Lines never intersect.
+
 * Lines are symmetric as they leave the charges. 
 
 ## Superposition Principle

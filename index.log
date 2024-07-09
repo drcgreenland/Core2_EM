@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.6.19)  8 JUL 2024 14:04
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.8)  9 JUL 2024 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **index.tex
 (./index.tex
-LaTeX2e <2024-06-01> patch level 1
+LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
 (c:/Users/ow21955/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrreprt.cls
 Document Class: scrreprt 2023/07/07 v3.41 KOMA-Script document class (report)
@@ -901,10 +901,10 @@ Type  H <return>  for immediate help.
 l.196 \newcommand{\l}{\mathrm{\mathbf{l}}}
                                            
 Here is how much of TeX's memory you used:
- 23277 strings out of 476193
- 451336 string characters out of 5783641
+ 23277 strings out of 476178
+ 451336 string characters out of 5783289
  1921560 words of memory out of 5000000
- 45573 multiletter control sequences out of 15000+600000
+ 45588 multiletter control sequences out of 15000+600000
  561633 words of font info for 65 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  108i,7n,123p,10900b,398s stack positions out of 10000i,1000n,20000p,200000b,200000s

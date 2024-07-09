@@ -6,6 +6,8 @@
 \newcommand{\x}{\mathrm{\mathbf{x}}}
 \newcommand{\y}{\mathrm{\mathbf{y}}}
 \newcommand{\z}{\mathrm{\mathbf{z}}}
+\newcommand{\p}{\mathrm{\mathbf{p}}}
+\newcommand{\d}{\mathrm{\mathbf{d}}}
 
 # Work and Energy in Electrostatics
 
@@ -27,11 +29,65 @@ The total electrostatic energy stored in a volume VVV is: U=12ϵ0∫VE2 d3rU =
 
 ## Work and the electric dipole
 
+
+### Electric dipole field
+
+Recommended reading: Tipler & Mosca 21-4
+An electric dipole is a combination of a positive and negative charge, equal in magnitude, a small distance from each other. A visual representation of the electric field of a dipole is shown below:
+
+![](Figures/dipole_field.png){width=300}
+
+The vector field for an electric dipole can be calculated by summing the vector fields due to the two charges. 
+
+Let's consider the dipole in the diagram below. The dipole is oriented along the $y$-axis, and we define an arbitrary point $P$ on the $x$-axis: 
+
+![A dipole represented in the $x$-$y$ plane, where $d$ is the distance between the charges.](Figures/dipole_diagram.png){width=300}
+
+For dipoles, we define a quantity known as the electric dipole moment, given by $\mathrm{\mathbf{p}} = q \d $. The electric dipole moment is the product of the charge $q$ (pay attention here! This is the charge on \bf{one of} the charges, not both added together) and $d$, which is the displacement vector pointing from the negative charge to the positive charge. Note that this is the opposite way to how electric fields are defined, which point from positive to negative charges.  
+
+![A diagram of an electric dipole, showing the vector quantities $\d$ and $\p$, which are the vector length of the dipole and the dipole moment, respectively.](Figures/dipole_moment.png){width=300}
+
+The field produced by the dipole at point $P$ on the $x$-axis is given by: 
+$$
+\E = \frac{1}{4\pi \epsilon_0} \frac{qd}{ \left( x^2 \left( \frac{d}{2} \right)^2 \right)^{\frac{3}{2}} }
+$$
+
+
+Does this look familiar? If you attempted the \bf{post-lecture problem for Lecture 1}, you have actually already calculated the electric field of an electric dipole! The only difference is that in that question you calculated the field at a point on the $z$-axis, but otherwise it should be same mathematical expression. In that problem you were asked to think about the dipole field in different ranges of values of $z$. If we look at the above expression, that in the limit $x >> d$ (in other words, when we are at a distance $x$ from the dipole that is much larger than the size of the dipole $d$) the electric field due to the dipole can be reduced to:
+$$
+\E = \frac{1}{4 \pi \epsilon_0} \frac{\p}{x^3}
+$$ 
+
+
+So the field is very similar to that of a point charge, however it drops off even faster with distance. If we look at the field lines of the dipole, we can see how this happens - instead of spreading straight out from the charges, the field lines bend towards the axis of the dipole, therefore diverging faster than the point charge case.
+
+### Energy of a dipole in an external electric field
+
+Consider a dipole that is placed within a uniform electric field. The force on each charge has magnitude $qE$, but since these forces are in opposite directions there is no net force on the dipole. There is however a torque about the centre of the dipole as a result of the forces on the two charges due to the $\E$-field. See the diagram below to get a feel for this. 
+
+
+![Representation of a dipole placed in an external uniform electric field. $\theta$ is the angle the dipole takes to the direction of the external electric field and $F$ is the force on each charge of the dipole due to the external field](Figures/dipole_extE.jpg){width=400}
+
+The torque about the centre of the dipole is
+τ=2Fd2sinθ=qEdsinθ=|p|Esinθ(2.9)(2.9)𝜏=2𝐹𝑑2sin⁡𝜃=𝑞𝐸𝑑sin⁡𝜃=|𝑝|𝐸sin⁡𝜃
+The direction of the torque is perpendicular to the page, so it can be represented in vector form as τ=p×E𝜏=𝑝×𝐸.
+The torque will cause the dipole to rotate and align itself with the electric field as shown here:
+ 
+We can use the work done by the field to determine what is the minimum energy configuration (although it should be fairly obvious). The work done is the integral of the product of the torque and the angle turned through:
+W=∫θθ0|τ|dθ=∫θθ0pEsinθdθ=[−pEcosθ]θθ0(2.10)(2.10)𝑊=∫𝜃0𝜃|𝜏|d𝜃=∫𝜃0𝜃𝑝𝐸sin⁡𝜃d𝜃=[−𝑝𝐸cos⁡𝜃]𝜃0𝜃
+The change in potential energy is ΔU=WΔ𝑈=𝑊, hence:ΔU=U(θ0)−U(θ)=pE(cosθ0−cosθ)(2.11)(2.11)Δ𝑈=𝑈(𝜃0)−𝑈(𝜃)=𝑝𝐸(cos⁡⁡𝜃0−𝑐𝑜𝑠𝜃)
+The zero of potential energy U(θ0)𝑈(𝜃0) can be chosen to be anywhere, so we can choose it to correspond to θ0=90∘𝜃0=90∘ in which case U=−pEcosθ𝑈=−𝑝𝐸cos⁡𝜃. This energy can be expressed in vector form as U=−p⋅E𝑈=−𝑝⋅𝐸.
+Not surprisingly, the energy is a minimum when the dipole is aligned with the field at which point the torque will be zero.
+
+
+
+
 ## Post-lecture problem
 
 As discussed in the lecture, consider a collection of 3 charges that form 3 sides of a square, as shown: 
 
-![](Figures/L3_3charges.png)
+![](Figures/L3_3charges.png){width=300}
+
 
 In the lecture, we calculated the amount of work it takes to bring in a 4th charge $+q$ from far away and place it in the 4th corner of the square.
 
