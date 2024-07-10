@@ -326,7 +326,7 @@ prescence of this field experience a force as a result.
 
 The force on a test charge \(Q\), exerted by a source charge \(q\), is
 given by Coulomb's Law, which is as follows:
-\[ F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r^2} \hat{\mathrm{\mathbf{r}}} \]
+\[ F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r_s^2} \hat{\mathrm{\mathbf{r}}_s} \]
 
 where:
 
@@ -646,8 +646,8 @@ V\_\{ab\} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) =
 \mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}} =
 -\int\emph{\{\infty\}\^{}\{\mathrm{\mathbf{b}}\}
 \mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}} -
-\int}\{A\}\^{}\{\infty\} \mathrm{\mathbf{E}} \cdot \mathrm{d}
-\mathrm{\mathbf{l}} =
+\int}\{\mathrm{\mathbf{a}}\}\^{}\{\infty\}
+\mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}} =
 -\int\_\{\mathrm{\mathbf{a}}\}\^{}\{\mathrm{\mathbf{b}}\}
 \mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}}
 
@@ -694,7 +694,10 @@ located at positions \(\mathrm{\mathbf{r}}_i\), the total potential at a
 point \mathrm{\mathbf{r}}is the sum of the potentials due to each
 charge:
 
-\[ V(r) = k_e \sum_{i} \frac{q_i}{|\mathrm{\mathbf{r}}- \mathrm{\mathbf{r}}_i|} \]
+\$\$
+
+V(r) = \frac{1}{4\pi \epsilon_0} \sum\_\{i\}
+\frac{q_i}{|\mathrm{\mathbf{r}}- \mathrm{\mathbf{r}}_i|} \$\$
 
 \section{Relationship Between Electric Field and Potential (Poisson's
 and Laplace's
@@ -723,15 +726,6 @@ For a continuous charge distribution with volume charge density
 \(\mathbf{r}\) is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V(\mathbf{r}) = k\_e
 \int \frac{\rho(\mathbf{r'})}{|\mathbf{r} - \mathbf{r'}|}
 d\^{}3\mathbf{r'}V(r)=ke∫∣r−r′∣ρ(r′)d3r′
-
-For a uniformly charged solid sphere of radius RRR and total charge QQQ:
-• Inside the sphere (r \textless{} R): V(r)=keQ2R(3−r2R2)V(r) = k\_e
-\frac{Q}{2R} \left( 3 - \frac{r^2}{R^2} \right)V(r)=ke2RQ(3−R2r2) •
-Outside the sphere (r \textgreater{} R): V(r)=keQrV(r) = k\_e
-\frac{Q}{r}V(r)=kerQ Example: Thin Spherical Shell For a thin spherical
-shell of radius RRR and total charge QQQ: • Inside the shell (r
-\textless{} R): V(r)=keQRV(r) = k\_e \frac{Q}{R}V(r)=keRQ • Outside the
-shell (r \textgreater{} R): V(r)=keQrV(r) = k\_e \frac{Q}{r}V(r)=kerQ
 
 \section{Summary}\label{summary-1}
 

@@ -60,7 +60,7 @@ Throughout this course you will also see the terms "source point" and "field poi
 All charges produce electric fields, and other charges that are in the prescence of this field experience a force as a result. 
 
 The force on a test charge $Q$, exerted by a source charge $q$, is given by Coulomb's Law, which is as follows: 
-$$ F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r^2} \hat{\r} $$
+$$ F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r_s^2} \hat{\r_s} $$
  
 where:
 

@@ -44,11 +44,12 @@ $$
 where $\E$ is the electric field, and $\mathrm{d}\l$  is an infinitesimal displacement vector along the path of the charge. As we have stated, the potential is the work done per unit charge, therefore we can see how the above can be derived. The work done by a force to bring an object from infinity to point $\r$ is given by $ \int_\infty^r \F \cdot \mathrm{d}\l$, therefore the work done per unit charge is $\int_\infty^r \frac{\F}{Q} \cdot \mathrm{d}\l = \int_\infty^r \E \cdot \mathrm{d}\l $. However, you will notice that the expression shown above is $ - \int_\infty^r \E \cdot \mathrm{d}\l $ - by convention, we add a minus sign because the direction of the electric field is the direction of *decreasing* potential. Let me explain this. We have seen in the previous lecture that electric field lines point away from a positive charge. If we place a positive test charge in the vicinity of another positive charge, the test charge will move away, in the direction of the electric field. This is the direction of decreasing potential because the charge loses potential energy as it moves away. Hence, the electric field points in the direction of decreasing potential, so the expression for potential must be the negative of the electric field. 
 
 ## Potential Difference
+
 The potential difference $V_{ab}$ between two points $\a$ and $\b$ is given by: 
 
 $$ 
 
-V_{ab} = V(\b) − V(\a) = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l + \int_{\infty}^{\a} \E \cdot \mathrm{d} \l = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l - \int_{A}^{\infty} \E \cdot \mathrm{d} \l =  -\int_{\a}^{\b} \E \cdot \mathrm{d} \l
+V_{ab} = V(\b) − V(\a) = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l + \int_{\infty}^{\a} \E \cdot \mathrm{d} \l = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l - \int_{\a}^{\infty} \E \cdot \mathrm{d} \l =  -\int_{\a}^{\b} \E \cdot \mathrm{d} \l
 
 $$
 
@@ -77,7 +78,9 @@ $$
 
 The principle of superposition applies to electric potential, just as it does to electric fields and forces. For multiple point charges $q_i$ located at positions $\r_i$, the total potential at a point \r is the sum of the potentials due to each charge: 
 
-$$ V(r) = k_e \sum_{i} \frac{q_i}{|\r - \r_i|} $$
+$$ 
+
+V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{|\r - \r_i|} $$
 
 ## Relationship Between Electric Field and Potential (Poisson's and Laplace's equation)
 
@@ -102,13 +105,6 @@ For a continuous charge distribution with volume charge density $\rho(\r')$, the
 <!--
 ADD DERIVATION HERE 
 -->
-
-For a uniformly charged solid sphere of radius RRR and total charge QQQ:
-•	Inside the sphere (r < R): V(r)=keQ2R(3−r2R2)V(r) = k_e \frac{Q}{2R} \left( 3 - \frac{r^2}{R^2} \right)V(r)=ke2RQ(3−R2r2)
-•	Outside the sphere (r > R): V(r)=keQrV(r) = k_e \frac{Q}{r}V(r)=kerQ
-Example: Thin Spherical Shell For a thin spherical shell of radius RRR and total charge QQQ:
-•	Inside the shell (r < R): V(r)=keQRV(r) = k_e \frac{Q}{R}V(r)=keRQ
-•	Outside the shell (r > R): V(r)=keQrV(r) = k_e \frac{Q}{r}V(r)=kerQ
 
 
 
