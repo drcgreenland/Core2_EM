@@ -49,7 +49,9 @@ Consider the following ensemble of charges:
 
 ![Some charges.](Figures/sourcetest_definitions.png)
 
-We define the charges $q_1$, $q_2$, $q_3$... $q_i$ as source charges, meaning that these are the charges that produce the electric field for the purpose of the problem. We define $Q$ as the test charge, which means it is the charge that is experiencing the effects of the electric field produced by the source charge(s). Of course, any charge can be a source or a test charge, there is no fundamental difference between them. "Source" and "test" are simply names that we give charges when setting up a problem, so that we can more easily define and solve the problem.
+We define the charges $q_1$, $q_2$, $q_3$... $q_i$ as source charges, meaning that these are the charges that produce the electric field for the purpose of the problem. We define $Q$ as the test charge, which means it is the charge that is experiencing the effects of the electric field produced by the source charge(s). It is important to note that any charge can be a source or a test charge, there is no fundamental difference between them. "Source" and "test" are simply names that we give charges when setting up a problem, so that we can more easily define and solve the problem.
+
+Throughout this course you will also see the terms "source point" and "field point". The source point is the location of the source charge(s), while the field point is essentially the location of the test charge. If there is no test charge in the problem (for example if we are computing the electric field of a source charge), the field point is the point at which we are measuring the field - it is the point where a test charge would be if there was one. 
 
 ![Some charges, overlaid with axes showing the definition of $\r$, the vector separation between the source and test charges. ](Figures/axes_r_definitions.png)
 

@@ -7,6 +7,9 @@
 \newcommand{\y}{\mathrm{\mathbf{y}}}
 \newcommand{\z}{\mathrm{\mathbf{z}}}
 
+\newcommand{\a}{\mathrm{\mathbf{a}}}
+\newcommand{\b}{\mathrm{\mathbf{b}}}
+
 # Electric Potential
 
 *Recommended reading*: Griffiths Section 2.3
@@ -33,7 +36,7 @@ The electric potential $V$ at some displacement $\r$ is given by
 
 $$ 
 
-V(r) = −\int_\infty^r \E \cdot \mathrm{d}\l 
+V(\r) = −\int_{\infty}^r \E \cdot \mathrm{d}\l 
 
 $$ 
 
@@ -41,18 +44,22 @@ $$
 where $\E$ is the electric field, and $\mathrm{d}\l$  is an infinitesimal displacement vector along the path of the charge. As we have stated, the potential is the work done per unit charge, therefore we can see how the above can be derived. The work done by a force to bring an object from infinity to point $\r$ is given by $ \int_\infty^r \F \cdot \mathrm{d}\l$, therefore the work done per unit charge is $\int_\infty^r \frac{\F}{Q} \cdot \mathrm{d}\l = \int_\infty^r \E \cdot \mathrm{d}\l $. However, you will notice that the expression shown above is $ - \int_\infty^r \E \cdot \mathrm{d}\l $ - by convention, we add a minus sign because the direction of the electric field is the direction of *decreasing* potential. Let me explain this. We have seen in the previous lecture that electric field lines point away from a positive charge. If we place a positive test charge in the vicinity of another positive charge, the test charge will move away, in the direction of the electric field. This is the direction of decreasing potential because the charge loses potential energy as it moves away. Hence, the electric field points in the direction of decreasing potential, so the expression for potential must be the negative of the electric field. 
 
 ## Potential Difference
-The potential difference $V_{AB}$ between two points $A$ and $B$ is given by: 
+The potential difference $V_{ab}$ between two points $\a$ and $\b$ is given by: 
 
 $$ 
 
-V_{AB} = V(B) − V(A) = -\int_{\infty}^{B} \E \cdot \mathrm{d} \l + \int_{\infty}^{A} \E \cdot \mathrm{d} \l = -\int_{\infty}^{B} \E \cdot \mathrm{d} \l - \int_{A}^{\infty} \E \cdot \mathrm{d} \l =  -\int_{A}^{B} \E \cdot \mathrm{d} \l
+V_{ab} = V(\b) − V(\a) = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l + \int_{\infty}^{\a} \E \cdot \mathrm{d} \l = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l - \int_{A}^{\infty} \E \cdot \mathrm{d} \l =  -\int_{\a}^{\b} \E \cdot \mathrm{d} \l
 
 $$
 
 
-$$ V_{AB} = V(B) − V(A) = -\int_{A}^{B} \E \cdot \mathrm{d} \l $$
+$$ 
 
-This quantity represents the work done per unit charge by the electric field in moving a charge from point $A$ to point $B$. 
+V_{ab} = V(\b) − V(\a) = -\int_{\a}^{\b} \E \cdot \mathrm{d} \l 
+
+$$
+
+This quantity represents the work done per unit charge by the electric field in moving a charge from point $\a$ to point $\b$. 
 
 ## Electric Potential Due to a Point Charge
 

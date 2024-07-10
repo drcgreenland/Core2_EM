@@ -9,11 +9,44 @@
 \newcommand{\p}{\mathrm{\mathbf{p}}}
 \newcommand{\d}{\mathrm{\mathbf{d}}}
 
+\newcommand{\a}{\mathrm{\mathbf{a}}}
+\newcommand{\b}{\mathrm{\mathbf{b}}}
+
 # Work and Energy in Electrostatics
 
 *Recommended reading*: Griffiths Section 2.4
 
 ## Work done to move a charge
+
+In general, the work done to move an electric charge is calculated in the same way we calculate mechanical work when solving mechanics problems, taking the form: 
+
+$$
+
+W = \int \F \cdot \mathrm{d} \l 
+
+$$ 
+
+Let's say we have some configuration of source charges, and we want to move a test charge past these charges, as represented in this diagram: 
+
+![](Figures/workdone_charge.png){width=300}
+
+Let us work out how much work we need to do to move the charge along this path. The work done to move a charge from point **a** to point **b** is given by: 
+
+$$
+
+W = \int_{\b}^{\a} \F \cdot \mathrm{d} \l 
+
+$$
+
+Each of the charges is exerting a force $\F = Q \E$ on the test charge, therefore the total work becomes:
+
+$$
+
+W = - Q \int_{\b}^{\a} \E \cdot \mathrm{d} \l = Q[V(\b) - V(\a)]
+
+$$
+
+This equation re-states what we discussed in Lecture 2 - that the potential difference between two points $\a$ and $\b$ is the work done per unit charge to bring a charge from point $\a$ to point $\b$. 
 
 ## Energy of a point charge distribution 
 
@@ -29,10 +62,10 @@ The total electrostatic energy stored in a volume VVV is: U=12ϵ0∫VE2 d3rU =
 
 ## Work and the electric dipole
 
-
 ### Electric dipole field
 
-Recommended reading: Tipler & Mosca 21-4
+
+First of all, let's talk about what an electric dipole is. 
 An electric dipole is a combination of a positive and negative charge, equal in magnitude, a small distance from each other. A visual representation of the electric field of a dipole is shown below:
 
 ![](Figures/dipole_field.png){width=300}
