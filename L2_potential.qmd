@@ -54,11 +54,7 @@ V_{ab} = V(\b) − V(\a) = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l + \int_{\i
 $$
 
 
-$$ 
-
-V_{ab} = V(\b) − V(\a) = -\int_{\a}^{\b} \E \cdot \mathrm{d} \l 
-
-$$
+$$ V_{ab} = V(\b) − V(\a) = -\int_{\a}^{\b} \E \cdot \mathrm{d} \l $$
 
 This quantity represents the work done per unit charge by the electric field in moving a charge from point $\a$ to point $\b$. 
 
