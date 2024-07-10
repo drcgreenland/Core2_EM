@@ -572,44 +572,97 @@ One of these is an impossible electrostatic field. Which one?
 potential}\label{introduction-to-electric-potential}
 
 Electric potential is a scalar quantity associated with the electric
-field. It is defined as the potential energy per unit charge at a
-particular point in space (for example, at the location of a test charge
-\(Q\)). The concept of electric potential simplifies many calculations
-in electrostatics, particularly when dealing with electric fields and
-potential energy.
+field. It is defined as the work done by an external force to bring a
+unit positive charge to a particular point in space (for example, at the
+location of a test charge \(Q\)) from an arbitrary reference point. For
+the purposes of this lecture course, we will choose infinity
+(\(\infty\)) as our reference point - but please note that Griffiths
+does not use infinity but rather uses the symbol \(\mathcal{O}\) to
+denote an arbitrary reference point.
+
+We will see later how the concept of electric potential simplifies many
+calculations in electrostatics, particularly when dealing with electric
+fields and potential energy.
 
 \section{Definition of Electric
 Potential}\label{definition-of-electric-potential}
 
-The electric potential \(V\), at a particular point in space, is defined
-as the work \(W\) done by an external force to bring a unit positive
-charge from infinity to that point without any acceleration:
+The electric potential \(V\) at some displacement
+\(\mathrm{\mathbf{r}}\) is given by
 
-\[ V(r)=−\int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\]
+\$\$
 
-where \(\mathrm{\mathbf{E}}\) is the electric field,
+V(r) = −\int\_\infty\^{}r
+\mathrm{\mathbf{E}} \cdot \mathrm{d}\mathrm{\mathbf{l}} 
+
+\$\$
+
+where \(\mathrm{\mathbf{E}}\) is the electric field, and
 \(\mathrm{d}\mathrm{\mathbf{l}}\) is an infinitesimal displacement
-vector along the path of the charge.
+vector along the path of the charge. As we have stated, the potential is
+the work done per unit charge, therefore we can see how the above can be
+derived. The work done by a force to bring an object from infinity to
+point \(\mathrm{\mathbf{r}}\) is given by \$ \int\emph{\infty\^{}r
+\mathrm{\mathbf{F}} \cdot \mathrm{d}\mathrm{\mathbf{l}}\$, therefore the
+work done per unit charge is \$\int}\infty\^{}r
+\frac{\mathrm{\mathbf{F}}}{Q} \cdot \mathrm{d}\mathrm{\mathbf{l}} =
+\int\emph{\infty\^{}r
+\mathrm{\mathbf{E}} \cdot \mathrm{d}\mathrm{\mathbf{l}} \$. However, you
+will notice that the expression shown above is \$ - \int}\infty\^{}r
+\mathrm{\mathbf{E}} \cdot \mathrm{d}\mathrm{\mathbf{l}} \$ - by
+convention, we add a minus sign because the direction of the electric
+field is the direction of \emph{decreasing} potential. Let me explain
+this. We have seen in the previous lecture that electric field lines
+point away from a positive charge. If we place a positive test charge in
+the vicinity of another positive charge, the test charge will move away,
+in the direction of the electric field. This is the direction of
+decreasing potential because the charge loses potential energy as it
+moves away. Hence, the electric field points in the direction of
+decreasing potential, so the expression for potential must be the
+negative of the electric field.
 
 \section{Potential Difference}\label{potential-difference}
 
-The potential difference V\_\{AB\} between two points AAA and BBB is
-given by:
+The potential difference \(V_{AB}\) between two points \(A\) and \(B\)
+is given by:
 
-\[ V_{AB} = V(A) − V(B) = -\int_{B}^{A} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]
+\$\$
+
+V\_\{AB\} = V(B) − V(A) = -\int\emph{\{\infty\}\^{}\{B\}
+\mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}} +
+\int}\{\infty\}\^{}\{A\} \mathrm{\mathbf{E}} \cdot \mathrm{d}
+\mathrm{\mathbf{l}} = -\int\emph{\{\infty\}\^{}\{B\}
+\mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}} -
+\int}\{A\}\^{}\{\infty\} \mathrm{\mathbf{E}} \cdot \mathrm{d}
+\mathrm{\mathbf{l}} = -\int\_\{A\}\^{}\{B\}
+\mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}}
+
+\$\$
+
+\[ V_{AB} = V(B) − V(A) = -\int_{A}^{B} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]
 
 This quantity represents the work done per unit charge by the electric
-field in moving a charge from point B to point A.
+field in moving a charge from point \(A\) to point \(B\).
 
 \section{Electric Potential Due to a Point
 Charge}\label{electric-potential-due-to-a-point-charge}
 
 For a point charge \(q\) located at the origin, the electric potential
-at a distance \(r\) is:
-\[ V(r) = \frac{1}{4\pi\epsilon_0} \frac{q}{r} \]
+at a displacement \(\mathrm{\mathbf{r}}\) can be found by computing the
+potential difference between infinity and the point
+\(\mathrm{\mathbf{r}}\) - that is, the work done per unit charge in
+bringing a test charge from infinity to point \(\mathrm{\mathbf{r}}\).
+Try using the expression for \(V_{AB}\) above to do this - you can use
+\(\mathrm{d}\mathrm{\mathbf{r}}\) as the displacement vector
+\(\mathrm{d}\mathrm{\mathbf{l}}\). You should find that the potential
+due to a point charge is therefore:
 
-where \$\(\epsilon_0\) is the permittivity of free space as defined in
-Section {[}?{]}.
+\$\$
+
+V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi\epsilon_0}
+\frac{q}{\mathrm{\mathbf{r}}}
+
+\$\$
 
 \section{Electric Potential Due to Multiple Point
 Charges}\label{electric-potential-due-to-multiple-point-charges}
@@ -637,16 +690,16 @@ distribution}\label{potential-of-a-continuous-charge-distribution}
 \section{Equipotential Surfaces}\label{equipotential-surfaces}
 
 Equipotential surfaces are surfaces on which the electric potential is
-constant. Key properties include: • No work is required to move a charge
-along an equipotential surface. • Electric field lines are always
-perpendicular to equipotential surfaces.
+constant. No work is required to move a charge along an equipotential
+surface, because work is only required to change an object's potential.
+Electric field lines are always perpendicular to equipotential surfaces.
 
 \section{Example 1: Potential of a uniformly charged
 sphere}\label{example-1-potential-of-a-uniformly-charged-sphere}
 
 For a continuous charge distribution with volume charge density
 \(\rho(\mathrm{\mathbf{r}}')\), the electric potential at a point
-r\mathbf{r}r is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V(\mathbf{r}) = k\_e
+\(\mathbf{r}\) is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V(\mathbf{r}) = k\_e
 \int \frac{\rho(\mathbf{r'})}{|\mathbf{r} - \mathbf{r'}|}
 d\^{}3\mathbf{r'}V(r)=ke∫∣r−r′∣ρ(r′)d3r′
 

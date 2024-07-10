@@ -301,24 +301,32 @@ window.Quarto = {
 </section>
 <section id="introduction-to-electric-potential" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="introduction-to-electric-potential"><span class="header-section-number">2.2</span> Introduction to electric potential</h2>
-<p>Electric potential is a scalar quantity associated with the electric field. It is defined as the potential energy per unit charge at a particular point in space (for example, at the location of a test charge <span class="math inline">\(Q\)</span>). The concept of electric potential simplifies many calculations in electrostatics, particularly when dealing with electric fields and potential energy.</p>
+<p>Electric potential is a scalar quantity associated with the electric field. It is defined as the work done by an external force to bring a unit positive charge to a particular point in space (for example, at the location of a test charge <span class="math inline">\(Q\)</span>) from an arbitrary reference point. For the purposes of this lecture course, we will choose infinity (<span class="math inline">\(\infty\)</span>) as our reference point - but please note that Griffiths does not use infinity but rather uses the symbol <span class="math inline">\(\mathcal{O}\)</span> to denote an arbitrary reference point.</p>
+<p>We will see later how the concept of electric potential simplifies many calculations in electrostatics, particularly when dealing with electric fields and potential energy.</p>
 </section>
 <section id="definition-of-electric-potential" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="definition-of-electric-potential"><span class="header-section-number">2.3</span> Definition of Electric Potential</h2>
-<p>The electric potential <span class="math inline">\(V\)</span>, at a particular point in space, is defined as the work <span class="math inline">\(W\)</span> done by an external force to bring a unit positive charge from infinity to that point without any acceleration:</p>
-<p><span class="math display">\[ V(r)=−\int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\]</span></p>
-<p>where <span class="math inline">\(\mathrm{\mathbf{E}}\)</span> is the electric field, <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{l}}\)</span> is an infinitesimal displacement vector along the path of the charge.</p>
+<p>The electric potential <span class="math inline">\(V\)</span> at some displacement <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> is given by</p>
+<p>$$</p>
+<p>V(r) = −_^r </p>
+<p>$$</p>
+<p>where <span class="math inline">\(\mathrm{\mathbf{E}}\)</span> is the electric field, and <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{l}}\)</span> is an infinitesimal displacement vector along the path of the charge. As we have stated, the potential is the work done per unit charge, therefore we can see how the above can be derived. The work done by a force to bring an object from infinity to point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> is given by $ <em>^r $, therefore the work done per unit charge is $</em>^r = <em>^r $. However, you will notice that the expression shown above is $ - </em>^r $ - by convention, we add a minus sign because the direction of the electric field is the direction of <em>decreasing</em> potential. Let me explain this. We have seen in the previous lecture that electric field lines point away from a positive charge. If we place a positive test charge in the vicinity of another positive charge, the test charge will move away, in the direction of the electric field. This is the direction of decreasing potential because the charge loses potential energy as it moves away. Hence, the electric field points in the direction of decreasing potential, so the expression for potential must be the negative of the electric field.</p>
 </section>
 <section id="potential-difference" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="potential-difference"><span class="header-section-number">2.4</span> Potential Difference</h2>
-<p>The potential difference V_{AB} between two points AAA and BBB is given by:</p>
-<p><span class="math display">\[ V_{AB} = V(A) − V(B) = -\int_{B}^{A} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]</span></p>
-<p>This quantity represents the work done per unit charge by the electric field in moving a charge from point B to point A.</p>
+<p>The potential difference <span class="math inline">\(V_{AB}\)</span> between two points <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is given by:</p>
+<p>$$</p>
+<p>V_{AB} = V(B) − V(A) = -<em>{}^{B} + </em>{}^{A} = -<em>{}^{B} - </em>{A}^{} = -_{A}^{B} </p>
+<p>$$</p>
+<p><span class="math display">\[ V_{AB} = V(B) − V(A) = -\int_{A}^{B} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]</span></p>
+<p>This quantity represents the work done per unit charge by the electric field in moving a charge from point <span class="math inline">\(A\)</span> to point <span class="math inline">\(B\)</span>.</p>
 </section>
 <section id="electric-potential-due-to-a-point-charge" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="electric-potential-due-to-a-point-charge"><span class="header-section-number">2.5</span> Electric Potential Due to a Point Charge</h2>
-<p>For a point charge <span class="math inline">\(q\)</span> located at the origin, the electric potential at a distance <span class="math inline">\(r\)</span> is: <span class="math display">\[ V(r) = \frac{1}{4\pi\epsilon_0} \frac{q}{r} \]</span></p>
-<p>where $<span class="math inline">\(\epsilon_0\)</span> is the permittivity of free space as defined in Section [?].</p>
+<p>For a point charge <span class="math inline">\(q\)</span> located at the origin, the electric potential at a displacement <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> can be found by computing the potential difference between infinity and the point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> - that is, the work done per unit charge in bringing a test charge from infinity to point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span>. Try using the expression for <span class="math inline">\(V_{AB}\)</span> above to do this - you can use <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{r}}\)</span> as the displacement vector <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{l}}\)</span>. You should find that the potential due to a point charge is therefore:</p>
+<p>$$</p>
+<p>V( = </p>
+<p>$$</p>
 </section>
 <section id="electric-potential-due-to-multiple-point-charges" class="level2" data-number="2.6">
 <h2 data-number="2.6" class="anchored" data-anchor-id="electric-potential-due-to-multiple-point-charges"><span class="header-section-number">2.6</span> Electric Potential Due to Multiple Point Charges</h2>
@@ -334,14 +342,14 @@ window.Quarto = {
 </section>
 <section id="equipotential-surfaces" class="level2" data-number="2.9">
 <h2 data-number="2.9" class="anchored" data-anchor-id="equipotential-surfaces"><span class="header-section-number">2.9</span> Equipotential Surfaces</h2>
-<p>Equipotential surfaces are surfaces on which the electric potential is constant. Key properties include: • No work is required to move a charge along an equipotential surface. • Electric field lines are always perpendicular to equipotential surfaces.</p>
+<p>Equipotential surfaces are surfaces on which the electric potential is constant. No work is required to move a charge along an equipotential surface, because work is only required to change an object’s potential. Electric field lines are always perpendicular to equipotential surfaces.</p>
 </section>
 <section id="example-1-potential-of-a-uniformly-charged-sphere" class="level2" data-number="2.10">
 <h2 data-number="2.10" class="anchored" data-anchor-id="example-1-potential-of-a-uniformly-charged-sphere"><span class="header-section-number">2.10</span> Example 1: Potential of a uniformly charged sphere</h2>
 <!--
 Example 2.7 in Griffiths ed3. ADD DERIVATION HERE 
 -->
-<p>For a continuous charge distribution with volume charge density <span class="math inline">\(\rho(\mathrm{\mathbf{r}}')\)</span>, the electric potential at a point rr is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V() = k_e d^3V(r)=ke∫∣r−r′∣ρ(r′)d3r′</p>
+<p>For a continuous charge distribution with volume charge density <span class="math inline">\(\rho(\mathrm{\mathbf{r}}')\)</span>, the electric potential at a point <span class="math inline">\(\mathbf{r}\)</span> is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V() = k_e d^3V(r)=ke∫∣r−r′∣ρ(r′)d3r′</p>
 <!--
 ADD DERIVATION HERE 
 -->
