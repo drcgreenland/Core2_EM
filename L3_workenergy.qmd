@@ -12,6 +12,13 @@
 \newcommand{\a}{\mathrm{\mathbf{a}}}
 \newcommand{\b}{\mathrm{\mathbf{b}}}
 
+<!--
+This section needs editing:
+Little edits here and there to clarify. 
+Diagrams? 
+Finish writing out most sections tbh. 
+-->
+
 # Work and Energy in Electrostatics
 
 *Recommended reading*: Griffiths Section 2.4

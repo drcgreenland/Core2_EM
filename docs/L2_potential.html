@@ -259,12 +259,11 @@ window.Quarto = {
   <li><a href="#potential-difference" id="toc-potential-difference" class="nav-link" data-scroll-target="#potential-difference"><span class="header-section-number">2.4</span> Potential Difference</a></li>
   <li><a href="#electric-potential-due-to-a-point-charge" id="toc-electric-potential-due-to-a-point-charge" class="nav-link" data-scroll-target="#electric-potential-due-to-a-point-charge"><span class="header-section-number">2.5</span> Electric Potential Due to a Point Charge</a></li>
   <li><a href="#electric-potential-due-to-multiple-point-charges" id="toc-electric-potential-due-to-multiple-point-charges" class="nav-link" data-scroll-target="#electric-potential-due-to-multiple-point-charges"><span class="header-section-number">2.6</span> Electric Potential Due to Multiple Point Charges</a></li>
-  <li><a href="#relationship-between-electric-field-and-potential-poissons-and-laplaces-equation" id="toc-relationship-between-electric-field-and-potential-poissons-and-laplaces-equation" class="nav-link" data-scroll-target="#relationship-between-electric-field-and-potential-poissons-and-laplaces-equation"><span class="header-section-number">2.7</span> Relationship Between Electric Field and Potential (Poisson’s and Laplace’s equation)</a></li>
-  <li><a href="#potential-of-a-continuous-charge-distribution" id="toc-potential-of-a-continuous-charge-distribution" class="nav-link" data-scroll-target="#potential-of-a-continuous-charge-distribution"><span class="header-section-number">2.8</span> Potential of a continuous charge distribution</a></li>
+  <li><a href="#electric-potential-due-to-a-continuous-charge-distribution" id="toc-electric-potential-due-to-a-continuous-charge-distribution" class="nav-link" data-scroll-target="#electric-potential-due-to-a-continuous-charge-distribution"><span class="header-section-number">2.7</span> Electric Potential Due to a Continuous Charge Distribution</a></li>
+  <li><a href="#relationship-between-electric-field-and-potential" id="toc-relationship-between-electric-field-and-potential" class="nav-link" data-scroll-target="#relationship-between-electric-field-and-potential"><span class="header-section-number">2.8</span> Relationship Between Electric Field and Potential</a></li>
   <li><a href="#equipotential-surfaces" id="toc-equipotential-surfaces" class="nav-link" data-scroll-target="#equipotential-surfaces"><span class="header-section-number">2.9</span> Equipotential Surfaces</a></li>
-  <li><a href="#example-1-potential-of-a-uniformly-charged-sphere" id="toc-example-1-potential-of-a-uniformly-charged-sphere" class="nav-link" data-scroll-target="#example-1-potential-of-a-uniformly-charged-sphere"><span class="header-section-number">2.10</span> Example 1: Potential of a uniformly charged sphere</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.11</span> Summary</a></li>
-  <li><a href="#post-lecture-problem" id="toc-post-lecture-problem" class="nav-link" data-scroll-target="#post-lecture-problem"><span class="header-section-number">2.12</span> Post-lecture problem</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.10</span> Summary</a></li>
+  <li><a href="#post-lecture-problem" id="toc-post-lecture-problem" class="nav-link" data-scroll-target="#post-lecture-problem"><span class="header-section-number">2.11</span> Post-lecture problem</a></li>
   </ul>
 </nav>
     </div>
@@ -290,6 +289,14 @@ window.Quarto = {
 </header>
 
 
+<!--
+This section needs editing:
+Little edits here and there to clarify. 
+Diagrams? 
+Improvements to continuous dist. stuff
+Improve intro and outro.
+New/reworked pre-and post-lecture problems. 
+-->
 <p><em>Recommended reading</em>: Griffiths Section 2.3</p>
 <section id="pre-lecture-problem" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="pre-lecture-problem"><span class="header-section-number">2.1</span> Pre-lecture problem</h2>
@@ -323,44 +330,44 @@ window.Quarto = {
 </section>
 <section id="electric-potential-due-to-a-point-charge" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="electric-potential-due-to-a-point-charge"><span class="header-section-number">2.5</span> Electric Potential Due to a Point Charge</h2>
-<p>For a point charge <span class="math inline">\(q\)</span> located at the origin, the electric potential at a displacement <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> can be found by computing the potential difference between infinity and the point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> - that is, the work done per unit charge in bringing a test charge from infinity to point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span>. Try using the expression for <span class="math inline">\(V_{AB}\)</span> above to do this - you can use <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{r}}\)</span> as the displacement vector <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{l}}\)</span>. You should find that the potential due to a point charge is therefore:</p>
-<p>$$</p>
-<p>V( = </p>
-<p>$$</p>
+<p>For a point charge <span class="math inline">\(q\)</span> located at the origin, the electric potential at a displacement <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> can be found by computing the potential difference between infinity and the point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> - this is derived in Section 2.3.4 of the Griffiths and comes out as follows:</p>
+<!--
+that is, the work done per unit charge in bringing a test charge from infinity to point $\r$. Try using the expression for $V_{ab}$ above to do this - you can use $\mathrm{d}\r$ as the displacement vector $\mathrm{d}\l$. You should find that the potential due to a point charge is:-->
+<p><span class="math display">\[ V(r) = \frac{1}{4\pi\epsilon_0} \frac{q}{r} \]</span></p>
+<p>If the point charge is not at the origin, we can generalise the above equation to:</p>
+<p><span class="math display">\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi\epsilon_0} \frac{q}{r_s} \]</span></p>
+<p>where <span class="math inline">\(r_s\)</span> is the separation between <span class="math inline">\(q\)</span> and <span class="math inline">\(\mathrm{\mathbf{r}}\)</span>, with <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> being the displacement with respect to the origin.</p>
 </section>
 <section id="electric-potential-due-to-multiple-point-charges" class="level2" data-number="2.6">
 <h2 data-number="2.6" class="anchored" data-anchor-id="electric-potential-due-to-multiple-point-charges"><span class="header-section-number">2.6</span> Electric Potential Due to Multiple Point Charges</h2>
 <p>The principle of superposition applies to electric potential, just as it does to electric fields and forces. For multiple point charges <span class="math inline">\(q_i\)</span> located at positions <span class="math inline">\(\mathrm{\mathbf{r}}_i\)</span>, the total potential at a point s the sum of the potentials due to each charge:</p>
-<p>$$</p>
-<p>V(r) = _{i} $$</p>
+<p><span class="math display">\[ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\mathrm{\mathbf{r}}_si} \]</span></p>
 </section>
-<section id="relationship-between-electric-field-and-potential-poissons-and-laplaces-equation" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="relationship-between-electric-field-and-potential-poissons-and-laplaces-equation"><span class="header-section-number">2.7</span> Relationship Between Electric Field and Potential (Poisson’s and Laplace’s equation)</h2>
-<p>The electric field is related to the electric potential by the gradient: <span class="math inline">\(\mathrm{\mathbf{E}}= -\nabla V\)</span>. This relationship implies that the electric field points in the direction of the greatest decrease of potential.</p>
+<section id="electric-potential-due-to-a-continuous-charge-distribution" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="electric-potential-due-to-a-continuous-charge-distribution"><span class="header-section-number">2.7</span> Electric Potential Due to a Continuous Charge Distribution</h2>
+<p>If we have a continuous charge distribution instead of a set of discrete charges, we can think instead of an infinitesimal charge <span class="math inline">\(\mathrm{d}q\)</span>, and sum over all of these to find the total potential due to the distribution:</p>
+<p><span class="math display">\[ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\mathrm{\mathbf{r}}_si} \mathrm{d}q \]</span></p>
+<!--
+This bit needs more added, including the volume charge distribution and the definitions of the notation. 
+-->
 </section>
-<section id="potential-of-a-continuous-charge-distribution" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="potential-of-a-continuous-charge-distribution"><span class="header-section-number">2.8</span> Potential of a continuous charge distribution</h2>
+<section id="relationship-between-electric-field-and-potential" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="relationship-between-electric-field-and-potential"><span class="header-section-number">2.8</span> Relationship Between Electric Field and Potential</h2>
+<p>The electric field is related to the electric potential by the gradient: <span class="math inline">\(\mathrm{\mathbf{E}}= -\nabla V\)</span>. You can see a brief proof of this on page 77 of the Griffiths. This relationship implies that the electric field points in the direction of the greatest decrease of potential.</p>
 </section>
 <section id="equipotential-surfaces" class="level2" data-number="2.9">
 <h2 data-number="2.9" class="anchored" data-anchor-id="equipotential-surfaces"><span class="header-section-number">2.9</span> Equipotential Surfaces</h2>
 <p>Equipotential surfaces are surfaces on which the electric potential is constant. No work is required to move a charge along an equipotential surface, because work is only required to change an object’s potential. Electric field lines are always perpendicular to equipotential surfaces.</p>
-</section>
-<section id="example-1-potential-of-a-uniformly-charged-sphere" class="level2" data-number="2.10">
-<h2 data-number="2.10" class="anchored" data-anchor-id="example-1-potential-of-a-uniformly-charged-sphere"><span class="header-section-number">2.10</span> Example 1: Potential of a uniformly charged sphere</h2>
 <!--
-Example 2.7 in Griffiths ed3. ADD DERIVATION HERE 
--->
-<p>For a continuous charge distribution with volume charge density <span class="math inline">\(\rho(\mathrm{\mathbf{r}}')\)</span>, the electric potential at a point <span class="math inline">\(\mathbf{r}\)</span> is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V() = k_e d^3V(r)=ke∫∣r−r′∣ρ(r′)d3r′</p>
-<!--
-ADD DERIVATION HERE 
+ADD COMMENT HERE 
 -->
 </section>
-<section id="summary" class="level2" data-number="2.11">
-<h2 data-number="2.11" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.11</span> Summary</h2>
+<section id="summary" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.10</span> Summary</h2>
 <p>Electric potential is a crucial concept in electrostatics, simplifying the analysis of electric fields and the work done by (or on) charges. It is ~intimately related~?? to the electric field and provides a scalar measure of potential energy per unit charge. Understanding electric potential is essential for solving a wide range of problems in electrostatics.</p>
 </section>
-<section id="post-lecture-problem" class="level2" data-number="2.12">
-<h2 data-number="2.12" class="anchored" data-anchor-id="post-lecture-problem"><span class="header-section-number">2.12</span> Post-lecture problem</h2>
+<section id="post-lecture-problem" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="post-lecture-problem"><span class="header-section-number">2.11</span> Post-lecture problem</h2>
 <p>In the pre-lecture problem, hopefully you had a think about how we might go about finding out which of the following two functions is an impossible one.</p>
 <p><strong>Q:</strong> For the <em>possible</em> one, find the potential. Use the origin as your reference point. Check your answer by computing <span class="math inline">\(\nabla V\)</span>.</p>
 <p>[Hint: you must select a specific path to integrate along. The answer is <strong>path-independent</strong>, meaning that you will get the same answer no matter what path you choose–however, it is simply not possible to integrate unless you have a particular path in mind.]</p>

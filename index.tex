@@ -665,19 +665,19 @@ Charge}\label{electric-potential-due-to-a-point-charge}
 For a point charge \(q\) located at the origin, the electric potential
 at a displacement \(\mathrm{\mathbf{r}}\) can be found by computing the
 potential difference between infinity and the point
-\(\mathrm{\mathbf{r}}\) - that is, the work done per unit charge in
-bringing a test charge from infinity to point \(\mathrm{\mathbf{r}}\).
-Try using the expression for \(V_{AB}\) above to do this - you can use
-\(\mathrm{d}\mathrm{\mathbf{r}}\) as the displacement vector
-\(\mathrm{d}\mathrm{\mathbf{l}}\). You should find that the potential
-due to a point charge is therefore:
+\(\mathrm{\mathbf{r}}\) - this is derived in Section 2.3.4 of the
+Griffiths and comes out as follows:
 
-\$\$
+\[ V(r) = \frac{1}{4\pi\epsilon_0} \frac{q}{r} \]
 
-V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi\epsilon_0}
-\frac{q}{\mathrm{\mathbf{r}}}
+If the point charge is not at the origin, we can generalise the above
+equation to:
 
-\$\$
+\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi\epsilon_0} \frac{q}{r_s} \]
+
+where \(r_s\) is the separation between \(q\) and
+\(\mathrm{\mathbf{r}}\), with \(\mathrm{\mathbf{r}}\) being the
+displacement with respect to the origin.
 
 \section{Electric Potential Due to Multiple Point
 Charges}\label{electric-potential-due-to-multiple-point-charges}
@@ -688,22 +688,25 @@ located at positions \(\mathrm{\mathbf{r}}_i\), the total potential at a
 point \mathrm{\mathbf{r}}is the sum of the potentials due to each
 charge:
 
-\$\$
+\[ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\mathrm{\mathbf{r}}_si} \]
 
-V(r) = \frac{1}{4\pi \epsilon_0} \sum\_\{i\}
-\frac{q_i}{|\mathrm{\mathbf{r}}- \mathrm{\mathbf{r}}_i|} \$\$
+\section{Electric Potential Due to a Continuous Charge
+Distribution}\label{electric-potential-due-to-a-continuous-charge-distribution}
 
-\section{Relationship Between Electric Field and Potential (Poisson's
-and Laplace's
-equation)}\label{relationship-between-electric-field-and-potential-poissons-and-laplaces-equation}
+If we have a continuous charge distribution instead of a set of discrete
+charges, we can think instead of an infinitesimal charge
+\(\mathrm{d}q\), and sum over all of these to find the total potential
+due to the distribution:
+
+\[ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\mathrm{\mathbf{r}}_si} \mathrm{d}q \]
+
+\section{Relationship Between Electric Field and
+Potential}\label{relationship-between-electric-field-and-potential}
 
 The electric field is related to the electric potential by the gradient:
-\(\mathrm{\mathbf{E}}= -\nabla V\). This relationship implies that the
-electric field points in the direction of the greatest decrease of
-potential.
-
-\section{Potential of a continuous charge
-distribution}\label{potential-of-a-continuous-charge-distribution}
+\(\mathrm{\mathbf{E}}= -\nabla V\). You can see a brief proof of this on
+page 77 of the Griffiths. This relationship implies that the electric
+field points in the direction of the greatest decrease of potential.
 
 \section{Equipotential Surfaces}\label{equipotential-surfaces}
 
@@ -711,15 +714,6 @@ Equipotential surfaces are surfaces on which the electric potential is
 constant. No work is required to move a charge along an equipotential
 surface, because work is only required to change an object's potential.
 Electric field lines are always perpendicular to equipotential surfaces.
-
-\section{Example 1: Potential of a uniformly charged
-sphere}\label{example-1-potential-of-a-uniformly-charged-sphere}
-
-For a continuous charge distribution with volume charge density
-\(\rho(\mathrm{\mathbf{r}}')\), the electric potential at a point
-\(\mathbf{r}\) is: V(r)=ke∫ρ(r′)∣r−r′∣d3r′V(\mathbf{r}) = k\_e
-\int \frac{\rho(\mathbf{r'})}{|\mathbf{r} - \mathbf{r'}|}
-d\^{}3\mathbf{r'}V(r)=ke∫∣r−r′∣ρ(r′)d3r′
 
 \section{Summary}\label{summary-1}
 
