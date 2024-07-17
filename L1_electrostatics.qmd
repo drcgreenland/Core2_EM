@@ -196,8 +196,7 @@ laws.
 \nabla \times \mathbf{B} = \frac{\mathbf{j}}{c^2 \epsilon_0} + \frac{1}{c^2} \frac{\partial \mathbf{E}}{\partial t}
 \end{equation}
 
-Source: <http://www.clerkmaxwellfoundation.org/html/about_maxwell.html>
-; <https://maxwells-equations.com/>
+Source: <http://www.clerkmaxwellfoundation.org/html/about_maxwell.html>;<https://maxwells-equations.com/>
 
 
 ## Problem Set

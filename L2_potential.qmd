@@ -30,9 +30,9 @@ Before you attempt this problem, it is recommended that you read through the lec
 
 One of these is an impossible electrostatic field. Which one?
 
-(a) $ \E = k[ xy \hat{\x} + 2yz\hat{\y} + 3xz \hat{\z} ] $
+(a) $\E = k[ xy \hat{\x} + 2yz\hat{\y} + 3xz \hat{\z} ]$
 
-(b) $ \E = k[ y^2 \hat{\x} + (2xy + z^2)\hat{\y} + 2yz \hat{\z} ] $
+(b) $\E = k[ y^2 \hat{\x} + (2xy + z^2)\hat{\y} + 2yz \hat{\z} ]$
 
 For the *possible* one, find the potential. Use the origin as your reference point. 
 Check your answer by computing $\nabla V$.
@@ -133,8 +133,8 @@ Electric potential is a crucial concept in electrostatics, simplifying the analy
 $$
 \left\{
     \begin{aligned}
-         & \mathrm{Outside the sphere (r > R):} \E = \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\r}  \\
-         & \mathrm{Inside the sphere (r < R):}  \E = \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\r} \\
+         & \mathrm{Outside \; the \; sphere \; (r > R):} \E = \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\r}  \\
+         & \mathrm{Inside \; the \; sphere \; (r < R):}  \E = \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\r} \\
     \end{aligned}
 \right.
 $$
@@ -148,7 +148,7 @@ this problem is an adapted version of Griffiths 3E problem 2.21
 -->
 
 2) In the worked example for Lecture 1 (see the lecture slides on Blackboard if you were not in attendance) we calculated the electric field a distance $z$ above the midpoint between two equal charges $q$ that are a distance $d$ apart. Now find the electric potential at a distance $z$ for these two charges. 
-Check your answer by computing $\E = -\nabla V $.
+Check your answer by computing $\E = -\nabla V$.
 
 <!--
 this problem is an adapted version of Griffiths 3E problem 2.25(a)
