@@ -509,9 +509,8 @@ Physics. They link the phenomena of electricity and magnetism and can be
 used to derive an expression for the speed of light. Einstein said that
 the theory of Relativity was rooted in Maxwell's equations. The
 equations in their differential form are shown below and we will meet
-most of the concepts in this course and integral versions of some of the
-laws. You can read more about Maxwell's Equations in Chapter 30 of
-Tipler and Mosca.
+these in more detail later in the course, along with the integral
+versions of these laws.
 
 \begin{equation}
 
@@ -534,7 +533,14 @@ Source:
 \url{http://www.clerkmaxwellfoundation.org/html/about_maxwell.html} ;
 \url{https://maxwells-equations.com/}
 
-\section{Post-lecture problem}\label{post-lecture-problem}
+\section{Problem Set}\label{problem-set}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  (\emph{Griffiths Problem 2.2})
+\end{enumerate}
 
 In the lecture, we found the electric field (magnitude and direction) a
 distance \(z\) above the midpoint between two equal charges, \(q\), a
@@ -542,10 +548,59 @@ distance \(d\) apart. We found that for distances \(z\)
 \textgreater\textgreater{} \(a\), as we might expect the field appears
 like that of a single charge \(2q\).
 
-\textbf{Q:} Repeat the calculation of the electric field, but replace
-one of the positive charges with a negative charge (so we now have a
-dipole). Is there anything interesting about this result {[}hint: try
-computing the field for different ranges of \(z\)-values{]}?
+Repeat the calculation of the electric field, but replace one of the
+positive charges with a negative charge (so we now have a dipole). Is
+there anything interesting about this result {[}hint: try computing the
+field for different ranges of \(z\)-values{]}?
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  (\emph{Griffiths Problem 2.1})
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\item
+  Twelve equal charges, \(q\), are situated at the corners of a regular
+  12-sided polygon (for example, you could imagine one is place on each
+  numeral of a clock face). What is the net force on a test charge \(Q\)
+  at the centre?
+\item
+  Suppose one of the 12 \(q\) s is removed (the one at ``6 o'clock'').
+  What is the force on \(Q\) now? Explain your reasoning carefully.
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  (\emph{Griffiths Problem 2.4}) Find the electric field a distance
+  \(z\) above the center of a square loop (side length \(a\)) carrying a
+  uniform line charge (see figure below). {[}Hint: Use the result of
+  Example 2.2 in the Griffiths.{]}
+\end{enumerate}
+
+\includegraphics[width=1.04167in,height=\textheight]{Figures/L1_prob3.png}
+
+:bulb: \textbf{Hint:} Have a look at Example 2.2 in the Griffiths.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  (\emph{Griffiths Problem 2.6}) Find the electric field a distance
+  \(z\) above the center of a flat circular disk of radius \(R\) (see
+  figure below) that carries a uniform surface charge \(\sigma\). What
+  does your formula give in the limit \(R \rightarrow \infty\)? Also
+  check the case \(z >> R\).
+\end{enumerate}
+
+\includegraphics[width=1.04167in,height=\textheight]{Figures/L1_prob4.png}
 
 \bookmarksetup{startatroot}
 
@@ -567,24 +622,40 @@ computing the field for different ranges of \(z\)-values{]}?
 
 \section{Pre-lecture problem}\label{pre-lecture-problem-1}
 
+Before you attempt this problem, it is recommended that you read through
+the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths.
+This question also requires some vector calculus, to which you have only
+just been introduced. Do not worry if you can't do this question just
+yet - we will go through it in the lecture.
+
 One of these is an impossible electrostatic field. Which one?
 
 \begin{enumerate}
 \def\labelenumi{(\alph{enumi})}
 \item
-  \$ \mathrm{\mathbf{E}} = k{[}xy \hat{\mathrm{\mathbf{x}}} +
+  \$ \mathrm{\mathbf{E}} = k{[} xy \hat{\mathrm{\mathbf{x}}} +
   2yz\hat{\mathrm{\mathbf{y}}} + 3xz \hat{\mathrm{\mathbf{z}}} {]} \$
 \item
-  \$ \mathrm{\mathbf{E}} = k{[}y\^{}2 \hat{\mathrm{\mathbf{x}}} + (2xy +
-  z\^{}2)\hat{\mathrm{\mathbf{y}}} + 2yz \hat{\mathrm{\mathbf{z}}} {]}\$
+  \$ \mathrm{\mathbf{E}} = k{[} y\^{}2 \hat{\mathrm{\mathbf{x}}} + (2xy
+  + z\^{}2)\hat{\mathrm{\mathbf{y}}} + 2yz \hat{\mathrm{\mathbf{z}}} {]}
+  \$
 \end{enumerate}
+
+For the \emph{possible} one, find the potential. Use the origin as your
+reference point. Check your answer by computing \(\nabla V\).
+
+{[}:bulb: \textbf{Hint:} you must select a specific path to integrate
+along. The answer is \textbf{path-independent}, meaning that you will
+get the same answer no matter what path you choose--however, it is
+simply not possible to integrate unless you have a particular path in
+mind.{]}
 
 \section{Introduction to electric
 potential}\label{introduction-to-electric-potential}
 
 Electric potential is a scalar quantity associated with the electric
 field. It is defined as the work done by an external force to bring a
-unit positive charge to a particular point in space (for example, at the
+unit positive charge to a particular point in space (for example, the
 location of a test charge \(Q\)) from an arbitrary reference point. For
 the purposes of this lecture course, we will choose infinity
 (\(\infty\)) as our reference point - but please note that Griffiths
@@ -724,20 +795,77 @@ field and provides a scalar measure of potential energy per unit charge.
 Understanding electric potential is essential for solving a wide range
 of problems in electrostatics.
 
-\section{Post-lecture problem}\label{post-lecture-problem-1}
+\section{Problem Set}\label{problem-set-1}
 
-In the pre-lecture problem, hopefully you had a think about how we might
-go about finding out which of the following two functions is an
-impossible one.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  Consider a uniformly charges solid sphere of radius \(R\) and total
+  charge \(q\). The electric field for this sphere is given by:
+\end{enumerate}
 
-\textbf{Q:} For the \emph{possible} one, find the potential. Use the
-origin as your reference point. Check your answer by computing
-\(\nabla V\).
+\[
+\left\{
+    \begin{aligned}
+         & \mathrm{Outside the sphere (r > R):} \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\mathrm{\mathbf{r}}}  \\
+         & \mathrm{Inside the sphere (r < R):}  \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\mathrm{\mathbf{r}}} \\
+    \end{aligned}
+\right.
+\]
 
-{[}Hint: you must select a specific path to integrate along. The answer
-is \textbf{path-independent}, meaning that you will get the same answer
-no matter what path you choose--however, it is simply not possible to
-integrate unless you have a particular path in mind.{]}
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\tightlist
+\item
+  Find the potential \(V(r)\) both inside and outside the sphere.
+\item
+  Compute the gradient of \(V\) in each region, and check that it yields
+  the correct field.
+\item
+  Sketch V(r).
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  In the worked example for Lecture 1 (see the lecture slides on
+  Blackboard if you were not in attendance) we calculated the electric
+  field a distance \(z\) above the midpoint between two equal charges
+  \(q\) that are a distance \(d\) apart. Now find the electric potential
+  at a distance \(z\) for these two charges. Check your answer by
+  computing \$\mathrm{\mathbf{E}} = -\nabla V \$.
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\tightlist
+\item
+  Find the electric field at a distance \(z\) above the midpoint of a
+  uniform line charge, of length \(2L\) and charge density \(\lambda\)
+  (see figure below).
+\end{enumerate}
+
+\includegraphics[width=2.08333in,height=\textheight]{Figures/L2_prob3.pdf}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Now find the potential at distance \(z\) above the midpoint of the
+  line charge. Check your answer by computing \$\mathrm{\mathbf{E}} =
+  -\nabla V \$.
+\end{enumerate}
 
 \bookmarksetup{startatroot}
 
@@ -938,19 +1066,49 @@ U=−pEcosθ𝑈=−𝑝𝐸cos⁡𝜃. This energy can be expressed in vector f
 U=−p⋅E𝑈=−𝑝⋅𝐸. Not surprisingly, the energy is a minimum when the dipole
 is aligned with the field at which point the torque will be zero.
 
-\section{Post-lecture problem}\label{post-lecture-problem-2}
+\section{Problem Set}\label{problem-set-2}
 
-As discussed in the lecture, consider a collection of 3 charges that
-form 3 sides of a square, as shown:
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  As discussed in the lecture, consider a collection of 3 charges that
+  form 3 sides of a square, as shown:
+\end{enumerate}
 
-\includegraphics[width=3.125in,height=\textheight]{Figures/L3_3charges.png}
+\includegraphics[width=2.08333in,height=\textheight]{Figures/L3_3charges.png}
 
 In the lecture, we calculated the amount of work it takes to bring in a
 4th charge \(+q\) from far away and place it in the 4th corner of the
-square.
+square. If you were not in attendance, see the lecture slides on
+Blackboard.
 
-\textbf{Q:} Your task is to calculate the total work it takes to
-assemble all 4 charges into the square configuration.
+Calculate the total work it takes to assemble all 4 charges into the
+square configuration.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Find the energy stored in the uniformly charged solid sphere of radius
+  \(R\) and charge \(q\). Do it 3 different ways:
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\item
+  Use the equation \$ W = \frac{1}{2} \int \rho V \mathrm{d} \tau \$.
+  You found the potential in Q1 of the Lecture 1 Problem Set.
+\item
+  Use the equation \$ W = \frac{\epilon_0}{2}
+  \int\_\{\mathrm{all space}\} E\^{}2 \mathrm{d} \tau \$. The electric
+  field is given in Q1 of the Lecture 1 Problem Set.
+\item
+  Use the equation \$ W = \frac{\epilon_0}{2} \left(
+  int\_\{\mathcal{V}\} E\^{}2 \mathrm{d} \tau + \oint\_\{\mathcal{S}\} V
+  \mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{a}} \$.
+\end{enumerate}
 
 \bookmarksetup{startatroot}
 
@@ -1110,7 +1268,7 @@ development of a transverse electric field in a solid material when it
 carries an electric current and is placed in a magnetic field that is
 perpendicular to the current.
 
-\section{Post-lecture problem}\label{post-lecture-problem-3}
+\section{Post-lecture problem}\label{post-lecture-problem}
 
 In the lecture we sketched the trajectory of the particle in Griffiths
 Example 5.2 at a starting velocity of

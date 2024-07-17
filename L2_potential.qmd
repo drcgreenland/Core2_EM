@@ -26,16 +26,24 @@ New/reworked pre-and post-lecture problems.
 
 ## Pre-lecture problem
 
+Before you attempt this problem, it is recommended that you read through the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths. This question also requires some vector calculus, to which you have only just been introduced. Do not worry if you can't do this question just yet - we will go through it in the lecture. 
+
 One of these is an impossible electrostatic field. Which one?
 
-(a) $ \E = k[xy \hat{\x} + 2yz\hat{\y} + 3xz \hat{\z} ] $
+(a) $ \E = k[ xy \hat{\x} + 2yz\hat{\y} + 3xz \hat{\z} ] $
 
-(b) $ \E = k[y^2 \hat{\x} + (2xy + z^2)\hat{\y} + 2yz \hat{\z} ]$
+(b) $ \E = k[ y^2 \hat{\x} + (2xy + z^2)\hat{\y} + 2yz \hat{\z} ] $
+
+For the *possible* one, find the potential. Use the origin as your reference point. 
+Check your answer by computing $\nabla V$.
+
+[:bulb: **Hint:** you must select a specific path to integrate along. The answer is **path-independent**, meaning that you will get the same answer no matter what path you choose--however, it is simply not possible to integrate unless you have a particular path in mind.]
+
+
 
 ## Introduction to electric potential
 
-
-Electric potential is a scalar quantity associated with the electric field. It is defined as the work done by an external force to bring a unit positive charge to a particular point in space (for example, at the location of a test charge $Q$) from an arbitrary reference point.
+Electric potential is a scalar quantity associated with the electric field. It is defined as the work done by an external force to bring a unit positive charge to a particular point in space (for example, the location of a test charge $Q$) from an arbitrary reference point.
 For the purposes of this lecture course, we will choose infinity ($\infty$) as our reference point - but please note that Griffiths does not use infinity but rather uses the symbol $\mathcal{O}$ to denote an arbitrary reference point.  
 
 We will see later how the concept of electric potential simplifies many calculations in electrostatics, particularly when dealing with electric fields and potential energy.
@@ -115,16 +123,46 @@ Equipotential surfaces are surfaces on which the electric potential is constant.
 ADD COMMENT HERE 
 -->
 
-
-
-
 ## Summary
 Electric potential is a crucial concept in electrostatics, simplifying the analysis of electric fields and the work done by (or on) charges. It is ~intimately related~?? to the electric field and provides a scalar measure of potential energy per unit charge. Understanding electric potential is essential for solving a wide range of problems in electrostatics.
 
-## Post-lecture problem
-In the pre-lecture problem, hopefully you had a think about how we might go about finding out which of the following two functions is an impossible one.
+## Problem Set
 
-**Q:** For the *possible* one, find the potential. Use the origin as your reference point. 
-Check your answer by computing $\nabla V$.
+1) Consider a uniformly charges solid sphere of radius $R$ and total charge $q$. The electric field for this sphere is given by: 
 
-[Hint: you must select a specific path to integrate along. The answer is **path-independent**, meaning that you will get the same answer no matter what path you choose--however, it is simply not possible to integrate unless you have a particular path in mind.]
+$$
+\left\{
+    \begin{aligned}
+         & \mathrm{Outside the sphere (r > R):} \E = \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\r}  \\
+         & \mathrm{Inside the sphere (r < R):}  \E = \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\r} \\
+    \end{aligned}
+\right.
+$$
+
+(a) Find the potential $V(r)$ both inside and outside the sphere. 
+(b) Compute the gradient of $V$ in each region, and check that it yields the correct field.
+(c) Sketch V(r). 
+
+<!--
+this problem is an adapted version of Griffiths 3E problem 2.21
+-->
+
+2) In the worked example for Lecture 1 (see the lecture slides on Blackboard if you were not in attendance) we calculated the electric field a distance $z$ above the midpoint between two equal charges $q$ that are a distance $d$ apart. Now find the electric potential at a distance $z$ for these two charges. 
+Check your answer by computing $\E = -\nabla V $.
+
+<!--
+this problem is an adapted version of Griffiths 3E problem 2.25(a)
+-->
+
+3) 
+(a) Find the electric field at a distance $z$ above the midpoint of a uniform line charge, of length $2L$ and charge density $\lambda$ (see figure below).
+
+![](Figures/L2_prob3){width=200}
+
+(b) Now find the potential at distance $z$ above the midpoint of the line charge. Check your answer by computing $\E = -\nabla V $. 
+
+ 
+<!--
+this problem is an adapted version of Griffiths 3E problem 2.25(b)
+-->
+

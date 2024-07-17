@@ -263,7 +263,7 @@ window.Quarto = {
   <li><a href="#relationship-between-electric-field-and-potential" id="toc-relationship-between-electric-field-and-potential" class="nav-link" data-scroll-target="#relationship-between-electric-field-and-potential"><span class="header-section-number">2.8</span> Relationship Between Electric Field and Potential</a></li>
   <li><a href="#equipotential-surfaces" id="toc-equipotential-surfaces" class="nav-link" data-scroll-target="#equipotential-surfaces"><span class="header-section-number">2.9</span> Equipotential Surfaces</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.10</span> Summary</a></li>
-  <li><a href="#post-lecture-problem" id="toc-post-lecture-problem" class="nav-link" data-scroll-target="#post-lecture-problem"><span class="header-section-number">2.11</span> Post-lecture problem</a></li>
+  <li><a href="#problem-set" id="toc-problem-set" class="nav-link" data-scroll-target="#problem-set"><span class="header-section-number">2.11</span> Problem Set</a></li>
   </ul>
 </nav>
     </div>
@@ -300,15 +300,18 @@ New/reworked pre-and post-lecture problems.
 <p><em>Recommended reading</em>: Griffiths Section 2.3</p>
 <section id="pre-lecture-problem" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="pre-lecture-problem"><span class="header-section-number">2.1</span> Pre-lecture problem</h2>
+<p>Before you attempt this problem, it is recommended that you read through the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths. This question also requires some vector calculus, to which you have only just been introduced. Do not worry if you can’t do this question just yet - we will go through it in the lecture.</p>
 <p>One of these is an impossible electrostatic field. Which one?</p>
 <ol type="a">
-<li><p>$ = k[xy + 2yz + 3xz ] $</p></li>
-<li><p>$ = k[y^2 + (2xy + z^2) + 2yz ]$</p></li>
+<li><p>$ = k[ xy + 2yz + 3xz ] $</p></li>
+<li><p>$ = k[ y^2 + (2xy + z^2) + 2yz ] $</p></li>
 </ol>
+<p>For the <em>possible</em> one, find the potential. Use the origin as your reference point. Check your answer by computing <span class="math inline">\(\nabla V\)</span>.</p>
+<p>[:bulb: <strong>Hint:</strong> you must select a specific path to integrate along. The answer is <strong>path-independent</strong>, meaning that you will get the same answer no matter what path you choose–however, it is simply not possible to integrate unless you have a particular path in mind.]</p>
 </section>
 <section id="introduction-to-electric-potential" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="introduction-to-electric-potential"><span class="header-section-number">2.2</span> Introduction to electric potential</h2>
-<p>Electric potential is a scalar quantity associated with the electric field. It is defined as the work done by an external force to bring a unit positive charge to a particular point in space (for example, at the location of a test charge <span class="math inline">\(Q\)</span>) from an arbitrary reference point. For the purposes of this lecture course, we will choose infinity (<span class="math inline">\(\infty\)</span>) as our reference point - but please note that Griffiths does not use infinity but rather uses the symbol <span class="math inline">\(\mathcal{O}\)</span> to denote an arbitrary reference point.</p>
+<p>Electric potential is a scalar quantity associated with the electric field. It is defined as the work done by an external force to bring a unit positive charge to a particular point in space (for example, the location of a test charge <span class="math inline">\(Q\)</span>) from an arbitrary reference point. For the purposes of this lecture course, we will choose infinity (<span class="math inline">\(\infty\)</span>) as our reference point - but please note that Griffiths does not use infinity but rather uses the symbol <span class="math inline">\(\mathcal{O}\)</span> to denote an arbitrary reference point.</p>
 <p>We will see later how the concept of electric potential simplifies many calculations in electrostatics, particularly when dealing with electric fields and potential energy.</p>
 </section>
 <section id="definition-of-electric-potential" class="level2" data-number="2.3">
@@ -366,11 +369,46 @@ ADD COMMENT HERE
 <h2 data-number="2.10" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.10</span> Summary</h2>
 <p>Electric potential is a crucial concept in electrostatics, simplifying the analysis of electric fields and the work done by (or on) charges. It is ~intimately related~?? to the electric field and provides a scalar measure of potential energy per unit charge. Understanding electric potential is essential for solving a wide range of problems in electrostatics.</p>
 </section>
-<section id="post-lecture-problem" class="level2" data-number="2.11">
-<h2 data-number="2.11" class="anchored" data-anchor-id="post-lecture-problem"><span class="header-section-number">2.11</span> Post-lecture problem</h2>
-<p>In the pre-lecture problem, hopefully you had a think about how we might go about finding out which of the following two functions is an impossible one.</p>
-<p><strong>Q:</strong> For the <em>possible</em> one, find the potential. Use the origin as your reference point. Check your answer by computing <span class="math inline">\(\nabla V\)</span>.</p>
-<p>[Hint: you must select a specific path to integrate along. The answer is <strong>path-independent</strong>, meaning that you will get the same answer no matter what path you choose–however, it is simply not possible to integrate unless you have a particular path in mind.]</p>
+<section id="problem-set" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="problem-set"><span class="header-section-number">2.11</span> Problem Set</h2>
+<ol type="1">
+<li>Consider a uniformly charges solid sphere of radius <span class="math inline">\(R\)</span> and total charge <span class="math inline">\(q\)</span>. The electric field for this sphere is given by:</li>
+</ol>
+<p><span class="math display">\[
+\left\{
+    \begin{aligned}
+         &amp; \mathrm{Outside the sphere (r &gt; R):} \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\mathrm{\mathbf{r}}}  \\
+         &amp; \mathrm{Inside the sphere (r &lt; R):}  \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\mathrm{\mathbf{r}}} \\
+    \end{aligned}
+\right.
+\]</span></p>
+<ol type="a">
+<li>Find the potential <span class="math inline">\(V(r)\)</span> both inside and outside the sphere.</li>
+<li>Compute the gradient of <span class="math inline">\(V\)</span> in each region, and check that it yields the correct field.</li>
+<li>Sketch V(r).</li>
+</ol>
+<!--
+this problem is an adapted version of Griffiths 3E problem 2.21
+-->
+<ol start="2" type="1">
+<li>In the worked example for Lecture 1 (see the lecture slides on Blackboard if you were not in attendance) we calculated the electric field a distance <span class="math inline">\(z\)</span> above the midpoint between two equal charges <span class="math inline">\(q\)</span> that are a distance <span class="math inline">\(d\)</span> apart. Now find the electric potential at a distance <span class="math inline">\(z\)</span> for these two charges. Check your answer by computing $= -V $.</li>
+</ol>
+<!--
+this problem is an adapted version of Griffiths 3E problem 2.25(a)
+-->
+<ol start="3" type="1">
+<li></li>
+</ol>
+<ol type="a">
+<li>Find the electric field at a distance <span class="math inline">\(z\)</span> above the midpoint of a uniform line charge, of length <span class="math inline">\(2L\)</span> and charge density <span class="math inline">\(\lambda\)</span> (see figure below).</li>
+</ol>
+<p><img src="Figures/L2_prob3.png" class="img-fluid" width="200"></p>
+<ol start="2" type="a">
+<li>Now find the potential at distance <span class="math inline">\(z\)</span> above the midpoint of the line charge. Check your answer by computing $= -V $.</li>
+</ol>
+<!--
+this problem is an adapted version of Griffiths 3E problem 2.25(b)
+-->
 
 
 </section>
