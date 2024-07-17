@@ -303,7 +303,7 @@ New/reworked pre-and post-lecture problems.
 <p>Before you attempt this problem, it is recommended that you read through the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths. This question also requires some vector calculus, to which you have only just been introduced. Do not worry if you can’t do this question just yet - we will go through it in the lecture.</p>
 <p>One of these is an impossible electrostatic field. Which one?</p>
 <ol type="a">
-<li><p><span class="math inline">\(\mathrm{\mathbf{E}}= k[ xy \hat{\mathrm{\mathbf{x}}} + 2yz\hat{\mathrm{\mathbf{y}}} + 3xz \hat{\mathrm{\mathbf{z}}} ]\)</span></p></li>
+<li><p><span class="math inline">\(\mathrm{\mathbf{E}}= k[ xy \hat{\mathrm{\mathbf{x}}} + 2yz \hat{\mathrm{\mathbf{y}}} + 3xz \hat{\mathrm{\mathbf{z}}} ]\)</span></p></li>
 <li><p><span class="math inline">\(\mathrm{\mathbf{E}}= k[ y^2 \hat{\mathrm{\mathbf{x}}} + (2xy + z^2)\hat{\mathrm{\mathbf{y}}} + 2yz \hat{\mathrm{\mathbf{z}}} ]\)</span></p></li>
 </ol>
 <p>For the <em>possible</em> one, find the potential. Use the origin as your reference point. Check your answer by computing <span class="math inline">\(\nabla V\)</span>.</p>
@@ -317,17 +317,13 @@ New/reworked pre-and post-lecture problems.
 <section id="definition-of-electric-potential" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="definition-of-electric-potential"><span class="header-section-number">2.3</span> Definition of Electric Potential</h2>
 <p>The electric potential <span class="math inline">\(V\)</span> at some displacement <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> is given by</p>
-<p>$$</p>
-<p>V( = −_{}^r </p>
-<p>$$</p>
+<p><span class="math display">\[ V(\mathrm{\mathbf{r}}) = −\int_{\infty}^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\]</span></p>
 <p>where <span class="math inline">\(\mathrm{\mathbf{E}}\)</span> is the electric field, and <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{l}}\)</span> is an infinitesimal displacement vector along the path of the charge. As we have stated, the potential is the work done per unit charge, therefore we can see how the above can be derived. The work done by a force to bring an object from infinity to point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> is given by $ <em>^r $, therefore the work done per unit charge is $</em>^r = <em>^r $. However, you will notice that the expression shown above is $ - </em>^r $ - by convention, we add a minus sign because the direction of the electric field is the direction of <em>decreasing</em> potential. Let me explain this. We have seen in the previous lecture that electric field lines point away from a positive charge. If we place a positive test charge in the vicinity of another positive charge, the test charge will move away, in the direction of the electric field. This is the direction of decreasing potential because the charge loses potential energy as it moves away. Hence, the electric field points in the direction of decreasing potential, so the expression for potential must be the negative of the electric field.</p>
 </section>
 <section id="potential-difference" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="potential-difference"><span class="header-section-number">2.4</span> Potential Difference</h2>
 <p>The potential difference <span class="math inline">\(V_{ab}\)</span> between two points <span class="math inline">\(\mathrm{\mathbf{a}}\)</span> and <span class="math inline">\(\mathrm{\mathbf{b}}\)</span> is given by:</p>
-<p>$$</p>
-<p>V_{ab} = V( − V() = -<em>{}^{} + </em>{}^{} = -<em>{}^{} - </em>{}^{} = -_{}^{} </p>
-<p>$$</p>
+<p><span class="math display">\[ V_{ab} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}+ \int_{\infty}^{\mathrm{\mathbf{a}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}= -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}- \int_{\mathrm{\mathbf{a}}}^{\infty} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}=  -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]</span></p>
 <p><span class="math display">\[ V_{ab} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]</span></p>
 <p>This quantity represents the work done per unit charge by the electric field in moving a charge from point <span class="math inline">\(\mathrm{\mathbf{a}}\)</span> to point <span class="math inline">\(\mathrm{\mathbf{b}}\)</span>.</p>
 </section>

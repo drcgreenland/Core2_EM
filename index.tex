@@ -632,7 +632,7 @@ One of these is an impossible electrostatic field. Which one?
 \begin{enumerate}
 \def\labelenumi{(\alph{enumi})}
 \item
-  \(\mathrm{\mathbf{E}}= k[ xy \hat{\mathrm{\mathbf{x}}} + 2yz\hat{\mathrm{\mathbf{y}}} + 3xz \hat{\mathrm{\mathbf{z}}} ]\)
+  \(\mathrm{\mathbf{E}}= k[ xy \hat{\mathrm{\mathbf{x}}} + 2yz \hat{\mathrm{\mathbf{y}}} + 3xz \hat{\mathrm{\mathbf{z}}} ]\)
 \item
   \(\mathrm{\mathbf{E}}= k[ y^2 \hat{\mathrm{\mathbf{x}}} + (2xy + z^2)\hat{\mathrm{\mathbf{y}}} + 2yz \hat{\mathrm{\mathbf{z}}} ]\)
 \end{enumerate}
@@ -668,12 +668,7 @@ Potential}\label{definition-of-electric-potential}
 The electric potential \(V\) at some displacement
 \(\mathrm{\mathbf{r}}\) is given by
 
-\$\$
-
-V(\mathrm{\mathbf{r}}) = −\int\_\{\infty\}\^{}r
-\mathrm{\mathbf{E}} \cdot \mathrm{d}\mathrm{\mathbf{l}} 
-
-\$\$
+\[ V(\mathrm{\mathbf{r}}) = −\int_{\infty}^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\]
 
 where \(\mathrm{\mathbf{E}}\) is the electric field, and
 \(\mathrm{d}\mathrm{\mathbf{l}}\) is an infinitesimal displacement
@@ -704,21 +699,7 @@ negative of the electric field.
 The potential difference \(V_{ab}\) between two points
 \(\mathrm{\mathbf{a}}\) and \(\mathrm{\mathbf{b}}\) is given by:
 
-\$\$
-
-V\_\{ab\} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) =
--\int\emph{\{\infty\}\^{}\{\mathrm{\mathbf{b}}\}
-\mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}} +
-\int}\{\infty\}\^{}\{\mathrm{\mathbf{a}}\}
-\mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}} =
--\int\emph{\{\infty\}\^{}\{\mathrm{\mathbf{b}}\}
-\mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}} -
-\int}\{\mathrm{\mathbf{a}}\}\^{}\{\infty\}
-\mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}} =
--\int\_\{\mathrm{\mathbf{a}}\}\^{}\{\mathrm{\mathbf{b}}\}
-\mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}}
-
-\$\$
+\[ V_{ab} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}+ \int_{\infty}^{\mathrm{\mathbf{a}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}= -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}- \int_{\mathrm{\mathbf{a}}}^{\infty} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}=  -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]
 
 \[ V_{ab} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]
 
