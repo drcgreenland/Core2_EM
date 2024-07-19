@@ -55,13 +55,20 @@ The electric potential $V$ at some displacement $\r$ is given by
 $$ V(\r) = −\int_{\infty}^r \E \cdot \mathrm{d}\l $$ 
 
 
-where $\E$ is the electric field, and $\mathrm{d}\l$  is an infinitesimal displacement vector along the path of the charge. As we have stated, the potential is the work done per unit charge, therefore we can see how the above can be derived. The work done by a force to bring an object from infinity to point $\r$ is given by $ \int_\infty^r \F \cdot \mathrm{d}\l$, therefore the work done per unit charge is $\int_\infty^r \frac{\F}{Q} \cdot \mathrm{d}\l = \int_\infty^r \E \cdot \mathrm{d}\l $. However, you will notice that the expression shown above is $ - \int_\infty^r \E \cdot \mathrm{d}\l $ - by convention, we add a minus sign because the direction of the electric field is the direction of *decreasing* potential. Let me explain this. We have seen in the previous lecture that electric field lines point away from a positive charge. If we place a positive test charge in the vicinity of another positive charge, the test charge will move away, in the direction of the electric field. This is the direction of decreasing potential because the charge loses potential energy as it moves away. Hence, the electric field points in the direction of decreasing potential, so the expression for potential must be the negative of the electric field. 
+where $\E$ is the electric field, and $\mathrm{d}\l$  is an infinitesimal displacement vector along the path of the charge. As we have stated, the potential is the work done per unit charge, therefore we can see how the above can be derived. The work done by a force to bring an object from infinity to point $\r$ is given by $ \int_\infty^r \F \cdot \mathrm{d}\l$, therefore the work done per unit charge is $\int_\infty^r \frac{\F}{Q} \cdot \mathrm{d}\l = \int_\infty^r \E \cdot \mathrm{d}\l$. However, you will notice that the expression shown above is $- \int_\infty^r \E \cdot \mathrm{d}\l$ - by convention, we add a minus sign because the direction of the electric field is the direction of *decreasing* potential. Let me explain this. We have seen in the previous lecture that electric field lines point away from a positive charge. If we place a positive test charge in the vicinity of another positive charge, the test charge will move away, in the direction of the electric field. This is the direction of decreasing potential because the charge loses potential energy as it moves away. Hence, the electric field points in the direction of decreasing potential, so the expression for potential must be the negative of the electric field. 
 
 ## Potential Difference
 
 The potential difference $V_{ab}$ between two points $\a$ and $\b$ is given by: 
 
-$$ V_{ab} = V(\b) − V(\a) = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l + \int_{\infty}^{\a} \E \cdot \mathrm{d} \l = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l - \int_{\a}^{\infty} \E \cdot \mathrm{d} \l =  -\int_{\a}^{\b} \E \cdot \mathrm{d} \l $$
+$$
+\begin{split} 
+V_{ab} & = V(\b) − V(\a) \\
+& = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l + \int_{\infty}^{\a} \E \cdot \mathrm{d} \l \\
+& = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l - \int_{\a}^{\infty} \E \cdot \mathrm{d} \l \\
+& = -\int_{\a}^{\b} \E \cdot \mathrm{d} \l 
+\end{split}
+$$
 
 
 $$ V_{ab} = V(\b) − V(\a) = -\int_{\a}^{\b} \E \cdot \mathrm{d} \l $$
@@ -88,14 +95,19 @@ where $r_s$ is the separation between $q$ and $\r$, with $\r$ being the displace
 
 The principle of superposition applies to electric potential, just as it does to electric fields and forces. For multiple point charges $q_i$ located at positions $\r_i$, the total potential at a point \r is the sum of the potentials due to each charge: 
 
-$$ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\r_si} $$
+$$ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\r_{s_i}} $$ {#eq-Vmulti}
 
 ## Electric Potential Due to a Continuous Charge Distribution 
 
 If we have a continuous charge distribution instead of a set of discrete charges, we can think instead of an infinitesimal charge $\mathrm{d}q$, and sum over all of these to find the total potential due to the distribution: 
 
-$$ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\r_si} \mathrm{d}q $$
+$$ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\r_s} \mathrm{d}q $$
 
+If we have a volume charge distribution, $\mathrm{d}q$ can be formualated as $\rho(\r') \mathrm{d}\tau'$, where $\r'$ is [!!!!!], therefore the potential due to a volume charge distribution is given by   
+
+$$ V(\r) = \frac{1}{4\pi \epsilon_0} \int \frac{\rho(\r')}{\r_s} \mathrm{d} \tau' $$. 
+
+This equation allows us to compute $V$ when we know $\rho$. 
 
 <!--
 This bit needs more added, including the volume charge distribution and the definitions of the notation. 
@@ -103,8 +115,13 @@ This bit needs more added, including the volume charge distribution and the defi
 
 ## Relationship Between Electric Field and Potential
 
-The electric field is related to the electric potential by the gradient: $\E = -\nabla V$. You can see a brief proof of this on page 77 of the Griffiths. This relationship implies that the electric field points in the direction of the greatest decrease of potential.
+The electric field is related to the electric potential by the gradient: 
 
+$$ \E = -\nabla V $$. 
+
+You can see a brief proof of this on page 77 of the Griffiths. This relationship implies that the electric field points in the direction of the greatest decrease of potential.
+
+We can use this relationship to find the electric field when we know the potential. 
 
 ## Equipotential Surfaces
 
@@ -125,21 +142,22 @@ Electric potential is a crucial concept in electrostatics, simplifying the analy
 $$
 \left\{
     \begin{aligned}
-         & \mathrm{Outside \; the \; sphere \; (r > R):} \E = \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\r}  \\
-         & \mathrm{Inside \; the \; sphere \; (r < R):}  \E = \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\r} \\
+         & \mathrm{Outside \; the \; sphere \; (r > R):} \; \E = \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\r}  \\
+         & \mathrm{Inside \; the \; sphere \; (r < R):} \; \E = \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\r} \\
     \end{aligned}
 \right.
 $$
 
 (a) Find the potential $V(r)$ both inside and outside the sphere. 
 (b) Compute the gradient of $V$ in each region, and check that it yields the correct field.
-(c) Sketch V(r). 
+(c) Sketch $V(r)$. 
 
 <!--
 this problem is an adapted version of Griffiths 3E problem 2.21
 -->
 
 2) In the worked example for Lecture 1 (see the lecture slides on Blackboard if you were not in attendance) we calculated the electric field a distance $z$ above the midpoint between two equal charges $q$ that are a distance $d$ apart. Now find the electric potential at a distance $z$ for these two charges. 
+
 Check your answer by computing $\E = -\nabla V$.
 
 <!--
@@ -151,7 +169,9 @@ this problem is an adapted version of Griffiths 3E problem 2.25(a)
 
 ![](Figures/L2_prob3){width=200}
 
-(b) Now find the potential at distance $z$ above the midpoint of the line charge. Check your answer by computing $\E = -\nabla V $. 
+(b) Now find the potential at distance $z$ above the midpoint of the line charge. 
+
+Check your answer by computing $\E = -\nabla V $. 
 
  
 <!--

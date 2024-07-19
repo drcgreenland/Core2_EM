@@ -543,9 +543,8 @@ Source:
 
 In the lecture, we found the electric field (magnitude and direction) a
 distance \(z\) above the midpoint between two equal charges, \(q\), a
-distance \(d\) apart. We found that for distances \(z\)
-\textgreater\textgreater{} \(a\), as we might expect the field appears
-like that of a single charge \(2q\).
+distance \(d\) apart. We found that for distances \(z >> a\), as we
+might expect the field appears like that of a single charge \(2q\).
 
 Repeat the calculation of the electric field, but replace one of the
 positive charges with a negative charge (so we now have a dipole). Is
@@ -675,21 +674,19 @@ where \(\mathrm{\mathbf{E}}\) is the electric field, and
 vector along the path of the charge. As we have stated, the potential is
 the work done per unit charge, therefore we can see how the above can be
 derived. The work done by a force to bring an object from infinity to
-point \(\mathrm{\mathbf{r}}\) is given by \$ \int\emph{\infty\^{}r
+point \(\mathrm{\mathbf{r}}\) is given by \$ \int\_\infty\^{}r
 \mathrm{\mathbf{F}} \cdot \mathrm{d}\mathrm{\mathbf{l}}\$, therefore the
-work done per unit charge is \$\int}\infty\^{}r
-\frac{\mathrm{\mathbf{F}}}{Q} \cdot \mathrm{d}\mathrm{\mathbf{l}} =
-\int\emph{\infty\^{}r
-\mathrm{\mathbf{E}} \cdot \mathrm{d}\mathrm{\mathbf{l}} \$. However, you
-will notice that the expression shown above is \$ - \int}\infty\^{}r
-\mathrm{\mathbf{E}} \cdot \mathrm{d}\mathrm{\mathbf{l}} \$ - by
-convention, we add a minus sign because the direction of the electric
-field is the direction of \emph{decreasing} potential. Let me explain
-this. We have seen in the previous lecture that electric field lines
-point away from a positive charge. If we place a positive test charge in
-the vicinity of another positive charge, the test charge will move away,
-in the direction of the electric field. This is the direction of
-decreasing potential because the charge loses potential energy as it
+work done per unit charge is
+\(\int_\infty^r \frac{\mathrm{\mathbf{F}}}{Q} \cdot \mathrm{d}\mathrm{\mathbf{l}}= \int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\).
+However, you will notice that the expression shown above is
+\(- \int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\)
+- by convention, we add a minus sign because the direction of the
+electric field is the direction of \emph{decreasing} potential. Let me
+explain this. We have seen in the previous lecture that electric field
+lines point away from a positive charge. If we place a positive test
+charge in the vicinity of another positive charge, the test charge will
+move away, in the direction of the electric field. This is the direction
+of decreasing potential because the charge loses potential energy as it
 moves away. Hence, the electric field points in the direction of
 decreasing potential, so the expression for potential must be the
 negative of the electric field.
@@ -699,7 +696,14 @@ negative of the electric field.
 The potential difference \(V_{ab}\) between two points
 \(\mathrm{\mathbf{a}}\) and \(\mathrm{\mathbf{b}}\) is given by:
 
-\[ V_{ab} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}+ \int_{\infty}^{\mathrm{\mathbf{a}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}= -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}- \int_{\mathrm{\mathbf{a}}}^{\infty} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}=  -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]
+\[
+\begin{split} 
+V_{ab} & = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) \\
+& = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}+ \int_{\infty}^{\mathrm{\mathbf{a}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\\
+& = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}- \int_{\mathrm{\mathbf{a}}}^{\infty} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\\
+& = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}
+\end{split}
+\]
 
 \[ V_{ab} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]
 
@@ -736,7 +740,7 @@ located at positions \(\mathrm{\mathbf{r}}_i\), the total potential at a
 point \mathrm{\mathbf{r}}is the sum of the potentials due to each
 charge:
 
-\[ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\mathrm{\mathbf{r}}_si} \]
+\begin{equation}\phantomsection\label{eq-Vmulti}{ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\mathrm{\mathbf{r}}_{s_i}} }\end{equation}
 
 \section{Electric Potential Due to a Continuous Charge
 Distribution}\label{electric-potential-due-to-a-continuous-charge-distribution}
@@ -746,15 +750,30 @@ charges, we can think instead of an infinitesimal charge
 \(\mathrm{d}q\), and sum over all of these to find the total potential
 due to the distribution:
 
-\[ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\mathrm{\mathbf{r}}_si} \mathrm{d}q \]
+\[ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\mathrm{\mathbf{r}}_s} \mathrm{d}q \]
+
+If we have a volume charge distribution, \(\mathrm{d}q\) can be
+formualated as \(\rho(\mathrm{\mathbf{r}}') \mathrm{d}\tau'\), where
+\(\mathrm{\mathbf{r}}'\) is {[}!!!!!{]}, therefore the potential due to
+a volume charge distribution is given by
+
+\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi \epsilon_0} \int \frac{\rho(\mathrm{\mathbf{r}}')}{\mathrm{\mathbf{r}}_s} \mathrm{d} \tau' \].
+
+This equation allows us to compute \(V\) when we know \(\rho\).
 
 \section{Relationship Between Electric Field and
 Potential}\label{relationship-between-electric-field-and-potential}
 
 The electric field is related to the electric potential by the gradient:
-\(\mathrm{\mathbf{E}}= -\nabla V\). You can see a brief proof of this on
-page 77 of the Griffiths. This relationship implies that the electric
-field points in the direction of the greatest decrease of potential.
+
+\[ \mathrm{\mathbf{E}}= -\nabla V \].
+
+You can see a brief proof of this on page 77 of the Griffiths. This
+relationship implies that the electric field points in the direction of
+the greatest decrease of potential.
+
+We can use this relationship to find the electric field when we know the
+potential.
 
 \section{Equipotential Surfaces}\label{equipotential-surfaces}
 
@@ -785,8 +804,8 @@ of problems in electrostatics.
 \[
 \left\{
     \begin{aligned}
-         & \mathrm{Outside \; the \; sphere \; (r > R):} \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\mathrm{\mathbf{r}}}  \\
-         & \mathrm{Inside \; the \; sphere \; (r < R):}  \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\mathrm{\mathbf{r}}} \\
+         & \mathrm{Outside \; the \; sphere \; (r > R):} \; \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\mathrm{\mathbf{r}}}  \\
+         & \mathrm{Inside \; the \; sphere \; (r < R):} \; \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\mathrm{\mathbf{r}}} \\
     \end{aligned}
 \right.
 \]
@@ -800,7 +819,7 @@ of problems in electrostatics.
   Compute the gradient of \(V\) in each region, and check that it yields
   the correct field.
 \item
-  Sketch V(r).
+  Sketch \(V(r)\).
 \end{enumerate}
 
 \begin{enumerate}
@@ -812,9 +831,10 @@ of problems in electrostatics.
   Blackboard if you were not in attendance) we calculated the electric
   field a distance \(z\) above the midpoint between two equal charges
   \(q\) that are a distance \(d\) apart. Now find the electric potential
-  at a distance \(z\) for these two charges. Check your answer by
-  computing \(\mathrm{\mathbf{E}}= -\nabla V\).
+  at a distance \(z\) for these two charges.
 \end{enumerate}
+
+Check your answer by computing \(\mathrm{\mathbf{E}}= -\nabla V\).
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
@@ -840,9 +860,10 @@ of problems in electrostatics.
 \tightlist
 \item
   Now find the potential at distance \(z\) above the midpoint of the
-  line charge. Check your answer by computing \$\mathrm{\mathbf{E}} =
-  -\nabla V \$.
+  line charge.
 \end{enumerate}
+
+Check your answer by computing \$\mathrm{\mathbf{E}} = -\nabla V \$.
 
 \bookmarksetup{startatroot}
 
@@ -909,31 +930,87 @@ This equation re-states what we discussed in Lecture 2 - that the
 potential difference between two points \(\mathrm{\mathbf{a}}\) and
 \(\mathrm{\mathbf{b}}\) is the work done per unit charge to bring a
 charge from point \(\mathrm{\mathbf{a}}\) to point
-\(\mathrm{\mathbf{b}}\).
+\(\mathrm{\mathbf{b}}\). If you want to bring a charge \(Q\) in from
+very far away and place it at point \(\mathrm{\mathbf{r}}\), you the
+work you have to do is
+
+\[W = Q[V(\mathrm{\mathbf{r}}) - V(\infty)]\]
+
+which, if you use a reference point at infinity, simply becomes
+
+\[W = Q V(\mathrm{\mathbf{r}})\]
+
+which should be a familiar expression from your previous studies.
 
 \section{Energy of a point charge
 distribution}\label{energy-of-a-point-charge-distribution}
 
+If you want to assemble a group of point charges, the work required to
+do so is given by
+
+\begin{equation}\phantomsection\label{eq-workMulti}{ W = \frac{1}{2} \sum_{i=1}^n q_i V(\mathrm{\mathbf{r}}_i) }\end{equation}
+
+Let's break this down. To calculate the work done to assemble a group of
+point charges, we need to first realise the fact that the first charge
+to join the group does not take any work, because there is no electric
+field present for it to interact with. It is only when we try to
+introduce further charges to configuration that work needs to be done.
+We therefore choose one of our charges arbitrarily to be the first
+charge. For every subsequent charge that is brought in, the work done to
+bring it in is proportional to \(q_i V(\mathrm{\mathbf{r}}_i)\), where
+\(q_i\) is the charge in question and \(V(\mathrm{\mathbf{r}}_i)\) is
+the potential at position \(\mathrm{\mathbf{r}}_i\) (position of
+\(q_i\)) due to all the other charges that are present. Summing over all
+of these will result in the work needed to add every charge to the
+distribution, and therefore gives the potential energy of the whole
+charge configuration. Summing the potentials of each charge with respect
+to the rest of the group of charges will lead to each pair of charges
+being considered twice, which is not physical, therefore the factor of
+\(\frac{1}{2}\) is introduced to remove this problem. For a full
+derivation and explanation of Equation~\ref{eq-workMulti}, see Griffiths
+Section 2.4.2.
+
 \section{Energy of a continuous charge
 distribution}\label{energy-of-a-continuous-charge-distribution}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
-\item
-  Work and Energy in Electrostatics The work done to assemble a system
-  of charges is related to the potential energy stored in the system.
-  For point charges, the electrostatic potential energy \(U\) is given
-  by:
-\item
-  Energy Density of the Electric Field
-\end{enumerate}
+Now consider the situation where we have a continuous charge
+distribution instead of a collection of point charges. It is important
+to note here that a charge distribution is never truly continuous -
+charge always comes in the form of discrete point charges such as
+electrons, protons etc - however if we have a very large amount of point
+charges we can consider them to be a continuous distribution with some
+associated charge density. For a volume charge density,
+Equation~\ref{eq-workMulti} becomes
 
-The energy density uuu of the electric field is: u=12ϵ0E2u = \frac{1}{2}
-\epsilon\_0 E\^{}2u=21ϵ0E2 where ϵ0\epsilon\_0ϵ0 is the permittivity of
-free space. The total electrostatic energy stored in a volume VVV is:
-U=12ϵ0∫VE2 d3rU = \frac{1}{2} \epsilon\_0 \int\_V E\^{}2 ,
-d\^{}3rU=21ϵ0∫VE2d3r
+\begin{equation}\phantomsection\label{eq-cont1}{ W = \frac{1}{2}\int \rho V \mathrm{d} \tau}\end{equation}
+
+where \(V\) denotes volume and \(\mathrm{d} \tau\) is the infinitesimal
+volume element.
+
+The same formulation works for a surface charge density\ldots{}
+
+\[ W = \frac{1}{2}\int \sigma V \mathrm{d} a\]
+
+\ldots{} and a line charge density
+
+\[ W = \frac{1}{2}\int \lambda V \mathrm{d} l\]
+
+as well.
+
+The energy of a continuous charge distribution can also be expressed in
+the following way:
+
+\[ W = \frac{\epilon_0}{2} \left( int_{\mathcal{V}} E^2 \mathrm{d} \tau + \oint_{\mathcal{S}} V \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{a}}\].\{\#eq-cont2\}
+
+We will not look at the derivation for this now, because it involves
+concepts not yet encountered in this course. After Lecture 7, I would
+recommend that you look at Section 2.4.3 of the Griffiths for the
+derivation of \textbf{?@eq-cont2}.
+
+If we integrate \textbf{?@eq-cont2} over all space, the surface integral
+goes to zero and we end up with:
+
+\[ W = \frac{\epilon_0}{2} \int_{\mathrm{all \; space}} E^2 \mathrm{d} \tau \].\{\#eq-cont3\}
 
 \section{Work and the electric
 dipole}\label{work-and-the-electric-dipole}
@@ -988,11 +1065,18 @@ given by: \[
 \mathrm{\mathbf{E}}= \frac{1}{4\pi \epsilon_0} \frac{qd}{ \left( x^2 \left( \frac{d}{2} \right)^2 \right)^{\frac{3}{2}} }
 \]
 
-Does this look familiar? If you attempted the
-\bf{post-lecture problem for Lecture 1}, you have actually already calculated the electric field of an electric dipole! The only difference is that in that question you calculated the field at a point on the $z$-axis, but otherwise it should be same mathematical expression. In that problem you were asked to think about the dipole field in different ranges of values of $z$. If we look at the above expression, we can see that in the limit $x >> d$ (in other words, when we are at a distance $x$ from the dipole that is much larger than the size of the dipole $d$) the electric field due to the dipole can be reduced to:
-$$
+Does this look familiar? If you attempted Q1 of the Problem Set for
+Lecture 1, you have actually already calculated the electric field of an
+electric dipole! The only difference is that in that question you
+calculated the field at a point on the \(z\)-axis, but otherwise it
+should be same mathematical expression. In that problem you were asked
+to think about the dipole field in different ranges of values of \(z\).
+If we look at the above expression, we can see that in the limit
+\(x >> d\) (in other words, when we are at a distance \(x\) from the
+dipole that is much larger than the size of the dipole \(d\)) the
+electric field due to the dipole can be reduced to: \[
 \mathrm{\mathbf{E}}= \frac{1}{4 \pi \epsilon_0} \frac{\mathrm{\mathbf{p}}}{x^3}
-$$ 
+\]
 
 So the field is very similar to that of a point charge, however it drops
 off even faster with distance. If we look at the field lines of the
@@ -1008,40 +1092,50 @@ Now, back to the topic at hand: work and energy.
 Consider a dipole that is placed within a uniform electric field. The
 force on each charge has magnitude \(qE\), but since these forces are in
 opposite directions there is no net force on the dipole. There is
-however a torque about the centre of the dipole. See the diagram below
-to get a feel for this.
+however a torque about the centre of the dipole. See
+\textbf{?@fig-dipoleExt} to get a feel for this.
 
-\begin{figure}[H]
+\includegraphics[width=4.16667in,height=\textheight]{Figures/dipole_extE.jpg}\{\#fig-dipoleExt\}
 
-{\centering \includegraphics[width=4.16667in,height=\textheight]{Figures/dipole_extE.jpg}
+The torque about the centre of the dipole in \textbf{?@fig-dipoleExt} is
 
-}
+\[ \tau = 2 F \frac{d}{2} \sin\theta = qEd\sin\theta = p E \sin\theta \]
 
-\caption{Representation of a dipole placed in an external uniform
-electric field. \(\theta\) is the angle the dipole takes to the
-direction of the external electric field and \(F\) is the force on each
-charge of the dipole due to the external field}
+This can be expressed in vector form as
+\[ \mathrm{\mathbf{\tau}} = \mathrm{\mathbf{p}}\times \mathrm{\mathbf{E}}\]
 
-\end{figure}%
+The torque will cause the dipole to rotate and align itself with the
+electric field, as shown here:
 
-The torque about the centre of the dipole is
-τ=2Fd2sinθ=qEdsinθ=\textbar p\textbar Esinθ(2.9)(2.9)𝜏=2𝐹𝑑2sin⁡𝜃=𝑞𝐸𝑑sin⁡𝜃=\textbar 𝑝\textbar 𝐸sin⁡𝜃
-The direction of the torque is perpendicular to the page, so it can be
-represented in vector form as τ=p×E𝜏=𝑝×𝐸. The torque will cause the
-dipole to rotate and align itself with the electric field.
+\includegraphics[width=3.125in,height=\textheight]{Figures/dipole_align.png}\{\#fig-dipoleAlign\}
 
-We can use the work done by the field to determine what is the minimum
-energy configuration (although it should be fairly obvious). The work
-done is the integral of the product of the torque and the angle turned
-through:
-W=∫θθ0\textbar τ\textbar dθ=∫θθ0pEsinθdθ={[}−pEcosθ{]}θθ0(2.10)(2.10)𝑊=∫𝜃0𝜃\textbar 𝜏\textbar d𝜃=∫𝜃0𝜃𝑝𝐸sin⁡𝜃d𝜃={[}−𝑝𝐸cos⁡𝜃{]}𝜃0𝜃
-The change in potential energy is ΔU=WΔ𝑈=𝑊,
-hence:ΔU=U(θ0)−U(θ)=pE(cosθ0−cosθ)(2.11)(2.11)Δ𝑈=𝑈(𝜃0)−𝑈(𝜃)=𝑝𝐸(cos⁡⁡𝜃0−𝑐𝑜𝑠𝜃)
-The zero of potential energy U(θ0)𝑈(𝜃0) can be chosen to be anywhere, so
-we can choose it to correspond to θ0=90∘𝜃0=90∘ in which case
-U=−pEcosθ𝑈=−𝑝𝐸cos⁡𝜃. This energy can be expressed in vector form as
-U=−p⋅E𝑈=−𝑝⋅𝐸. Not surprisingly, the energy is a minimum when the dipole
-is aligned with the field at which point the torque will be zero.
+If we think about it in terms of work - we Would have to do work on the
+dipole to rotate it away from the position where it is aligned with the
+electric field (which is when the positive charge is on the right). This
+work is stored as potential energy. The dipole does work (in other words
+it loses potential energy) rotating towards its aligned position.
+
+The work done is the integral of the product of the torque and the angle
+turned through:
+
+\[
+\begin{split} 
+W & = \int_{\theta_0}^{\theta} \tau \mathrm{d} \theta \\
+& = \int_{\theta_0}^{\theta} pE\sin\theta \mathrm{d} \theta \\
+& = [-pE \cos \theta]_{\theta_0}^{\theta} 
+\end{split}
+\]
+
+The change in potential energy is \(\Delta U = W\), hence:
+
+\[ \Delta U = U(\theta_0) - U (\theta) = pE(\cos\theta_0 - \cos\theta) \]
+
+The zero of potential energy \(U(\theta_0)\) can be chosen to be
+anywhere, so we can choose it to correspond to \(\theta = 90^{\circ}\)
+in which case \(U = -pE\cos\theta\).
+
+Not surprisingly, the energy is at a minimum when the dipole is aligned
+with the field, at which point the torque will be zero.
 
 \section{Problem Set}\label{problem-set-2}
 
@@ -1084,7 +1178,9 @@ square configuration.
 \item
   Use the equation \$ W = \frac{\epilon_0}{2} \left(
   int\_\{\mathcal{V}\} E\^{}2 \mathrm{d} \tau + \oint\_\{\mathcal{S}\} V
-  \mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{a}} \$.
+  \mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{a}} \$. Take a
+  spherical volume of radius \(a\). What happens as
+  \(a \rightarrow \infty\)?
 \end{enumerate}
 
 \bookmarksetup{startatroot}

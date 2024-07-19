@@ -204,7 +204,7 @@ Source: <http://www.clerkmaxwellfoundation.org/html/about_maxwell.html>;<https:/
 1) (*Griffiths Problem 2.2*)
 
 In the lecture, we found the electric field (magnitude and direction) a distance $z$ above the midpoint between two equal charges, $q$, a distance $d$ apart.
-We found that for distances $z$ >> $a$, as we might expect the field appears like that of a single charge $2q$. 
+We found that for distances $z >> a$, as we might expect the field appears like that of a single charge $2q$. 
 
 Repeat the calculation of the electric field, but replace one of the positive charges with a negative charge (so we now have a dipole). 
 Is there anything interesting about this result [hint: try computing the field for different ranges of $z$-values]?

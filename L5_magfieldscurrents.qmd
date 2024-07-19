@@ -13,3 +13,5 @@
 
 *A problem to try before attending the lecture*: 
 Force Q, inspired by p217.
+
+
