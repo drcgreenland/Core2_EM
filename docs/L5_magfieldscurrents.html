@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Electromagnetism - 5&nbsp; The Biot-Savart Law - Magnetic Fields of Currents</title>
+<title>Electromagnetism - 5&nbsp; The Biot-Savart Law</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -81,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./L5_magfieldscurrents.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law - Magnetic Fields of Currents</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./L5_magfieldscurrents.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -139,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./L5_magfieldscurrents.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law - Magnetic Fields of Currents</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -220,14 +249,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#pre-lecture-problem" id="toc-pre-lecture-problem" class="nav-link active" data-scroll-target="#pre-lecture-problem"><span class="header-section-number">5.1</span> Pre-lecture problem</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">5.2</span> </a></li>
+  <li><a href="#problem-set" id="toc-problem-set" class="nav-link" data-scroll-target="#problem-set"><span class="header-section-number">5.3</span> Problem Set</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law - Magnetic Fields of Currents</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law</span></h1>
 </div>
 
 
@@ -245,9 +282,27 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><em>Recommended reading</em>: Griffiths Section 5.2</p>
-<p><em>A problem to try before attending the lecture</em>: Force Q, inspired by p217.</p>
+<section id="pre-lecture-problem" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="pre-lecture-problem"><span class="header-section-number">5.1</span> Pre-lecture problem</h2>
+<p>Find the magnitude of the attractive force between two long, parallel wires which are a distance <span class="math inline">\(d\)</span> apart, carrying currents <span class="math inline">\(I_1\)</span> and <span class="math inline">\(I_2\)</span>.</p>
+<p>We saw in the last lecture that a current-carrying wire experiences a magnetic force when in the prescence of an applied magnetic field, and we found an expression for the magnetic force on a segment of current-carrying wire. Ultimately, current-carrying wires experience this force because they produce their own magnetic field which interacts with the applied magnetic field. The Biot-Savart Law is a formula for the magnetic field of a steady line current. Note that we are once again thinking about <em>line</em> currents, so we are modelling our currents as 1-dimensional.</p>
+<p><strong>An aside on “steady currents”:</strong> The Biot-Savart Law only applies to so-called “steady currents”. A steady current is defined as a continuous flow of charge that goes on forever, without changing and without charge piling up anywhere. In reality, there is no such current, but for the purposes of this course we can model current-carrying wires as carrying steady currents. If the current wasn’t a steady current, the magnetic field produced by the current would be varying as a function of time, and we would no longer be in the realm of magnetostatics, which deals in static (non-time varying) magnetic fields.</p>
+<p>The Biot-Savart Law takes the following form:</p>
+<p><span class="math display">\[\B(\mathrm{\mathbf{r}}) = \frac{\mu_0}{4\pi} \int \frac{\I \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \mathrm{d}l' =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \]</span></p>
+<p>In your previous studies you may have come across the formula for the magnetic field at a distance from a current-carrying wire. We are now going to derive this using the Biot-Savart law.</p>
+<!--
+Insert Example 5.5! 
+-->
+</section>
+<section id="section" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="section"><span class="header-section-number">5.2</span> </h2>
+<p>Now we will use the Biot-Savart Law to find the</p>
+</section>
+<section id="problem-set" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="problem-set"><span class="header-section-number">5.3</span> Problem Set</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

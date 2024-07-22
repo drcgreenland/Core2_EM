@@ -301,10 +301,17 @@ we can more easily define and solve the problem.
 Throughout this course you will also see the terms ``source point'' and
 ``field point''. The source point is the location of the source
 charge(s), while the field point is essentially the location of the test
-charge. If there is no test charge in the problem (for example if we are
-computing the electric field of a source charge), the field point is the
-point at which we are measuring the field - it is the point where a test
-charge would be if there was one.
+charge - so when we are solving problems, this is the point at which we
+are measuring the field, potential, etc. The source point is given by
+the vector \(\mathrm{\mathbf{r}}'\) and the field point is given by the
+vector \(\mathrm{\mathbf{r}}\), while the separation between the two
+point is given by the vector \(r_s\). (Please note that the Griffiths
+uses slightly different notation - for the separation vector it uses a
+curly script ``r'', I did not use this as there is no way of making that
+symbol in Latex.) If there is no test charge in the problem (for example
+if we are computing the electric field of a source charge), the field
+point is the point at which we are measuring the field - it is the point
+where a test charge would be if there was one.
 
 \begin{figure}[H]
 
@@ -532,7 +539,7 @@ versions of these laws.
 Source:
 \url{http://www.clerkmaxwellfoundation.org/html/about_maxwell.html};\url{https://maxwells-equations.com/}
 
-\section{Problem Set}\label{problem-set}
+\section{Problems}\label{problems}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
@@ -791,7 +798,7 @@ field and provides a scalar measure of potential energy per unit charge.
 Understanding electric potential is essential for solving a wide range
 of problems in electrostatics.
 
-\section{Problem Set}\label{problem-set-1}
+\section{Problems}\label{problems-1}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
@@ -1137,7 +1144,7 @@ in which case \(U = -pE\cos\theta\).
 Not surprisingly, the energy is at a minimum when the dipole is aligned
 with the field, at which point the torque will be zero.
 
-\section{Problem Set}\label{problem-set-2}
+\section{Problems}\label{problems-2}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
@@ -1200,6 +1207,8 @@ Law}\label{magnetic-fields-and-the-lorentz-force-law}
 
 \newcommand{\a}{\mathrm{\mathbf{a}}}
 \newcommand{\b}{\mathrm{\mathbf{b}}}
+\newcommand{\I}{\mathrm{\mathbf{I}}}
+\newcommand{\l}{\mathrm{\mathbf{l}}}
 
 \emph{Recommended reading}: Griffiths Section 5.1
 
@@ -1285,10 +1294,9 @@ magnetic field \(\mathrm{\mathbf{B}}\) that it produces.}
 \end{figure}%
 
 Magnetic field lines always form closed loops whereas electric field
-lines begin and end on charges. This means that a version of Gauss' Law
-for magnetism states . As field lines are closed all field lines
-entering a closed surface must leave it as well. So net magnetic flux
-through the surface is zero.
+lines begin and end on charges. As magnetic field lines are closed
+loops, all field lines entering a closed surface must leave it as well -
+therefore the net magnetic flux through any surface is zero.
 
 \subsection{The Lorentz Force Law}\label{the-lorentz-force-law}
 
@@ -1301,7 +1309,7 @@ field and the two fields interact, producing a force.
 The magnetic force on a moving charge is given by
 
 \[
-\mathrm{\mathbf{F}}_B = q(\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}})
+\mathrm{\mathbf{F}}_B = q(\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) {#eq-lorentz}
 \]
 
 The term \(\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}\) represents
@@ -1330,7 +1338,9 @@ a magnetic field \(\mathrm{\mathbf{B}}\) is given by:
 \]
 
 The Lorentz force law is responsible for the circular motion of charged
-particles in magnetic fields, as represented in the figure below.
+particles in magnetic fields, as represented in the figure below:
+
+\includegraphics[width=5.20833in,height=\textheight]{Figures/lorentz_motion.png}
 
 The centripetal force required for circular motion is supplied by the
 magnetic force. This principle is used in cyclotrons and other particle
@@ -1341,22 +1351,113 @@ development of a transverse electric field in a solid material when it
 carries an electric current and is placed in a magnetic field that is
 perpendicular to the current.
 
-\section{Post-lecture problem}\label{post-lecture-problem}
+\section{Magnetic field of currents}\label{magnetic-field-of-currents}
 
-In the lecture we sketched the trajectory of the particle in Griffiths
-Example 5.2 at a starting velocity of
-\((E/B) \hat{\mathrm{\mathbf{y}}}\). We found that the particle travels
-in a straight line at a constant speed.
+As we mentioned earlier, currents are moving charges and therefore they
+also experience a force in the prescence of a magnetic field. We can use
+the Lorentz force law to work out what this force will be. Here we
+consider a current as a moving line charge with velocity
+\(\mathrm{\mathbf{v}}\) and linear charge density \(\lambda\). The
+current in the wire is given by \(I = \lambda \mathrm{\mathbf{v}}\) -
+you should be able to see upon inspection that this makes sense
+dimensionally, but check out Griffiths 5.1.3 for a more detailed
+derivation. If we think of the current as being made up of infinitesimal
+charges \(\mathrm{d} q\), integrating to sum all of these across the
+length of the wire would give the total charge in the wire. Hence, by
+analogy to \textbf{?@eq-lorentz}, the force on the wire would be
 
-\textbf{Q:} Find and sketch the trajectory of the particle in Example
-5.2, if it starts at the origin with velocity: (a)
-\((E/2B) \hat{\mathrm{\mathbf{y}}}\) (b)
+\begin{equation}\phantomsection\label{eq-currentforce}{ \mathrm{\mathbf{F}}_{mag} = \int (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \mathrm{d} q }\end{equation}
+
+We can express \(\mathrm{d}q\) as \(\lambda \mathrm{d} l\), hence the
+magnetic force becomes
+
+\begin{equation}\phantomsection\label{eq-currentforce2}{ \ begin{split} 
+\mathrm{\mathbf{F}}_{mag} &= \int (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \lambda \mathrm{d} l \\
+&= \int (\mathrm{\mathbf{I}}\times \mathrm{\mathbf{B}}) \mathrm{d} l 
+\end{split}
+}\end{equation}
+
+\(\mathrm{\mathbf{I}}\) and \(\mathrm{d} \mathrm{\mathbf{l}}\) point in
+the same direction, therefore it is valid to express
+Equation~\ref{eq-currentforce2} as
+
+\begin{equation}\phantomsection\label{eq-currentforce3}{ \mathrm{\mathbf{F}}_{mag} &= \int I (\mathrm{d} \mathrm{\mathbf{l}}\times \mathrm{\mathbf{B}}) }\end{equation}
+
+Equation~\ref{eq-currentforce3} is the generally accepted way to express
+the magnetic force on a segment of current-carrying wire, and will be
+used in this form in this course. However,
+Equation~\ref{eq-currentforce3} models a current-carrying wire as a
+1-dimensional line charge, which of course in reality it is not. If we
+want to be more realistic and calculate the magnetic force on a volume
+current (so, considering the current in a 3-dimensional wire) the
+magnetic force is
+
+\begin{equation}\phantomsection\label{eq-currentforceVol}{ \mathrm{\mathbf{F}}_{mag} &= \int (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \rho \mathrm{d}\tau = \int (\J \times \mathrm{\mathbf{B}}) \mathrm{d}\tau }\end{equation}
+
+where \(\mathrm{d}\tau\) is the volume element, \(\rho\) is the volume
+charge density and \(\J = \rho \mathrm{\mathbf{v}}\) is the volume
+current density. The volume current density is defined as the current
+per unit area for the area perpendicular to the current flow
+(essentially the cross-sectional area of the wire). Once again,
+Griffiths 5.1.3 is worth reading if you want a more detailed derivation.
+
+\section{Problems}\label{problems-3}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  In the lecture we sketched and calculated the trajectory of the
+  particle in Griffiths Example 5.2, in the case where the particle was
+  released from the origin at zero velocity (see the lecture slides on
+  Blackboard if you were not in attendance).
+\end{enumerate}
+
+Find and sketch the trajectory of the particle in Example 5.2, if it
+starts at the origin with velocity: (a)
+\((E/B) \hat{\mathrm{\mathbf{y}}}\) (b)
+\((E/2B) \hat{\mathrm{\mathbf{y}}}\) (c)
 \((E/B) (\hat{\mathrm{\mathbf{y}}} + \hat{\mathrm{\mathbf{z}}}\))
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  (\emph{Griffiths Problem 5.3})
+\end{enumerate}
+
+In 1897, J. J. Thomson ``discovered'' the electron by measuring the
+charge-to-mass ratio of ``cathode rays'' (actually, streams of
+electrons, with charge \(q\) and mass \(m\)) as follows:
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\item
+  First he passed the beam through uniform crossed electric and magnetic
+  fields \(\mathrm{\mathbf{E}}\) and \(\mathrm{\mathbf{B}}\) (mutually
+  perpendicular, and both of them perpendicular to the beam), and
+  adjusted the electric field until he got zero deflection. What was the
+  speed of the particles in terms of \(E\) and \(B\) when he reached
+  zero deflection?
+\item
+  Then he turned off the electric field, and measured the radius of
+  curvature, \(R\), of the beam, as deflected by the magnetic field
+  alone. In terms of \(E\), \(B\), and \(R\), what is the charge-to-mass
+  ratio (\(q/m\)) of the particles?
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  A problem related to force on current-carrying wires?
+\end{enumerate}
 
 \bookmarksetup{startatroot}
 
-\chapter{The Biot-Savart Law - Magnetic Fields of
-Currents}\label{the-biot-savart-law---magnetic-fields-of-currents}
+\chapter{The Biot-Savart Law}\label{the-biot-savart-law}
 
 \newcommand{\l}{\mathrm{\mathbf{l}}}
 \newcommand{\E}{\mathrm{\mathbf{E}}}
@@ -1369,8 +1470,45 @@ Currents}\label{the-biot-savart-law---magnetic-fields-of-currents}
 
 \emph{Recommended reading}: Griffiths Section 5.2
 
-\emph{A problem to try before attending the lecture}: Force Q, inspired
-by p217.
+\section{Pre-lecture problem}\label{pre-lecture-problem-3}
+
+Find the magnitude of the attractive force between two long, parallel
+wires which are a distance \(d\) apart, carrying currents \(I_1\) and
+\(I_2\).
+
+We saw in the last lecture that a current-carrying wire experiences a
+magnetic force when in the prescence of an applied magnetic field, and
+we found an expression for the magnetic force on a segment of
+current-carrying wire. Ultimately, current-carrying wires experience
+this force because they produce their own magnetic field which interacts
+with the applied magnetic field. The Biot-Savart Law is a formula for
+the magnetic field of a steady line current. Note that we are once again
+thinking about \emph{line} currents, so we are modelling our currents as
+1-dimensional.
+
+\textbf{An aside on ``steady currents'':} The Biot-Savart Law only
+applies to so-called ``steady currents''. A steady current is defined as
+a continuous flow of charge that goes on forever, without changing and
+without charge piling up anywhere. In reality, there is no such current,
+but for the purposes of this course we can model current-carrying wires
+as carrying steady currents. If the current wasn't a steady current, the
+magnetic field produced by the current would be varying as a function of
+time, and we would no longer be in the realm of magnetostatics, which
+deals in static (non-time varying) magnetic fields.
+
+The Biot-Savart Law takes the following form:
+
+\[\mathrm{\mathbf{B}}(\mathrm{\mathbf{r}}) = \frac{\mu_0}{4\pi} \int \frac{\mathrm{\mathbf{I}}\times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \mathrm{d}l' =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \]
+
+In your previous studies you may have come across the formula for the
+magnetic field at a distance from a current-carrying wire. We are now
+going to derive this using the Biot-Savart law.
+
+\section{}\label{section}
+
+Now we will use the Biot-Savart Law to find the
+
+\section{Problem Set}\label{problem-set}
 
 \bookmarksetup{startatroot}
 
@@ -1542,7 +1680,7 @@ Mosca\ldots{}
 
 \bookmarksetup{startatroot}
 
-\chapter{}\label{section}
+\chapter{}\label{section-1}
 
 \newcommand{\l}{\mathrm{\mathbf{l}}}
 \newcommand{\E}{\mathrm{\mathbf{E}}}

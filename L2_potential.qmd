@@ -135,7 +135,7 @@ ADD COMMENT HERE
 ## Summary
 Electric potential is a crucial concept in electrostatics, simplifying the analysis of electric fields and the work done by (or on) charges. It is ~intimately related~?? to the electric field and provides a scalar measure of potential energy per unit charge. Understanding electric potential is essential for solving a wide range of problems in electrostatics.
 
-## Problem Set
+## Problems
 
 1) Consider a uniformly charges solid sphere of radius $R$ and total charge $q$. The electric field for this sphere is given by: 
 

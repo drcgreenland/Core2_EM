@@ -7,11 +7,31 @@
 \newcommand{\y}{\mathrm{\mathbf{y}}}
 \newcommand{\z}{\mathrm{\mathbf{z}}}
 
-# The Biot-Savart Law - Magnetic Fields of Currents
+# The Biot-Savart Law
 
 *Recommended reading*: Griffiths Section 5.2
 
-*A problem to try before attending the lecture*: 
-Force Q, inspired by p217.
+## Pre-lecture problem 
 
+Find the magnitude of the attractive force between two long, parallel wires which are a distance $d$ apart, carrying currents $I_1$ and $I_2$. 
+
+We saw in the last lecture that a  current-carrying wire experiences a magnetic force when in the prescence of an applied magnetic field, and we found an expression for the magnetic force on a segment of current-carrying wire. Ultimately, current-carrying wires experience this force because they produce their own magnetic field which interacts with the applied magnetic field. The Biot-Savart Law is a formula for the magnetic field of a steady line current. Note that we are once again thinking about *line* currents, so we are modelling our currents as 1-dimensional.  
+
+**An aside on "steady currents":**
+The Biot-Savart Law only applies to so-called "steady currents". A steady current is defined as a continuous flow of charge that goes on forever, without changing and without charge piling up anywhere. In reality, there is no such current, but for the purposes of this course we can model current-carrying wires as carrying steady currents. If the current wasn't a steady current, the magnetic field produced by the current would be varying as a function of time, and we would no longer be in the realm of magnetostatics, which deals in static (non-time varying) magnetic fields. 
+
+The Biot-Savart Law takes the following form:
+
+$$\B(\r) = \frac{\mu_0}{4\pi} \int \frac{\I \times \hat{\r_s} }{\r_s^2} \mathrm{d}l' =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \l' \times \hat{\r_s} }{\r_s^2} $$
+
+In your previous studies you may have come across the formula for the magnetic field at a distance from a current-carrying wire. We are now going to derive this using the Biot-Savart law. 
+
+<!--
+Insert Example 5.5! 
+-->
+
+## 
+Now we will use the Biot-Savart Law to find the 
+
+## Problem Set
 
