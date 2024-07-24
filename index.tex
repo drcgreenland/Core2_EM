@@ -197,10 +197,19 @@
 \newcommand{\E}{\mathrm{\mathbf{E}}}
 \newcommand{\F}{\mathrm{\mathbf{F}}}
 \newcommand{\r}{\mathrm{\mathbf{r}}}
-
+\newcommand{\B}{\mathrm{\mathbf{B}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
 \newcommand{\x}{\mathrm{\mathbf{x}}}
 \newcommand{\y}{\mathrm{\mathbf{y}}}
 \newcommand{\z}{\mathrm{\mathbf{z}}}
+\newcommand{\v}{\mathrm{\mathbf{v}}}
+\newcommand{\p}{\mathrm{\mathbf{p}}}
+\newcommand{\d}{\mathrm{\mathbf{d}}}
+
+\newcommand{\a}{\mathrm{\mathbf{a}}}
+\newcommand{\b}{\mathrm{\mathbf{b}}}
+\newcommand{\I}{\mathrm{\mathbf{I}}}
+\newcommand{\dd}{\mathrm{d}}
 
 This is a Quarto book.
 
@@ -214,15 +223,6 @@ Put a nice introduction here introducing the subject of electromagnetism
 
 \chapter{Electrostatics - Charges, Forces \&
 Fields}\label{electrostatics---charges-forces-fields}
-
-\newcommand{\l}{\mathrm{\mathbf{l}}}
-\newcommand{\E}{\mathrm{\mathbf{E}}}
-\newcommand{\F}{\mathrm{\mathbf{F}}}
-\newcommand{\r}{\mathrm{\mathbf{r}}}
-
-\newcommand{\x}{\mathrm{\mathbf{x}}}
-\newcommand{\y}{\mathrm{\mathbf{y}}}
-\newcommand{\z}{\mathrm{\mathbf{z}}}
 
 \emph{Recommended reading}: Griffiths Section 2.1 (and 2.2 if you want
 some bonus reading about stuff that will be important later)
@@ -592,21 +592,21 @@ for different ranges of \(z\)-values.{]}
 
 \includegraphics[width=1.04167in,height=\textheight]{Figures/L1_prob4.png}
 
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Find the electric field at a distance \(z\) above the midpoint of a
+  uniform line charge, of length \(2L\) and charge density \(\lambda\)
+  (see figure below).
+\end{enumerate}
+
+\includegraphics[width=2.08333in,height=\textheight]{Figures/L2_prob3.pdf}
+
 \bookmarksetup{startatroot}
 
 \chapter{Electric Potential}\label{electric-potential}
-
-\newcommand{\l}{\mathrm{\mathbf{l}}}
-\newcommand{\E}{\mathrm{\mathbf{E}}}
-\newcommand{\F}{\mathrm{\mathbf{F}}}
-\newcommand{\r}{\mathrm{\mathbf{r}}}
-
-\newcommand{\x}{\mathrm{\mathbf{x}}}
-\newcommand{\y}{\mathrm{\mathbf{y}}}
-\newcommand{\z}{\mathrm{\mathbf{z}}}
-
-\newcommand{\a}{\mathrm{\mathbf{a}}}
-\newcommand{\b}{\mathrm{\mathbf{b}}}
 
 \emph{Recommended reading}: Griffiths Section 2.3
 
@@ -822,58 +822,32 @@ of problems in electrostatics.
   In the worked example for Lecture 1 (see the lecture slides on
   Blackboard if you were not in attendance) we calculated the electric
   field a distance \(z\) above the midpoint between two equal charges
-  \(q\) that are a distance \(d\) apart. Now find the electric potential
-  at a distance \(z\) for these two charges.
+  \(q\) that are a distance \(d\) apart. Use the solution found there to
+  find the electric potential at a distance \(z\) above the midpoint
+  between the two charges.
 \end{enumerate}
-
-Check your answer by computing \(\mathrm{\mathbf{E}}= -\nabla V\).
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
 \setcounter{enumi}{2}
 \tightlist
 \item
-  \begin{enumerate}
-  \def\labelenumii{(\alph{enumii})}
-  \tightlist
-  \item
-    Find the electric field at a distance \(z\) above the midpoint of a
-    uniform line charge, of length \(2L\) and charge density \(\lambda\)
-    (see figure below).
-  \end{enumerate}
+  Find the potential at distance \(z\) above the midpoint of the line
+  charge shown in the figure below. \(\lambda\) is its line charge
+  density.
+  \includegraphics[width=2.08333in,height=\textheight]{Figures/L2_prob3.pdf}
 \end{enumerate}
 
-\includegraphics[width=2.08333in,height=\textheight]{Figures/L2_prob3.pdf}
-
-\begin{enumerate}
-\def\labelenumi{(\alph{enumi})}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  Now find the potential at distance \(z\) above the midpoint of the
-  line charge.
-\end{enumerate}
-
-Check your answer by computing \(\mathrm{\mathbf{E}}= -\nabla V\).
+\textbf{Hint:} You may be tempted to use your result from Q5 of the
+Lecture 1 problems, however it is easier to directly calulate the
+potential here, by splitting up the line into infinitesimals segments
+and summing over the potentials from all segments, working from the
+formula for potential of a point charge.
 
 \bookmarksetup{startatroot}
 
 \chapter{Work and Energy in
 Electrostatics}\label{work-and-energy-in-electrostatics}
-
-\newcommand{\l}{\mathrm{\mathbf{l}}}
-\newcommand{\E}{\mathrm{\mathbf{E}}}
-\newcommand{\F}{\mathrm{\mathbf{F}}}
-\newcommand{\r}{\mathrm{\mathbf{r}}}
-
-\newcommand{\x}{\mathrm{\mathbf{x}}}
-\newcommand{\y}{\mathrm{\mathbf{y}}}
-\newcommand{\z}{\mathrm{\mathbf{z}}}
-\newcommand{\p}{\mathrm{\mathbf{p}}}
-\newcommand{\d}{\mathrm{\mathbf{d}}}
-
-\newcommand{\a}{\mathrm{\mathbf{a}}}
-\newcommand{\b}{\mathrm{\mathbf{b}}}
 
 \emph{Recommended reading}: Griffiths Section 2.4
 
@@ -1142,8 +1116,7 @@ with the field, at which point the torque will be zero.
 
 In the lecture, we calculated the amount of work it takes to bring in a
 4th charge \(+q\) from far away and place it in the 4th corner of the
-square. If you were not in attendance, see the lecture slides on
-Blackboard.
+square.
 
 Calculate the total work it takes to assemble all 4 charges into the
 square configuration.
@@ -1153,8 +1126,9 @@ square configuration.
 \setcounter{enumi}{1}
 \tightlist
 \item
-  Find the energy stored in the uniformly charged solid sphere of radius
-  \(R\) and charge \(q\). Do it 3 different ways:
+  (\emph{Griffiths Problem 2.35}) Find the energy stored in the
+  uniformly charged solid sphere of radius \(R\) and charge \(q\). Do it
+  3 different ways:
 \end{enumerate}
 
 \begin{enumerate}
@@ -1178,21 +1152,6 @@ square configuration.
 
 \chapter{Magnetic Fields and the Lorentz Force
 Law}\label{magnetic-fields-and-the-lorentz-force-law}
-
-\newcommand{\l}{\mathrm{\mathbf{l}}}
-\newcommand{\E}{\mathrm{\mathbf{E}}}
-\newcommand{\F}{\mathrm{\mathbf{F}}}
-\newcommand{\r}{\mathrm{\mathbf{r}}}
-\newcommand{\B}{\mathrm{\mathbf{B}}}
-\newcommand{\x}{\mathrm{\mathbf{x}}}
-\newcommand{\y}{\mathrm{\mathbf{y}}}
-\newcommand{\z}{\mathrm{\mathbf{z}}}
-\newcommand{\v}{\mathrm{\mathbf{v}}}
-
-\newcommand{\a}{\mathrm{\mathbf{a}}}
-\newcommand{\b}{\mathrm{\mathbf{b}}}
-\newcommand{\I}{\mathrm{\mathbf{I}}}
-\newcommand{\l}{\mathrm{\mathbf{l}}}
 
 \emph{Recommended reading}: Griffiths Section 5.1
 
@@ -1385,6 +1344,9 @@ per unit area for the area perpendicular to the current flow
 (essentially the cross-sectional area of the wire). Once again,
 Griffiths 5.1.3 is worth reading if you want a more detailed derivation.
 
+\section{Work done by magnetic
+fields?}\label{work-done-by-magnetic-fields}
+
 \section{Practice problems}\label{practice-problems-3}
 
 \begin{enumerate}
@@ -1431,27 +1393,9 @@ electrons, with charge \(q\) and mass \(m\)) as follows:
   ratio (\(q/m\)) of the particles?
 \end{enumerate}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  A problem related to force on current-carrying wires?
-\end{enumerate}
-
 \bookmarksetup{startatroot}
 
 \chapter{The Biot-Savart Law}\label{the-biot-savart-law}
-
-\newcommand{\l}{\mathrm{\mathbf{l}}}
-\newcommand{\E}{\mathrm{\mathbf{E}}}
-\newcommand{\F}{\mathrm{\mathbf{F}}}
-\newcommand{\r}{\mathrm{\mathbf{r}}}
-
-\newcommand{\x}{\mathrm{\mathbf{x}}}
-\newcommand{\y}{\mathrm{\mathbf{y}}}
-\newcommand{\z}{\mathrm{\mathbf{z}}}
-\newcommand{\dd}{\mathrm{d}}
 
 \emph{Recommended reading}: Griffiths Section 5.2
 
@@ -1589,15 +1533,6 @@ what you have learned in this lecture.
 
 \chapter{Magnetic Vector Potential}\label{magnetic-vector-potential}
 
-\newcommand{\l}{\mathrm{\mathbf{l}}}
-\newcommand{\E}{\mathrm{\mathbf{E}}}
-\newcommand{\F}{\mathrm{\mathbf{F}}}
-\newcommand{\r}{\mathrm{\mathbf{r}}}
-
-\newcommand{\x}{\mathrm{\mathbf{x}}}
-\newcommand{\y}{\mathrm{\mathbf{y}}}
-\newcommand{\z}{\mathrm{\mathbf{z}}}
-
 \emph{Recommended reading}: Griffiths Section 5.4
 
 \emph{A problem to try before attending the lecture}: Griffiths Problem
@@ -1608,15 +1543,6 @@ what you have learned in this lecture.
 \bookmarksetup{startatroot}
 
 \chapter{Gauss's Law}\label{gausss-law}
-
-\newcommand{\l}{\mathrm{\mathbf{l}}}
-\newcommand{\E}{\mathrm{\mathbf{E}}}
-\newcommand{\F}{\mathrm{\mathbf{F}}}
-\newcommand{\r}{\mathrm{\mathbf{r}}}
-
-\newcommand{\x}{\mathrm{\mathbf{x}}}
-\newcommand{\y}{\mathrm{\mathbf{y}}}
-\newcommand{\z}{\mathrm{\mathbf{z}}}
 
 \emph{Recommended reading}: Griffiths Section 2.2
 

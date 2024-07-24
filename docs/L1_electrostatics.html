@@ -325,31 +325,31 @@ subatomic particles i.e. to length scales of $\sim 10^{-15}$ m.
 </figure>
 </div>
 <p>We define the charges <span class="math inline">\(q_1\)</span>, <span class="math inline">\(q_2\)</span>, <span class="math inline">\(q_3\)</span>… <span class="math inline">\(q_i\)</span> as source charges, meaning that these are the charges that produce the electric field for the purpose of the problem. We define <span class="math inline">\(Q\)</span> as the test charge, which means it is the charge that is experiencing the effects of the electric field produced by the source charge(s). It is important to note that any charge can be a source or a test charge, there is no fundamental difference between them. “Source” and “test” are simply names that we give charges when setting up a problem, so that we can more easily define and solve the problem.</p>
-<p>Throughout this course you will also see the terms “source point” and “field point”. The source point is the location of the source charge(s), while the field point is essentially the location of the test charge - so when we are solving problems, this is the point at which we are measuring the field, potential, etc. The source point is given by the vector <span class="math inline">\(\mathrm{\mathbf{r}}'\)</span> and the field point is given by the vector <span class="math inline">\(\mathrm{\mathbf{r}}\)</span>, while the separation between the two point is given by the vector <span class="math inline">\(r_s\)</span>. (Please note that the Griffiths uses slightly different notation - for the separation vector it uses a curly script “r”, I did not use this as there is no way of making that symbol in Latex.) If there is no test charge in the problem (for example if we are computing the electric field of a source charge), the field point is the point at which we are measuring the field - it is the point where a test charge would be if there was one.</p>
+<p>Throughout this course you will also see the terms “source point” and “field point”. The source point is the location of the source charge(s), while the field point is essentially the location of the test charge - so when we are solving problems, this is the point at which we are measuring the field, potential, etc. The source point is given by the vector <span class="math inline">\(\r'\)</span> and the field point is given by the vector <span class="math inline">\(\r\)</span>, while the separation between the two point is given by the vector <span class="math inline">\(r_s\)</span>. (Please note that the Griffiths uses slightly different notation - for the separation vector it uses a curly script “r”, I did not use this as there is no way of making that symbol in Latex.) If there is no test charge in the problem (for example if we are computing the electric field of a source charge), the field point is the point at which we are measuring the field - it is the point where a test charge would be if there was one.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Figures/axes_r_definitions.png" class="img-fluid figure-img"></p>
-<figcaption>Some charges, overlaid with axes showing the definition of <span class="math inline">\(\mathrm{\mathbf{r}}\)</span>, the vector separation between the source and test charges.</figcaption>
+<figcaption>Some charges, overlaid with axes showing the definition of <span class="math inline">\(\r\)</span>, the vector separation between the source and test charges.</figcaption>
 </figure>
 </div>
 </section>
 <section id="electric-forces-coulombs-law" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="electric-forces-coulombs-law"><span class="header-section-number">1.4</span> Electric Forces &amp; Coulomb’s Law</h2>
 <p>All charges produce electric fields, and other charges that are in the prescence of this field experience a force as a result.</p>
-<p>The force on a test charge <span class="math inline">\(Q\)</span>, exerted by a source charge <span class="math inline">\(q\)</span>, is given by Coulomb’s Law, which is as follows: <span class="math display">\[ F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r_s^2} \hat{\mathrm{\mathbf{r}}_s} \]</span></p>
+<p>The force on a test charge <span class="math inline">\(Q\)</span>, exerted by a source charge <span class="math inline">\(q\)</span>, is given by Coulomb’s Law, which is as follows: <span class="math display">\[ F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r_s^2} \hat{\r_s} \]</span></p>
 <p>where:</p>
 <ul>
-<li><span class="math inline">\(\hat{\mathrm{\mathbf{r}}}\)</span> is the unit vector in the direction of the force, which points from <span class="math inline">\(q\)</span> to <span class="math inline">\(Q\)</span>.</li>
+<li><span class="math inline">\(\hat{\r}\)</span> is the unit vector in the direction of the force, which points from <span class="math inline">\(q\)</span> to <span class="math inline">\(Q\)</span>.</li>
 <li><span class="math inline">\(r\)</span> is the separation between <span class="math inline">\(q\)</span> and <span class="math inline">\(Q\)</span>.</li>
 <li><span class="math inline">\(\epsilon_0\)</span> is a physical constant known as the </li>
 </ul>
-<p>If <span class="math inline">\(q\)</span> and <span class="math inline">\(Q\)</span> have the same sign (like charges) the force is repulsive (<span class="math inline">\(\mathrm{\mathbf{F}}\)</span> is a positive quantity); if <span class="math inline">\(q\)</span> and <span class="math inline">\(Q\)</span> have different signs, the force is attractive (<span class="math inline">\(\mathrm{\mathbf{F}}\)</span> is a negative quantity).</p>
+<p>If <span class="math inline">\(q\)</span> and <span class="math inline">\(Q\)</span> have the same sign (like charges) the force is repulsive (<span class="math inline">\(\F\)</span> is a positive quantity); if <span class="math inline">\(q\)</span> and <span class="math inline">\(Q\)</span> have different signs, the force is attractive (<span class="math inline">\(\F\)</span> is a negative quantity).</p>
 </section>
 <section id="electric-field" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="electric-field"><span class="header-section-number">1.5</span> Electric Field</h2>
-<p>The electric field <span class="math inline">\(\mathrm{\mathbf{E}}\)</span> produced by a charge (or charged object/charge distribution) is a vector field that represents the force per unit charge experienced by a positive test charge placed at a particular point in space:</p>
-<p><span class="math display">\[ \mathrm{\mathbf{E}}= \frac{\mathrm{\mathbf{F}}}{Q} \]</span></p>
-<p>which can be rearranged to the more familiar form <span class="math inline">\(\mathrm{\mathbf{F}}= Q \mathrm{\mathbf{E}}\)</span>.</p>
+<p>The electric field <span class="math inline">\(\E\)</span> produced by a charge (or charged object/charge distribution) is a vector field that represents the force per unit charge experienced by a positive test charge placed at a particular point in space:</p>
+<p><span class="math display">\[ \E = \frac{\F}{Q} \]</span></p>
+<p>which can be rearranged to the more familiar form <span class="math inline">\(\F = Q \E\)</span>.</p>
 <p><span class="math inline">\(\mathbf{E}\)</span> has units of Vm<span class="math inline">\(^{-1}\)</span> or NC<span class="math inline">\(^{-1}\)</span>.</p>
 <p>The electric field is normally represented by field lines that indicate the direction of the field. The direction of the field is determined by what a positive test charge will do. That’s why field lines point towards negative charges - that’s the direction a positive charge would travel if it encountered the field of a negative charge. The density of lines/arrows indicates the strength of the field at a point. You may also see fields drawn where the size of the arrows represents the electric field strength. The diagram below shows the electric field lines for two positive point charges of the same magnitude.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -368,8 +368,8 @@ subatomic particles i.e. to length scales of $\sim 10^{-15}$ m.
 <section id="superposition-principle" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="superposition-principle"><span class="header-section-number">1.6</span> Superposition Principle</h2>
 <p>The principle of superposition states that “the interaction between any two charges is completely unaffected by the presence of others”. This means that the total force on a test charge can be computed by calculating the force on the test charge due to each source charge separately, then adding up the contributions, as follows:</p>
-<p><span class="math display">\[ \mathrm{\mathbf{F}}_{tot} = \sum_i \mathrm{\mathbf{F}}_i \]</span></p>
-<p>The same applies to the electric field, which can be calculated for any given point in space as a sum of the electric field at that point from all the source charges: <span class="math display">\[ \mathrm{\mathbf{E}}_{tot} = \sum_i \mathrm{\mathbf{E}}_i \]</span></p>
+<p><span class="math display">\[ \F_{tot} = \sum_i \F_i \]</span></p>
+<p>The same applies to the electric field, which can be calculated for any given point in space as a sum of the electric field at that point from all the source charges: <span class="math display">\[ \E_{tot} = \sum_i \E_i \]</span></p>
 </section>
 <section id="continuous-charge-distributions" class="level2" data-number="1.7">
 <h2 data-number="1.7" class="anchored" data-anchor-id="continuous-charge-distributions"><span class="header-section-number">1.7</span> Continuous charge distributions</h2>
@@ -451,6 +451,10 @@ Copy what you have from your PHY1002 notes!
 <li>(<em>Griffiths Problem 2.6</em>) Find the electric field a distance <span class="math inline">\(z\)</span> above the center of a flat circular disk of radius <span class="math inline">\(R\)</span> (see figure below) that carries a uniform surface charge <span class="math inline">\(\sigma\)</span>. What does your formula give in the limit <span class="math inline">\(R \rightarrow \infty\)</span>? Also check the case <span class="math inline">\(z &gt;&gt; R\)</span>.</li>
 </ol>
 <p><img src="Figures/L1_prob4.png" class="img-fluid" width="100"></p>
+<ol start="5" type="1">
+<li>Find the electric field at a distance <span class="math inline">\(z\)</span> above the midpoint of a uniform line charge, of length <span class="math inline">\(2L\)</span> and charge density <span class="math inline">\(\lambda\)</span> (see figure below).</li>
+</ol>
+<p><img src="Figures/L2_prob3.png" class="img-fluid" width="200"></p>
 
 
 </section>

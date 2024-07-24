@@ -1,14 +1,4 @@
-\newcommand{\l}{\mathrm{\mathbf{l}}}
-\newcommand{\E}{\mathrm{\mathbf{E}}}
-\newcommand{\F}{\mathrm{\mathbf{F}}}
-\newcommand{\r}{\mathrm{\mathbf{r}}}
 
-\newcommand{\x}{\mathrm{\mathbf{x}}}
-\newcommand{\y}{\mathrm{\mathbf{y}}}
-\newcommand{\z}{\mathrm{\mathbf{z}}}
-
-\newcommand{\a}{\mathrm{\mathbf{a}}}
-\newcommand{\b}{\mathrm{\mathbf{b}}}
 
 
 <!--
@@ -167,7 +157,7 @@ this problem is an adapted version of Griffiths 3E problem 2.25(a)
 ![](Figures/L2_prob3){width=200}
 
 **Hint:** You may be tempted to use your result from Q5 of the Lecture 1 problems, however it is easier to directly calulate the potential here, by splitting up the line into infinitesimals segments and summing over the potentials from all segments, working from the formula for potential of a point charge. 
- 
+
 <!--
 ???  
 this problem is an adapted version of Griffiths 3E problem 2.25(b)

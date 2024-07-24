@@ -1,16 +1,3 @@
-\newcommand{\l}{\mathrm{\mathbf{l}}}
-\newcommand{\E}{\mathrm{\mathbf{E}}}
-\newcommand{\F}{\mathrm{\mathbf{F}}}
-\newcommand{\r}{\mathrm{\mathbf{r}}}
-
-\newcommand{\x}{\mathrm{\mathbf{x}}}
-\newcommand{\y}{\mathrm{\mathbf{y}}}
-\newcommand{\z}{\mathrm{\mathbf{z}}}
-\newcommand{\p}{\mathrm{\mathbf{p}}}
-\newcommand{\d}{\mathrm{\mathbf{d}}}
-
-\newcommand{\a}{\mathrm{\mathbf{a}}}
-\newcommand{\b}{\mathrm{\mathbf{b}}}
 
 <!--
 This section needs editing:
@@ -192,11 +179,17 @@ Use this problem set to guide the content of the lecture notes/lecture!
 ![](Figures/L3_3charges.png){width=200}
 
 
-In the lecture, we calculated the amount of work it takes to bring in a 4th charge $+q$ from far away and place it in the 4th corner of the square. If you were not in attendance, see the lecture slides on Blackboard.
+In the lecture, we calculated the amount of work it takes to bring in a 4th charge $+q$ from far away and place it in the 4th corner of the square. 
 
 Calculate the total work it takes to assemble all 4 charges into the square configuration.  
 
-2) Find the energy stored in the uniformly charged solid sphere of radius $R$ and charge $q$. Do it 3 different ways:
+<!--
+Q1 is Prob 2.31(b) from 3Ed Griffiths, it's 2.32 in the 5Ed Griffiths.
+Q2 is Problem 2.35 from 5Ed. 
+-->
+
+2) (*Griffiths Problem 2.35*)
+Find the energy stored in the uniformly charged solid sphere of radius $R$ and charge $q$. Do it 3 different ways:
 (a) Use the equation $ W = \frac{1}{2} \int \rho V \mathrm{d} \tau $. You found the potential in Q1 of the Lecture 1 Problem Set. 
 
 (b) Use the equation $ W = \frac{\epilon_0}{2} \int_{\mathrm{all space}} E^2 \mathrm{d} \tau $. The electric field is given in Q1 of the Lecture 1 Problem Set. 

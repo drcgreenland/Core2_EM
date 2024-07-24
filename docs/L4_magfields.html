@@ -259,7 +259,8 @@ window.Quarto = {
   <li><a href="#the-lorentz-force-law" id="toc-the-lorentz-force-law" class="nav-link" data-scroll-target="#the-lorentz-force-law"><span class="header-section-number">4.2.1</span> The Lorentz Force Law</a></li>
   </ul></li>
   <li><a href="#magnetic-field-of-currents" id="toc-magnetic-field-of-currents" class="nav-link" data-scroll-target="#magnetic-field-of-currents"><span class="header-section-number">4.3</span> Magnetic field of currents</a></li>
-  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems"><span class="header-section-number">4.4</span> Practice problems</a></li>
+  <li><a href="#work-done-by-magnetic-fields" id="toc-work-done-by-magnetic-fields" class="nav-link" data-scroll-target="#work-done-by-magnetic-fields"><span class="header-section-number">4.4</span> Work done by magnetic fields?</a></li>
+  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems"><span class="header-section-number">4.5</span> Practice problems</a></li>
   </ul>
 </nav>
     </div>
@@ -290,7 +291,7 @@ window.Quarto = {
 <h2 data-number="4.1" class="anchored" data-anchor-id="pre-lecture-problem"><span class="header-section-number">4.1</span> Pre-lecture problem</h2>
 <p>(Griffiths, Problem 5.1)</p>
 <p>This problem should help you revise some magnetism concepts from your A-level course.</p>
-<p>A particle of charge <span class="math inline">\(q\)</span> enters a region of uniform magnetic field <span class="math inline">\(\mathrm{\mathbf{B}}\)</span> (pointing <em>into</em> the page). The field deflects the particle a distance <span class="math inline">\(d\)</span> above the original line of flight, as shown in the diagram below.</p>
+<p>A particle of charge <span class="math inline">\(q\)</span> enters a region of uniform magnetic field <span class="math inline">\(\B\)</span> (pointing <em>into</em> the page). The field deflects the particle a distance <span class="math inline">\(d\)</span> above the original line of flight, as shown in the diagram below.</p>
 <p><img src="Figures/L4_preprob.png" class="img-fluid" width="200"></p>
 <ol type="a">
 <li><p>Is the charge positive or negative?</p></li>
@@ -301,14 +302,14 @@ window.Quarto = {
 <h2 data-number="4.2" class="anchored" data-anchor-id="magnetic-fields"><span class="header-section-number">4.2</span> Magnetic Fields</h2>
 <p>In electrostatics, we discussed electric charges as interacting via the electric field. An electric field surrounds a charge, and when a second charge is brought near to the first it interacts with the field, experiencing a force. The electric field diverges from charges - all charges are either a source or a sink for the electric field.</p>
 <p>However, the magnetic field does not work in the same way. We cannot think of “magnetic charges” interacting via the magnetic field, because magnetic charges have not been found to exist - there is no evidence for single North or South poles. Searches have been made for magnetic monopoles, but without any success, although their existence has not been entirely ruled out. (This is beyond our syllabus but if you are interested you could try looking at <a href="https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0328">this paper</a>.)</p>
-<p>Magnetic fields, denoted by <span class="math inline">\(\mathrm{\mathbf{B}}\)</span>, are vector fields that are produced by moving electric charges, for example electric currents. The direction of the magnetic field at a given point in space is the direction in which the north end of a compass needle would point when placed at that point.</p>
+<p>Magnetic fields, denoted by <span class="math inline">\(\B\)</span>, are vector fields that are produced by moving electric charges, for example electric currents. The direction of the magnetic field at a given point in space is the direction in which the north end of a compass needle would point when placed at that point.</p>
 <p>There are some important differences between the behaviour of charges in electric and magnetic fields. In electric fields, the force on a charge is parallel to the field lines – a positive charge moves along the field lines in the direction indicated. In magnetic fields, the force on a moving charge is perpendicular to the field lines.</p>
 <p>As with the electric field, the magnetic field can be represented using field lines and the density of field lines represents the strength of the field. The direction of the magnetic field at a given point in space is defined as the direction in which a compass needle would point if placed at this point. In other words, it is the direction in which the North pole of a magnetic would move (i.e.&nbsp;away from another North pole). The direction of the magnetic field due to an electric current is given by the right-hand rule. If you point the thumb of your right hand in the direction of the current and then curl the fingers the field is in the direction of the curl of your fingers.</p>
 <p>In the same way as the electric field, the strength (or in other words, the magnitude) of the magnetic field is usually indicated by the density of the field lines. Magnetic field strength is measured in the SI unit of Tesla (T) or in Gauss, where 1 Tesla = <span class="math inline">\(10^4\)</span> Gauss.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Figures/MagFields.png" class="img-fluid figure-img" width="500"></p>
-<figcaption><em>Left:</em> The magnetic field produced by a bar magnet. <em>Right:</em> Section of a wire (yellow) carrying current <span class="math inline">\(I\)</span> and the magnetic field <span class="math inline">\(\mathrm{\mathbf{B}}\)</span> that it produces.</figcaption>
+<figcaption><em>Left:</em> The magnetic field produced by a bar magnet. <em>Right:</em> Section of a wire (yellow) carrying current <span class="math inline">\(I\)</span> and the magnetic field <span class="math inline">\(\B\)</span> that it produces.</figcaption>
 </figure>
 </div>
 <p>Magnetic field lines always form closed loops whereas electric field lines begin and end on charges. As magnetic field lines are closed loops, all field lines entering a closed surface must leave it as well - therefore the net magnetic flux through any surface is zero.</p>
@@ -317,15 +318,15 @@ window.Quarto = {
 <p>As we have seen in the previous lectures on electrostatics, electric charges exert forces on one another as a result of the electric fields that arise from them. In the same way, a magnetic field exerts a force on a moving charge, because the moving charge produce its own magnetic field and the two fields interact, producing a force.</p>
 <p>The magnetic force on a moving charge is given by</p>
 <p><span class="math display">\[
-\mathrm{\mathbf{F}}_B = q(\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) {#eq-lorentz}
+\F_B = q(\v \times \B) {#eq-lorentz}
 \]</span></p>
-<p>The term <span class="math inline">\(\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}\)</span> represents the cross product of the velocity and magnetic field vectors. As you will know, the cross product of two vectors results in a vector that is perpendicular to both. Therefore, the direction of <span class="math inline">\(\mathrm{\mathbf{F}}\)</span> is perpendicular to both <span class="math inline">\(\mathrm{\mathbf{v}}\)</span> and <span class="math inline">\(\mathrm{\mathbf{B}}\)</span>. You will also know that the cross product of two vectors <span class="math inline">\(\mathrm{\mathbf{a}}\)</span> and <span class="math inline">\(\mathrm{\mathbf{b}}\)</span> is equal to <span class="math inline">\(ab \sin\theta\)</span>. Hence, the magnitude of the magnetic force is given by:</p>
+<p>The term <span class="math inline">\(\v \times \B\)</span> represents the cross product of the velocity and magnetic field vectors. As you will know, the cross product of two vectors results in a vector that is perpendicular to both. Therefore, the direction of <span class="math inline">\(\F\)</span> is perpendicular to both <span class="math inline">\(\v\)</span> and <span class="math inline">\(\B\)</span>. You will also know that the cross product of two vectors <span class="math inline">\(\a\)</span> and <span class="math inline">\(\b\)</span> is equal to <span class="math inline">\(ab \sin\theta\)</span>. Hence, the magnitude of the magnetic force is given by:</p>
 <p><span class="math display">\[
 F_B = qvB \sin\theta
 \]</span></p>
-<p>This is not the full picture, however. The <strong>Lorentz Force Law</strong> describes the total force on a moving charge, including the effect of both electric and magnetic fields. The force <span class="math inline">\(\mathrm{\mathbf{F}}\)</span> experienced by a charge <span class="math inline">\(q\)</span> moving with a velocity <span class="math inline">\(\mathrm{\mathbf{v}}\)</span> in an electric field <span class="math inline">\(\mathrm{\mathbf{E}}\)</span> and a magnetic field <span class="math inline">\(\mathrm{\mathbf{B}}\)</span> is given by:</p>
+<p>This is not the full picture, however. The <strong>Lorentz Force Law</strong> describes the total force on a moving charge, including the effect of both electric and magnetic fields. The force <span class="math inline">\(\F\)</span> experienced by a charge <span class="math inline">\(q\)</span> moving with a velocity <span class="math inline">\(\v\)</span> in an electric field <span class="math inline">\(\E\)</span> and a magnetic field <span class="math inline">\(\B\)</span> is given by:</p>
 <p><span class="math display">\[
-\mathrm{\mathbf{F}}= q(\mathrm{\mathbf{E}}+ \mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}})
+\F = q(\E + \v \times \B)
 \]</span></p>
 <p>The Lorentz force law is responsible for the circular motion of charged particles in magnetic fields, as represented in the figure below:</p>
 <p><img src="Figures/lorentz_motion.png" class="img-fluid" width="500"></p>
@@ -335,36 +336,40 @@ F_B = qvB \sin\theta
 </section>
 <section id="magnetic-field-of-currents" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="magnetic-field-of-currents"><span class="header-section-number">4.3</span> Magnetic field of currents</h2>
-<p>As we mentioned earlier, currents are moving charges and therefore they also experience a force in the prescence of a magnetic field. We can use the Lorentz force law to work out what this force will be. Here we consider a current as a moving line charge with velocity <span class="math inline">\(\mathrm{\mathbf{v}}\)</span> and linear charge density <span class="math inline">\(\lambda\)</span>. The current in the wire is given by <span class="math inline">\(I = \lambda \mathrm{\mathbf{v}}\)</span> - you should be able to see upon inspection that this makes sense dimensionally, but check out Griffiths 5.1.3 for a more detailed derivation. If we think of the current as being made up of infinitesimal charges <span class="math inline">\(\mathrm{d} q\)</span>, integrating to sum all of these across the length of the wire would give the total charge in the wire. Hence, by analogy to <a href="#eq-lorentz" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-lorentz</span></a>, the force on the wire would be</p>
-<p><span id="eq-currentforce"><span class="math display">\[ \mathrm{\mathbf{F}}_{mag} = \int (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \mathrm{d} q  \tag{4.1}\]</span></span></p>
+<p>As we mentioned earlier, currents are moving charges and therefore they also experience a force in the prescence of a magnetic field. We can use the Lorentz force law to work out what this force will be. Here we consider a current as a moving line charge with velocity <span class="math inline">\(\v\)</span> and linear charge density <span class="math inline">\(\lambda\)</span>. The current in the wire is given by <span class="math inline">\(I = \lambda \v\)</span> - you should be able to see upon inspection that this makes sense dimensionally, but check out Griffiths 5.1.3 for a more detailed derivation. If we think of the current as being made up of infinitesimal charges <span class="math inline">\(\mathrm{d} q\)</span>, integrating to sum all of these across the length of the wire would give the total charge in the wire. Hence, by analogy to <a href="#eq-lorentz" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-lorentz</span></a>, the force on the wire would be</p>
+<p><span id="eq-currentforce"><span class="math display">\[ \F_{mag} = \int (\v \times \B) \mathrm{d} q  \tag{4.1}\]</span></span></p>
 <p>We can express <span class="math inline">\(\mathrm{d}q\)</span> as <span class="math inline">\(\lambda \mathrm{d} l\)</span>, hence the magnetic force becomes</p>
 <p><span id="eq-currentforce2"><span class="math display">\[ \ begin{split}
-\mathrm{\mathbf{F}}_{mag} &amp;= \int (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \lambda \mathrm{d} l \\
-&amp;= \int (\mathrm{\mathbf{I}}\times \mathrm{\mathbf{B}}) \mathrm{d} l
+\F_{mag} &amp;= \int (\v \times \B) \lambda \mathrm{d} l \\
+&amp;= \int (\I \times \B) \mathrm{d} l
 \end{split}
 \tag{4.2}\]</span></span></p>
-<p><span class="math inline">\(\mathrm{\mathbf{I}}\)</span> and <span class="math inline">\(\mathrm{d} \mathrm{\mathbf{l}}\)</span> point in the same direction, therefore it is valid to express <a href="#eq-currentforce2" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-currentforce2</span></a> as</p>
-<p><span id="eq-currentforce3"><span class="math display">\[ \mathrm{\mathbf{F}}_{mag} &amp;= \int I (\mathrm{d} \mathrm{\mathbf{l}}\times \mathrm{\mathbf{B}})  \tag{4.3}\]</span></span></p>
+<p><span class="math inline">\(\I\)</span> and <span class="math inline">\(\mathrm{d} \l\)</span> point in the same direction, therefore it is valid to express <a href="#eq-currentforce2" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-currentforce2</span></a> as</p>
+<p><span id="eq-currentforce3"><span class="math display">\[ \F_{mag} &amp;= \int I (\mathrm{d} \l \times \B)  \tag{4.3}\]</span></span></p>
 <p><a href="#eq-currentforce3" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-currentforce3</span></a> is the generally accepted way to express the magnetic force on a segment of current-carrying wire, and will be used in this form in this course. However, <a href="#eq-currentforce3" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-currentforce3</span></a> models a current-carrying wire as a 1-dimensional line charge, which of course in reality it is not. If we want to be more realistic and calculate the magnetic force on a volume current (so, considering the current in a 3-dimensional wire) the magnetic force is</p>
-<p><span id="eq-currentforceVol"><span class="math display">\[ \mathrm{\mathbf{F}}_{mag} &amp;= \int (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \rho \mathrm{d}\tau = \int (\J \times \mathrm{\mathbf{B}}) \mathrm{d}\tau  \tag{4.4}\]</span></span></p>
-<p>where <span class="math inline">\(\mathrm{d}\tau\)</span> is the volume element, <span class="math inline">\(\rho\)</span> is the volume charge density and <span class="math inline">\(\J = \rho \mathrm{\mathbf{v}}\)</span> is the volume current density. The volume current density is defined as the current per unit area for the area perpendicular to the current flow (essentially the cross-sectional area of the wire). Once again, Griffiths 5.1.3 is worth reading if you want a more detailed derivation.</p>
+<p><span id="eq-currentforceVol"><span class="math display">\[ \F_{mag} &amp;= \int (\v \times \B) \rho \mathrm{d}\tau = \int (\J \times \B) \mathrm{d}\tau  \tag{4.4}\]</span></span></p>
+<p>where <span class="math inline">\(\mathrm{d}\tau\)</span> is the volume element, <span class="math inline">\(\rho\)</span> is the volume charge density and <span class="math inline">\(\J = \rho \v\)</span> is the volume current density. The volume current density is defined as the current per unit area for the area perpendicular to the current flow (essentially the cross-sectional area of the wire). Once again, Griffiths 5.1.3 is worth reading if you want a more detailed derivation.</p>
 </section>
-<section id="practice-problems" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="practice-problems"><span class="header-section-number">4.4</span> Practice problems</h2>
+<section id="work-done-by-magnetic-fields" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="work-done-by-magnetic-fields"><span class="header-section-number">4.4</span> Work done by magnetic fields?</h2>
+<!--
+Magnetic forces do no work (use Griffiths, and watch that part of Adrian's magnetostatics 1 lecture more carefully)
+In the lecture itself, use the force on a current-carrying wire to lead on to a discussion of the function of motors? 
+-->
+</section>
+<section id="practice-problems" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="practice-problems"><span class="header-section-number">4.5</span> Practice problems</h2>
 <ol type="1">
 <li>In the lecture we sketched and calculated the trajectory of the particle in Griffiths Example 5.2, in the case where the particle was released from the origin at zero velocity (see the lecture slides on Blackboard if you were not in attendance).</li>
 </ol>
-<p>Find and sketch the trajectory of the particle in Example 5.2, if it starts at the origin with velocity: (a) <span class="math inline">\((E/B) \hat{\mathrm{\mathbf{y}}}\)</span> (b) <span class="math inline">\((E/2B) \hat{\mathrm{\mathbf{y}}}\)</span> (c) <span class="math inline">\((E/B) (\hat{\mathrm{\mathbf{y}}} + \hat{\mathrm{\mathbf{z}}}\)</span>)</p>
+<p>Find and sketch the trajectory of the particle in Example 5.2, if it starts at the origin with velocity: (a) <span class="math inline">\((E/B) \hat{\y}\)</span> (b) <span class="math inline">\((E/2B) \hat{\y}\)</span> (c) <span class="math inline">\((E/B) (\hat{\y} + \hat{\z}\)</span>)</p>
 <ol start="2" type="1">
 <li>(<em>Griffiths Problem 5.3</em>)</li>
 </ol>
 <p>In 1897, J. J. Thomson “discovered” the electron by measuring the charge-to-mass ratio of “cathode rays” (actually, streams of electrons, with charge <span class="math inline">\(q\)</span> and mass <span class="math inline">\(m\)</span>) as follows:</p>
 <ol type="a">
-<li><p>First he passed the beam through uniform crossed electric and magnetic fields <span class="math inline">\(\mathrm{\mathbf{E}}\)</span> and <span class="math inline">\(\mathrm{\mathbf{B}}\)</span> (mutually perpendicular, and both of them perpendicular to the beam), and adjusted the electric field until he got zero deflection. What was the speed of the particles in terms of <span class="math inline">\(E\)</span> and <span class="math inline">\(B\)</span> when he reached zero deflection?</p></li>
+<li><p>First he passed the beam through uniform crossed electric and magnetic fields <span class="math inline">\(\E\)</span> and <span class="math inline">\(\B\)</span> (mutually perpendicular, and both of them perpendicular to the beam), and adjusted the electric field until he got zero deflection. What was the speed of the particles in terms of <span class="math inline">\(E\)</span> and <span class="math inline">\(B\)</span> when he reached zero deflection?</p></li>
 <li><p>Then he turned off the electric field, and measured the radius of curvature, <span class="math inline">\(R\)</span>, of the beam, as deflected by the magnetic field alone. In terms of <span class="math inline">\(E\)</span>, <span class="math inline">\(B\)</span>, and <span class="math inline">\(R\)</span>, what is the charge-to-mass ratio (<span class="math inline">\(q/m\)</span>) of the particles?</p></li>
-</ol>
-<ol start="3" type="1">
-<li>A problem related to force on current-carrying wires?</li>
 </ol>
 
 
