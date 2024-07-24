@@ -13,3 +13,4 @@
 
 *A problem to try before attending the lecture*: Griffiths Problem 1.18
 
+## Practice problems

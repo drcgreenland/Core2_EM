@@ -114,7 +114,7 @@ $$ \F_{mag} &= \int (\v \times \B) \rho \mathrm{d}\tau = \int (\J \times \B) \ma
 
 where $\mathrm{d}\tau$ is the volume element, $\rho$ is the volume charge density and $\J = \rho \v$ is the volume current density. The volume current density is defined as the current per unit area for the area perpendicular to the current flow (essentially the cross-sectional area of the wire). Once again, Griffiths 5.1.3 is worth reading if you want a more detailed derivation. 
 
-## Problems
+## Practice problems
 
 1) In the lecture we sketched and calculated the trajectory of the particle in Griffiths Example 5.2, in the case where the particle was released from the origin at zero velocity (see the lecture slides on Blackboard if you were not in attendance). 
 

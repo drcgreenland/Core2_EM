@@ -104,6 +104,12 @@ The same applies to the electric field, which can be calculated for any given po
 $$ \E_{tot} = \sum_i \E_i $$ 
 
 
+## Continuous charge distributions
+
+<!--
+Copy what you have from your PHY1002 notes! 
+-->
+
 ## Summary
 Electric charges create electric fields, which exert forces on other charges. Coulomb's Law describes the force between point charges. 
 
@@ -199,23 +205,19 @@ laws.
 Source: <http://www.clerkmaxwellfoundation.org/html/about_maxwell.html>;<https://maxwells-equations.com/>
 
 
-## Problems
+## Practice problems
 
 1) (*Griffiths Problem 2.2*)
 
 In the lecture, we found the electric field (magnitude and direction) a distance $z$ above the midpoint between two equal charges, $q$, a distance $d$ apart.
 We found that for distances $z >> a$, as we might expect the field appears like that of a single charge $2q$. 
 
-Repeat the calculation of the electric field, but replace one of the positive charges with a negative charge (so we now have a dipole). 
-Is there anything interesting about this result [hint: try computing the field for different ranges of $z$-values]?
+Repeat the calculation of the electric field, but replace the charge on the right with a negative charge (so we now have a dipole). 
+Is there anything interesting about this result? [Hint: try computing the field for different ranges of $z$-values.]
 
-2) (*Griffiths Problem 2.1*)
-(a) Twelve equal charges, $q$, are situated at the corners of a regular 12-sided polygon (for example, you could imagine one is place on each numeral of a clock face). What is the net force on a test charge $Q$  at the centre?
+2) Charges $+Q$, $+Q$ and $-Q$ are arranged at the vertices of an equilateral triangle.  What is the electric field at the centre of the triangle?
 
-(b) Suppose one of the 12 $q$ s is removed (the one at “6 o’clock”). What is the force on $Q$ now? Explain your reasoning carefully.
-
-3) (*Griffiths Problem 2.4*)
-Find the electric field a distance $z$ above the center of a square loop (side length $a$) carrying a uniform line charge (see figure below). [Hint: Use the result of Example 2.2 in the Griffiths.]
+3) A charge $Q$ is uniformly distributed along the circumference of a thin ring of radius $R$. Find the electric field a distance $z$ above the centre of the ring. 
 
 ![](Figures/L1_prob3.png){width=100}
 
@@ -226,3 +228,6 @@ Find the electric field a distance $z$ above the center of a flat circular disk 
 
 ![](Figures/L1_prob4.png){width=100}
 
+5) Find the electric field at a distance $z$ above the midpoint of a uniform line charge, of length $2L$ and charge density $\lambda$ (see figure below).
+
+![](Figures/L2_prob3){width=200}

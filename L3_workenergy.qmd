@@ -181,7 +181,7 @@ The zero of potential energy $U(\theta_0)$ can be chosen to be anywhere, so we c
 Not surprisingly, the energy is at a minimum when the dipole is aligned with the field, at which point the torque will be zero.
 
 
-## Problems
+## Practice problems
 
 <!--
 Use this problem set to guide the content of the lecture notes/lecture!

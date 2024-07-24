@@ -135,9 +135,9 @@ ADD COMMENT HERE
 ## Summary
 Electric potential is a crucial concept in electrostatics, simplifying the analysis of electric fields and the work done by (or on) charges. It is ~intimately related~?? to the electric field and provides a scalar measure of potential energy per unit charge. Understanding electric potential is essential for solving a wide range of problems in electrostatics.
 
-## Problems
+## Practice problems
 
-1) Consider a uniformly charges solid sphere of radius $R$ and total charge $q$. The electric field for this sphere is given by: 
+1) Consider a uniformly charged solid sphere of radius $R$ and total charge $q$. The electric field for this sphere is given by: 
 
 $$
 \left\{
@@ -156,25 +156,20 @@ $$
 this problem is an adapted version of Griffiths 3E problem 2.21
 -->
 
-2) In the worked example for Lecture 1 (see the lecture slides on Blackboard if you were not in attendance) we calculated the electric field a distance $z$ above the midpoint between two equal charges $q$ that are a distance $d$ apart. Now find the electric potential at a distance $z$ for these two charges. 
+2) In the worked example for Lecture 1 (see the lecture slides on Blackboard if you were not in attendance) we calculated the electric field a distance $z$ above the midpoint between two equal charges $q$ that are a distance $d$ apart. Use the solution found there to find the electric potential at a distance $z$ above the midpoint between the two charges. 
 
-Check your answer by computing $\E = -\nabla V$.
 
 <!--
 this problem is an adapted version of Griffiths 3E problem 2.25(a)
 -->
 
-3) 
-(a) Find the electric field at a distance $z$ above the midpoint of a uniform line charge, of length $2L$ and charge density $\lambda$ (see figure below).
-
+3) Find the potential at distance $z$ above the midpoint of the line charge shown in the figure below. $\lambda$ is its line charge density. 
 ![](Figures/L2_prob3){width=200}
 
-(b) Now find the potential at distance $z$ above the midpoint of the line charge. 
-
-Check your answer by computing $\E = -\nabla V $. 
-
+**Hint:** You may be tempted to use your result from Q5 of the Lecture 1 problems, however it is easier to directly calulate the potential here, by splitting up the line into infinitesimals segments and summing over the potentials from all segments, working from the formula for potential of a point charge. 
  
 <!--
+???  
 this problem is an adapted version of Griffiths 3E problem 2.25(b)
 -->
 

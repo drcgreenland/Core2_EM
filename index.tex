@@ -415,6 +415,9 @@ given point in space as a sum of the electric field at that point from
 all the source charges:
 \[ \mathrm{\mathbf{E}}_{tot} = \sum_i \mathrm{\mathbf{E}}_i \]
 
+\section{Continuous charge
+distributions}\label{continuous-charge-distributions}
+
 \section{Summary}\label{summary}
 
 Electric charges create electric fields, which exert forces on other
@@ -539,7 +542,7 @@ versions of these laws.
 Source:
 \url{http://www.clerkmaxwellfoundation.org/html/about_maxwell.html};\url{https://maxwells-equations.com/}
 
-\section{Problems}\label{problems}
+\section{Practice problems}\label{practice-problems}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
@@ -553,40 +556,22 @@ distance \(z\) above the midpoint between two equal charges, \(q\), a
 distance \(d\) apart. We found that for distances \(z >> a\), as we
 might expect the field appears like that of a single charge \(2q\).
 
-Repeat the calculation of the electric field, but replace one of the
-positive charges with a negative charge (so we now have a dipole). Is
-there anything interesting about this result {[}hint: try computing the
-field for different ranges of \(z\)-values{]}?
+Repeat the calculation of the electric field, but replace the charge on
+the right with a negative charge (so we now have a dipole). Is there
+anything interesting about this result? {[}Hint: try computing the field
+for different ranges of \(z\)-values.{]}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
 \setcounter{enumi}{1}
-\tightlist
 \item
-  (\emph{Griffiths Problem 2.1})
-\end{enumerate}
-
-\begin{enumerate}
-\def\labelenumi{(\alph{enumi})}
+  Charges \(+Q\), \(+Q\) and \(-Q\) are arranged at the vertices of an
+  equilateral triangle. What is the electric field at the centre of the
+  triangle?
 \item
-  Twelve equal charges, \(q\), are situated at the corners of a regular
-  12-sided polygon (for example, you could imagine one is place on each
-  numeral of a clock face). What is the net force on a test charge \(Q\)
-  at the centre?
-\item
-  Suppose one of the 12 \(q\) s is removed (the one at ``6 o'clock'').
-  What is the force on \(Q\) now? Explain your reasoning carefully.
-\end{enumerate}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  (\emph{Griffiths Problem 2.4}) Find the electric field a distance
-  \(z\) above the center of a square loop (side length \(a\)) carrying a
-  uniform line charge (see figure below). {[}Hint: Use the result of
-  Example 2.2 in the Griffiths.{]}
+  A charge \(Q\) is uniformly distributed along the circumference of a
+  thin ring of radius \(R\). Find the electric field a distance \(z\)
+  above the centre of the ring.
 \end{enumerate}
 
 \includegraphics[width=1.04167in,height=\textheight]{Figures/L1_prob3.png}
@@ -798,13 +783,13 @@ field and provides a scalar measure of potential energy per unit charge.
 Understanding electric potential is essential for solving a wide range
 of problems in electrostatics.
 
-\section{Problems}\label{problems-1}
+\section{Practice problems}\label{practice-problems-1}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
 \tightlist
 \item
-  Consider a uniformly charges solid sphere of radius \(R\) and total
+  Consider a uniformly charged solid sphere of radius \(R\) and total
   charge \(q\). The electric field for this sphere is given by:
 \end{enumerate}
 
@@ -848,15 +833,14 @@ Check your answer by computing \(\mathrm{\mathbf{E}}= -\nabla V\).
 \setcounter{enumi}{2}
 \tightlist
 \item
-\end{enumerate}
-
-\begin{enumerate}
-\def\labelenumi{(\alph{enumi})}
-\tightlist
-\item
-  Find the electric field at a distance \(z\) above the midpoint of a
-  uniform line charge, of length \(2L\) and charge density \(\lambda\)
-  (see figure below).
+  \begin{enumerate}
+  \def\labelenumii{(\alph{enumii})}
+  \tightlist
+  \item
+    Find the electric field at a distance \(z\) above the midpoint of a
+    uniform line charge, of length \(2L\) and charge density \(\lambda\)
+    (see figure below).
+  \end{enumerate}
 \end{enumerate}
 
 \includegraphics[width=2.08333in,height=\textheight]{Figures/L2_prob3.pdf}
@@ -870,7 +854,7 @@ Check your answer by computing \(\mathrm{\mathbf{E}}= -\nabla V\).
   line charge.
 \end{enumerate}
 
-Check your answer by computing \$\mathrm{\mathbf{E}} = -\nabla V \$.
+Check your answer by computing \(\mathrm{\mathbf{E}}= -\nabla V\).
 
 \bookmarksetup{startatroot}
 
@@ -1144,7 +1128,7 @@ in which case \(U = -pE\cos\theta\).
 Not surprisingly, the energy is at a minimum when the dipole is aligned
 with the field, at which point the torque will be zero.
 
-\section{Problems}\label{problems-2}
+\section{Practice problems}\label{practice-problems-2}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
@@ -1401,7 +1385,7 @@ per unit area for the area perpendicular to the current flow
 (essentially the cross-sectional area of the wire). Once again,
 Griffiths 5.1.3 is worth reading if you want a more detailed derivation.
 
-\section{Problems}\label{problems-3}
+\section{Practice problems}\label{practice-problems-3}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
@@ -1467,6 +1451,7 @@ electrons, with charge \(q\) and mass \(m\)) as follows:
 \newcommand{\x}{\mathrm{\mathbf{x}}}
 \newcommand{\y}{\mathrm{\mathbf{y}}}
 \newcommand{\z}{\mathrm{\mathbf{z}}}
+\newcommand{\dd}{\mathrm{d}}
 
 \emph{Recommended reading}: Griffiths Section 5.2
 
@@ -1486,9 +1471,9 @@ the magnetic field of a steady line current. Note that we are once again
 thinking about \emph{line} currents, so we are modelling our currents as
 1-dimensional.
 
-\textbf{An aside on ``steady currents'':} The Biot-Savart Law only
-applies to so-called ``steady currents''. A steady current is defined as
-a continuous flow of charge that goes on forever, without changing and
+\textbf{An aside on steady currents:} The Biot-Savart Law only applies
+to so-called ``steady currents''. A steady current is defined as a
+continuous flow of charge that goes on forever, without changing and
 without charge piling up anywhere. In reality, there is no such current,
 but for the purposes of this course we can model current-carrying wires
 as carrying steady currents. If the current wasn't a steady current, the
@@ -1501,14 +1486,104 @@ The Biot-Savart Law takes the following form:
 \[\mathrm{\mathbf{B}}(\mathrm{\mathbf{r}}) = \frac{\mu_0}{4\pi} \int \frac{\mathrm{\mathbf{I}}\times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \mathrm{d}l' =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \]
 
 In your previous studies you may have come across the formula for the
-magnetic field at a distance from a current-carrying wire. We are now
-going to derive this using the Biot-Savart law.
+magnetic field at a distance from a current-carrying wire. Have you ever
+wondered where this equation came from? Turns out it is derived using
+the Biot-Savart Law - I'm going to guide you the derivation here, to
+demonstrate how we use the Biot-Savart Law.
 
-\section{}\label{section}
+\section{Magnetic Field of a Current-Carrying
+Wire}\label{magnetic-field-of-a-current-carrying-wire}
 
-Now we will use the Biot-Savart Law to find the
+Our task here is to find the magnetic field at a distance \(s\) from a
+long, straight wire carrying a steady current \(I\).
 
-\section{Problem Set}\label{problem-set}
+\textbf{Important:} When we talk about a ``long'' wire, we are talking
+about a wire that is so long that it can be considered infinitely long -
+so that we can assume it carries a steady current (see ``aside on steady
+currents'' above). In real life, wires that carry currrent are usually
+part of a closed circuit, so we can consider most current-carrying wires
+to be carrying steady currents, as the current in closed circuit will go
+on forever (until a switch is opened, a battery dies, a component
+breaks, and so on\ldots).
+
+Let us first visualise the problem with a diagram:
+\includegraphics[width=2.08333in,height=\textheight]{Figures/BS-example-1.png}\{\#BS-ex1\}
+
+This figure is taken from the Griffiths, therefore the curly ``r''
+pointing from \(\mathrm{d} \mathrm{\mathbf{l}}'\) to \(P\) should be
+interpreted as \(\mathrm{\mathbf{r}}_s\) in our notation. As a reminder,
+the Biot-Savart Law is given by
+
+\[\mathrm{\mathbf{B}}(\mathrm{\mathbf{r}}) =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \]
+
+In (\textbf{BS-ex1?}),
+\(\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s}\)
+points out of the page (because it must be perpendicular to both
+vectors) and has magnitude \(\mathrm{d} l' \sin\alpha\). However, it is
+more convenient in this problem for us to to work with the angle
+\(\theta\), because we can use trigonometric identities to relate
+\(\theta\) more easily to the other variables in our problem. Therefore
+we can use the angle addition formula
+\(\sin(A + B) = \sin A \cos B + \cos A \sin B\), to find
+\[ \sin\alpha = \sin(90 + \theta) = \sin(90)\cos\theta + \cos(90)\sin\theta = \cos\theta \]
+
+Hence, the magnitude of
+\(\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s}\)
+is
+
+\[ \mathrm{d} l' \cos\theta \]
+
+We can also say that \(l' = s \tan\theta\), therefore
+
+\[ \begin{split} 
+\frac{\mathrm{d} l'}{\mathrm{d} \theta} &=  \frac{\mathrm{d} }{\mathrm{d} \theta} s \tan\theta \\
+\mathrm{d}l' &=  \frac{s}{ \cos^2 \theta} \mathrm{d}\theta
+\end{split}
+\]
+
+Finally, we can see that \(s = r_s \cos \theta\), so we can state
+
+\[ \frac{1}{\mathrm{\mathbf{r}}_s^2} = \frac{\cos^2 \theta}{s^2} \]
+
+We now have everything we need to compute the integral in the
+Biot-Savart Law. We can integrate with respect to \(\theta\), and find
+the integral between two angles \(\theta_1\) and \(\theta_2\), as
+represented in this figure:
+
+\includegraphics[width=2.08333in,height=\textheight]{Figures/BS-example-2.png}
+
+Therefore
+
+\[ \begin{split} 
+B &= \frac{\mu_0 I}{4 \pi} \int_{\theta_1}^{\theta_2} \left( frac{\cos^2 \theta }{s^2} \right) \left( \frac{s}{\cos^\theta} \right) \cos\theta \mathrm{d}\theta   \\
+ &= \frac{\mu_0 I}{4 \pi s} \int_{\theta_1}^{\theta_2}  \cos\theta \mathrm{d}\theta \\
+ &= \frac{\mu_0 I}{4 \pi s} (\sin\theta_2 - \sin \theta_1) 
+\end{split}
+\]
+
+The above equations represents the \(B\)-field at a distance \(s\) from
+a short section of wire between two arbitrary anglular positions
+\(\theta_1\) and \(\theta_2\). This is not physical however, because a
+short section of wire cannot carry a steady current. Therefore let's
+think about what happens when we extend the length of the wire to
+infinity. For an infinitely long wire, \(\theta_1 = -\pi/2\) and
+\(\theta_2 = \pi/2\). Hence, the magnitude of the \(B\)-field at a
+distance \(s\) from a long current-carrying wire is
+
+\[ B = \frac{\mu_0 I}{2\pi s}. \]\#eq-Bwire
+
+If you didn't manage the pre-lecture problem, try it again now using
+what you have learned in this lecture.
+
+\section{Practice problems}\label{practice-problems-4}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+\item
+\item
+\end{enumerate}
 
 \bookmarksetup{startatroot}
 
@@ -1528,6 +1603,8 @@ Now we will use the Biot-Savart Law to find the
 \emph{A problem to try before attending the lecture}: Griffiths Problem
 1.18
 
+\section{Practice problems}\label{practice-problems-5}
+
 \bookmarksetup{startatroot}
 
 \chapter{Gauss's Law}\label{gausss-law}
@@ -1543,8 +1620,121 @@ Now we will use the Biot-Savart Law to find the
 
 \emph{Recommended reading}: Griffiths Section 2.2
 
-\emph{A problem to try before attending the lecture}: Griffiths
-{[}insert problem no.{]}
+\#\#Pre-lecture problem
+
+\section{Introduction}\label{introduction}
+
+Gauss's Law is the first of Maxwell's equations and forms part of the
+basis of classical electromagnetism. It concerns the relationship
+between electric flux through a closed surface and the electric charge
+enclosed within that surface. Crucially, it allows us a much simpler
+method by which to calculate the electric field compared to
+
+\section{Electric flux}\label{electric-flux}
+
+In order to discuss Gauss's Law, we will now revisit the topic of
+electrostatics, in particular electric fields. Consider again the
+electric field of a point charge \(q\) at the origin. Imagine we
+surround the charge by a spherical surface, centred on the origin with
+radius \(R\). The area of the surface is \(A = 4\pi R^2\) , and the
+magnitude of electric field a distance \(R\) from the charge is
+
+\[ E(R) = \frac{q}{4\pi \epsilon_0 R^2} \],
+
+with its direction perpendicular to the surface of the sphere.
+
+We now introduce a new concept, known as the electric flux, which is the
+flux of the electric field through a surface. It counts how many field
+lines pierce the surface. In the case of the point charge, the flux
+\(\Phi_E\) is given by the magnitude of the electric field multiplied by
+the area of the surface, hence \(\Phi_E = EA\). In the case where we
+have a point charge enclosed within the surface:
+
+\[ \Phi_E = EA = \frac{q}{4\pi\epsilon_0 R^2} 4\pi R^2 = \frac{q}{\epsilon_0} \]
+
+Notice how \(EA\) does not depend on the radius \(R\)! To understand
+this, first let's generalise this concept beyond a spherical surface.
+Let's say we deform the spherical surface into any other closed surface
+(i.e., not tearing holes in it). Once a field line goes through the
+surface, it counts towards the flux. No matter how big or small we make
+the surface, and no matter its shape, the number of field lines coming
+out of the surface will be the same provided that amount of charge
+inside stays the same. If we add more charge inside, there will be a
+higher density of field lines, hence more field lines will pierce the
+surface. This means that the electric flux through a surface is a
+measure of the amount of charge inside that surface, hence
+\(\Phi_E = \frac{q}{\epsilon_0}\). As we can see, it is actually
+\emph{proportional} to the amount of charge, modified by a constant
+factor of \(\frac{1}{\epsilon_0}\). We can make sense of this
+conceptually by reminding ourselves that \(\epsilon_0\) defines the
+capacity of free space to hold electric fields, so it is sensible that
+it should have a bearing on electric flux.
+
+\includegraphics[width=3.125in,height=\textheight]{Figures/Gauss-surface-vector.png}\{\#surface-vector\}
+
+In the case of a point charge and a spherical surface, the electric
+field lines are always perpendicular to the surface. What happens when
+the electric field is not perpendicular to the surface? Then we can
+consider the projection of the surface perpendicular to \(E\). If the
+angle between the field direction and the normal to the surface is θ, as
+represented in (\textbf{surface-vector?}), then the flux of a constant
+electric field of magnitude (i.e., field line density) \(E\) is
+\(\Phi_E = EA \cos\theta\). If we have a volume V enclosed by a surface
+S, we can ``tile'' S with infinitesimal tiles dA, where the area is
+infinitesimally small, and the direction is out of the volume. The total
+flux is then the sum over all the infinitesimal fluxes through dA. This
+is a surface integral, written by ΦE = I S E · dA , (23) where the
+symbol H S denotes integration over the entire surface S. Since field
+lines cannot cross each other, if we have a bunch of charges inside the
+volume V, the flux of the charges adds up. Positive charges create field
+lines going out of the volume, and negative charges create field lines
+going into the volume. Moreover, every field line sprouting at a
+positive charge which does not exit V must terminate on a negative
+charge inside V, cancelling that part of the flux for both charges.
+Then, from Equation (20), we find that the flux through S is equal to
+the total charge Qinside inside S, divided by 0: I S E · dA = Qinside 0
+. (24) This is called Gauss' law. In the next lecture we will see how
+this law can be used to calculate the electric field for some
+interesting charge distributions.
+
+Gauss' law in mathematical form looks pretty terrifying: I S E · dA =
+Qinside 0 . (25) The power of this expression lies in the fact that it
+is universally valid. So we would like to take this law as our starting
+point in solving electrostatic problems. The way we use this equation is
+by carefully unpacking the dot product in the integral, and choosing a
+surface that we can easily integrate over, preferably without actually
+having to solve the integral. First, let's see how we can calculate the
+electric field of a point charge by starting from Gauss' law, just to
+illustrate its use. We have the dot product E · dA, which we may get rid
+Electricity 9 of by choosing a surface2 that either turns it into E · dA
+= EdA or E · dA = 0. So we want to find a surface S that is either
+parallel or perpendicular to the field, such that cos θ = 1 or cos θ =
+0. The surface S may have different facets that are parallel and
+perpendicular to the field. Next, we should consider the symmetry of the
+problem. The point charge has spherical symmetry around the charge, so
+the electric field must point radially outwards (or inwards). We're not
+using knowledge of Equation (6) here, we deduce that any other direction
+of the electric field would violate the symmetry of the problem. Knowing
+the direction of the field allows us to choose S parallel to this, and
+that determines the spherical surface of radius r. Any r will do. The
+second observation from symmetry is that the magnitude of E must be
+constant on S. Therefore, we find that for the integral we have I S E ·
+dA = I S E dA = E I S dA , (26) where we pulled E out of the integral,
+since it is constant over the entire surface S. Now we are left with
+only the surface integral H S dA. But this is simply the surface area of
+a sphere of radius r. Gauss' law then becomes I S E · dA = 4πr2E = q 0 .
+(27) Rearranging gives the magnitude: E = q 4πr2 0 , (28) and including
+the field direction we find the required Equation (6). In summary,
+solving Gauss' law to find the electric field for a charge distribution
+relies on symmetry arguments to find the direction of the field, which
+in turn leads to the most convenient Gaussian surface S. Then you
+evaluate the dot product E · dA, and solve the integral. Gauss' law is
+one of the four Maxwell equations (in integral form) that completely
+describes how electric and magnetic fields behave, even in situations
+where there are no symmetries and the integral is really hard to
+evaluate.
+
+\section{Practice problems}\label{practice-problems-6}
 
 \bookmarksetup{startatroot}
 
@@ -1680,7 +1870,7 @@ Mosca\ldots{}
 
 \bookmarksetup{startatroot}
 
-\chapter{}\label{section-1}
+\chapter{}\label{section}
 
 \newcommand{\l}{\mathrm{\mathbf{l}}}
 \newcommand{\E}{\mathrm{\mathbf{E}}}
