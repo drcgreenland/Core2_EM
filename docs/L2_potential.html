@@ -303,8 +303,8 @@ New/reworked pre-and post-lecture problems.
 <p>Before you attempt this problem, it is recommended that you read through the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths. This question also requires some vector calculus, to which you have only just been introduced. Do not worry if you can’t do this question just yet - we will go through it in the lecture.</p>
 <p>One of these is an impossible electrostatic field. Which one?</p>
 <ol type="a">
-<li><p><span class="math inline">\(\E = k[ xy \hat{\x} + 2yz \hat{\y} + 3xz \hat{\z} ]\)</span></p></li>
-<li><p><span class="math inline">\(\E = k[ y^2 \hat{\x} + (2xy + z^2)\hat{\y} + 2yz \hat{\z} ]\)</span></p></li>
+<li><p><span class="math inline">\(\mathrm{\mathbf{E}}= k[ xy \hat{\mathrm{\mathbf{x}}} + 2yz \hat{\mathrm{\mathbf{y}}} + 3xz \hat{\mathrm{\mathbf{z}}} ]\)</span></p></li>
+<li><p><span class="math inline">\(\mathrm{\mathbf{E}}= k[ y^2 \hat{\mathrm{\mathbf{x}}} + (2xy + z^2)\hat{\mathrm{\mathbf{y}}} + 2yz \hat{\mathrm{\mathbf{z}}} ]\)</span></p></li>
 </ol>
 <p>For the <em>possible</em> one, find the potential. Use the origin as your reference point. Check your answer by computing <span class="math inline">\(\nabla V\)</span>.</p>
 <p>[:bulb: <strong>Hint:</strong> you must select a specific path to integrate along. The answer is <strong>path-independent</strong>, meaning that you will get the same answer no matter what path you choose–however, it is simply not possible to integrate unless you have a particular path in mind.]</p>
@@ -316,45 +316,45 @@ New/reworked pre-and post-lecture problems.
 </section>
 <section id="definition-of-electric-potential" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="definition-of-electric-potential"><span class="header-section-number">2.3</span> Definition of Electric Potential</h2>
-<p>The electric potential <span class="math inline">\(V\)</span> at some displacement <span class="math inline">\(\r\)</span> is given by</p>
-<p><span class="math display">\[ V(\r) = −\int_{\infty}^r \E \cdot \mathrm{d}\l \]</span></p>
-<p>where <span class="math inline">\(\E\)</span> is the electric field, and <span class="math inline">\(\mathrm{d}\l\)</span> is an infinitesimal displacement vector along the path of the charge. As we have stated, the potential is the work done per unit charge, therefore we can see how the above can be derived. The work done by a force to bring an object from infinity to point <span class="math inline">\(\r\)</span> is given by $ _^r $, therefore the work done per unit charge is <span class="math inline">\(\int_\infty^r \frac{\F}{Q} \cdot \mathrm{d}\l = \int_\infty^r \E \cdot \mathrm{d}\l\)</span>. However, you will notice that the expression shown above is <span class="math inline">\(- \int_\infty^r \E \cdot \mathrm{d}\l\)</span> - by convention, we add a minus sign because the direction of the electric field is the direction of <em>decreasing</em> potential. Let me explain this. We have seen in the previous lecture that electric field lines point away from a positive charge. If we place a positive test charge in the vicinity of another positive charge, the test charge will move away, in the direction of the electric field. This is the direction of decreasing potential because the charge loses potential energy as it moves away. Hence, the electric field points in the direction of decreasing potential, so the expression for potential must be the negative of the electric field.</p>
+<p>The electric potential <span class="math inline">\(V\)</span> at some displacement <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> is given by</p>
+<p><span class="math display">\[ V(\mathrm{\mathbf{r}}) = −\int_{\infty}^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\]</span></p>
+<p>where <span class="math inline">\(\mathrm{\mathbf{E}}\)</span> is the electric field, and <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{l}}\)</span> is an infinitesimal displacement vector along the path of the charge. As we have stated, the potential is the work done per unit charge, therefore we can see how the above can be derived. The work done by a force to bring an object from infinity to point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> is given by $ _^r $, therefore the work done per unit charge is <span class="math inline">\(\int_\infty^r \frac{\mathrm{\mathbf{F}}}{Q} \cdot \mathrm{d}\mathrm{\mathbf{l}}= \int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\)</span>. However, you will notice that the expression shown above is <span class="math inline">\(- \int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\)</span> - by convention, we add a minus sign because the direction of the electric field is the direction of <em>decreasing</em> potential. Let me explain this. We have seen in the previous lecture that electric field lines point away from a positive charge. If we place a positive test charge in the vicinity of another positive charge, the test charge will move away, in the direction of the electric field. This is the direction of decreasing potential because the charge loses potential energy as it moves away. Hence, the electric field points in the direction of decreasing potential, so the expression for potential must be the negative of the electric field.</p>
 </section>
 <section id="potential-difference" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="potential-difference"><span class="header-section-number">2.4</span> Potential Difference</h2>
-<p>The potential difference <span class="math inline">\(V_{ab}\)</span> between two points <span class="math inline">\(\a\)</span> and <span class="math inline">\(\b\)</span> is given by:</p>
+<p>The potential difference <span class="math inline">\(V_{ab}\)</span> between two points <span class="math inline">\(\mathrm{\mathbf{a}}\)</span> and <span class="math inline">\(\mathrm{\mathbf{b}}\)</span> is given by:</p>
 <p><span class="math display">\[
 \begin{split}
-V_{ab} &amp; = V(\b) − V(\a) \\
-&amp; = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l + \int_{\infty}^{\a} \E \cdot \mathrm{d} \l \\
-&amp; = -\int_{\infty}^{\b} \E \cdot \mathrm{d} \l - \int_{\a}^{\infty} \E \cdot \mathrm{d} \l \\
-&amp; = -\int_{\a}^{\b} \E \cdot \mathrm{d} \l
+V_{ab} &amp; = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) \\
+&amp; = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}+ \int_{\infty}^{\mathrm{\mathbf{a}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\\
+&amp; = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}- \int_{\mathrm{\mathbf{a}}}^{\infty} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\\
+&amp; = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}
 \end{split}
 \]</span></p>
-<p><span class="math display">\[ V_{ab} = V(\b) − V(\a) = -\int_{\a}^{\b} \E \cdot \mathrm{d} \l \]</span></p>
-<p>This quantity represents the work done per unit charge by the electric field in moving a charge from point <span class="math inline">\(\a\)</span> to point <span class="math inline">\(\b\)</span>.</p>
+<p><span class="math display">\[ V_{ab} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]</span></p>
+<p>This quantity represents the work done per unit charge by the electric field in moving a charge from point <span class="math inline">\(\mathrm{\mathbf{a}}\)</span> to point <span class="math inline">\(\mathrm{\mathbf{b}}\)</span>.</p>
 </section>
 <section id="electric-potential-due-to-a-point-charge" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="electric-potential-due-to-a-point-charge"><span class="header-section-number">2.5</span> Electric Potential Due to a Point Charge</h2>
-<p>For a point charge <span class="math inline">\(q\)</span> located at the origin, the electric potential at a displacement <span class="math inline">\(\r\)</span> can be found by computing the potential difference between infinity and the point <span class="math inline">\(\r\)</span> - this is derived in Section 2.3.4 of the Griffiths and comes out as follows:</p>
+<p>For a point charge <span class="math inline">\(q\)</span> located at the origin, the electric potential at a displacement <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> can be found by computing the potential difference between infinity and the point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> - this is derived in Section 2.3.4 of the Griffiths and comes out as follows:</p>
 <!--
 that is, the work done per unit charge in bringing a test charge from infinity to point $\r$. Try using the expression for $V_{ab}$ above to do this - you can use $\mathrm{d}\r$ as the displacement vector $\mathrm{d}\l$. You should find that the potential due to a point charge is:-->
 <p><span class="math display">\[ V(r) = \frac{1}{4\pi\epsilon_0} \frac{q}{r} \]</span></p>
 <p>If the point charge is not at the origin, we can generalise the above equation to:</p>
-<p><span class="math display">\[ V(\r) = \frac{1}{4\pi\epsilon_0} \frac{q}{r_s} \]</span></p>
-<p>where <span class="math inline">\(r_s\)</span> is the separation between <span class="math inline">\(q\)</span> and <span class="math inline">\(\r\)</span>, with <span class="math inline">\(\r\)</span> being the displacement with respect to the origin.</p>
+<p><span class="math display">\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi\epsilon_0} \frac{q}{r_s} \]</span></p>
+<p>where <span class="math inline">\(r_s\)</span> is the separation between <span class="math inline">\(q\)</span> and <span class="math inline">\(\mathrm{\mathbf{r}}\)</span>, with <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> being the displacement with respect to the origin.</p>
 </section>
 <section id="electric-potential-due-to-multiple-point-charges" class="level2" data-number="2.6">
 <h2 data-number="2.6" class="anchored" data-anchor-id="electric-potential-due-to-multiple-point-charges"><span class="header-section-number">2.6</span> Electric Potential Due to Multiple Point Charges</h2>
-<p>The principle of superposition applies to electric potential, just as it does to electric fields and forces. For multiple point charges <span class="math inline">\(q_i\)</span> located at positions <span class="math inline">\(\r_i\)</span>, the total potential at a point s the sum of the potentials due to each charge:</p>
-<p><span id="eq-Vmulti"><span class="math display">\[ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\r_{s_i}}  \tag{2.1}\]</span></span></p>
+<p>The principle of superposition applies to electric potential, just as it does to electric fields and forces. For multiple point charges <span class="math inline">\(q_i\)</span> located at positions <span class="math inline">\(\mathrm{\mathbf{r}}_i\)</span>, the total potential at a point s the sum of the potentials due to each charge:</p>
+<p><span id="eq-Vmulti"><span class="math display">\[ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\mathrm{\mathbf{r}}_{s_i}}  \tag{2.1}\]</span></span></p>
 </section>
 <section id="electric-potential-due-to-a-continuous-charge-distribution" class="level2" data-number="2.7">
 <h2 data-number="2.7" class="anchored" data-anchor-id="electric-potential-due-to-a-continuous-charge-distribution"><span class="header-section-number">2.7</span> Electric Potential Due to a Continuous Charge Distribution</h2>
 <p>If we have a continuous charge distribution instead of a set of discrete charges, we can think instead of an infinitesimal charge <span class="math inline">\(\mathrm{d}q\)</span>, and sum over all of these to find the total potential due to the distribution:</p>
-<p><span class="math display">\[ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\r_s} \mathrm{d}q \]</span></p>
-<p>If we have a volume charge distribution, <span class="math inline">\(\mathrm{d}q\)</span> can be formualated as <span class="math inline">\(\rho(\r') \mathrm{d}\tau'\)</span>, where <span class="math inline">\(\r'\)</span> is [!!!!!], therefore the potential due to a volume charge distribution is given by</p>
-<p><span class="math display">\[ V(\r) = \frac{1}{4\pi \epsilon_0} \int \frac{\rho(\r')}{\r_s} \mathrm{d} \tau' \]</span>.</p>
+<p><span class="math display">\[ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\mathrm{\mathbf{r}}_s} \mathrm{d}q \]</span></p>
+<p>If we have a volume charge distribution, <span class="math inline">\(\mathrm{d}q\)</span> can be formualated as <span class="math inline">\(\rho(\mathrm{\mathbf{r}}') \mathrm{d}\tau'\)</span>, where <span class="math inline">\(\mathrm{\mathbf{r}}'\)</span> is [!!!!!], therefore the potential due to a volume charge distribution is given by</p>
+<p><span class="math display">\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi \epsilon_0} \int \frac{\rho(\mathrm{\mathbf{r}}')}{\mathrm{\mathbf{r}}_s} \mathrm{d} \tau' \]</span>.</p>
 <p>This equation allows us to compute <span class="math inline">\(V\)</span> when we know <span class="math inline">\(\rho\)</span>.</p>
 <!--
 This bit needs more added, including the volume charge distribution and the definitions of the notation. 
@@ -363,7 +363,7 @@ This bit needs more added, including the volume charge distribution and the defi
 <section id="relationship-between-electric-field-and-potential" class="level2" data-number="2.8">
 <h2 data-number="2.8" class="anchored" data-anchor-id="relationship-between-electric-field-and-potential"><span class="header-section-number">2.8</span> Relationship Between Electric Field and Potential</h2>
 <p>The electric field is related to the electric potential by the gradient:</p>
-<p><span class="math display">\[ \E = -\nabla V \]</span>.</p>
+<p><span class="math display">\[ \mathrm{\mathbf{E}}= -\nabla V \]</span>.</p>
 <p>You can see a brief proof of this on page 77 of the Griffiths. This relationship implies that the electric field points in the direction of the greatest decrease of potential.</p>
 <p>We can use this relationship to find the electric field when we know the potential.</p>
 </section>
@@ -386,8 +386,8 @@ ADD COMMENT HERE
 <p><span class="math display">\[
 \left\{
     \begin{aligned}
-         &amp; \mathrm{Outside \; the \; sphere \; (r &gt; R):} \; \E = \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\r}  \\
-         &amp; \mathrm{Inside \; the \; sphere \; (r &lt; R):} \; \E = \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\r} \\
+         &amp; \mathrm{Outside \; the \; sphere \; (r &gt; R):} \; \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\mathrm{\mathbf{r}}}  \\
+         &amp; \mathrm{Inside \; the \; sphere \; (r &lt; R):} \; \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\mathrm{\mathbf{r}}} \\
     \end{aligned}
 \right.
 \]</span></p>
