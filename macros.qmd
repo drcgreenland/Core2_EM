@@ -13,6 +13,9 @@
 
 \newcommand{\a}{\mathrm{\mathbf{a}}}
 \newcommand{\b}{\mathrm{\mathbf{b}}}
+\newcommand{\c}{\mathrm{\mathbf{c}}}
+\newcommand{\m}{\mathrm{\mathbf{m}}}
+
 \newcommand{\I}{\mathrm{\mathbf{I}}}
 \newcommand{\K}{\mathrm{\mathbf{K}}}
 \newcommand{\J}{\mathrm{\mathbf{J}}}

@@ -49,6 +49,22 @@ This is the **multipole expansion** of the magnetic vector potential. We call th
 
 $$ \A_{dip} (\r) = \frac{mu_0 I}{4\pi r^2} \oint r' \cos\alpha \dd l' = \frac{mu_0 I}{4\pi r^2} \oint (\hat{\r} \cdot \r') \dd \l'$$. 
 
+We can use the identity 
+$$\oint (\c \cdot \r) \dd \l = \a \times \c$$
+
+where $\a = \int_{\mathcal{S}} \dd \a$, and let $\c = \hat{\r}$, to find that 
+
+$$ \oint (\hat{\r} \cdot \r') \dd \l' = - \hat{\r} \times \int \dd \a' $$
+
+Therefore the dipole term of the magnetic vector potential can be written as
+
+$$\A_{dip}(\r) = \frac{\mu_0}{4\pi} \frac{ \m \times \r}{r^2}
+
+where $\m$ is the magnetic dipole moment:
+$$ \m = I \int \dd \a = I\a $$
+
+Here, $\a$ is known as the "vector area" of the loop, defined above. 
+
 
 
 
