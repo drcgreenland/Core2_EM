@@ -6,6 +6,7 @@ book:
   author: "Claire Greenland"
   date: "03/25/2024"
   
+  number-sections: true
   crossref:
     fig-labels: arabic
     eq-labels: arabic 
