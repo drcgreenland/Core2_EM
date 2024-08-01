@@ -1,4 +1,4 @@
-
+{{< include macros.qmd >}}
 <!--
 This section needs editing:
 Little edits here and there to clarify. 
@@ -38,9 +38,9 @@ $$
 
 W = - Q \int_{\b}^{\a} \E \cdot \mathrm{d} \l = Q[V(\b) - V(\a)]
 
-$$
+$${#eq-workatob}
 
-This equation re-states what we discussed in Lecture 2 - that the potential difference between two points $\a$ and $\b$ is the work done per unit charge to bring a charge from point $\a$ to point $\b$. 
+
 If you want to bring a charge $Q$ in from very far away and place it at point $\r$, you the work you have to do is
 
 $$W = Q[V(\r) - V(\infty)]$$

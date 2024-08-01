@@ -14,4 +14,7 @@
 \newcommand{\a}{\mathrm{\mathbf{a}}}
 \newcommand{\b}{\mathrm{\mathbf{b}}}
 \newcommand{\I}{\mathrm{\mathbf{I}}}
+\newcommand{\K}{\mathrm{\mathbf{K}}}
+\newcommand{\J}{\mathrm{\mathbf{J}}}
+
 \newcommand{\dd}{\mathrm{d}}

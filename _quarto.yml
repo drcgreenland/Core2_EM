@@ -8,8 +8,8 @@ book:
   chapters:
     - index.qmd
     - L1_electrostatics.qmd
-    - L2_potential.qmd
-    - L3_workenergy.qmd
+    - L2_workenergy.qmd
+    - L3_potential.qmd
     - L4_magfields.qmd
     - L5_magfieldscurrents.qmd
     - L6_magvectorpotential.qmd

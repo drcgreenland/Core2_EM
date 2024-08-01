@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Electromagnetism - 3&nbsp; Work and Energy in Electrostatics</title>
+<title>Electromagnetism - 2&nbsp; Work and Energy in Electrostatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./L4_magfields.html" rel="next">
-<link href="./L2_potential.html" rel="prev">
+<link href="./L3_potential.html" rel="next">
+<link href="./L1_electrostatics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./L3_workenergy.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./L2_workenergy.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -149,14 +149,14 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./L2_potential.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Electric Potential</span></span></a>
+  <a href="./L2_workenergy.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./L3_workenergy.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></span></a>
+  <a href="./L3_potential.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electric Potential</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -168,7 +168,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./L5_magfieldscurrents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Currents &amp; the Biot-Savart Law</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -253,15 +253,15 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#work-done-to-move-a-charge" id="toc-work-done-to-move-a-charge" class="nav-link active" data-scroll-target="#work-done-to-move-a-charge"><span class="header-section-number">3.1</span> Work done to move a charge</a></li>
-  <li><a href="#energy-of-a-point-charge-distribution" id="toc-energy-of-a-point-charge-distribution" class="nav-link" data-scroll-target="#energy-of-a-point-charge-distribution"><span class="header-section-number">3.2</span> Energy of a point charge distribution</a></li>
-  <li><a href="#energy-of-a-continuous-charge-distribution" id="toc-energy-of-a-continuous-charge-distribution" class="nav-link" data-scroll-target="#energy-of-a-continuous-charge-distribution"><span class="header-section-number">3.3</span> Energy of a continuous charge distribution</a></li>
-  <li><a href="#work-and-the-electric-dipole" id="toc-work-and-the-electric-dipole" class="nav-link" data-scroll-target="#work-and-the-electric-dipole"><span class="header-section-number">3.4</span> Work and the electric dipole</a>
+  <li><a href="#work-done-to-move-a-charge" id="toc-work-done-to-move-a-charge" class="nav-link active" data-scroll-target="#work-done-to-move-a-charge"><span class="header-section-number">2.1</span> Work done to move a charge</a></li>
+  <li><a href="#energy-of-a-point-charge-distribution" id="toc-energy-of-a-point-charge-distribution" class="nav-link" data-scroll-target="#energy-of-a-point-charge-distribution"><span class="header-section-number">2.2</span> Energy of a point charge distribution</a></li>
+  <li><a href="#energy-of-a-continuous-charge-distribution" id="toc-energy-of-a-continuous-charge-distribution" class="nav-link" data-scroll-target="#energy-of-a-continuous-charge-distribution"><span class="header-section-number">2.3</span> Energy of a continuous charge distribution</a></li>
+  <li><a href="#work-and-the-electric-dipole" id="toc-work-and-the-electric-dipole" class="nav-link" data-scroll-target="#work-and-the-electric-dipole"><span class="header-section-number">2.4</span> Work and the electric dipole</a>
   <ul class="collapse">
-  <li><a href="#electric-dipole-field" id="toc-electric-dipole-field" class="nav-link" data-scroll-target="#electric-dipole-field"><span class="header-section-number">3.4.1</span> Electric dipole field</a></li>
-  <li><a href="#energy-of-a-dipole-in-an-external-electric-field" id="toc-energy-of-a-dipole-in-an-external-electric-field" class="nav-link" data-scroll-target="#energy-of-a-dipole-in-an-external-electric-field"><span class="header-section-number">3.4.2</span> Energy of a dipole in an external electric field</a></li>
+  <li><a href="#electric-dipole-field" id="toc-electric-dipole-field" class="nav-link" data-scroll-target="#electric-dipole-field"><span class="header-section-number">2.4.1</span> Electric dipole field</a></li>
+  <li><a href="#energy-of-a-dipole-in-an-external-electric-field" id="toc-energy-of-a-dipole-in-an-external-electric-field" class="nav-link" data-scroll-target="#energy-of-a-dipole-in-an-external-electric-field"><span class="header-section-number">2.4.2</span> Energy of a dipole in an external electric field</a></li>
   </ul></li>
-  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems"><span class="header-section-number">3.5</span> Practice problems</a></li>
+  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems"><span class="header-section-number">2.5</span> Practice problems</a></li>
   </ul>
 </nav>
     </div>
@@ -270,7 +270,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></h1>
 </div>
 
 
@@ -294,8 +294,8 @@ Diagrams?
 Finish writing out most sections tbh. 
 -->
 <p><em>Recommended reading</em>: Griffiths Section 2.4</p>
-<section id="work-done-to-move-a-charge" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="work-done-to-move-a-charge"><span class="header-section-number">3.1</span> Work done to move a charge</h2>
+<section id="work-done-to-move-a-charge" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="work-done-to-move-a-charge"><span class="header-section-number">2.1</span> Work done to move a charge</h2>
 <p>In general, the work done to move an electric charge is calculated in the same way we calculate mechanical work when solving mechanics problems, taking the form:</p>
 <p>$$</p>
 <p>W = </p>
@@ -306,26 +306,26 @@ Finish writing out most sections tbh.
 <p>$$</p>
 <p>W = _{}^{} </p>
 <p>$$</p>
-<p>Each of the charges is exerting a force <span class="math inline">\(\F = Q \E\)</span> on the test charge, therefore the total work becomes:</p>
+<p>Each of the charges is exerting a force <span class="math inline">\(\mathrm{\mathbf{F}}= Q \mathrm{\mathbf{E}}\)</span> on the test charge, therefore the total work becomes:</p>
 <p>$$</p>
 <p>W = - Q _{}^{} = Q[V( - V()]</p>
-<p>$$</p>
-<p>This equation re-states what we discussed in Lecture 2 - that the potential difference between two points <span class="math inline">\(\a\)</span> and <span class="math inline">\(\b\)</span> is the work done per unit charge to bring a charge from point <span class="math inline">\(\a\)</span> to point <span class="math inline">\(\b\)</span>. If you want to bring a charge <span class="math inline">\(Q\)</span> in from very far away and place it at point <span class="math inline">\(\r\)</span>, you the work you have to do is</p>
-<p><span class="math display">\[W = Q[V(\r) - V(\infty)]\]</span></p>
+<p>$${#eq-workatob}</p>
+<p>If you want to bring a charge <span class="math inline">\(Q\)</span> in from very far away and place it at point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span>, you the work you have to do is</p>
+<p><span class="math display">\[W = Q[V(\mathrm{\mathbf{r}}) - V(\infty)]\]</span></p>
 <p>which, if you use a reference point at infinity, simply becomes</p>
-<p><span class="math display">\[W = Q V(\r)\]</span></p>
+<p><span class="math display">\[W = Q V(\mathrm{\mathbf{r}})\]</span></p>
 <p>which should be a familiar expression from your previous studies.</p>
 </section>
-<section id="energy-of-a-point-charge-distribution" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="energy-of-a-point-charge-distribution"><span class="header-section-number">3.2</span> Energy of a point charge distribution</h2>
+<section id="energy-of-a-point-charge-distribution" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="energy-of-a-point-charge-distribution"><span class="header-section-number">2.2</span> Energy of a point charge distribution</h2>
 <p>If you want to assemble a group of point charges, the work required to do so is given by</p>
-<p><span id="eq-workMulti"><span class="math display">\[ W = \frac{1}{2} \sum_{i=1}^n q_i V(\r_i)  \tag{3.1}\]</span></span></p>
-<p>Let’s break this down. To calculate the work done to assemble a group of point charges, we need to first realise the fact that the first charge to join the group does not take any work, because there is no electric field present for it to interact with. It is only when we try to introduce further charges to configuration that work needs to be done. We therefore choose one of our charges arbitrarily to be the first charge. For every subsequent charge that is brought in, the work done to bring it in is proportional to <span class="math inline">\(q_i V(\r_i)\)</span>, where <span class="math inline">\(q_i\)</span> is the charge in question and <span class="math inline">\(V(\r_i)\)</span> is the potential at position <span class="math inline">\(\r_i\)</span> (position of <span class="math inline">\(q_i\)</span>) due to all the other charges that are present. Summing over all of these will result in the work needed to add every charge to the distribution, and therefore gives the potential energy of the whole charge configuration. Summing the potentials of each charge with respect to the rest of the group of charges will lead to each pair of charges being considered twice, which is not physical, therefore the factor of <span class="math inline">\(\frac{1}{2}\)</span> is introduced to remove this problem. For a full derivation and explanation of <a href="#eq-workMulti" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-workMulti</span></a>, see Griffiths Section 2.4.2.</p>
+<p><span id="eq-workMulti"><span class="math display">\[ W = \frac{1}{2} \sum_{i=1}^n q_i V(\mathrm{\mathbf{r}}_i)  \tag{2.1}\]</span></span></p>
+<p>Let’s break this down. To calculate the work done to assemble a group of point charges, we need to first realise the fact that the first charge to join the group does not take any work, because there is no electric field present for it to interact with. It is only when we try to introduce further charges to configuration that work needs to be done. We therefore choose one of our charges arbitrarily to be the first charge. For every subsequent charge that is brought in, the work done to bring it in is proportional to <span class="math inline">\(q_i V(\mathrm{\mathbf{r}}_i)\)</span>, where <span class="math inline">\(q_i\)</span> is the charge in question and <span class="math inline">\(V(\mathrm{\mathbf{r}}_i)\)</span> is the potential at position <span class="math inline">\(\mathrm{\mathbf{r}}_i\)</span> (position of <span class="math inline">\(q_i\)</span>) due to all the other charges that are present. Summing over all of these will result in the work needed to add every charge to the distribution, and therefore gives the potential energy of the whole charge configuration. Summing the potentials of each charge with respect to the rest of the group of charges will lead to each pair of charges being considered twice, which is not physical, therefore the factor of <span class="math inline">\(\frac{1}{2}\)</span> is introduced to remove this problem. For a full derivation and explanation of <a href="#eq-workMulti" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-workMulti</span></a>, see Griffiths Section 2.4.2.</p>
 </section>
-<section id="energy-of-a-continuous-charge-distribution" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="energy-of-a-continuous-charge-distribution"><span class="header-section-number">3.3</span> Energy of a continuous charge distribution</h2>
+<section id="energy-of-a-continuous-charge-distribution" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="energy-of-a-continuous-charge-distribution"><span class="header-section-number">2.3</span> Energy of a continuous charge distribution</h2>
 <p>Now consider the situation where we have a continuous charge distribution instead of a collection of point charges. It is important to note here that a charge distribution is never truly continuous - charge always comes in the form of discrete point charges such as electrons, protons etc - however if we have a very large amount of point charges we can consider them to be a continuous distribution with some associated charge density. For a volume charge density, <a href="#eq-workMulti" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-workMulti</span></a> becomes</p>
-<p><span id="eq-cont1"><span class="math display">\[ W = \frac{1}{2}\int \rho V \mathrm{d} \tau \tag{3.2}\]</span></span></p>
+<p><span id="eq-cont1"><span class="math display">\[ W = \frac{1}{2}\int \rho V \mathrm{d} \tau \tag{2.2}\]</span></span></p>
 <p>where <span class="math inline">\(V\)</span> denotes volume and <span class="math inline">\(\mathrm{d} \tau\)</span> is the infinitesimal volume element.</p>
 <p>The same formulation works for a surface charge density…</p>
 <p><span class="math display">\[ W = \frac{1}{2}\int \sigma V \mathrm{d} a\]</span></p>
@@ -333,17 +333,17 @@ Finish writing out most sections tbh.
 <p><span class="math display">\[ W = \frac{1}{2}\int \lambda V \mathrm{d} l\]</span></p>
 <p>as well.</p>
 <p>The energy of a continuous charge distribution can also be expressed in the following way:</p>
-<p><span class="math display">\[ W = \frac{\epilon_0}{2} \left( int_{\mathcal{V}} E^2 \mathrm{d} \tau + \oint_{\mathcal{S}} V \E \cdot \mathrm{d} \a \]</span>.{#eq-cont2}</p>
+<p><span class="math display">\[ W = \frac{\epilon_0}{2} \left( int_{\mathcal{V}} E^2 \mathrm{d} \tau + \oint_{\mathcal{S}} V \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{a}}\]</span>.{#eq-cont2}</p>
 <p>We will not look at the derivation for this now, because it involves concepts not yet encountered in this course. After Lecture 7, I would recommend that you look at Section 2.4.3 of the Griffiths for the derivation of <a href="#eq-cont2" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-cont2</span></a>.</p>
 <p>If we integrate <a href="#eq-cont2" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-cont2</span></a> over all space, the surface integral goes to zero and we end up with:</p>
 <p><span class="math display">\[ W = \frac{\epilon_0}{2} \int_{\mathrm{all \; space}} E^2 \mathrm{d} \tau \]</span>.{#eq-cont3}</p>
 <!--
 -->
 </section>
-<section id="work-and-the-electric-dipole" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="work-and-the-electric-dipole"><span class="header-section-number">3.4</span> Work and the electric dipole</h2>
-<section id="electric-dipole-field" class="level3" data-number="3.4.1">
-<h3 data-number="3.4.1" class="anchored" data-anchor-id="electric-dipole-field"><span class="header-section-number">3.4.1</span> Electric dipole field</h3>
+<section id="work-and-the-electric-dipole" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="work-and-the-electric-dipole"><span class="header-section-number">2.4</span> Work and the electric dipole</h2>
+<section id="electric-dipole-field" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="electric-dipole-field"><span class="header-section-number">2.4.1</span> Electric dipole field</h3>
 <p>First of all, let’s talk about what an electric dipole is. An electric dipole is a combination of a positive and negative charge, equal in magnitude, a small distance from each other. A visual representation of the electric field of a dipole is shown below:</p>
 <p><img src="Figures/dipole_field.png" class="img-fluid" width="300"></p>
 <p>The vector field for an electric dipole can be calculated by summing the vector fields due to the two charges.</p>
@@ -358,25 +358,25 @@ Finish writing out most sections tbh.
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="Figures/dipole_moment.png" class="img-fluid figure-img" width="300"></p>
-<figcaption>A diagram of an electric dipole, showing the vector quantities <span class="math inline">\(\d\)</span> and <span class="math inline">\(\p\)</span>, which are the vector length of the dipole and the dipole moment, respectively.</figcaption>
+<figcaption>A diagram of an electric dipole, showing the vector quantities <span class="math inline">\(\mathrm{\mathbf{d}}\)</span> and <span class="math inline">\(\mathrm{\mathbf{p}}\)</span>, which are the vector length of the dipole and the dipole moment, respectively.</figcaption>
 </figure>
 </div>
 <p>The field produced by the dipole at point <span class="math inline">\(P\)</span> on the <span class="math inline">\(x\)</span>-axis is given by: <span class="math display">\[
-\E = \frac{1}{4\pi \epsilon_0} \frac{qd}{ \left( x^2 \left( \frac{d}{2} \right)^2 \right)^{\frac{3}{2}} }
+\mathrm{\mathbf{E}}= \frac{1}{4\pi \epsilon_0} \frac{qd}{ \left( x^2 \left( \frac{d}{2} \right)^2 \right)^{\frac{3}{2}} }
 \]</span></p>
 <p>Does this look familiar? If you attempted Q1 of the Problem Set for Lecture 1, you have actually already calculated the electric field of an electric dipole! The only difference is that in that question you calculated the field at a point on the <span class="math inline">\(z\)</span>-axis, but otherwise it should be same mathematical expression. In that problem you were asked to think about the dipole field in different ranges of values of <span class="math inline">\(z\)</span>. If we look at the above expression, we can see that in the limit <span class="math inline">\(x &gt;&gt; d\)</span> (in other words, when we are at a distance <span class="math inline">\(x\)</span> from the dipole that is much larger than the size of the dipole <span class="math inline">\(d\)</span>) the electric field due to the dipole can be reduced to: <span class="math display">\[
-\E = \frac{1}{4 \pi \epsilon_0} \frac{\p}{x^3}
+\mathrm{\mathbf{E}}= \frac{1}{4 \pi \epsilon_0} \frac{\mathrm{\mathbf{p}}}{x^3}
 \]</span></p>
 <p>So the field is very similar to that of a point charge, however it drops off even faster with distance. If we look at the field lines of the dipole, we can see how this happens - instead of spreading straight out from the charges, the field lines bend towards the axis of the dipole, therefore diverging faster than the point charge case.</p>
 </section>
-<section id="energy-of-a-dipole-in-an-external-electric-field" class="level3" data-number="3.4.2">
-<h3 data-number="3.4.2" class="anchored" data-anchor-id="energy-of-a-dipole-in-an-external-electric-field"><span class="header-section-number">3.4.2</span> Energy of a dipole in an external electric field</h3>
+<section id="energy-of-a-dipole-in-an-external-electric-field" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="energy-of-a-dipole-in-an-external-electric-field"><span class="header-section-number">2.4.2</span> Energy of a dipole in an external electric field</h3>
 <p>Now, back to the topic at hand: work and energy.</p>
 <p>Consider a dipole that is placed within a uniform electric field. The force on each charge has magnitude <span class="math inline">\(qE\)</span>, but since these forces are in opposite directions there is no net force on the dipole. There is however a torque about the centre of the dipole. See <a href="#fig-dipoleExt" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-dipoleExt</span></a> to get a feel for this.</p>
 <p><img src="Figures/dipole_extE.jpg" class="img-fluid" width="400" alt="Representation of a dipole placed in an external uniform electric field. \theta is the angle the dipole takes to the direction of the external electric field and F is the force on each charge of the dipole due to the external field">{#fig-dipoleExt}</p>
 <p>The torque about the centre of the dipole in <a href="#fig-dipoleExt" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-dipoleExt</span></a> is</p>
 <p><span class="math display">\[ \tau = 2 F \frac{d}{2} \sin\theta = qEd\sin\theta = p E \sin\theta \]</span></p>
-<p>This can be expressed in vector form as <span class="math display">\[ \mathrm{\mathbf{\tau}} = \p \times \E \]</span></p>
+<p>This can be expressed in vector form as <span class="math display">\[ \mathrm{\mathbf{\tau}} = \mathrm{\mathbf{p}}\times \mathrm{\mathbf{E}}\]</span></p>
 <p>The torque will cause the dipole to rotate and align itself with the electric field, as shown here:</p>
 <p><img src="Figures/dipole_align.png" class="img-fluid" width="300">{#fig-dipoleAlign}</p>
 <p>If we think about it in terms of work - we Would have to do work on the dipole to rotate it away from the position where it is aligned with the electric field (which is when the positive charge is on the right). This work is stored as potential energy. The dipole does work (in other words it loses potential energy) rotating towards its aligned position.</p>
@@ -394,8 +394,8 @@ W &amp; = \int_{\theta_0}^{\theta} \tau \mathrm{d} \theta \\
 <p>Not surprisingly, the energy is at a minimum when the dipole is aligned with the field, at which point the torque will be zero.</p>
 </section>
 </section>
-<section id="practice-problems" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="practice-problems"><span class="header-section-number">3.5</span> Practice problems</h2>
+<section id="practice-problems" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="practice-problems"><span class="header-section-number">2.5</span> Practice problems</h2>
 <!--
 Use this problem set to guide the content of the lecture notes/lecture!
 -->
@@ -833,13 +833,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./L2_potential.html" class="pagination-link" aria-label="Electric Potential">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Electric Potential</span></span>
+      <a href="./L1_electrostatics.html" class="pagination-link" aria-label="Electrostatics - Charges, Forces &amp; Fields">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Electrostatics - Charges, Forces &amp; Fields</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./L4_magfields.html" class="pagination-link" aria-label="Magnetic Fields and the Lorentz Force Law">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Magnetic Fields and the Lorentz Force Law</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./L3_potential.html" class="pagination-link" aria-label="Electric Potential">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electric Potential</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

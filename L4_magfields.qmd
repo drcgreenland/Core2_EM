@@ -1,3 +1,4 @@
+{{< include macros.qmd >}}
 
 # Magnetic Fields and the Lorentz Force Law
 
@@ -26,7 +27,7 @@ A particle of charge $q$ enters a region of uniform magnetic field $\B$ (pointin
 
 In electrostatics, we discussed electric charges as interacting via the electric field. An electric field surrounds a charge, and when a second charge is brought near to the first it interacts with the field, experiencing a force. The electric field diverges from charges - all charges are either a source or a sink for the electric field.
 
-However, the magnetic field does not work in the same way. We cannot think of "magnetic charges" interacting via the magnetic field, because magnetic charges have not been found to exist - there is no evidence for single North or South poles. Searches have been made for magnetic monopoles, but without any success, although their existence has not been entirely ruled out. (This is beyond our syllabus but if you are interested you could try looking at [this paper](https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0328).) 
+However, the magnetic field does not work in the same way. We cannot think of "magnetic charges" interacting via the magnetic field, because magnetic charges (in other words, magnetic monopoles) have not been found to exist - there is no evidence for single North or South poles. Searches have been made for magnetic monopoles, but without any success, although their existence has not been entirely ruled out. (This is beyond our syllabus but if you are interested you could try looking at [this paper](https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0328).) 
 
 Magnetic fields, denoted by $\B$, are vector fields that are produced by moving electric charges, for example electric currents. The direction of the magnetic field at a given point in space is the direction in which the north end of a compass needle would point when placed at that point. 
 
@@ -38,8 +39,7 @@ In the same way as the electric field, the strength (or in other words, the magn
 
 ![*Left:* The magnetic field produced by a bar magnet. *Right:* Section of a wire (yellow) carrying current $I$ and the magnetic field $\B$ that it produces.](Figures/MagFields.png){width=500}
 
-Magnetic field lines always form closed loops whereas electric field lines begin and end on charges. As magnetic field lines are closed loops, all field lines entering a closed surface must leave it as well - therefore the net magnetic flux through any surface is zero.
-
+Because there are no magnetic monopoles, magnetic field lines always form closed loops - as opposed to electric field lines, which begin and end on charges. 
 
 ### The Lorentz Force Law
 
@@ -74,9 +74,26 @@ The centripetal force required for circular motion is supplied by the magnetic f
 
 The Lorentz force law also leads to the Hall effect, which is the development of a transverse electric field in a solid material when it carries an electric current and is placed in a magnetic field that is perpendicular to the current.
 
-## Magnetic field of currents
 
-As we mentioned earlier, currents are moving charges and therefore they also experience a force in the prescence of a magnetic field. We can use the Lorentz force law to work out what this force will be. Here we consider a current as a moving line charge with velocity $\v$ and linear charge density $\lambda$. The current in the wire is given by $I = \lambda \v$ - you should be able to see upon inspection that this makes sense dimensionally, but check out Griffiths 5.1.3 for a more detailed derivation. If we think of the current as being made up of infinitesimal charges $\mathrm{d} q$, integrating to sum all of these across the length of the wire would give the total charge in the wire. Hence, by analogy to @eq-lorentz, the force on the wire would be
+## Work done by magnetic forces? 
+The work done on a charge when a magnetic force acts upon it,
+$\dd W_{mag} = \F_{mag} \cdot \dd l = Q(\v \times \B)\cdot \v \dd t$$
+
+By definition, $\v \times \B$ must be perpendicular to both $\B$ and $\v$ (unless they are parallel to one another, in which case there is no force anyway because the cross-product is zero.) Hence the dot product $(\v \times \B)\cdot \v \dd t$ is zero, implying that magnetic forces do no work. How can this be?! 
+E.g. the toqrue exerted by gravirty on a gyroscope changes the angular momentum of the gyroscope 
+
+<!-- 
+TIDY UP AND FINISH THIS BIT
+--> 
+
+
+## Magnetic field of currents{#sec-magcurrents1}
+
+When we talk about currents we are referring to a flow of charge through a wire. We define the current as the amount of *charge per unit time* passing a point in the wire. 
+We can imagine a current as a moving line charge with velocity $\v$ and linear charge density $\lambda$. The current in the wire is given by $I = \lambda \v$ - you should be able to see upon closer inspection that this is equivalent to charge per unit time. 
+
+
+Currents are moving charges and therefore they also experience a force in the prescence of a magnetic field. We can use the Lorentz force law to work out what this force will be.  If we think of the current as being made up of infinitesimal charges $\mathrm{d} q$, integrating to sum all of these across the length of the wire would give the total charge in the wire. Hence, by analogy to @eq-lorentz, the force on the wire would be
 
 $$ \F_{mag} = \int (\v \times \B) \mathrm{d} q $${#eq-currentforce}
 
@@ -88,26 +105,13 @@ $$ \ begin{split}
 \end{split}
 $${#eq-currentforce2}
 
-$\I$ and $\mathrm{d} \l$ point in the same direction, therefore it is valid to express @eq-currentforce2 as
+$\I$ and $\mathrm{d} \l$ point in the same direction, therefore it is valid (and more commonly encountered) to express @eq-currentforce2 as
 
 
-$$ \F_{mag} &= \int I (\mathrm{d} \l \times \B) $${#eq-currentforce3}
-
-
-@eq-currentforce3 is the generally accepted way to express the magnetic force on a segment of current-carrying wire, and will be used in this form in this course. However, @eq-currentforce3 models a current-carrying wire as a 1-dimensional line charge, which of course in reality it is not. If we want to be more realistic and calculate the magnetic force on a volume current (so, considering the current in a 3-dimensional wire) the magnetic force is 
-
-$$ \F_{mag} &= \int (\v \times \B) \rho \mathrm{d}\tau = \int (\J \times \B) \mathrm{d}\tau $${#eq-currentforceVol}
-
-where $\mathrm{d}\tau$ is the volume element, $\rho$ is the volume charge density and $\J = \rho \v$ is the volume current density. The volume current density is defined as the current per unit area for the area perpendicular to the current flow (essentially the cross-sectional area of the wire). Once again, Griffiths 5.1.3 is worth reading if you want a more detailed derivation. 
-
-## Work done by magnetic fields? 
+$$ \F_{mag} &= \int I (\mathrm{d} \l \times \B) $${#eq-currentforce3}. 
 
 
 
-<!--
-Magnetic forces do no work (use Griffiths, and watch that part of Adrian's magnetostatics 1 lecture more carefully)
-In the lecture itself, use the force on a current-carrying wire to lead on to a discussion of the function of motors? 
---> 
 ## Practice problems
 
 1) In the lecture we sketched and calculated the trajectory of the particle in Griffiths Example 5.2, in the case where the particle was released from the origin at zero velocity (see the lecture slides on Blackboard if you were not in attendance). 

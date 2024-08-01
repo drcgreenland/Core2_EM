@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Electromagnetism - 2&nbsp; Electric Potential</title>
+<title>Electromagnetism - 3&nbsp; Electric Potential</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./L3_workenergy.html" rel="next">
-<link href="./L1_electrostatics.html" rel="prev">
+<link href="./L4_magfields.html" rel="next">
+<link href="./L2_workenergy.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./L2_potential.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Electric Potential</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./L3_potential.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electric Potential</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -149,14 +149,14 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./L2_potential.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Electric Potential</span></span></a>
+  <a href="./L2_workenergy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./L3_workenergy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></span></a>
+  <a href="./L3_potential.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electric Potential</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -168,7 +168,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./L5_magfieldscurrents.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Currents &amp; the Biot-Savart Law</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -253,17 +253,19 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#pre-lecture-problem" id="toc-pre-lecture-problem" class="nav-link active" data-scroll-target="#pre-lecture-problem"><span class="header-section-number">2.1</span> Pre-lecture problem</a></li>
-  <li><a href="#introduction-to-electric-potential" id="toc-introduction-to-electric-potential" class="nav-link" data-scroll-target="#introduction-to-electric-potential"><span class="header-section-number">2.2</span> Introduction to electric potential</a></li>
-  <li><a href="#definition-of-electric-potential" id="toc-definition-of-electric-potential" class="nav-link" data-scroll-target="#definition-of-electric-potential"><span class="header-section-number">2.3</span> Definition of Electric Potential</a></li>
-  <li><a href="#potential-difference" id="toc-potential-difference" class="nav-link" data-scroll-target="#potential-difference"><span class="header-section-number">2.4</span> Potential Difference</a></li>
-  <li><a href="#electric-potential-due-to-a-point-charge" id="toc-electric-potential-due-to-a-point-charge" class="nav-link" data-scroll-target="#electric-potential-due-to-a-point-charge"><span class="header-section-number">2.5</span> Electric Potential Due to a Point Charge</a></li>
-  <li><a href="#electric-potential-due-to-multiple-point-charges" id="toc-electric-potential-due-to-multiple-point-charges" class="nav-link" data-scroll-target="#electric-potential-due-to-multiple-point-charges"><span class="header-section-number">2.6</span> Electric Potential Due to Multiple Point Charges</a></li>
-  <li><a href="#electric-potential-due-to-a-continuous-charge-distribution" id="toc-electric-potential-due-to-a-continuous-charge-distribution" class="nav-link" data-scroll-target="#electric-potential-due-to-a-continuous-charge-distribution"><span class="header-section-number">2.7</span> Electric Potential Due to a Continuous Charge Distribution</a></li>
-  <li><a href="#relationship-between-electric-field-and-potential" id="toc-relationship-between-electric-field-and-potential" class="nav-link" data-scroll-target="#relationship-between-electric-field-and-potential"><span class="header-section-number">2.8</span> Relationship Between Electric Field and Potential</a></li>
-  <li><a href="#equipotential-surfaces" id="toc-equipotential-surfaces" class="nav-link" data-scroll-target="#equipotential-surfaces"><span class="header-section-number">2.9</span> Equipotential Surfaces</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.10</span> Summary</a></li>
-  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems"><span class="header-section-number">2.11</span> Practice problems</a></li>
+  <li><a href="#pre-lecture-problem" id="toc-pre-lecture-problem" class="nav-link active" data-scroll-target="#pre-lecture-problem"><span class="header-section-number">3.1</span> Pre-lecture problem</a></li>
+  <li><a href="#introduction-to-electric-potential" id="toc-introduction-to-electric-potential" class="nav-link" data-scroll-target="#introduction-to-electric-potential"><span class="header-section-number">3.2</span> Introduction to electric potential</a></li>
+  <li><a href="#definition-of-electric-potential" id="toc-definition-of-electric-potential" class="nav-link" data-scroll-target="#definition-of-electric-potential"><span class="header-section-number">3.3</span> Definition of Electric Potential</a></li>
+  <li><a href="#potential-difference" id="toc-potential-difference" class="nav-link" data-scroll-target="#potential-difference"><span class="header-section-number">3.4</span> Potential Difference</a></li>
+  <li><a href="#electric-potential-due-to-a-point-charge" id="toc-electric-potential-due-to-a-point-charge" class="nav-link" data-scroll-target="#electric-potential-due-to-a-point-charge"><span class="header-section-number">3.5</span> Electric Potential Due to a Point Charge</a></li>
+  <li><a href="#electric-potential-due-to-multiple-point-charges" id="toc-electric-potential-due-to-multiple-point-charges" class="nav-link" data-scroll-target="#electric-potential-due-to-multiple-point-charges"><span class="header-section-number">3.6</span> Electric Potential Due to Multiple Point Charges</a></li>
+  <li><a href="#electric-potential-due-to-a-continuous-charge-distribution" id="toc-electric-potential-due-to-a-continuous-charge-distribution" class="nav-link" data-scroll-target="#electric-potential-due-to-a-continuous-charge-distribution"><span class="header-section-number">3.7</span> Electric Potential Due to a Continuous Charge Distribution</a>
+  <ul class="collapse">
+  <li><a href="#approximate-potentials-at-large-distances" id="toc-approximate-potentials-at-large-distances" class="nav-link" data-scroll-target="#approximate-potentials-at-large-distances"><span class="header-section-number">3.7.1</span> Approximate potentials at large distances</a></li>
+  </ul></li>
+  <li><a href="#relationship-between-electric-field-and-potential" id="toc-relationship-between-electric-field-and-potential" class="nav-link" data-scroll-target="#relationship-between-electric-field-and-potential"><span class="header-section-number">3.8</span> Relationship Between Electric Field and Potential</a></li>
+  <li><a href="#equipotential-surfaces" id="toc-equipotential-surfaces" class="nav-link" data-scroll-target="#equipotential-surfaces"><span class="header-section-number">3.9</span> Equipotential Surfaces</a></li>
+  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems"><span class="header-section-number">3.10</span> Practice problems</a></li>
   </ul>
 </nav>
     </div>
@@ -272,7 +274,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Electric Potential</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electric Potential</span></h1>
 </div>
 
 
@@ -298,30 +300,30 @@ Improve intro and outro.
 New/reworked pre-and post-lecture problems. 
 -->
 <p><em>Recommended reading</em>: Griffiths Section 2.3</p>
-<section id="pre-lecture-problem" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="pre-lecture-problem"><span class="header-section-number">2.1</span> Pre-lecture problem</h2>
-<p>Before you attempt this problem, it is recommended that you read through the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths. This question also requires some vector calculus, to which you have only just been introduced. Do not worry if you can’t do this question just yet - we will go through it in the lecture.</p>
+<section id="pre-lecture-problem" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="pre-lecture-problem"><span class="header-section-number">3.1</span> Pre-lecture problem</h2>
+<p>Before you attempt this problem, it is recommended that you read through the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths. This question also requires some vector calculus, to which you have only just been introduced. Do not worry if you are struggling with this question - we will go through it in the lecture.</p>
 <p>One of these is an impossible electrostatic field. Which one?</p>
 <ol type="a">
 <li><p><span class="math inline">\(\mathrm{\mathbf{E}}= k[ xy \hat{\mathrm{\mathbf{x}}} + 2yz \hat{\mathrm{\mathbf{y}}} + 3xz \hat{\mathrm{\mathbf{z}}} ]\)</span></p></li>
 <li><p><span class="math inline">\(\mathrm{\mathbf{E}}= k[ y^2 \hat{\mathrm{\mathbf{x}}} + (2xy + z^2)\hat{\mathrm{\mathbf{y}}} + 2yz \hat{\mathrm{\mathbf{z}}} ]\)</span></p></li>
 </ol>
 <p>For the <em>possible</em> one, find the potential. Use the origin as your reference point. Check your answer by computing <span class="math inline">\(\nabla V\)</span>.</p>
-<p>[:bulb: <strong>Hint:</strong> you must select a specific path to integrate along. The answer is <strong>path-independent</strong>, meaning that you will get the same answer no matter what path you choose–however, it is simply not possible to integrate unless you have a particular path in mind.]</p>
+<p>[<strong>Hint:</strong> you must select a specific path to integrate along. The answer is <strong>path-independent</strong>, meaning that you will get the same answer no matter what path you choose–however, it is simply not possible to integrate unless you have a particular path in mind.]</p>
 </section>
-<section id="introduction-to-electric-potential" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="introduction-to-electric-potential"><span class="header-section-number">2.2</span> Introduction to electric potential</h2>
+<section id="introduction-to-electric-potential" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="introduction-to-electric-potential"><span class="header-section-number">3.2</span> Introduction to electric potential</h2>
 <p>Electric potential is a scalar quantity associated with the electric field. It is defined as the work done by an external force to bring a unit positive charge to a particular point in space (for example, the location of a test charge <span class="math inline">\(Q\)</span>) from an arbitrary reference point. For the purposes of this lecture course, we will choose infinity (<span class="math inline">\(\infty\)</span>) as our reference point - but please note that Griffiths does not use infinity but rather uses the symbol <span class="math inline">\(\mathcal{O}\)</span> to denote an arbitrary reference point.</p>
 <p>We will see later how the concept of electric potential simplifies many calculations in electrostatics, particularly when dealing with electric fields and potential energy.</p>
 </section>
-<section id="definition-of-electric-potential" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="definition-of-electric-potential"><span class="header-section-number">2.3</span> Definition of Electric Potential</h2>
+<section id="definition-of-electric-potential" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="definition-of-electric-potential"><span class="header-section-number">3.3</span> Definition of Electric Potential</h2>
 <p>The electric potential <span class="math inline">\(V\)</span> at some displacement <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> is given by</p>
 <p><span class="math display">\[ V(\mathrm{\mathbf{r}}) = −\int_{\infty}^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\]</span></p>
 <p>where <span class="math inline">\(\mathrm{\mathbf{E}}\)</span> is the electric field, and <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{l}}\)</span> is an infinitesimal displacement vector along the path of the charge. As we have stated, the potential is the work done per unit charge, therefore we can see how the above can be derived. The work done by a force to bring an object from infinity to point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> is given by $ _^r $, therefore the work done per unit charge is <span class="math inline">\(\int_\infty^r \frac{\mathrm{\mathbf{F}}}{Q} \cdot \mathrm{d}\mathrm{\mathbf{l}}= \int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\)</span>. However, you will notice that the expression shown above is <span class="math inline">\(- \int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\)</span> - by convention, we add a minus sign because the direction of the electric field is the direction of <em>decreasing</em> potential. Let me explain this. We have seen in the previous lecture that electric field lines point away from a positive charge. If we place a positive test charge in the vicinity of another positive charge, the test charge will move away, in the direction of the electric field. This is the direction of decreasing potential because the charge loses potential energy as it moves away. Hence, the electric field points in the direction of decreasing potential, so the expression for potential must be the negative of the electric field.</p>
 </section>
-<section id="potential-difference" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="potential-difference"><span class="header-section-number">2.4</span> Potential Difference</h2>
+<section id="potential-difference" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="potential-difference"><span class="header-section-number">3.4</span> Potential Difference</h2>
 <p>The potential difference <span class="math inline">\(V_{ab}\)</span> between two points <span class="math inline">\(\mathrm{\mathbf{a}}\)</span> and <span class="math inline">\(\mathrm{\mathbf{b}}\)</span> is given by:</p>
 <p><span class="math display">\[
 \begin{split}
@@ -332,10 +334,10 @@ V_{ab} &amp; = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) \\
 \end{split}
 \]</span></p>
 <p><span class="math display">\[ V_{ab} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]</span></p>
-<p>This quantity represents the work done per unit charge by the electric field in moving a charge from point <span class="math inline">\(\mathrm{\mathbf{a}}\)</span> to point <span class="math inline">\(\mathrm{\mathbf{b}}\)</span>.</p>
+<p>This quantity represents the work done per unit charge by the electric field in moving a charge from point <span class="math inline">\(\mathrm{\mathbf{a}}\)</span> to point <span class="math inline">\(\mathrm{\mathbf{b}}\)</span>. You should now be able to see clearly, looking back at <a href="#eq-workatob" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-workatob</span></a> from Lecture 2, that this is the work done per unit charge in moving a charge from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>.</p>
 </section>
-<section id="electric-potential-due-to-a-point-charge" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="electric-potential-due-to-a-point-charge"><span class="header-section-number">2.5</span> Electric Potential Due to a Point Charge</h2>
+<section id="electric-potential-due-to-a-point-charge" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="electric-potential-due-to-a-point-charge"><span class="header-section-number">3.5</span> Electric Potential Due to a Point Charge</h2>
 <p>For a point charge <span class="math inline">\(q\)</span> located at the origin, the electric potential at a displacement <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> can be found by computing the potential difference between infinity and the point <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> - this is derived in Section 2.3.4 of the Griffiths and comes out as follows:</p>
 <!--
 that is, the work done per unit charge in bringing a test charge from infinity to point $\r$. Try using the expression for $V_{ab}$ above to do this - you can use $\mathrm{d}\r$ as the displacement vector $\mathrm{d}\l$. You should find that the potential due to a point charge is:-->
@@ -344,42 +346,61 @@ that is, the work done per unit charge in bringing a test charge from infinity t
 <p><span class="math display">\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi\epsilon_0} \frac{q}{r_s} \]</span></p>
 <p>where <span class="math inline">\(r_s\)</span> is the separation between <span class="math inline">\(q\)</span> and <span class="math inline">\(\mathrm{\mathbf{r}}\)</span>, with <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> being the displacement with respect to the origin.</p>
 </section>
-<section id="electric-potential-due-to-multiple-point-charges" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="electric-potential-due-to-multiple-point-charges"><span class="header-section-number">2.6</span> Electric Potential Due to Multiple Point Charges</h2>
+<section id="electric-potential-due-to-multiple-point-charges" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="electric-potential-due-to-multiple-point-charges"><span class="header-section-number">3.6</span> Electric Potential Due to Multiple Point Charges</h2>
 <p>The principle of superposition applies to electric potential, just as it does to electric fields and forces. For multiple point charges <span class="math inline">\(q_i\)</span> located at positions <span class="math inline">\(\mathrm{\mathbf{r}}_i\)</span>, the total potential at a point s the sum of the potentials due to each charge:</p>
-<p><span id="eq-Vmulti"><span class="math display">\[ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\mathrm{\mathbf{r}}_{s_i}}  \tag{2.1}\]</span></span></p>
+<p><span id="eq-Vmulti"><span class="math display">\[ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\mathrm{\mathbf{r}}_{s_i}}  \tag{3.1}\]</span></span></p>
 </section>
-<section id="electric-potential-due-to-a-continuous-charge-distribution" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="electric-potential-due-to-a-continuous-charge-distribution"><span class="header-section-number">2.7</span> Electric Potential Due to a Continuous Charge Distribution</h2>
+<section id="electric-potential-due-to-a-continuous-charge-distribution" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="electric-potential-due-to-a-continuous-charge-distribution"><span class="header-section-number">3.7</span> Electric Potential Due to a Continuous Charge Distribution</h2>
 <p>If we have a continuous charge distribution instead of a set of discrete charges, we can think instead of an infinitesimal charge <span class="math inline">\(\mathrm{d}q\)</span>, and sum over all of these to find the total potential due to the distribution:</p>
 <p><span class="math display">\[ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\mathrm{\mathbf{r}}_s} \mathrm{d}q \]</span></p>
-<p>If we have a volume charge distribution, <span class="math inline">\(\mathrm{d}q\)</span> can be formualated as <span class="math inline">\(\rho(\mathrm{\mathbf{r}}') \mathrm{d}\tau'\)</span>, where <span class="math inline">\(\mathrm{\mathbf{r}}'\)</span> is [!!!!!], therefore the potential due to a volume charge distribution is given by</p>
-<p><span class="math display">\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi \epsilon_0} \int \frac{\rho(\mathrm{\mathbf{r}}')}{\mathrm{\mathbf{r}}_s} \mathrm{d} \tau' \]</span>.</p>
+<p>If we have a volume charge distribution, <span class="math inline">\(\mathrm{d}q\)</span> can be formualated as <span class="math inline">\(\rho(\mathrm{\mathbf{r}}') \mathrm{d}\tau'\)</span>, where <span class="math inline">\(\mathrm{\mathbf{r}}'\)</span> is the position of the volume element <span class="math inline">\(\mathrm{d}\tau'\)</span>. Therefore, the potential due to a volume charge distribution is given by</p>
+<p><span class="math display">\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi \epsilon_0} \int \frac{\rho(\mathrm{\mathbf{r}}')}{\mathrm{\mathbf{r}}_s} \mathrm{d} \tau' \]</span>{#eq-Vrho}.</p>
 <p>This equation allows us to compute <span class="math inline">\(V\)</span> when we know <span class="math inline">\(\rho\)</span>.</p>
+<section id="approximate-potentials-at-large-distances" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="approximate-potentials-at-large-distances"><span class="header-section-number">3.7.1</span> Approximate potentials at large distances</h3>
+<p>If you are very far away from a localized charge distribution, it “looks” like a point charge - the potential at a distance <span class="math inline">\(r\)</span> would be approximately <span class="math inline">\(\frac{Q}{4\pi\epsilon_0 r}\)</span>. What happens if <span class="math inline">\(Q\)</span> is zero? You may think the potential is (approximately) zero - and you’d be right, in a sense - even if <span class="math inline">\(Q\)</span> is not zero, the potential at large <span class="math inline">\(r\)</span> (aka very far away) is really tiny anyway. But we want to know more than this - we want a more precise approximation of the potential. This is where we can do a <strong>multipole expansion</strong>, which is a expansion of <span class="math inline">\(V\)</span> in powers of <span class="math inline">\(\frac{1}{r}\)</span>. We start with the potential at position <span class="math inline">\(\mathrm{\mathbf{r}}\)</span>, given by <a href="#eq-Vrho" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-Vrho</span></a>, with a reminder that <span class="math inline">\(\mathrm{\mathbf{r}}\)</span> is the field point (the vector of the position at which we are measuring the potential) and <span class="math inline">\(r_s\)</span> is the separation distance between the volume element <span class="math inline">\(\mathrm{d}\tau'\)</span> and the field point (see <a href="#fig-multipolesetup" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-multipolesetup</span></a>).</p>
+<p><img src="Figures/Griffiths_fig3_28.jpg" class="img-fluid" width="200">{#fig-multipolesetup}</p>
+<p>First we transform <span class="math inline">\(r_s\)</span> to be a function of <span class="math inline">\(r\)</span>, using the law of cosines:</p>
+<p><span class="math display">\[ \mathrm{\mathbf{r}}_s^2 = r^2 + (r')^2 - 2r r' \cos\alpha = r^2 \left[ 1 + \left( \frac{r'}{r} \right)^2 + 2 \left( \frac{r'}{r} \right)\cos\alpha \right]. \]</span></p>
+<p>To make this expression easier to work with, we make the substition:</p>
+<p><span class="math display">\[ \epsilon = \left( \frac{r}{r'} \right)\left( \frac{r}{r'} - 2\cos\alpha \right) \]</span></p>
+<p>Therefore <span class="math inline">\(r_s\)</span> can expressed as</p>
+<p><span class="math display">\[ \mathrm{\mathbf{r}}_s = r \sqrt{1 + \epsilon} \]</span></p>
+<p>For points very far away from the charge distribution (which is the range of <span class="math inline">\(r\)</span> we’re looking for), <span class="math inline">\(\epsilon\)</span> is much smaller than 1 (because <span class="math inline">\(r'\)</span> is much smaller than <span class="math inline">\(r\)</span>). This means that it is appropriate to apply a binomial expansion to <span class="math inline">\(r_s = r\sqrt{1 + \epsilon}\)</span>. We want our expansion to be in powers of <span class="math inline">\(1/r\)</span> to reflect what we know about what the potential should be. So we write</p>
+<p><span class="math display">\[ \frac{1}{r_s} = \frac{1}{r} (1 + \epsilon)^{-1/2} = \frac{1}{r} \left( 1 - \frac{1}{2} \epsilon + \frac{3}{8} \epsilon^2 - \frac{5}{16} \epsilon^3 + ... \right) \]</span>.</p>
+<p>We can expand this out in terms of <span class="math inline">\(r\)</span>, <span class="math inline">\(r'\)</span> and <span class="math inline">\(\alpha\)</span>, which gives</p>
+<p><span class="math display">\[ \frac{1}{r_s} &amp;= \frac{1}{r} \left[ 1 - \frac{1}{2} \left( \frac{r'}{r} \right)\left( \frac{r'}{r} - 2\cos\alpha \right) + \frac{3}{8} \left( \frac{r'}{r} \right)^2 \left( \frac{r'}{r} - 2\cos\alpha \right)^2 - \frac{5}{16} \left( \frac{r'}{r} \right)^3 \left( \frac{r'}{r} - 2\cos\alpha \right)^3 + ... \right] \]</span></p>
+<p>From here we must expand out each term and gather powers of <span class="math inline">\(\left( \frac{r'}{r} \right)\)</span>, removing any terms in <span class="math inline">\(\left( \frac{r'}{r} \right)^4\)</span> or above as these will be vanishingly small. I strongly encourage you to try this bit of maths out for yourself, as it is not too trivial and will give you some good maths practice. You should reach the result:</p>
+<p><span class="math display">\[ \frac{1}{r_s} = \frac{1}{r} \left[1 + left( \frac{r'}{r} \right) (\cos\alpha) + \left( \frac{r'}{r} \right)^2 (3\cos^2 \alpha - 1)/2 + \left( \frac{r'}{r} \right)^3 (5\cos^3 \alpha - 3\cos\alpha)/2 right] \]</span></p>
+<p>The coefficients of <span class="math inline">\(\left( \frac{r'}{r} \right)\)</span> (the <span class="math inline">\(\cos\)</span>-based terms in brackets) can recognised as Legendre polynomials of <span class="math inline">\(\cos\alpha\)</span>, denoted as <span class="math inline">\(P_n (\cos\alpha)\)</span> (you can read up on these if you wish but it is not necessary to understand them, you may simply accept the result!) Hence:</p>
+<p><span id="eq-potLegendre"><span class="math display">\[ \frac{1}{r_s} = \frac{1}{r} \sum_{n=0}^{\infty} \left( \frac{r'}{r} \right)^n P_n (\cos\alpha)  \tag{3.2}\]</span></span></p>
+<p>where <span class="math inline">\(\alpha\)</span> is the angle between <span class="math inline">\(\mathrm{\mathbf{r}}'\)</span> and <span class="math inline">\(\mathrm{\mathbf{r}}\)</span>.</p>
+<p>Substituting <span class="math inline">\(\frac{1}{r_s}\)</span> back into <a href="#eq-Vrho" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-Vrho</span></a>, we obtain</p>
+<p><span class="math display">\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi\epsilon_0} \sum_{n=0}^{\infty} \frac{1}{r^{(n+1)}} \int (r')^n P_n(\cos\alpha) \rho(\mathrm{\mathbf{r}}') \mathrm{d}\tau'\]</span></p>
+<p>which is the <strong>multipole expansion</strong> of <span class="math inline">\(V\)</span> in powers of <span class="math inline">\(\frac{1}{r}\)</span>, that can be used to approximate the potential of charge distrbution at large distances away from it. Please read Section 3.4.2 of the Griffiths to discover how this formula can be used to find a <strong>dipole moment</strong> for a charge distribution. This is the continuous charge distribution equivalent of the dipole moment that was discussed in Lecture 2.</p>
 <!--
 This bit needs more added, including the volume charge distribution and the definitions of the notation. 
 -->
 </section>
-<section id="relationship-between-electric-field-and-potential" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="relationship-between-electric-field-and-potential"><span class="header-section-number">2.8</span> Relationship Between Electric Field and Potential</h2>
+</section>
+<section id="relationship-between-electric-field-and-potential" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="relationship-between-electric-field-and-potential"><span class="header-section-number">3.8</span> Relationship Between Electric Field and Potential</h2>
 <p>The electric field is related to the electric potential by the gradient:</p>
 <p><span class="math display">\[ \mathrm{\mathbf{E}}= -\nabla V \]</span>.</p>
 <p>You can see a brief proof of this on page 77 of the Griffiths. This relationship implies that the electric field points in the direction of the greatest decrease of potential.</p>
 <p>We can use this relationship to find the electric field when we know the potential.</p>
 </section>
-<section id="equipotential-surfaces" class="level2" data-number="2.9">
-<h2 data-number="2.9" class="anchored" data-anchor-id="equipotential-surfaces"><span class="header-section-number">2.9</span> Equipotential Surfaces</h2>
+<section id="equipotential-surfaces" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="equipotential-surfaces"><span class="header-section-number">3.9</span> Equipotential Surfaces</h2>
 <p>Equipotential surfaces are surfaces on which the electric potential is constant. No work is required to move a charge along an equipotential surface, because work is only required to change an object’s potential. Electric field lines are always perpendicular to equipotential surfaces.</p>
 <!--
 ADD COMMENT HERE 
 -->
 </section>
-<section id="summary" class="level2" data-number="2.10">
-<h2 data-number="2.10" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.10</span> Summary</h2>
-<p>Electric potential is a crucial concept in electrostatics, simplifying the analysis of electric fields and the work done by (or on) charges. It is ~intimately related~?? to the electric field and provides a scalar measure of potential energy per unit charge. Understanding electric potential is essential for solving a wide range of problems in electrostatics.</p>
-</section>
-<section id="practice-problems" class="level2" data-number="2.11">
-<h2 data-number="2.11" class="anchored" data-anchor-id="practice-problems"><span class="header-section-number">2.11</span> Practice problems</h2>
+<section id="practice-problems" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="practice-problems"><span class="header-section-number">3.10</span> Practice problems</h2>
 <ol type="1">
 <li>Consider a uniformly charged solid sphere of radius <span class="math inline">\(R\)</span> and total charge <span class="math inline">\(q\)</span>. The electric field for this sphere is given by:</li>
 </ol>
@@ -829,13 +850,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./L1_electrostatics.html" class="pagination-link" aria-label="Electrostatics - Charges, Forces &amp; Fields">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Electrostatics - Charges, Forces &amp; Fields</span></span>
+      <a href="./L2_workenergy.html" class="pagination-link" aria-label="Work and Energy in Electrostatics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./L3_workenergy.html" class="pagination-link" aria-label="Work and Energy in Electrostatics">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./L4_magfields.html" class="pagination-link" aria-label="Magnetic Fields and the Lorentz Force Law">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Magnetic Fields and the Lorentz Force Law</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

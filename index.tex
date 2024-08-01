@@ -222,6 +222,9 @@ Fields}\label{electrostatics---charges-forces-fields}
 \newcommand{\a}{\mathrm{\mathbf{a}}}
 \newcommand{\b}{\mathrm{\mathbf{b}}}
 \newcommand{\I}{\mathrm{\mathbf{I}}}
+\newcommand{\K}{\mathrm{\mathbf{K}}}
+\newcommand{\J}{\mathrm{\mathbf{J}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
 \newcommand{\dd}{\mathrm{d}}
 
 \emph{Recommended reading}: Griffiths Section 2.1 (and 2.2 if you want
@@ -231,7 +234,7 @@ some bonus reading about stuff that will be important later)
 
 Griffiths Problem 1.7
 
-\section{Electric Charges}\label{electric-charges}
+\section{Electric Charges}\label{sec-charge}
 
 Electric charge is a fundamental property of matter. Many fundamental
 particles (such as electrons and protons) have charge. However,
@@ -313,15 +316,17 @@ if we are computing the electric field of a source charge), the field
 point is the point at which we are measuring the field - it is the point
 where a test charge would be if there was one.
 
-\begin{figure}[H]
+\begin{figure}
 
-{\centering \includegraphics{Figures/axes_r_definitions.png}
+\centering{
+
+\includegraphics{Figures/axes_r_definitions.png}
 
 }
 
-\caption{Some charges, overlaid with axes showing the definition of
-\(\mathrm{\mathbf{r}}\), the vector separation between the source and
-test charges.}
+\caption{\label{fig-definitions}Some charges, overlaid with axes showing
+the definition of \(\mathrm{\mathbf{r}}\), the vector separation between
+the source and test charges.}
 
 \end{figure}%
 
@@ -333,7 +338,7 @@ prescence of this field experience a force as a result.
 
 The force on a test charge \(Q\), exerted by a source charge \(q\), is
 given by Coulomb's Law, which is as follows:
-\[ F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r_s^2} \hat{\mathrm{\mathbf{r}}_s} \]
+\[ \mathrm{\mathbf{F}}= \frac{1}{4\pi \epsilon_0} \frac{q Q}{r_s^2} \hat{\mathrm{\mathbf{r}}_s} \]
 
 where:
 
@@ -354,19 +359,53 @@ repulsive (\(\mathrm{\mathbf{F}}\) is a positive quantity); if \(q\) and
 \(Q\) have different signs, the force is attractive
 (\(\mathrm{\mathbf{F}}\) is a negative quantity).
 
+\section{Superposition Principle}\label{superposition-principle}
+
+The principle of superposition states that ``the interaction between any
+two charges is completely unaffected by the presence of others''. This
+means that the total force on a test charge can be computed by
+calculating the force on the test charge due to each source charge
+separately, then adding up the contributions, as follows:
+
+\[ \mathrm{\mathbf{F}}_{tot} = \sum_i \mathrm{\mathbf{F}}_i \]
+
 \section{Electric Field}\label{electric-field}
 
-The electric field \(\mathrm{\mathbf{E}}\) produced by a charge (or
-charged object/charge distribution) is a vector field that represents
-the force per unit charge experienced by a positive test charge placed
-at a particular point in space:
+The electric field \(\mathrm{\mathbf{E}}\) produced by a charge (or a
+collection of charges or charge distribution) is a vector field that
+represents the force per unit charge experienced by a positive test
+charge placed at a particular point in space:
 
 \[ \mathrm{\mathbf{E}}= \frac{\mathrm{\mathbf{F}}}{Q} \]
 
 \noindent which can be rearranged to the more familiar form
 \(\mathrm{\mathbf{F}}= Q \mathrm{\mathbf{E}}\).
 
+Hence the electric field a distance \(r_s\) from a single point charge
+is given by:
+
+\[ \mathrm{\mathbf{E}}= \frac{1}{4\pi \epsilon_0} \frac{q}{r_s^2} \hat{\mathrm{\mathbf{r}}_s} \]
+
 \(\mathbf{E}\) has units of Vm\(^{-1}\) or NC\(^{-1}\).
+
+The superposition principle also applies to the electric field, which
+can be calculated for any given point in space as a sum of the electric
+field at that point from all the source charges. Consider the collection
+of charges in Figure~\ref{fig-definitions} - the electric field due to
+this collection of \(i\) charges can be expressed as\\
+\begin{equation}\phantomsection\label{eq-Esum}{ \mathrm{\mathbf{E}}_{tot} = \sum_i \mathrm{\mathbf{E}}_i = \frac{1}{4\pi\epsilon_0} \sum_{i=1}^n \frac{q_i}{\mathrm{\mathbf{r}}_s_i^2} \hat{\mathrm{\mathbf{r}}_s} }\end{equation}
+
+What actually is an electric field though? As we have discussed, it is a
+vector field surrounding an electric charge, so it has a vector value at
+every point in space which represents how strong of a force another
+charge would experience at that point. Conceptually, this is not a
+trivial question - for the purposes of this course, we can simply think
+of electric field as a real physical entity that fills the space
+surrounding an electric charge, which causes other charges to ``feel''
+the prescence of the charge and hence interact with it.
+
+\subsection{Representing the electric
+field}\label{representing-the-electric-field}
 
 The electric field is normally represented by field lines that indicate
 the direction of the field. The direction of the field is determined by
@@ -400,23 +439,69 @@ Most important rules for field lines:
   Lines are symmetric as they leave the charges.
 \end{itemize}
 
-\section{Superposition Principle}\label{superposition-principle}
-
-The principle of superposition states that ``the interaction between any
-two charges is completely unaffected by the presence of others''. This
-means that the total force on a test charge can be computed by
-calculating the force on the test charge due to each source charge
-separately, then adding up the contributions, as follows:
-
-\[ \mathrm{\mathbf{F}}_{tot} = \sum_i \mathrm{\mathbf{F}}_i \]
-
-The same applies to the electric field, which can be calculated for any
-given point in space as a sum of the electric field at that point from
-all the source charges:
-\[ \mathrm{\mathbf{E}}_{tot} = \sum_i \mathrm{\mathbf{E}}_i \]
-
 \section{Continuous charge
 distributions}\label{continuous-charge-distributions}
+
+Many of the problems we encounter in electromagnetism are not related to
+small collections of individual point charges like those in
+Figure~\ref{fig-definitions}, as this is not a very common or useful
+physical situation. We often have to deal instead with large collections
+of charges, such as a charged objects (as discussed in
+Section~\ref{sec-charge}) or currents. We can think of such large
+collections of charges as \textbf{continuous charge distributions} -
+although they are not truly continuous, as they always consist of
+individual point charges, we can effectively model them as continuous
+when there is such a vast amount of charge.
+
+In order to find the field due to a continuous distribution, we must
+consider the charge divided up into infinitesimal elements
+\(\mathrm{d}q\) which may be considered as point charges. The
+infinitesimal contribution to the total field produced by such an
+element is
+
+\[ \mathrm{d}\mathrm{\mathbf{E}}= \frac{\mathrm{d}q}{4\pi\epsilon_0 r_s^2} \hat{\mathrm{\mathbf{r}}_s}.\]
+where \(\mathrm{\mathbf{r}}_s\) is the separation vector from the charge
+element to the field point. To determine the total field due to the
+distributed charge, the vector sum over the whole distribution of all
+such contributions must be evaluated by means of an integral:
+
+\begin{equation}\phantomsection\label{eq-infinitesimalE}{ E(\mathrm{\mathbf{r}}) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{r_s^2} \mathrm{d}q }\end{equation}
+
+In practice, to evaluate the integral it is necessary to express
+\(\mathrm{d}q\) in terms of \$\mathrm{\mathbf{r}}, as we will illustrate
+in examples. We often need to consider charge distributed along a line,
+over a surface or throughout a volume. This leads to the concept of a
+variety of charge distributions.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\item
+  Volume charge distribution has a charge per unit volume (charge
+  density) \(\rho\). \(\mathrm{d}q = \rho \mathrm{d}\tau'\) where
+  \(\mathrm{d}\tau'\) is an element of volume. For a volume charge we
+  can therefore reformulate Equation~\ref{eq-infinitesimalE} as:
+  \[ \mathrm{\mathbf{E}}{\mathrm{\mathbf{r}}} \frac{1}{4\pi\epsilon_0} \int_{\mathcal{V}} \frac{\rho (\mathrm{\mathbf{r}}')}{\mathrm{\mathbf{r}}_s^2} \hat{r_s} \mathrm{d}\tau' \]
+\item
+  Surface charge distribution has a charge per unit area (surface charge
+  density) \(\sigma\). \(\mathrm{d}q = \sigma \mathrm{d}a'\) where
+  \(\mathrm{d}a'\) is an element of area. For a surface charge, the
+  electric field is given by
+  \[ \mathrm{\mathbf{E}}{\mathrm{\mathbf{r}}} \frac{1}{4\pi\epsilon_0} \int_{\mathcal{S}} \frac{\sigma (\mathrm{\mathbf{r}}')}{\mathrm{\mathbf{r}}_s^2} \hat{r_s} \mathrm{d}a' \]
+\item
+  Line charge distribution has a charge per unit length (linear charge
+  density) \(\\lambda\). \(\mathrm{d}q = \rho \mathrm{d}l'\) where
+  \(\mathrm{d}l'\) is an element of length. For a line charge. the
+  electric field is given by
+  \[ \mathrm{\mathbf{E}}{\mathrm{\mathbf{r}}} \frac{1}{4\pi\epsilon_0} \int_{\mathcal{V}} \frac{\lambda (\mathrm{\mathbf{r}}')}{\mathrm{\mathbf{r}}_s^2} \hat{r_s} \mathrm{d}l' \]
+\end{enumerate}
+
+Note carefully the notation here - the same conventions are used as in
+Figure~\ref{fig-definitions}, except that now the source charge is
+\(\mathrm{d}q\). Therefore, \(\mathrm{\mathbf{r}}_s\) is the vector from
+\(\mathrm{d}q\) (and therefore from \(\mathrm{d}\tau'\),
+\(\mathrm{d}a'\) or \(\mathrm{d}l\)) to the field point
+\(\mathrm{\mathbf{r}}\), while \(\mathrm{\mathbf{r}}'\) is the vector
+from the origin to \(\mathrm{d}q\).
 
 \section{Summary}\label{summary}
 
@@ -606,7 +691,8 @@ for different ranges of \(z\)-values.{]}
 
 \bookmarksetup{startatroot}
 
-\chapter{Electric Potential}\label{electric-potential}
+\chapter{Work and Energy in
+Electrostatics}\label{work-and-energy-in-electrostatics}
 
 \newcommand{\l}{\mathrm{\mathbf{l}}}
 \newcommand{\E}{\mathrm{\mathbf{E}}}
@@ -624,248 +710,10 @@ for different ranges of \(z\)-values.{]}
 \newcommand{\a}{\mathrm{\mathbf{a}}}
 \newcommand{\b}{\mathrm{\mathbf{b}}}
 \newcommand{\I}{\mathrm{\mathbf{I}}}
+\newcommand{\K}{\mathrm{\mathbf{K}}}
+\newcommand{\J}{\mathrm{\mathbf{J}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
 \newcommand{\dd}{\mathrm{d}}
-
-\emph{Recommended reading}: Griffiths Section 2.3
-
-\section{Pre-lecture problem}\label{pre-lecture-problem-1}
-
-Before you attempt this problem, it is recommended that you read through
-the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths.
-This question also requires some vector calculus, to which you have only
-just been introduced. Do not worry if you can't do this question just
-yet - we will go through it in the lecture.
-
-One of these is an impossible electrostatic field. Which one?
-
-\begin{enumerate}
-\def\labelenumi{(\alph{enumi})}
-\item
-  \(\mathrm{\mathbf{E}}= k[ xy \hat{\mathrm{\mathbf{x}}} + 2yz \hat{\mathrm{\mathbf{y}}} + 3xz \hat{\mathrm{\mathbf{z}}} ]\)
-\item
-  \(\mathrm{\mathbf{E}}= k[ y^2 \hat{\mathrm{\mathbf{x}}} + (2xy + z^2)\hat{\mathrm{\mathbf{y}}} + 2yz \hat{\mathrm{\mathbf{z}}} ]\)
-\end{enumerate}
-
-For the \emph{possible} one, find the potential. Use the origin as your
-reference point. Check your answer by computing \(\nabla V\).
-
-{[}:bulb: \textbf{Hint:} you must select a specific path to integrate
-along. The answer is \textbf{path-independent}, meaning that you will
-get the same answer no matter what path you choose--however, it is
-simply not possible to integrate unless you have a particular path in
-mind.{]}
-
-\section{Introduction to electric
-potential}\label{introduction-to-electric-potential}
-
-Electric potential is a scalar quantity associated with the electric
-field. It is defined as the work done by an external force to bring a
-unit positive charge to a particular point in space (for example, the
-location of a test charge \(Q\)) from an arbitrary reference point. For
-the purposes of this lecture course, we will choose infinity
-(\(\infty\)) as our reference point - but please note that Griffiths
-does not use infinity but rather uses the symbol \(\mathcal{O}\) to
-denote an arbitrary reference point.
-
-We will see later how the concept of electric potential simplifies many
-calculations in electrostatics, particularly when dealing with electric
-fields and potential energy.
-
-\section{Definition of Electric
-Potential}\label{definition-of-electric-potential}
-
-The electric potential \(V\) at some displacement
-\(\mathrm{\mathbf{r}}\) is given by
-
-\[ V(\mathrm{\mathbf{r}}) = −\int_{\infty}^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\]
-
-where \(\mathrm{\mathbf{E}}\) is the electric field, and
-\(\mathrm{d}\mathrm{\mathbf{l}}\) is an infinitesimal displacement
-vector along the path of the charge. As we have stated, the potential is
-the work done per unit charge, therefore we can see how the above can be
-derived. The work done by a force to bring an object from infinity to
-point \(\mathrm{\mathbf{r}}\) is given by \$ \int\_\infty\^{}r
-\mathrm{\mathbf{F}} \cdot \mathrm{d}\mathrm{\mathbf{l}}\$, therefore the
-work done per unit charge is
-\(\int_\infty^r \frac{\mathrm{\mathbf{F}}}{Q} \cdot \mathrm{d}\mathrm{\mathbf{l}}= \int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\).
-However, you will notice that the expression shown above is
-\(- \int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\)
-- by convention, we add a minus sign because the direction of the
-electric field is the direction of \emph{decreasing} potential. Let me
-explain this. We have seen in the previous lecture that electric field
-lines point away from a positive charge. If we place a positive test
-charge in the vicinity of another positive charge, the test charge will
-move away, in the direction of the electric field. This is the direction
-of decreasing potential because the charge loses potential energy as it
-moves away. Hence, the electric field points in the direction of
-decreasing potential, so the expression for potential must be the
-negative of the electric field.
-
-\section{Potential Difference}\label{potential-difference}
-
-The potential difference \(V_{ab}\) between two points
-\(\mathrm{\mathbf{a}}\) and \(\mathrm{\mathbf{b}}\) is given by:
-
-\[
-\begin{split} 
-V_{ab} & = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) \\
-& = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}+ \int_{\infty}^{\mathrm{\mathbf{a}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\\
-& = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}- \int_{\mathrm{\mathbf{a}}}^{\infty} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\\
-& = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}
-\end{split}
-\]
-
-\[ V_{ab} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]
-
-This quantity represents the work done per unit charge by the electric
-field in moving a charge from point \(\mathrm{\mathbf{a}}\) to point
-\(\mathrm{\mathbf{b}}\).
-
-\section{Electric Potential Due to a Point
-Charge}\label{electric-potential-due-to-a-point-charge}
-
-For a point charge \(q\) located at the origin, the electric potential
-at a displacement \(\mathrm{\mathbf{r}}\) can be found by computing the
-potential difference between infinity and the point
-\(\mathrm{\mathbf{r}}\) - this is derived in Section 2.3.4 of the
-Griffiths and comes out as follows:
-
-\[ V(r) = \frac{1}{4\pi\epsilon_0} \frac{q}{r} \]
-
-If the point charge is not at the origin, we can generalise the above
-equation to:
-
-\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi\epsilon_0} \frac{q}{r_s} \]
-
-where \(r_s\) is the separation between \(q\) and
-\(\mathrm{\mathbf{r}}\), with \(\mathrm{\mathbf{r}}\) being the
-displacement with respect to the origin.
-
-\section{Electric Potential Due to Multiple Point
-Charges}\label{electric-potential-due-to-multiple-point-charges}
-
-The principle of superposition applies to electric potential, just as it
-does to electric fields and forces. For multiple point charges \(q_i\)
-located at positions \(\mathrm{\mathbf{r}}_i\), the total potential at a
-point \mathrm{\mathbf{r}}is the sum of the potentials due to each
-charge:
-
-\begin{equation}\phantomsection\label{eq-Vmulti}{ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\mathrm{\mathbf{r}}_{s_i}} }\end{equation}
-
-\section{Electric Potential Due to a Continuous Charge
-Distribution}\label{electric-potential-due-to-a-continuous-charge-distribution}
-
-If we have a continuous charge distribution instead of a set of discrete
-charges, we can think instead of an infinitesimal charge
-\(\mathrm{d}q\), and sum over all of these to find the total potential
-due to the distribution:
-
-\[ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\mathrm{\mathbf{r}}_s} \mathrm{d}q \]
-
-If we have a volume charge distribution, \(\mathrm{d}q\) can be
-formualated as \(\rho(\mathrm{\mathbf{r}}') \mathrm{d}\tau'\), where
-\(\mathrm{\mathbf{r}}'\) is {[}!!!!!{]}, therefore the potential due to
-a volume charge distribution is given by
-
-\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi \epsilon_0} \int \frac{\rho(\mathrm{\mathbf{r}}')}{\mathrm{\mathbf{r}}_s} \mathrm{d} \tau' \].
-
-This equation allows us to compute \(V\) when we know \(\rho\).
-
-\section{Relationship Between Electric Field and
-Potential}\label{relationship-between-electric-field-and-potential}
-
-The electric field is related to the electric potential by the gradient:
-
-\[ \mathrm{\mathbf{E}}= -\nabla V \].
-
-You can see a brief proof of this on page 77 of the Griffiths. This
-relationship implies that the electric field points in the direction of
-the greatest decrease of potential.
-
-We can use this relationship to find the electric field when we know the
-potential.
-
-\section{Equipotential Surfaces}\label{equipotential-surfaces}
-
-Equipotential surfaces are surfaces on which the electric potential is
-constant. No work is required to move a charge along an equipotential
-surface, because work is only required to change an object's potential.
-Electric field lines are always perpendicular to equipotential surfaces.
-
-\section{Summary}\label{summary-1}
-
-Electric potential is a crucial concept in electrostatics, simplifying
-the analysis of electric fields and the work done by (or on) charges. It
-is \textasciitilde intimately related\textasciitilde?? to the electric
-field and provides a scalar measure of potential energy per unit charge.
-Understanding electric potential is essential for solving a wide range
-of problems in electrostatics.
-
-\section{Practice problems}\label{practice-problems-1}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
-\tightlist
-\item
-  Consider a uniformly charged solid sphere of radius \(R\) and total
-  charge \(q\). The electric field for this sphere is given by:
-\end{enumerate}
-
-\[
-\left\{
-    \begin{aligned}
-         & \mathrm{Outside \; the \; sphere \; (r > R):} \; \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\mathrm{\mathbf{r}}}  \\
-         & \mathrm{Inside \; the \; sphere \; (r < R):} \; \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\mathrm{\mathbf{r}}} \\
-    \end{aligned}
-\right.
-\]
-
-\begin{enumerate}
-\def\labelenumi{(\alph{enumi})}
-\tightlist
-\item
-  Find the potential \(V(r)\) both inside and outside the sphere.
-\item
-  Compute the gradient of \(V\) in each region, and check that it yields
-  the correct field.
-\item
-  Sketch \(V(r)\).
-\end{enumerate}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  In the worked example for Lecture 1 (see the lecture slides on
-  Blackboard if you were not in attendance) we calculated the electric
-  field a distance \(z\) above the midpoint between two equal charges
-  \(q\) that are a distance \(d\) apart. Use the solution found there to
-  find the electric potential at a distance \(z\) above the midpoint
-  between the two charges.
-\end{enumerate}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Find the potential at distance \(z\) above the midpoint of the line
-  charge shown in the figure below. \(\lambda\) is its line charge
-  density.
-  \includegraphics[width=2.08333in,height=\textheight]{Figures/L2_prob3.pdf}
-\end{enumerate}
-
-\textbf{Hint:} You may be tempted to use your result from Q5 of the
-Lecture 1 problems, however it is easier to directly calulate the
-potential here, by splitting up the line into infinitesimals segments
-and summing over the potentials from all segments, working from the
-formula for potential of a point charge.
-
-\bookmarksetup{startatroot}
-
-\chapter{Work and Energy in
-Electrostatics}\label{work-and-energy-in-electrostatics}
 
 \emph{Recommended reading}: Griffiths Section 2.4
 
@@ -907,15 +755,10 @@ W = - Q \int\_\{\mathrm{\mathbf{b}}\}\^{}\{\mathrm{\mathbf{a}}\}
 \mathrm{\mathbf{E}} \cdot \mathrm{d} \mathrm{\mathbf{l}} =
 Q{[}V(\mathrm{\mathbf{b}}) - V(\mathrm{\mathbf{a}}){]}
 
-\$\$
+\$\$\{\#eq-workatob\}
 
-This equation re-states what we discussed in Lecture 2 - that the
-potential difference between two points \(\mathrm{\mathbf{a}}\) and
-\(\mathrm{\mathbf{b}}\) is the work done per unit charge to bring a
-charge from point \(\mathrm{\mathbf{a}}\) to point
-\(\mathrm{\mathbf{b}}\). If you want to bring a charge \(Q\) in from
-very far away and place it at point \(\mathrm{\mathbf{r}}\), you the
-work you have to do is
+If you want to bring a charge \(Q\) in from very far away and place it
+at point \(\mathrm{\mathbf{r}}\), you the work you have to do is
 
 \[W = Q[V(\mathrm{\mathbf{r}}) - V(\infty)]\]
 
@@ -1120,7 +963,7 @@ in which case \(U = -pE\cos\theta\).
 Not surprisingly, the energy is at a minimum when the dipole is aligned
 with the field, at which point the torque will be zero.
 
-\section{Practice problems}\label{practice-problems-2}
+\section{Practice problems}\label{practice-problems-1}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
@@ -1168,8 +1011,364 @@ square configuration.
 
 \bookmarksetup{startatroot}
 
+\chapter{Electric Potential}\label{electric-potential}
+
+\newcommand{\l}{\mathrm{\mathbf{l}}}
+\newcommand{\E}{\mathrm{\mathbf{E}}}
+\newcommand{\F}{\mathrm{\mathbf{F}}}
+\newcommand{\r}{\mathrm{\mathbf{r}}}
+\newcommand{\B}{\mathrm{\mathbf{B}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
+\newcommand{\x}{\mathrm{\mathbf{x}}}
+\newcommand{\y}{\mathrm{\mathbf{y}}}
+\newcommand{\z}{\mathrm{\mathbf{z}}}
+\newcommand{\v}{\mathrm{\mathbf{v}}}
+\newcommand{\p}{\mathrm{\mathbf{p}}}
+\newcommand{\d}{\mathrm{\mathbf{d}}}
+
+\newcommand{\a}{\mathrm{\mathbf{a}}}
+\newcommand{\b}{\mathrm{\mathbf{b}}}
+\newcommand{\I}{\mathrm{\mathbf{I}}}
+\newcommand{\K}{\mathrm{\mathbf{K}}}
+\newcommand{\J}{\mathrm{\mathbf{J}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
+\newcommand{\dd}{\mathrm{d}}
+
+\emph{Recommended reading}: Griffiths Section 2.3
+
+\section{Pre-lecture problem}\label{pre-lecture-problem-1}
+
+Before you attempt this problem, it is recommended that you read through
+the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths.
+This question also requires some vector calculus, to which you have only
+just been introduced. Do not worry if you are struggling with this
+question - we will go through it in the lecture.
+
+One of these is an impossible electrostatic field. Which one?
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\item
+  \(\mathrm{\mathbf{E}}= k[ xy \hat{\mathrm{\mathbf{x}}} + 2yz \hat{\mathrm{\mathbf{y}}} + 3xz \hat{\mathrm{\mathbf{z}}} ]\)
+\item
+  \(\mathrm{\mathbf{E}}= k[ y^2 \hat{\mathrm{\mathbf{x}}} + (2xy + z^2)\hat{\mathrm{\mathbf{y}}} + 2yz \hat{\mathrm{\mathbf{z}}} ]\)
+\end{enumerate}
+
+For the \emph{possible} one, find the potential. Use the origin as your
+reference point. Check your answer by computing \(\nabla V\).
+
+{[}\textbf{Hint:} you must select a specific path to integrate along.
+The answer is \textbf{path-independent}, meaning that you will get the
+same answer no matter what path you choose--however, it is simply not
+possible to integrate unless you have a particular path in mind.{]}
+
+\section{Introduction to electric
+potential}\label{introduction-to-electric-potential}
+
+Electric potential is a scalar quantity associated with the electric
+field. It is defined as the work done by an external force to bring a
+unit positive charge to a particular point in space (for example, the
+location of a test charge \(Q\)) from an arbitrary reference point. For
+the purposes of this lecture course, we will choose infinity
+(\(\infty\)) as our reference point - but please note that Griffiths
+does not use infinity but rather uses the symbol \(\mathcal{O}\) to
+denote an arbitrary reference point.
+
+We will see later how the concept of electric potential simplifies many
+calculations in electrostatics, particularly when dealing with electric
+fields and potential energy.
+
+\section{Definition of Electric
+Potential}\label{definition-of-electric-potential}
+
+The electric potential \(V\) at some displacement
+\(\mathrm{\mathbf{r}}\) is given by
+
+\[ V(\mathrm{\mathbf{r}}) = −\int_{\infty}^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\]
+
+where \(\mathrm{\mathbf{E}}\) is the electric field, and
+\(\mathrm{d}\mathrm{\mathbf{l}}\) is an infinitesimal displacement
+vector along the path of the charge. As we have stated, the potential is
+the work done per unit charge, therefore we can see how the above can be
+derived. The work done by a force to bring an object from infinity to
+point \(\mathrm{\mathbf{r}}\) is given by \$ \int\_\infty\^{}r
+\mathrm{\mathbf{F}} \cdot \mathrm{d}\mathrm{\mathbf{l}}\$, therefore the
+work done per unit charge is
+\(\int_\infty^r \frac{\mathrm{\mathbf{F}}}{Q} \cdot \mathrm{d}\mathrm{\mathbf{l}}= \int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\).
+However, you will notice that the expression shown above is
+\(- \int_\infty^r \mathrm{\mathbf{E}}\cdot \mathrm{d}\mathrm{\mathbf{l}}\)
+- by convention, we add a minus sign because the direction of the
+electric field is the direction of \emph{decreasing} potential. Let me
+explain this. We have seen in the previous lecture that electric field
+lines point away from a positive charge. If we place a positive test
+charge in the vicinity of another positive charge, the test charge will
+move away, in the direction of the electric field. This is the direction
+of decreasing potential because the charge loses potential energy as it
+moves away. Hence, the electric field points in the direction of
+decreasing potential, so the expression for potential must be the
+negative of the electric field.
+
+\section{Potential Difference}\label{potential-difference}
+
+The potential difference \(V_{ab}\) between two points
+\(\mathrm{\mathbf{a}}\) and \(\mathrm{\mathbf{b}}\) is given by:
+
+\[
+\begin{split} 
+V_{ab} & = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) \\
+& = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}+ \int_{\infty}^{\mathrm{\mathbf{a}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\\
+& = -\int_{\infty}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}- \int_{\mathrm{\mathbf{a}}}^{\infty} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\\
+& = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}
+\end{split}
+\]
+
+\[ V_{ab} = V(\mathrm{\mathbf{b}}) − V(\mathrm{\mathbf{a}}) = -\int_{\mathrm{\mathbf{a}}}^{\mathrm{\mathbf{b}}} \mathrm{\mathbf{E}}\cdot \mathrm{d} \mathrm{\mathbf{l}}\]
+
+This quantity represents the work done per unit charge by the electric
+field in moving a charge from point \(\mathrm{\mathbf{a}}\) to point
+\(\mathrm{\mathbf{b}}\). You should now be able to see clearly, looking
+back at \textbf{?@eq-workatob} from Lecture 2, that this is the work
+done per unit charge in moving a charge from \(a\) to \(b\).
+
+\section{Electric Potential Due to a Point
+Charge}\label{electric-potential-due-to-a-point-charge}
+
+For a point charge \(q\) located at the origin, the electric potential
+at a displacement \(\mathrm{\mathbf{r}}\) can be found by computing the
+potential difference between infinity and the point
+\(\mathrm{\mathbf{r}}\) - this is derived in Section 2.3.4 of the
+Griffiths and comes out as follows:
+
+\[ V(r) = \frac{1}{4\pi\epsilon_0} \frac{q}{r} \]
+
+If the point charge is not at the origin, we can generalise the above
+equation to:
+
+\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi\epsilon_0} \frac{q}{r_s} \]
+
+where \(r_s\) is the separation between \(q\) and
+\(\mathrm{\mathbf{r}}\), with \(\mathrm{\mathbf{r}}\) being the
+displacement with respect to the origin.
+
+\section{Electric Potential Due to Multiple Point
+Charges}\label{electric-potential-due-to-multiple-point-charges}
+
+The principle of superposition applies to electric potential, just as it
+does to electric fields and forces. For multiple point charges \(q_i\)
+located at positions \(\mathrm{\mathbf{r}}_i\), the total potential at a
+point \mathrm{\mathbf{r}}is the sum of the potentials due to each
+charge:
+
+\begin{equation}\phantomsection\label{eq-Vmulti}{ V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i} \frac{q_i}{\mathrm{\mathbf{r}}_{s_i}} }\end{equation}
+
+\section{Electric Potential Due to a Continuous Charge
+Distribution}\label{electric-potential-due-to-a-continuous-charge-distribution}
+
+If we have a continuous charge distribution instead of a set of discrete
+charges, we can think instead of an infinitesimal charge
+\(\mathrm{d}q\), and sum over all of these to find the total potential
+due to the distribution:
+
+\[ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\mathrm{\mathbf{r}}_s} \mathrm{d}q \]
+
+If we have a volume charge distribution, \(\mathrm{d}q\) can be
+formualated as \(\rho(\mathrm{\mathbf{r}}') \mathrm{d}\tau'\), where
+\(\mathrm{\mathbf{r}}'\) is the position of the volume element
+\(\mathrm{d}\tau'\). Therefore, the potential due to a volume charge
+distribution is given by
+
+\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi \epsilon_0} \int \frac{\rho(\mathrm{\mathbf{r}}')}{\mathrm{\mathbf{r}}_s} \mathrm{d} \tau' \]\{\#eq-Vrho\}.
+
+This equation allows us to compute \(V\) when we know \(\rho\).
+
+\subsection{Approximate potentials at large
+distances}\label{approximate-potentials-at-large-distances}
+
+If you are very far away from a localized charge distribution, it
+``looks'' like a point charge - the potential at a distance \(r\) would
+be approximately \(\frac{Q}{4\pi\epsilon_0 r}\). What happens if \(Q\)
+is zero? You may think the potential is (approximately) zero - and you'd
+be right, in a sense - even if \(Q\) is not zero, the potential at large
+\(r\) (aka very far away) is really tiny anyway. But we want to know
+more than this - we want a more precise approximation of the potential.
+This is where we can do a \textbf{multipole expansion}, which is a
+expansion of \(V\) in powers of \(\frac{1}{r}\). We start with the
+potential at position \(\mathrm{\mathbf{r}}\), given by
+\textbf{?@eq-Vrho}, with a reminder that \(\mathrm{\mathbf{r}}\) is the
+field point (the vector of the position at which we are measuring the
+potential) and \(r_s\) is the separation distance between the volume
+element \(\mathrm{d}\tau'\) and the field point (see
+\textbf{?@fig-multipolesetup}).
+
+\includegraphics[width=2.08333in,height=\textheight]{Figures/Griffiths_fig3_28.jpg}\{\#fig-multipolesetup\}
+
+First we transform \(r_s\) to be a function of \(r\), using the law of
+cosines:
+
+\[ \mathrm{\mathbf{r}}_s^2 = r^2 + (r')^2 - 2r r' \cos\alpha = r^2 \left[ 1 + \left( \frac{r'}{r} \right)^2 + 2 \left( \frac{r'}{r} \right)\cos\alpha \right]. \]
+
+To make this expression easier to work with, we make the substition:
+
+\[ \epsilon = \left( \frac{r}{r'} \right)\left( \frac{r}{r'} - 2\cos\alpha \right) \]
+
+Therefore \(r_s\) can expressed as
+
+\[ \mathrm{\mathbf{r}}_s = r \sqrt{1 + \epsilon} \]
+
+For points very far away from the charge distribution (which is the
+range of \(r\) we're looking for), \(\epsilon\) is much smaller than 1
+(because \(r'\) is much smaller than \(r\)). This means that it is
+appropriate to apply a binomial expansion to
+\(r_s = r\sqrt{1 + \epsilon}\). We want our expansion to be in powers of
+\(1/r\) to reflect what we know about what the potential should be. So
+we write
+
+\[ \frac{1}{r_s} = \frac{1}{r} (1 + \epsilon)^{-1/2} = \frac{1}{r} \left( 1 - \frac{1}{2} \epsilon + \frac{3}{8} \epsilon^2 - \frac{5}{16} \epsilon^3 + ... \right) \].
+
+We can expand this out in terms of \(r\), \(r'\) and \(\alpha\), which
+gives
+
+\[ \frac{1}{r_s} &= \frac{1}{r} \left[ 1 - \frac{1}{2} \left( \frac{r'}{r} \right)\left( \frac{r'}{r} - 2\cos\alpha \right) + \frac{3}{8} \left( \frac{r'}{r} \right)^2 \left( \frac{r'}{r} - 2\cos\alpha \right)^2 - \frac{5}{16} \left( \frac{r'}{r} \right)^3 \left( \frac{r'}{r} - 2\cos\alpha \right)^3 + ... \right] \]
+
+From here we must expand out each term and gather powers of
+\(\left( \frac{r'}{r} \right)\), removing any terms in
+\(\left( \frac{r'}{r} \right)^4\) or above as these will be vanishingly
+small. I strongly encourage you to try this bit of maths out for
+yourself, as it is not too trivial and will give you some good maths
+practice. You should reach the result:
+
+\[ \frac{1}{r_s} = \frac{1}{r} \left[1 + left( \frac{r'}{r} \right) (\cos\alpha) + \left( \frac{r'}{r} \right)^2 (3\cos^2 \alpha - 1)/2 + \left( \frac{r'}{r} \right)^3 (5\cos^3 \alpha - 3\cos\alpha)/2 right] \]
+
+The coefficients of \(\left( \frac{r'}{r} \right)\) (the \(\cos\)-based
+terms in brackets) can recognised as Legendre polynomials of
+\(\cos\alpha\), denoted as \(P_n (\cos\alpha)\) (you can read up on
+these if you wish but it is not necessary to understand them, you may
+simply accept the result!) Hence:
+
+\begin{equation}\phantomsection\label{eq-potLegendre}{ \frac{1}{r_s} = \frac{1}{r} \sum_{n=0}^{\infty} \left( \frac{r'}{r} \right)^n P_n (\cos\alpha) }\end{equation}
+
+where \(\alpha\) is the angle between \(\mathrm{\mathbf{r}}'\) and
+\(\mathrm{\mathbf{r}}\).
+
+Substituting \(\frac{1}{r_s}\) back into \textbf{?@eq-Vrho}, we obtain
+
+\[ V(\mathrm{\mathbf{r}}) = \frac{1}{4\pi\epsilon_0} \sum_{n=0}^{\infty} \frac{1}{r^{(n+1)}} \int (r')^n P_n(\cos\alpha) \rho(\mathrm{\mathbf{r}}') \mathrm{d}\tau'\]
+
+which is the \textbf{multipole expansion} of \(V\) in powers of
+\(\frac{1}{r}\), that can be used to approximate the potential of charge
+distrbution at large distances away from it. Please read Section 3.4.2
+of the Griffiths to discover how this formula can be used to find a
+\textbf{dipole moment} for a charge distribution. This is the continuous
+charge distribution equivalent of the dipole moment that was discussed
+in Lecture 2.
+
+\section{Relationship Between Electric Field and
+Potential}\label{relationship-between-electric-field-and-potential}
+
+The electric field is related to the electric potential by the gradient:
+
+\[ \mathrm{\mathbf{E}}= -\nabla V \].
+
+You can see a brief proof of this on page 77 of the Griffiths. This
+relationship implies that the electric field points in the direction of
+the greatest decrease of potential.
+
+We can use this relationship to find the electric field when we know the
+potential.
+
+\section{Equipotential Surfaces}\label{equipotential-surfaces}
+
+Equipotential surfaces are surfaces on which the electric potential is
+constant. No work is required to move a charge along an equipotential
+surface, because work is only required to change an object's potential.
+Electric field lines are always perpendicular to equipotential surfaces.
+
+\section{Practice problems}\label{practice-problems-2}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  Consider a uniformly charged solid sphere of radius \(R\) and total
+  charge \(q\). The electric field for this sphere is given by:
+\end{enumerate}
+
+\[
+\left\{
+    \begin{aligned}
+         & \mathrm{Outside \; the \; sphere \; (r > R):} \; \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \hat{\mathrm{\mathbf{r}}}  \\
+         & \mathrm{Inside \; the \; sphere \; (r < R):} \; \mathrm{\mathbf{E}}= \frac{1}{4\pi\epsilon_0} \frac{qr}{R^3} \hat{\mathrm{\mathbf{r}}} \\
+    \end{aligned}
+\right.
+\]
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\tightlist
+\item
+  Find the potential \(V(r)\) both inside and outside the sphere.
+\item
+  Compute the gradient of \(V\) in each region, and check that it yields
+  the correct field.
+\item
+  Sketch \(V(r)\).
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  In the worked example for Lecture 1 (see the lecture slides on
+  Blackboard if you were not in attendance) we calculated the electric
+  field a distance \(z\) above the midpoint between two equal charges
+  \(q\) that are a distance \(d\) apart. Use the solution found there to
+  find the electric potential at a distance \(z\) above the midpoint
+  between the two charges.
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Find the potential at distance \(z\) above the midpoint of the line
+  charge shown in the figure below. \(\lambda\) is its line charge
+  density.
+  \includegraphics[width=2.08333in,height=\textheight]{Figures/L2_prob3.png}
+\end{enumerate}
+
+\textbf{Hint:} You may be tempted to use your result from Q5 of the
+Lecture 1 problems, however it is easier to directly calulate the
+potential here, by splitting up the line into infinitesimals segments
+and summing over the potentials from all segments, working from the
+formula for potential of a point charge.
+
+\bookmarksetup{startatroot}
+
 \chapter{Magnetic Fields and the Lorentz Force
 Law}\label{magnetic-fields-and-the-lorentz-force-law}
+
+\newcommand{\l}{\mathrm{\mathbf{l}}}
+\newcommand{\E}{\mathrm{\mathbf{E}}}
+\newcommand{\F}{\mathrm{\mathbf{F}}}
+\newcommand{\r}{\mathrm{\mathbf{r}}}
+\newcommand{\B}{\mathrm{\mathbf{B}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
+\newcommand{\x}{\mathrm{\mathbf{x}}}
+\newcommand{\y}{\mathrm{\mathbf{y}}}
+\newcommand{\z}{\mathrm{\mathbf{z}}}
+\newcommand{\v}{\mathrm{\mathbf{v}}}
+\newcommand{\p}{\mathrm{\mathbf{p}}}
+\newcommand{\d}{\mathrm{\mathbf{d}}}
+
+\newcommand{\a}{\mathrm{\mathbf{a}}}
+\newcommand{\b}{\mathrm{\mathbf{b}}}
+\newcommand{\I}{\mathrm{\mathbf{I}}}
+\newcommand{\K}{\mathrm{\mathbf{K}}}
+\newcommand{\J}{\mathrm{\mathbf{J}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
+\newcommand{\dd}{\mathrm{d}}
 
 \emph{Recommended reading}: Griffiths Section 5.1
 
@@ -1206,11 +1405,12 @@ charges are either a source or a sink for the electric field.
 
 However, the magnetic field does not work in the same way. We cannot
 think of ``magnetic charges'' interacting via the magnetic field,
-because magnetic charges have not been found to exist - there is no
-evidence for single North or South poles. Searches have been made for
-magnetic monopoles, but without any success, although their existence
-has not been entirely ruled out. (This is beyond our syllabus but if you
-are interested you could try looking at
+because magnetic charges (in other words, magnetic monopoles) have not
+been found to exist - there is no evidence for single North or South
+poles. Searches have been made for magnetic monopoles, but without any
+success, although their existence has not been entirely ruled out. (This
+is beyond our syllabus but if you are interested you could try looking
+at
 \href{https://royalsocietypublishing.org/doi/10.1098/rsta.2018.0328}{this
 paper}.)
 
@@ -1254,10 +1454,9 @@ magnetic field \(\mathrm{\mathbf{B}}\) that it produces.}
 
 \end{figure}%
 
-Magnetic field lines always form closed loops whereas electric field
-lines begin and end on charges. As magnetic field lines are closed
-loops, all field lines entering a closed surface must leave it as well -
-therefore the net magnetic flux through any surface is zero.
+Because there are no magnetic monopoles, magnetic field lines always
+form closed loops - as opposed to electric field lines, which begin and
+end on charges.
 
 \subsection{The Lorentz Force Law}\label{the-lorentz-force-law}
 
@@ -1312,20 +1511,39 @@ development of a transverse electric field in a solid material when it
 carries an electric current and is placed in a magnetic field that is
 perpendicular to the current.
 
-\section{Magnetic field of currents}\label{magnetic-field-of-currents}
+\section{Work done by magnetic
+forces?}\label{work-done-by-magnetic-forces}
 
-As we mentioned earlier, currents are moving charges and therefore they
-also experience a force in the prescence of a magnetic field. We can use
-the Lorentz force law to work out what this force will be. Here we
-consider a current as a moving line charge with velocity
-\(\mathrm{\mathbf{v}}\) and linear charge density \(\lambda\). The
-current in the wire is given by \(I = \lambda \mathrm{\mathbf{v}}\) -
-you should be able to see upon inspection that this makes sense
-dimensionally, but check out Griffiths 5.1.3 for a more detailed
-derivation. If we think of the current as being made up of infinitesimal
-charges \(\mathrm{d} q\), integrating to sum all of these across the
-length of the wire would give the total charge in the wire. Hence, by
-analogy to \textbf{?@eq-lorentz}, the force on the wire would be
+The work done on a charge when a magnetic force acts upon it,
+\(\mathrm{d}W_{mag} = \mathrm{\mathbf{F}}_{mag} \cdot \mathrm{d}l = Q(\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}})\cdot \mathrm{\mathbf{v}}\mathrm{d}t\)\$
+
+By definition, \(\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}\) must be
+perpendicular to both \(\mathrm{\mathbf{B}}\) and
+\(\mathrm{\mathbf{v}}\) (unless they are parallel to one another, in
+which case there is no force anyway because the cross-product is zero.)
+Hence the dot product
+\((\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}})\cdot \mathrm{\mathbf{v}}\mathrm{d}t\)
+is zero, implying that magnetic forces do no work. How can this be?!
+E.g. the toqrue exerted by gravirty on a gyroscope changes the angular
+momentum of the gyroscope
+
+\section{Magnetic field of currents}\label{sec-magcurrents1}
+
+When we talk about currents we are referring to a flow of charge through
+a wire. We define the current as the amount of \emph{charge per unit
+time} passing a point in the wire. We can imagine a current as a moving
+line charge with velocity \(\mathrm{\mathbf{v}}\) and linear charge
+density \(\lambda\). The current in the wire is given by
+\(I = \lambda \mathrm{\mathbf{v}}\) - you should be able to see upon
+closer inspection that this is equivalent to charge per unit time.
+
+Currents are moving charges and therefore they also experience a force
+in the prescence of a magnetic field. We can use the Lorentz force law
+to work out what this force will be. If we think of the current as being
+made up of infinitesimal charges \(\mathrm{d} q\), integrating to sum
+all of these across the length of the wire would give the total charge
+in the wire. Hence, by analogy to \textbf{?@eq-lorentz}, the force on
+the wire would be
 
 \begin{equation}\phantomsection\label{eq-currentforce}{ \mathrm{\mathbf{F}}_{mag} = \int (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \mathrm{d} q }\end{equation}
 
@@ -1339,31 +1557,10 @@ magnetic force becomes
 }\end{equation}
 
 \(\mathrm{\mathbf{I}}\) and \(\mathrm{d} \mathrm{\mathbf{l}}\) point in
-the same direction, therefore it is valid to express
-Equation~\ref{eq-currentforce2} as
+the same direction, therefore it is valid (and more commonly
+encountered) to express Equation~\ref{eq-currentforce2} as
 
-\begin{equation}\phantomsection\label{eq-currentforce3}{ \mathrm{\mathbf{F}}_{mag} &= \int I (\mathrm{d} \mathrm{\mathbf{l}}\times \mathrm{\mathbf{B}}) }\end{equation}
-
-Equation~\ref{eq-currentforce3} is the generally accepted way to express
-the magnetic force on a segment of current-carrying wire, and will be
-used in this form in this course. However,
-Equation~\ref{eq-currentforce3} models a current-carrying wire as a
-1-dimensional line charge, which of course in reality it is not. If we
-want to be more realistic and calculate the magnetic force on a volume
-current (so, considering the current in a 3-dimensional wire) the
-magnetic force is
-
-\begin{equation}\phantomsection\label{eq-currentforceVol}{ \mathrm{\mathbf{F}}_{mag} &= \int (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \rho \mathrm{d}\tau = \int (\J \times \mathrm{\mathbf{B}}) \mathrm{d}\tau }\end{equation}
-
-where \(\mathrm{d}\tau\) is the volume element, \(\rho\) is the volume
-charge density and \(\J = \rho \mathrm{\mathbf{v}}\) is the volume
-current density. The volume current density is defined as the current
-per unit area for the area perpendicular to the current flow
-(essentially the cross-sectional area of the wire). Once again,
-Griffiths 5.1.3 is worth reading if you want a more detailed derivation.
-
-\section{Work done by magnetic
-fields?}\label{work-done-by-magnetic-fields}
+\[ \mathrm{\mathbf{F}}_{mag} &= \int I (\mathrm{d} \mathrm{\mathbf{l}}\times \mathrm{\mathbf{B}}) \]\{\#eq-currentforce3\}.
 
 \section{Practice problems}\label{practice-problems-3}
 
@@ -1413,7 +1610,29 @@ electrons, with charge \(q\) and mass \(m\)) as follows:
 
 \bookmarksetup{startatroot}
 
-\chapter{The Biot-Savart Law}\label{the-biot-savart-law}
+\chapter{Currents \& the Biot-Savart
+Law}\label{currents-the-biot-savart-law}
+
+\newcommand{\l}{\mathrm{\mathbf{l}}}
+\newcommand{\E}{\mathrm{\mathbf{E}}}
+\newcommand{\F}{\mathrm{\mathbf{F}}}
+\newcommand{\r}{\mathrm{\mathbf{r}}}
+\newcommand{\B}{\mathrm{\mathbf{B}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
+\newcommand{\x}{\mathrm{\mathbf{x}}}
+\newcommand{\y}{\mathrm{\mathbf{y}}}
+\newcommand{\z}{\mathrm{\mathbf{z}}}
+\newcommand{\v}{\mathrm{\mathbf{v}}}
+\newcommand{\p}{\mathrm{\mathbf{p}}}
+\newcommand{\d}{\mathrm{\mathbf{d}}}
+
+\newcommand{\a}{\mathrm{\mathbf{a}}}
+\newcommand{\b}{\mathrm{\mathbf{b}}}
+\newcommand{\I}{\mathrm{\mathbf{I}}}
+\newcommand{\K}{\mathrm{\mathbf{K}}}
+\newcommand{\J}{\mathrm{\mathbf{J}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
+\newcommand{\dd}{\mathrm{d}}
 
 \emph{Recommended reading}: Griffiths Section 5.2
 
@@ -1423,38 +1642,132 @@ Find the magnitude of the attractive force between two long, parallel
 wires which are a distance \(d\) apart, carrying currents \(I_1\) and
 \(I_2\).
 
+\section{More about currents}\label{sec-morecurrents}
+
+In the previous lecture we introduced the concept of currents and used
+the Lorentz force law to derive an expression for the force on a
+current-carrying wire. However, our treatment of currents is incomplete.
+In the previous lecture we dealt with currents in one dimension,
+imagining them to be a line charge flowing down wire. But in practice,
+when solving problems and working as physicists, we generally have to
+deal with higher dimensional currents as these are more realistic.
+
+When we dealt with line currents at the end of the previous lecture, we
+imagined a current as a moving line charge with velocity
+\(\mathrm{\mathbf{v}}\) and linear charge density \(\lambda\). But when
+charge flows over a surface, we are suddenly dealing with a surface
+charge density instead. We can no longer think of current as simply
+charge per unit time. We also need to consider how the charge is
+distributed across the width of the surface. So, we define the
+\textbf{surface current density}, \(\mathrm{\mathbf{K}}\), as follows.
+
+\includegraphics[width=3.125in,height=\textheight]{Figures/surface_current.png}\{\#fig-surfcurr\}
+
+Consider \textbf{?@fig-surfcurr} - this shows a ``ribbon'' of
+infinitesimal width \(\mathrm{d}l_{perp}\) running parallel to the flow.
+\(l_{\perp}\) is the width perpendicular to the flow. If the
+infinitesimal current in this ribbon is
+\(\mathrm{d}\mathrm{\mathbf{I}}\), the \textbf{surface current density}
+\(\mathrm{\mathbf{K}}\) is given by
+
+\[ \mathrm{\mathbf{K}}= \frac{\mathrm{d}\mathrm{\mathbf{I}}}{\mathrm{d}l_{\perp}} \]
+
+So, the surface current density is the current per unit
+width-perpendicular-to-flow.
+
+If the surface charge density (of \emph{mobile} charges, we do not
+consider charges which are stationary within the material) is
+\(\sigma\), and its velocity is \(\mathrm{\mathbf{v}}\), then we can
+express \[ \mathrm{\mathbf{K}}= \sigma \mathrm{\mathbf{v}}\].
+
+You may notice this looks familiar - this is the surface equivalent of
+\(\mathrm{\mathbf{I}}= \lambda \mathrm{\mathbf{v}}\).
+
+It is fairly clear to see then that the magnetic force on the surface
+current is
+
+\[ \mathrm{\mathbf{F}}_{mag} = \int  (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \sigma \mathrm{d}a = \int  (\mathrm{\mathbf{K}}\times \mathrm{\mathbf{B}}) \mathrm{d}a \]
+
+Similarly, when charge flow is distributed throughout a volume, we need
+to define a \textbf{volume current density}. This is
+\(\mathrm{\mathbf{J}}\), and we define it as follows.
+
+\includegraphics[width=3.125in,height=\textheight]{Figures/vol_current.png}\{\#fig-volcurr\}
+
+Consider \textbf{?@fig-volcurr} - this time we have a ``tube'' of
+infinitesimal area \(\mathrm{d}a_{perp}\) parallel to the flow.
+\(a_{\perp}\) is the area perpendicular to the flow. If the current in
+this tube is \(\mathrm{d}\mathrm{\mathbf{I}}\), the \textbf{volume
+current density} \(\mathrm{\mathbf{K}}\) is given by
+
+\begin{equation}\phantomsection\label{eq-J}{ \mathrm{\mathbf{J}}= \frac{\mathrm{d}\mathrm{\mathbf{I}}}{\mathrm{d}a_{\perp}} }\end{equation}
+
+If the volume charge density (of mobile charges) is \(\rho\) and its
+velocity is \(\mathrm{\mathbf{v}}\), then
+
+\[ \mathrm{\mathbf{J}}= \sigma \mathrm{\mathbf{v}}\].
+
+Therefore, the magnetic force on a volume current is
+
+\[ \mathrm{\mathbf{F}}_{mag} = \int  (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \rho \mathrm{d}\tau = \int  (\mathrm{\mathbf{J}}\times \mathrm{\mathbf{B}}) \mathrm{d}\tau \].
+
+\subsection{The continuity equation}\label{the-continuity-equation}
+
+Equation~\ref{eq-J} can be rearranged to show that current crossing a
+surface \(\mathcal{S}\) can be expressed as
+
+\[ I = \int_{\mathcal{S}} J \mathrm{d}a_{\perp} = \int_{\mathcal{S}} \mathrm{\mathbf{J}}\cdot \mathrm{d}\mathrm{\mathbf{a}}\]
+
+The current crossing a surface can also be thought of as the total
+charge per unit time leaving a volume \(\mathcal{V}\) is
+
+\[ \int_{\mathcal{S}} \mathrm{\mathbf{J}}\cdot \mathrm{d}\mathrm{\mathbf{a}}= \int_{\mathcal{V}} (\nabla \cdot \mathrm{\mathbf{J}}) \mathrm{d}\tau =  \]
+
+We know that charge is conserved, so this must surely have some
+consequences for currents\ldots?
+
+\subsection{Steady currents}\label{steady-currents}
+
+A steady current is defined as a continuous flow of charge that goes on
+forever, without changing and without charge piling up anywhere. In
+reality, there is no such current, but for the purposes of this course
+we can model current-carrying wires as carrying steady currents. If the
+current wasn't a steady current, the magnetic field produced by the
+current would be varying as a function of time, and we would no longer
+be in the realm of magnetostatics, which deals in static (non-time
+varying) magnetic fields.
+
+\section{The Biot-Savart Law}\label{the-biot-savart-law}
+
 We saw in the last lecture that a current-carrying wire experiences a
 magnetic force when in the prescence of an applied magnetic field, and
 we found an expression for the magnetic force on a segment of
 current-carrying wire. Ultimately, current-carrying wires experience
 this force because they produce their own magnetic field which interacts
 with the applied magnetic field. The Biot-Savart Law is a formula for
-the magnetic field of a steady line current. Note that we are once again
-thinking about \emph{line} currents, so we are modelling our currents as
-1-dimensional.
+the magnetic field of a steady current - in fact it exclusively applies
+to steady currents.
 
-\textbf{An aside on steady currents:} The Biot-Savart Law only applies
-to so-called ``steady currents''. A steady current is defined as a
-continuous flow of charge that goes on forever, without changing and
-without charge piling up anywhere. In reality, there is no such current,
-but for the purposes of this course we can model current-carrying wires
-as carrying steady currents. If the current wasn't a steady current, the
-magnetic field produced by the current would be varying as a function of
-time, and we would no longer be in the realm of magnetostatics, which
-deals in static (non-time varying) magnetic fields.
-
-The Biot-Savart Law takes the following form:
+The Biot-Savart Law takes the following form, for a steady \emph{line}
+current:
 
 \[\mathrm{\mathbf{B}}(\mathrm{\mathbf{r}}) = \frac{\mu_0}{4\pi} \int \frac{\mathrm{\mathbf{I}}\times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \mathrm{d}l' =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \]
+
+However we know from Section~\ref{sec-morecurrents} that we need to
+consider surface and volume currents as well\ldots. so..
+
+{[}biot-savart for surface current{]} {[}biot-savart for volume
+current{]}
+
+\subsection{Derivation: the magnetic field of a straight
+current-carrying
+wire}\label{derivation-the-magnetic-field-of-a-straight-current-carrying-wire}
 
 In your previous studies you may have come across the formula for the
 magnetic field at a distance from a current-carrying wire. Have you ever
 wondered where this equation came from? Turns out it is derived using
 the Biot-Savart Law - I'm going to guide you the derivation here, to
 demonstrate how we use the Biot-Savart Law.
-
-\section{Magnetic Field of a Current-Carrying
-Wire}\label{magnetic-field-of-a-current-carrying-wire}
 
 Our task here is to find the magnetic field at a distance \(s\) from a
 long, straight wire carrying a steady current \(I\).
@@ -1469,7 +1782,7 @@ on forever (until a switch is opened, a battery dies, a component
 breaks, and so on\ldots).
 
 Let us first visualise the problem with a diagram:
-\includegraphics[width=2.08333in,height=\textheight]{Figures/BS-example-1.png}\{\#BS-ex1\}
+\includegraphics[width=2.08333in,height=\textheight]{Figures/BS-example-1.png}\{\#fig-BS-ex1\}
 
 This figure is taken from the Griffiths, therefore the curly ``r''
 pointing from \(\mathrm{d} \mathrm{\mathbf{l}}'\) to \(P\) should be
@@ -1478,7 +1791,7 @@ the Biot-Savart Law is given by
 
 \[\mathrm{\mathbf{B}}(\mathrm{\mathbf{r}}) =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \]
 
-In (\textbf{BS-ex1?}),
+In \textbf{?@fig-BS-ex1},
 \(\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s}\)
 points out of the page (because it must be perpendicular to both
 vectors) and has magnitude \(\mathrm{d} l' \sin\alpha\). However, it is
@@ -1537,12 +1850,17 @@ distance \(s\) from a long current-carrying wire is
 If you didn't manage the pre-lecture problem, try it again now using
 what you have learned in this lecture.
 
+\subsection{Biot-Savart law for surface and volume
+currents}\label{biot-savart-law-for-surface-and-volume-currents}
+
+\[\mathrm{\mathbf{B}}(\mathrm{\mathbf{r}}) = \frac{\mu_0}{4\pi} \int \frac{\mathrm{\mathbf{I}}\times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \mathrm{d}l' =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \]
+
 \section{Practice problems}\label{practice-problems-4}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
-\tightlist
 \item
+  A current \(I\) flows down
 \item
 \item
 \end{enumerate}
@@ -1551,16 +1869,159 @@ what you have learned in this lecture.
 
 \chapter{Magnetic Vector Potential}\label{magnetic-vector-potential}
 
+\newcommand{\l}{\mathrm{\mathbf{l}}}
+\newcommand{\E}{\mathrm{\mathbf{E}}}
+\newcommand{\F}{\mathrm{\mathbf{F}}}
+\newcommand{\r}{\mathrm{\mathbf{r}}}
+\newcommand{\B}{\mathrm{\mathbf{B}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
+\newcommand{\x}{\mathrm{\mathbf{x}}}
+\newcommand{\y}{\mathrm{\mathbf{y}}}
+\newcommand{\z}{\mathrm{\mathbf{z}}}
+\newcommand{\v}{\mathrm{\mathbf{v}}}
+\newcommand{\p}{\mathrm{\mathbf{p}}}
+\newcommand{\d}{\mathrm{\mathbf{d}}}
+
+\newcommand{\a}{\mathrm{\mathbf{a}}}
+\newcommand{\b}{\mathrm{\mathbf{b}}}
+\newcommand{\I}{\mathrm{\mathbf{I}}}
+\newcommand{\K}{\mathrm{\mathbf{K}}}
+\newcommand{\J}{\mathrm{\mathbf{J}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
+\newcommand{\dd}{\mathrm{d}}
+
 \emph{Recommended reading}: Griffiths Section 5.4
 
-\emph{A problem to try before attending the lecture}: Griffiths Problem
-1.18
+\#\#Pre-lecture problem Griffiths Problem 1.18
+
+\section{The vector potential}\label{the-vector-potential}
+
+In electrostatics, we introduced the concept of electric potential, a
+scalar associated with the electric field, given by its gradient:
+\[ \mathrm{\mathbf{E}}= \mabla V\]. So you may wonder if there is an
+equivalent potential for the magnetic field. There is indeed such a
+potential, but to explore what this is we must first think more deeply
+about magnetic fields themselves. We know that there are no magnetic
+monopoles and therefore magnetic fields always form closed loops.
+Mathematically, this means that \(\nabla \cdot \mathrm{\mathbf{B}}= 0\)
+- the divergence is a measure of the degree to which vectors in a field
+diverge - the magnetic field cannot diverge, hence
+\(\nabla \cdot \mathrm{\mathbf{B}}= 0\). We need the magnetic field to
+be a derivative of the magnetic potential, but we cannot use the
+gradient function and have a scalar potential as we did with electric
+potential, as then \(\mathrm{\mathbf{B}}\) might not satisfy
+\(\nabla \cdot \mathrm{\mathbf{B}}= 0\). The divergence of a curl is
+always zero, therefore we can define some vector potential
+\(\mathrm{\mathbf{A}}\) such that
+
+\[ \mathrm{\mathbf{B}}= \nabla \times \mathrm{\mathbf{A}}\]
+
+\(\mathrm{\mathbf{A}}\) is the magnetic vector potential. We will not
+see the derivation for this now, at it requires material from Lecture 8
+- we will derive it then. For now, you will have to take my word for it
+that \(\mathrm{\mathbf{A}}\) is given by
+
+\[ \mathrm{\mathbf{A}}(\mathrm{\mathbf{r}}) = \frac{\mu_0}{4 \pi} \int \frac{\mathrm{\mathbf{J}}(\mathrm{\mathbf{r}}')}{r_s} \mathrm{d}\tau'\]
+
+You may be wondering - but what is this physical significance of the
+magnetic vector potential? What does it represent? If you recall, the
+electric potential was the potential energy per unit charge at a given
+point in space, or alternatively the work done per unit charge to bring
+a test charge from inifinity to a given point in space. Similarly, the
+magnetic vector potential is the potential energy per unit element of
+current
+
+We can see that the magnetic vector potential is related to the volume
+current density \(\mathrm{\mathbf{J}}\) here. However we can also define
+a magnetic vector potential for line\ldots{}
+
+\begin{equation}\phantomsection\label{eq-linecurrA}{ \mathrm{\mathbf{A}}= \frac{\mu_0}{4 \pi} \int \frac{\mathrm{\mathbf{I}})}{r_s} \mathrm{d}l' = \frac{\mu_0 I}{4 \pi} \int \frac{1)}{r_s} \mathrm{d}\mathrm{\mathbf{l}}' }\end{equation}
+
+\ldots{} and surface currents
+\[ \mathrm{\mathbf{A}}= \frac{\mu_0}{4 \pi} \int \frac{\mathrm{\mathbf{K}})}{r_s} \mathrm{d}a' \].
+
+Generally, the direction of \(\mathrm{\mathbf{A}}\) will match the
+direction of the current - with some caveats (see Griffiths page 247).
+\(\mathrm{\mathbf{A}}\) serves a similar purpose to \(V\), in that it
+allows us to find the magnetic field.
+
+\subsection{Multipole expansion of the magnetic vector
+potential}\label{multipole-expansion-of-the-magnetic-vector-potential}
+
+The magnetic vector potential on its own can be limited in its
+usefulness. However, we can do what is known as a \textbf{multipole
+exapansion} of the magnetic vector potential - and this makes it a lot
+more useful. When we were studying electrostatics, we saw that the main
+goal of electrostatics is to determine the electric field and related
+quantities for a given charge distribution. The multipole expansion of
+magnetic vector potential can allow us to do the same with a current
+distribution. This is particularly useful when thinking about atoms in
+matter - each nucleus has its own ``current'' produced by orbiting
+electrons, and therefore will act as a magnetic dipole. So being able to
+calculate the behaviour of a distribution of dipoles can help us to
+understand the behaviour of material. We will explore this in more depth
+in later lectures, but for now we will start by working out the
+multipole expansion.
+
+\includegraphics[width=3.125in,height=\textheight]{Figures/Griffiths_fig5_54.jpg}\{\#fig-AmultipoleGeo\}
+
+The idea of a multipole expansion is to write the potential in the form
+of a power series in \(\frac{1}{r}\). You may recall that we did this in
+Lecture 3 for the electric potential. Again we are talking about
+approximating the potential at large distances from a distribution, but
+this time it is the magnetic vector potential and a distribution of
+current elements. \textbf{?@fig-AmultipoleGeo} shows the geometry of the
+problem. We start with Equation~\ref{eq-linecurrA}, which is telling us
+the magnetic vector potential for a line current. To find the multipole
+expansion of this, we substitute it into Equation~\ref{eq-potLegendre}
+from Lecture 3, giving
+
+\[ \mathrm{\mathbf{A}}(\mathrm{\mathbf{r}}) = \frac{\mu_0 I}{4\pi} \oint \frac{1}{r_s} \mathrm{d}\mathrm{\mathbf{l}}' = \frac{\mu_0}{4\pi} \sum_{n=0}^{\infty} \frac{1}{r^{(n+1)}} \oint (r')^n P_n(\cos\alpha) \mathrm{d}\mathrm{\mathbf{l}}' \]
+
+Substituting in for the Legendre polynomials \(P_n(\cos\alpha)\), we
+obtain
+
+\[ \mathrm{\mathbf{A}}(\mathrm{\mathbf{r}}) = \frac{\mu_0 I}{4\pi} \left[ \frac{1}{r} \oint \mathrm{d}\mathrm{\mathbf{l}}' + \frac{1}{r^2} \oint r' \cos\alpha \mathrm{d}\mathrm{\mathbf{l}}' + \frac{1}{r^3} \oint (r')^2 \left(  \frac{3}{2} \cos^2 \alpha - \frac{1}{2}  \right) \mathrm{d}\mathrm{\mathbf{l}}' + ... \right] \]
+
+This is the \textbf{multipole expansion} of the magnetic vector
+potential. We call the first term (\(1/r\) term) the \emph{monopole
+term}, we call the second term (\(1/r^2\) term) the \emph{dipole term},
+the third term (\(1/r^3\) term) the \emph{quadropole term}, and so
+on\ldots{} We know that there are no magnetic monopoles (as far as we
+know), therefore we would expect the first term to go to zero. This is
+borne out by the mathematics, because
+\(\oint \mathrm{d}\mathrm{\mathbf{l}}' = 0\). With the monopole term
+gone, the dominant term in the multipole expansion is the \textbf{dipole
+term}:
+
+\[ \mathrm{\mathbf{A}}_{dip} (\mathrm{\mathbf{r}}) = \frac{mu_0 I}{4\pi r^2} \oint r' \cos\alpha \mathrm{d}l' = \frac{mu_0 I}{4\pi r^2} \oint (\hat{\mathrm{\mathbf{r}}} \cdot \mathrm{\mathbf{r}}') \mathrm{d}\mathrm{\mathbf{l}}'\].
 
 \section{Practice problems}\label{practice-problems-5}
 
 \bookmarksetup{startatroot}
 
 \chapter{Gauss's Law}\label{gausss-law}
+
+\newcommand{\l}{\mathrm{\mathbf{l}}}
+\newcommand{\E}{\mathrm{\mathbf{E}}}
+\newcommand{\F}{\mathrm{\mathbf{F}}}
+\newcommand{\r}{\mathrm{\mathbf{r}}}
+\newcommand{\B}{\mathrm{\mathbf{B}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
+\newcommand{\x}{\mathrm{\mathbf{x}}}
+\newcommand{\y}{\mathrm{\mathbf{y}}}
+\newcommand{\z}{\mathrm{\mathbf{z}}}
+\newcommand{\v}{\mathrm{\mathbf{v}}}
+\newcommand{\p}{\mathrm{\mathbf{p}}}
+\newcommand{\d}{\mathrm{\mathbf{d}}}
+
+\newcommand{\a}{\mathrm{\mathbf{a}}}
+\newcommand{\b}{\mathrm{\mathbf{b}}}
+\newcommand{\I}{\mathrm{\mathbf{I}}}
+\newcommand{\K}{\mathrm{\mathbf{K}}}
+\newcommand{\J}{\mathrm{\mathbf{J}}}
+\newcommand{\A}{\mathrm{\mathbf{A}}}
+\newcommand{\dd}{\mathrm{d}}
 
 \emph{Recommended reading}: Griffiths Section 2.2
 
@@ -1614,15 +2075,15 @@ conceptually by reminding ourselves that \(\epsilon_0\) defines the
 capacity of free space to hold electric fields, so it is sensible that
 it should have a bearing on electric flux.
 
-\includegraphics[width=3.125in,height=\textheight]{Figures/Gauss-surface-vector.png}\{\#surface-vector\}
+\includegraphics[width=3.125in,height=\textheight]{Figures/Gauss-surface-vector.png}\{\#fig-surface-vector\}
 
 In the case of a point charge and a spherical surface, the electric
 field lines are always perpendicular to the surface. What happens when
 the electric field is not perpendicular to the surface? Then we can
 consider the projection of the surface perpendicular to \(E\). If the
 angle between the field direction and the normal to the surface is θ, as
-represented in (\textbf{surface-vector?}), then the flux of a constant
-electric field of magnitude (i.e., field line density) \(E\) is
+represented in \textbf{?@fig-surface-vector}, then the flux of a
+constant electric field of magnitude (i.e., field line density) \(E\) is
 \(\Phi_E = EA \cos\theta\). If we have a volume V enclosed by a surface
 S, we can ``tile'' S with infinitesimal tiles dA, where the area is
 infinitesimally small, and the direction is out of the volume. The total
@@ -1831,7 +2292,7 @@ Impedance
 
 \bookmarksetup{startatroot}
 
-\chapter{Summary}\label{summary-2}
+\chapter{Summary}\label{summary-1}
 
 In summary, this book has no content whatsoever.
 

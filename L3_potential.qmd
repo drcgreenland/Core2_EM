@@ -16,7 +16,7 @@ New/reworked pre-and post-lecture problems.
 
 ## Pre-lecture problem
 
-Before you attempt this problem, it is recommended that you read through the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths. This question also requires some vector calculus, to which you have only just been introduced. Do not worry if you can't do this question just yet - we will go through it in the lecture. 
+Before you attempt this problem, it is recommended that you read through the lecture notes, as well as Sections 2.3 and 2.2.4 of the Griffiths. This question also requires some vector calculus, to which you have only just been introduced. Do not worry if you are struggling with this question - we will go through it in the lecture. 
 
 One of these is an impossible electrostatic field. Which one?
 
@@ -27,7 +27,7 @@ One of these is an impossible electrostatic field. Which one?
 For the *possible* one, find the potential. Use the origin as your reference point. 
 Check your answer by computing $\nabla V$.
 
-[:bulb: **Hint:** you must select a specific path to integrate along. The answer is **path-independent**, meaning that you will get the same answer no matter what path you choose--however, it is simply not possible to integrate unless you have a particular path in mind.]
+[**Hint:** you must select a specific path to integrate along. The answer is **path-independent**, meaning that you will get the same answer no matter what path you choose--however, it is simply not possible to integrate unless you have a particular path in mind.]
 
 
 
@@ -63,7 +63,7 @@ $$
 
 $$ V_{ab} = V(\b) − V(\a) = -\int_{\a}^{\b} \E \cdot \mathrm{d} \l $$
 
-This quantity represents the work done per unit charge by the electric field in moving a charge from point $\a$ to point $\b$. 
+This quantity represents the work done per unit charge by the electric field in moving a charge from point $\a$ to point $\b$. You should now be able to see clearly, looking back at @eq-workatob from Lecture 2, that this is the work done per unit charge in moving a charge from $a$ to $b$. 
 
 ## Electric Potential Due to a Point Charge
 
@@ -93,11 +93,61 @@ If we have a continuous charge distribution instead of a set of discrete charges
 
 $$ V(r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{\r_s} \mathrm{d}q $$
 
-If we have a volume charge distribution, $\mathrm{d}q$ can be formualated as $\rho(\r') \mathrm{d}\tau'$, where $\r'$ is [!!!!!], therefore the potential due to a volume charge distribution is given by   
+If we have a volume charge distribution, $\mathrm{d}q$ can be formualated as $\rho(\r') \mathrm{d}\tau'$, where $\r'$ is the position of the volume element $\dd \tau'$. Therefore, the potential due to a volume charge distribution is given by   
 
-$$ V(\r) = \frac{1}{4\pi \epsilon_0} \int \frac{\rho(\r')}{\r_s} \mathrm{d} \tau' $$. 
+$$ V(\r) = \frac{1}{4\pi \epsilon_0} \int \frac{\rho(\r')}{\r_s} \mathrm{d} \tau' $${#eq-Vrho}. 
 
 This equation allows us to compute $V$ when we know $\rho$. 
+
+### Approximate potentials at large distances
+
+If you are very far away from a localized charge distribution, it "looks" like a point charge - the potential at a distance $r$ would be approximately $\frac{Q}{4\pi\epsilon_0 r}$. What happens if $Q$ is zero? You may think the potential is (approximately) zero - and you'd be right, in a sense - even if $Q$ is not zero, the potential at large $r$ (aka very far away) is really tiny anyway. But we want to know more than this - we want a more precise approximation of the potential. This is where we can do a **multipole expansion**, which is a expansion of $V$ in powers of $\frac{1}{r}$. We start with the potential at position $\r$, given by @eq-Vrho, with a reminder that $\r$ is the field point (the vector of the position at which we are measuring the potential) and $r_s$ is the separation distance between the volume element $\dd \tau'$ and the field point (see @fig-multipolesetup).
+
+![](Figures/Griffiths_fig3_28.jpg){width=200}{#fig-multipolesetup}
+
+First we transform $r_s$ to be a function of $r$, using the law of cosines:
+
+$$ \r_s^2 = r^2 + (r')^2 - 2r r' \cos\alpha = r^2 \left[ 1 + \left( \frac{r'}{r} \right)^2 + 2 \left( \frac{r'}{r} \right)\cos\alpha \right]. $$
+
+To make this expression easier to work with, we make the substition:
+
+$$ \epsilon = \left( \frac{r}{r'} \right)\left( \frac{r}{r'} - 2\cos\alpha \right) $$
+
+Therefore $r_s$ can expressed as 
+
+$$ \r_s = r \sqrt{1 + \epsilon} $$
+
+
+For points very far away from the charge distribution (which is the range of $r$ we're looking for), $\epsilon$ is much smaller than 1 (because $r'$ is much smaller than $r$). This means that it is appropriate to apply a binomial expansion to $r_s = r\sqrt{1 + \epsilon}$. We want our expansion to be in powers of $1/r$ to reflect what we know about what the potential should be. So we write
+
+$$ \frac{1}{r_s} = \frac{1}{r} (1 + \epsilon)^{-1/2} = \frac{1}{r} \left( 1 - \frac{1}{2} \epsilon + \frac{3}{8} \epsilon^2 - \frac{5}{16} \epsilon^3 + ... \right) $$. 
+
+We can expand this out in terms of $r$, $r'$ and $\alpha$, which gives 
+
+$$ \frac{1}{r_s} &= \frac{1}{r} \left[ 1 - \frac{1}{2} \left( \frac{r'}{r} \right)\left( \frac{r'}{r} - 2\cos\alpha \right) + \frac{3}{8} \left( \frac{r'}{r} \right)^2 \left( \frac{r'}{r} - 2\cos\alpha \right)^2 - \frac{5}{16} \left( \frac{r'}{r} \right)^3 \left( \frac{r'}{r} - 2\cos\alpha \right)^3 + ... \right] $$
+
+From here we must expand out each term and gather powers of $\left( \frac{r'}{r} \right)$, removing any terms in $\left( \frac{r'}{r} \right)^4$ or above as these will be vanishingly small. I strongly encourage you to try this bit of maths out for yourself, as it is not too trivial and will give you some good maths practice. 
+You should reach the result: 
+
+$$ \frac{1}{r_s} = \frac{1}{r} \left[1 + left( \frac{r'}{r} \right) (\cos\alpha) + \left( \frac{r'}{r} \right)^2 (3\cos^2 \alpha - 1)/2 + \left( \frac{r'}{r} \right)^3 (5\cos^3 \alpha - 3\cos\alpha)/2 right] $$
+
+The coefficients of $\left( \frac{r'}{r} \right)$ (the $\cos$-based terms in brackets) can recognised as Legendre polynomials of $\cos\alpha$, denoted as $P_n (\cos\alpha)$ (you can read up on these if you wish but it is not necessary to understand them, you may simply accept the result!) Hence:
+
+$$ \frac{1}{r_s} = \frac{1}{r} \sum_{n=0}^{\infty} \left( \frac{r'}{r} \right)^n P_n (\cos\alpha) $${#eq-potLegendre}
+
+where $\alpha$ is the angle between $\r'$ and $\r$. 
+
+Substituting $\frac{1}{r_s}$ back into @eq-Vrho, we obtain
+
+$$ V(\r) = \frac{1}{4\pi\epsilon_0} \sum_{n=0}^{\infty} \frac{1}{r^{(n+1)}} \int (r')^n P_n(\cos\alpha) \rho(\r') \dd \tau'$$
+
+which is the **multipole expansion** of $V$ in powers of $\frac{1}{r}$, that can be used to approximate the potential of charge distrbution at large distances away from it. Please read Section 3.4.2 of the Griffiths to discover how this formula can be used to find a **dipole moment** for a charge distribution. This is the continuous charge distribution equivalent of the dipole moment that was discussed in Lecture 2.
+
+
+
+
+
+
 
 <!--
 This bit needs more added, including the volume charge distribution and the definitions of the notation. 
@@ -122,8 +172,6 @@ Equipotential surfaces are surfaces on which the electric potential is constant.
 ADD COMMENT HERE 
 -->
 
-## Summary
-Electric potential is a crucial concept in electrostatics, simplifying the analysis of electric fields and the work done by (or on) charges. It is ~intimately related~?? to the electric field and provides a scalar measure of potential energy per unit charge. Understanding electric potential is essential for solving a wide range of problems in electrostatics.
 
 ## Practice problems
 
@@ -154,7 +202,7 @@ this problem is an adapted version of Griffiths 3E problem 2.25(a)
 -->
 
 3) Find the potential at distance $z$ above the midpoint of the line charge shown in the figure below. $\lambda$ is its line charge density. 
-![](Figures/L2_prob3){width=200}
+![](Figures/L2_prob3.png){width=200}
 
 **Hint:** You may be tempted to use your result from Q5 of the Lecture 1 problems, however it is easier to directly calulate the potential here, by splitting up the line into infinitesimals segments and summing over the potentials from all segments, working from the formula for potential of a point charge. 
 

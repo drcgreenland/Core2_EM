@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Electromagnetism - 5&nbsp; The Biot-Savart Law</title>
+<title>Electromagnetism - 5&nbsp; Currents &amp; the Biot-Savart Law</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./L5_magfieldscurrents.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./L5_magfieldscurrents.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Currents &amp; the Biot-Savart Law</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -149,14 +149,14 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./L2_potential.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Electric Potential</span></span></a>
+  <a href="./L2_workenergy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./L3_workenergy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Work and Energy in Electrostatics</span></span></a>
+  <a href="./L3_potential.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electric Potential</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -168,7 +168,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./L5_magfieldscurrents.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Currents &amp; the Biot-Savart Law</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -254,8 +254,17 @@ window.Quarto = {
    
   <ul>
   <li><a href="#pre-lecture-problem" id="toc-pre-lecture-problem" class="nav-link active" data-scroll-target="#pre-lecture-problem"><span class="header-section-number">5.1</span> Pre-lecture problem</a></li>
-  <li><a href="#magnetic-field-of-a-current-carrying-wire" id="toc-magnetic-field-of-a-current-carrying-wire" class="nav-link" data-scroll-target="#magnetic-field-of-a-current-carrying-wire"><span class="header-section-number">5.2</span> Magnetic Field of a Current-Carrying Wire</a></li>
-  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems"><span class="header-section-number">5.3</span> Practice problems</a></li>
+  <li><a href="#sec-morecurrents" id="toc-sec-morecurrents" class="nav-link" data-scroll-target="#sec-morecurrents"><span class="header-section-number">5.2</span> More about currents</a>
+  <ul class="collapse">
+  <li><a href="#the-continuity-equation" id="toc-the-continuity-equation" class="nav-link" data-scroll-target="#the-continuity-equation"><span class="header-section-number">5.2.1</span> The continuity equation</a></li>
+  <li><a href="#steady-currents" id="toc-steady-currents" class="nav-link" data-scroll-target="#steady-currents"><span class="header-section-number">5.2.2</span> Steady currents</a></li>
+  </ul></li>
+  <li><a href="#the-biot-savart-law" id="toc-the-biot-savart-law" class="nav-link" data-scroll-target="#the-biot-savart-law"><span class="header-section-number">5.3</span> The Biot-Savart Law</a>
+  <ul class="collapse">
+  <li><a href="#derivation-the-magnetic-field-of-a-straight-current-carrying-wire" id="toc-derivation-the-magnetic-field-of-a-straight-current-carrying-wire" class="nav-link" data-scroll-target="#derivation-the-magnetic-field-of-a-straight-current-carrying-wire"><span class="header-section-number">5.3.1</span> Derivation: the magnetic field of a straight current-carrying wire</a></li>
+  <li><a href="#biot-savart-law-for-surface-and-volume-currents" id="toc-biot-savart-law-for-surface-and-volume-currents" class="nav-link" data-scroll-target="#biot-savart-law-for-surface-and-volume-currents"><span class="header-section-number">5.3.2</span> Biot-Savart law for surface and volume currents</a></li>
+  </ul></li>
+  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems"><span class="header-section-number">5.4</span> Practice problems</a></li>
   </ul>
 </nav>
     </div>
@@ -264,7 +273,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Biot-Savart Law</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Currents &amp; the Biot-Savart Law</span></h1>
 </div>
 
 
@@ -285,52 +294,94 @@ window.Quarto = {
 <section id="pre-lecture-problem" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="pre-lecture-problem"><span class="header-section-number">5.1</span> Pre-lecture problem</h2>
 <p>Find the magnitude of the attractive force between two long, parallel wires which are a distance <span class="math inline">\(d\)</span> apart, carrying currents <span class="math inline">\(I_1\)</span> and <span class="math inline">\(I_2\)</span>.</p>
-<p>We saw in the last lecture that a current-carrying wire experiences a magnetic force when in the prescence of an applied magnetic field, and we found an expression for the magnetic force on a segment of current-carrying wire. Ultimately, current-carrying wires experience this force because they produce their own magnetic field which interacts with the applied magnetic field. The Biot-Savart Law is a formula for the magnetic field of a steady line current. Note that we are once again thinking about <em>line</em> currents, so we are modelling our currents as 1-dimensional.</p>
-<p><strong>An aside on steady currents:</strong> The Biot-Savart Law only applies to so-called “steady currents”. A steady current is defined as a continuous flow of charge that goes on forever, without changing and without charge piling up anywhere. In reality, there is no such current, but for the purposes of this course we can model current-carrying wires as carrying steady currents. If the current wasn’t a steady current, the magnetic field produced by the current would be varying as a function of time, and we would no longer be in the realm of magnetostatics, which deals in static (non-time varying) magnetic fields.</p>
-<p>The Biot-Savart Law takes the following form:</p>
-<p><span class="math display">\[\B(\r) = \frac{\mu_0}{4\pi} \int \frac{\I \times \hat{\r_s} }{\r_s^2} \mathrm{d}l' =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \l' \times \hat{\r_s} }{\r_s^2} \]</span></p>
-<p>In your previous studies you may have come across the formula for the magnetic field at a distance from a current-carrying wire. Have you ever wondered where this equation came from? Turns out it is derived using the Biot-Savart Law - I’m going to guide you the derivation here, to demonstrate how we use the Biot-Savart Law.</p>
 </section>
-<section id="magnetic-field-of-a-current-carrying-wire" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="magnetic-field-of-a-current-carrying-wire"><span class="header-section-number">5.2</span> Magnetic Field of a Current-Carrying Wire</h2>
+<section id="sec-morecurrents" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-morecurrents"><span class="header-section-number">5.2</span> More about currents</h2>
+<p>In the previous lecture we introduced the concept of currents and used the Lorentz force law to derive an expression for the force on a current-carrying wire. However, our treatment of currents is incomplete. In the previous lecture we dealt with currents in one dimension, imagining them to be a line charge flowing down wire. But in practice, when solving problems and working as physicists, we generally have to deal with higher dimensional currents as these are more realistic.</p>
+<p>When we dealt with line currents at the end of the previous lecture, we imagined a current as a moving line charge with velocity <span class="math inline">\(\mathrm{\mathbf{v}}\)</span> and linear charge density <span class="math inline">\(\lambda\)</span>. But when charge flows over a surface, we are suddenly dealing with a surface charge density instead. We can no longer think of current as simply charge per unit time. We also need to consider how the charge is distributed across the width of the surface. So, we define the <strong>surface current density</strong>, <span class="math inline">\(\mathrm{\mathbf{K}}\)</span>, as follows.</p>
+<p><img src="Figures/surface_current.png" class="img-fluid" width="300">{#fig-surfcurr}</p>
+<p>Consider <a href="#fig-surfcurr" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-surfcurr</span></a> - this shows a “ribbon” of infinitesimal width <span class="math inline">\(\mathrm{d}l_{perp}\)</span> running parallel to the flow. <span class="math inline">\(l_{\perp}\)</span> is the width perpendicular to the flow. If the infinitesimal current in this ribbon is <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{I}}\)</span>, the <strong>surface current density</strong> <span class="math inline">\(\mathrm{\mathbf{K}}\)</span> is given by</p>
+<p><span class="math display">\[ \mathrm{\mathbf{K}}= \frac{\mathrm{d}\mathrm{\mathbf{I}}}{\mathrm{d}l_{\perp}} \]</span></p>
+<p>So, the surface current density is the current per unit width-perpendicular-to-flow.</p>
+<p>If the surface charge density (of <em>mobile</em> charges, we do not consider charges which are stationary within the material) is <span class="math inline">\(\sigma\)</span>, and its velocity is <span class="math inline">\(\mathrm{\mathbf{v}}\)</span>, then we can express <span class="math display">\[ \mathrm{\mathbf{K}}= \sigma \mathrm{\mathbf{v}}\]</span>.</p>
+<p>You may notice this looks familiar - this is the surface equivalent of <span class="math inline">\(\mathrm{\mathbf{I}}= \lambda \mathrm{\mathbf{v}}\)</span>.</p>
+<p>It is fairly clear to see then that the magnetic force on the surface current is</p>
+<p><span class="math display">\[ \mathrm{\mathbf{F}}_{mag} = \int  (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \sigma \mathrm{d}a = \int  (\mathrm{\mathbf{K}}\times \mathrm{\mathbf{B}}) \mathrm{d}a \]</span></p>
+<p>Similarly, when charge flow is distributed throughout a volume, we need to define a <strong>volume current density</strong>. This is <span class="math inline">\(\mathrm{\mathbf{J}}\)</span>, and we define it as follows.</p>
+<p><img src="Figures/vol_current.png" class="img-fluid" width="300">{#fig-volcurr}</p>
+<p>Consider <a href="#fig-volcurr" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-volcurr</span></a> - this time we have a “tube” of infinitesimal area <span class="math inline">\(\mathrm{d}a_{perp}\)</span> parallel to the flow. <span class="math inline">\(a_{\perp}\)</span> is the area perpendicular to the flow. If the current in this tube is <span class="math inline">\(\mathrm{d}\mathrm{\mathbf{I}}\)</span>, the <strong>volume current density</strong> <span class="math inline">\(\mathrm{\mathbf{K}}\)</span> is given by</p>
+<p><span id="eq-J"><span class="math display">\[ \mathrm{\mathbf{J}}= \frac{\mathrm{d}\mathrm{\mathbf{I}}}{\mathrm{d}a_{\perp}}  \tag{5.1}\]</span></span></p>
+<p>If the volume charge density (of mobile charges) is <span class="math inline">\(\rho\)</span> and its velocity is <span class="math inline">\(\mathrm{\mathbf{v}}\)</span>, then</p>
+<p><span class="math display">\[ \mathrm{\mathbf{J}}= \sigma \mathrm{\mathbf{v}}\]</span>.</p>
+<p>Therefore, the magnetic force on a volume current is</p>
+<p><span class="math display">\[ \mathrm{\mathbf{F}}_{mag} = \int  (\mathrm{\mathbf{v}}\times \mathrm{\mathbf{B}}) \rho \mathrm{d}\tau = \int  (\mathrm{\mathbf{J}}\times \mathrm{\mathbf{B}}) \mathrm{d}\tau \]</span>.</p>
+<section id="the-continuity-equation" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="the-continuity-equation"><span class="header-section-number">5.2.1</span> The continuity equation</h3>
+<p><a href="#eq-J" class="quarto-xref">Equation&nbsp;<span class="quarto-unresolved-ref">eq-J</span></a> can be rearranged to show that current crossing a surface <span class="math inline">\(\mathcal{S}\)</span> can be expressed as</p>
+<p><span class="math display">\[ I = \int_{\mathcal{S}} J \mathrm{d}a_{\perp} = \int_{\mathcal{S}} \mathrm{\mathbf{J}}\cdot \mathrm{d}\mathrm{\mathbf{a}}\]</span></p>
+<p>The current crossing a surface can also be thought of as the total charge per unit time leaving a volume <span class="math inline">\(\mathcal{V}\)</span> is</p>
+<p><span class="math display">\[ \int_{\mathcal{S}} \mathrm{\mathbf{J}}\cdot \mathrm{d}\mathrm{\mathbf{a}}= \int_{\mathcal{V}} (\nabla \cdot \mathrm{\mathbf{J}}) \mathrm{d}\tau =  \]</span></p>
+<p>We know that charge is conserved, so this must surely have some consequences for currents…?</p>
+<!--
+Finish "continuity equation" stuff"
+-->
+</section>
+<section id="steady-currents" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="steady-currents"><span class="header-section-number">5.2.2</span> Steady currents</h3>
+<p>A steady current is defined as a continuous flow of charge that goes on forever, without changing and without charge piling up anywhere. In reality, there is no such current, but for the purposes of this course we can model current-carrying wires as carrying steady currents. If the current wasn’t a steady current, the magnetic field produced by the current would be varying as a function of time, and we would no longer be in the realm of magnetostatics, which deals in static (non-time varying) magnetic fields.</p>
+</section>
+</section>
+<section id="the-biot-savart-law" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="the-biot-savart-law"><span class="header-section-number">5.3</span> The Biot-Savart Law</h2>
+<p>We saw in the last lecture that a current-carrying wire experiences a magnetic force when in the prescence of an applied magnetic field, and we found an expression for the magnetic force on a segment of current-carrying wire. Ultimately, current-carrying wires experience this force because they produce their own magnetic field which interacts with the applied magnetic field. The Biot-Savart Law is a formula for the magnetic field of a steady current - in fact it exclusively applies to steady currents.</p>
+<p>The Biot-Savart Law takes the following form, for a steady <em>line</em> current:</p>
+<p><span class="math display">\[\mathrm{\mathbf{B}}(\mathrm{\mathbf{r}}) = \frac{\mu_0}{4\pi} \int \frac{\mathrm{\mathbf{I}}\times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \mathrm{d}l' =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \]</span></p>
+<p>However we know from <a href="#sec-morecurrents" class="quarto-xref"><span class="quarto-unresolved-ref">sec-morecurrents</span></a> that we need to consider surface and volume currents as well…. so..</p>
+<p>[biot-savart for surface current] [biot-savart for volume current]</p>
+<section id="derivation-the-magnetic-field-of-a-straight-current-carrying-wire" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="derivation-the-magnetic-field-of-a-straight-current-carrying-wire"><span class="header-section-number">5.3.1</span> Derivation: the magnetic field of a straight current-carrying wire</h3>
+<p>In your previous studies you may have come across the formula for the magnetic field at a distance from a current-carrying wire. Have you ever wondered where this equation came from? Turns out it is derived using the Biot-Savart Law - I’m going to guide you the derivation here, to demonstrate how we use the Biot-Savart Law.</p>
 <p>Our task here is to find the magnetic field at a distance <span class="math inline">\(s\)</span> from a long, straight wire carrying a steady current <span class="math inline">\(I\)</span>.</p>
 <p><strong>Important:</strong> When we talk about a “long” wire, we are talking about a wire that is so long that it can be considered infinitely long - so that we can assume it carries a steady current (see “aside on steady currents” above). In real life, wires that carry currrent are usually part of a closed circuit, so we can consider most current-carrying wires to be carrying steady currents, as the current in closed circuit will go on forever (until a switch is opened, a battery dies, a component breaks, and so on…).</p>
-<p>Let us first visualise the problem with a diagram: <img src="Figures/BS-example-1.png" class="img-fluid" width="200">{#BS-ex1}</p>
-<p>This figure is taken from the Griffiths, therefore the curly “r” pointing from <span class="math inline">\(\mathrm{d} \l'\)</span> to <span class="math inline">\(P\)</span> should be interpreted as <span class="math inline">\(\r_s\)</span> in our notation. As a reminder, the Biot-Savart Law is given by</p>
-<p><span class="math display">\[\B(\r) =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \l' \times \hat{\r_s} }{\r_s^2} \]</span></p>
-<p>In <span class="citation" data-cites="BS-ex1">(<a href="#ref-BS-ex1" role="doc-biblioref"><strong>BS-ex1?</strong></a>)</span>, <span class="math inline">\(\mathrm{d} \l' \times \hat{\r_s}\)</span> points out of the page (because it must be perpendicular to both vectors) and has magnitude <span class="math inline">\(\mathrm{d} l' \sin\alpha\)</span>. However, it is more convenient in this problem for us to to work with the angle <span class="math inline">\(\theta\)</span>, because we can use trigonometric identities to relate <span class="math inline">\(\theta\)</span> more easily to the other variables in our problem. Therefore we can use the angle addition formula <span class="math inline">\(\sin(A + B) = \sin A \cos B + \cos A \sin B\)</span>, to find <span class="math display">\[ \sin\alpha = \sin(90 + \theta) = \sin(90)\cos\theta + \cos(90)\sin\theta = \cos\theta \]</span></p>
-<p>Hence, the magnitude of <span class="math inline">\(\mathrm{d} \l' \times \hat{\r_s}\)</span> is</p>
+<p>Let us first visualise the problem with a diagram: <img src="Figures/BS-example-1.png" class="img-fluid" width="200">{#fig-BS-ex1}</p>
+<p>This figure is taken from the Griffiths, therefore the curly “r” pointing from <span class="math inline">\(\mathrm{d} \mathrm{\mathbf{l}}'\)</span> to <span class="math inline">\(P\)</span> should be interpreted as <span class="math inline">\(\mathrm{\mathbf{r}}_s\)</span> in our notation. As a reminder, the Biot-Savart Law is given by</p>
+<p><span class="math display">\[\mathrm{\mathbf{B}}(\mathrm{\mathbf{r}}) =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \]</span></p>
+<p>In <a href="#fig-BS-ex1" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-BS-ex1</span></a>, <span class="math inline">\(\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s}\)</span> points out of the page (because it must be perpendicular to both vectors) and has magnitude <span class="math inline">\(\mathrm{d} l' \sin\alpha\)</span>. However, it is more convenient in this problem for us to to work with the angle <span class="math inline">\(\theta\)</span>, because we can use trigonometric identities to relate <span class="math inline">\(\theta\)</span> more easily to the other variables in our problem. Therefore we can use the angle addition formula <span class="math inline">\(\sin(A + B) = \sin A \cos B + \cos A \sin B\)</span>, to find <span class="math display">\[ \sin\alpha = \sin(90 + \theta) = \sin(90)\cos\theta + \cos(90)\sin\theta = \cos\theta \]</span></p>
+<p>Hence, the magnitude of <span class="math inline">\(\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s}\)</span> is</p>
 <p><span class="math display">\[ \mathrm{d} l' \cos\theta \]</span></p>
 <p>We can also say that <span class="math inline">\(l' = s \tan\theta\)</span>, therefore</p>
 <p><span class="math display">\[ \begin{split}
 \frac{\mathrm{d} l'}{\mathrm{d} \theta} &amp;=  \frac{\mathrm{d} }{\mathrm{d} \theta} s \tan\theta \\
-\dd l' &amp;=  \frac{s}{ \cos^2 \theta} \dd \theta
+\mathrm{d}l' &amp;=  \frac{s}{ \cos^2 \theta} \mathrm{d}\theta
 \end{split}
 \]</span></p>
 <p>Finally, we can see that <span class="math inline">\(s = r_s \cos \theta\)</span>, so we can state</p>
-<p><span class="math display">\[ \frac{1}{\r_s^2} = \frac{\cos^2 \theta}{s^2} \]</span></p>
+<p><span class="math display">\[ \frac{1}{\mathrm{\mathbf{r}}_s^2} = \frac{\cos^2 \theta}{s^2} \]</span></p>
 <p>We now have everything we need to compute the integral in the Biot-Savart Law. We can integrate with respect to <span class="math inline">\(\theta\)</span>, and find the integral between two angles <span class="math inline">\(\theta_1\)</span> and <span class="math inline">\(\theta_2\)</span>, as represented in this figure:</p>
 <p><img src="Figures/BS-example-2.png" class="img-fluid" width="200"></p>
 <p>Therefore</p>
 <p><span class="math display">\[ \begin{split}
-B &amp;= \frac{\mu_0 I}{4 \pi} \int_{\theta_1}^{\theta_2} \left( frac{\cos^2 \theta }{s^2} \right) \left( \frac{s}{\cos^\theta} \right) \cos\theta \dd \theta   \\
-&amp;= \frac{\mu_0 I}{4 \pi s} \int_{\theta_1}^{\theta_2}  \cos\theta \dd \theta \\
+B &amp;= \frac{\mu_0 I}{4 \pi} \int_{\theta_1}^{\theta_2} \left( frac{\cos^2 \theta }{s^2} \right) \left( \frac{s}{\cos^\theta} \right) \cos\theta \mathrm{d}\theta   \\
+&amp;= \frac{\mu_0 I}{4 \pi s} \int_{\theta_1}^{\theta_2}  \cos\theta \mathrm{d}\theta \\
 &amp;= \frac{\mu_0 I}{4 \pi s} (\sin\theta_2 - \sin \theta_1)
 \end{split}
 \]</span></p>
 <p>The above equations represents the <span class="math inline">\(B\)</span>-field at a distance <span class="math inline">\(s\)</span> from a short section of wire between two arbitrary anglular positions <span class="math inline">\(\theta_1\)</span> and <span class="math inline">\(\theta_2\)</span>. This is not physical however, because a short section of wire cannot carry a steady current. Therefore let’s think about what happens when we extend the length of the wire to infinity. For an infinitely long wire, <span class="math inline">\(\theta_1 = -\pi/2\)</span> and <span class="math inline">\(\theta_2 = \pi/2\)</span>. Hence, the magnitude of the <span class="math inline">\(B\)</span>-field at a distance <span class="math inline">\(s\)</span> from a long current-carrying wire is</p>
 <p><span class="math display">\[ B = \frac{\mu_0 I}{2\pi s}. \]</span>#eq-Bwire</p>
 <p>If you didn’t manage the pre-lecture problem, try it again now using what you have learned in this lecture.</p>
-<!--
-Add in:
-surface and volume currents?
-dipoles? (as stipulated in the Core Physics spreadsheet)
--->
 </section>
-<section id="practice-problems" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="practice-problems"><span class="header-section-number">5.3</span> Practice problems</h2>
+<section id="biot-savart-law-for-surface-and-volume-currents" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="biot-savart-law-for-surface-and-volume-currents"><span class="header-section-number">5.3.2</span> Biot-Savart law for surface and volume currents</h3>
+<!--
+Explain surface/volume currents, following on from intro to currents from earlier. 
+-->
+<p><span class="math display">\[\mathrm{\mathbf{B}}(\mathrm{\mathbf{r}}) = \frac{\mu_0}{4\pi} \int \frac{\mathrm{\mathbf{I}}\times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \mathrm{d}l' =  \frac{\mu_0}{4\pi} \int I \frac{\mathrm{d} \mathrm{\mathbf{l}}' \times \hat{\mathrm{\mathbf{r}}_s} }{\mathrm{\mathbf{r}}_s^2} \]</span></p>
+</section>
+</section>
+<section id="practice-problems" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="practice-problems"><span class="header-section-number">5.4</span> Practice problems</h2>
 <ol type="1">
-<li></li>
+<li><p>A current <span class="math inline">\(I\)</span> flows down</p></li>
 <li></li>
 <li></li>
 </ol>

@@ -9,7 +9,7 @@
 
 Griffiths Problem 1.7
 
-## Electric Charges
+## Electric Charges{#sec-charge}
 
 Electric charge is a fundamental property of matter. Many fundamental particles (such as electrons and protons) have charge. However, macroscopic objects can also be charged due to having a distribution of charged particles on them that has a small imbalance in charge - we might describe these as "charged objects". 
 
@@ -45,14 +45,14 @@ We define the charges $q_1$, $q_2$, $q_3$... $q_i$ as source charges, meaning th
 
 Throughout this course you will also see the terms "source point" and "field point". The source point is the location of the source charge(s), while the field point is essentially the location of the test charge - so when we are solving problems, this is the point at which we are measuring the field, potential, etc. The source point is given by the vector $\r'$ and the field point is given by the vector $\r$, while the separation between the two point is given by the vector $r_s$. (Please note that the Griffiths uses slightly different notation - for the separation vector it uses a curly script "r", I did not use this as there is no way of making that symbol in Latex.) If there is no test charge in the problem (for example if we are computing the electric field of a source charge), the field point is the point at which we are measuring the field - it is the point where a test charge would be if there was one. 
 
-![Some charges, overlaid with axes showing the definition of $\r$, the vector separation between the source and test charges. ](Figures/axes_r_definitions.png)
+![Some charges, overlaid with axes showing the definition of $\r$, the vector separation between the source and test charges. ](Figures/axes_r_definitions.png){#fig-definitions}
 
 ## Electric Forces & Coulomb's Law
 
 All charges produce electric fields, and other charges that are in the prescence of this field experience a force as a result. 
 
 The force on a test charge $Q$, exerted by a source charge $q$, is given by Coulomb's Law, which is as follows: 
-$$ F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r_s^2} \hat{\r_s} $$
+$$ \F = \frac{1}{4\pi \epsilon_0} \frac{q Q}{r_s^2} \hat{\r_s} $$
  
 where:
 
@@ -62,17 +62,35 @@ where:
 
 If $q$ and $Q$ have the same sign (like charges) the force is repulsive ($\F$ is a positive quantity); if $q$ and $Q$ have different signs, the force is attractive ($\F$ is a negative quantity).    
 
+## Superposition Principle
+The principle of superposition states that "the interaction between any two charges is completely unaffected by the presence of others". This means that the total force on a test charge can be computed by calculating the force on the test charge due to each source charge separately, then adding up the contributions, as follows: 
+
+$$ \F_{tot} = \sum_i \F_i $$
 
 
 ## Electric Field
 
-The electric field $\E$ produced by a charge (or charged object/charge distribution) is a vector field that represents the force per unit charge experienced by a positive test charge placed at a particular point in space:
+The electric field $\E$ produced by a charge (or a collection of charges or charge distribution) is a vector field that represents the force per unit charge experienced by a positive test charge placed at a particular point in space:
 
 $$ \E = \frac{\F}{Q} $$
 
 \noindent which can be rearranged to the more familiar form $\F = Q \E$. 
 
+Hence the electric field a distance $r_s$ from a single point charge is given by:
+
+$$ \E = \frac{1}{4\pi \epsilon_0} \frac{q}{r_s^2} \hat{\r_s} $$
+
 $\mathbf{E}$ has units of Vm$^{-1}$ or NC$^{-1}$. 
+
+
+The superposition principle also applies to the electric field, which can be calculated for any given point in space as a sum of the electric field at that point from all the source charges. Consider the collection of charges in @fig-definitions - the electric field due to this collection of $i$ charges can be expressed as   
+$$ \E_{tot} = \sum_i \E_i = \frac{1}{4\pi\epsilon_0} \sum_{i=1}^n \frac{q_i}{\r_s_i^2} \hat{\r_s} $${#eq-Esum}
+
+What actually is an electric field though? As we have discussed, it is a vector field surrounding an electric charge, so it has a vector value at every point in space which represents how strong of a force another charge would experience at that point. Conceptually, this is not a trivial question - for the purposes of this course, we can simply think of electric field as a real physical entity that fills the space surrounding an electric charge, which causes other charges to "feel" the prescence of the charge and hence interact with it.  
+
+
+
+### Representing the electric field 
 
 The electric field is normally represented by field lines that indicate the direction of the field. The direction of the field is determined by what a positive test charge will do. That's why field lines point towards negative charges - that's the direction a positive charge would travel if it encountered the field of a negative charge.
 The density of lines/arrows indicates the strength of the field at a point. You may also see fields drawn where the size of the arrows represents the electric field strength. The diagram below shows the electric field lines for two positive point charges of the same magnitude.
@@ -87,20 +105,32 @@ Most important rules for field lines:
 
 * Lines are symmetric as they leave the charges. 
 
-## Superposition Principle
-The principle of superposition states that "the interaction between any two charges is completely unaffected by the presence of others". This means that the total force on a test charge can be computed by calculating the force on the test charge due to each source charge separately, then adding up the contributions, as follows: 
-
-$$ \F_{tot} = \sum_i \F_i $$
-
-The same applies to the electric field, which can be calculated for any given point in space as a sum of the electric field at that point from all the source charges: 
-$$ \E_{tot} = \sum_i \E_i $$ 
 
 
 ## Continuous charge distributions
 
-<!--
-Copy what you have from your PHY1002 notes! 
--->
+Many of the problems we encounter in electromagnetism are not related to small collections of individual point charges like those in @fig-definitions, as this is not a very common or useful physical situation. We often have to deal instead with large collections of charges, such as a charged objects (as discussed in @sec-charge) or currents. We can think of such large collections of charges as **continuous charge distributions** - although they are not truly continuous, as they always consist of individual point charges, we can effectively model them as continuous when there is such a vast amount of charge.
+
+In order to find the field due to a continuous distribution, we must consider the charge divided up into infinitesimal elements $\dd q$ which may be considered as point charges. The infinitesimal contribution to the total field produced by such an element is 
+
+$$ \dd \E = \frac{\dd q}{4\pi\epsilon_0 r_s^2} \hat{\r_s}.$$ 
+where $\r_s$ is the separation vector from the charge element to the field point. To determine the total field due to the distributed charge, the vector sum over the whole distribution of all such contributions must be evaluated by means of an integral: 
+
+$$ E(\r) = \frac{1}{4\pi \epsilon_0} \int \frac{1}{r_s^2} \dd q $${#eq-infinitesimalE}
+
+ In practice, to evaluate the integral it is necessary to express $\dd q$ in terms of $\r, as we will illustrate in examples. We often need to consider charge distributed along a line, over a surface or throughout a volume. This leads to the concept of a variety of charge distributions.
+ 
+ 1) Volume charge distribution has a charge per unit volume (charge density) $\rho$. $\dd q = \rho \dd\tau'$ where $\dd\tau'$ is an element of volume. For a volume charge we can therefore reformulate @eq-infinitesimalE as:
+ $$ \E{\r} \frac{1}{4\pi\epsilon_0} \int_{\mathcal{V}} \frac{\rho (\r')}{\r_s^2} \hat{r_s} \dd \tau' $$
+ 2) Surface charge distribution has a charge per unit area (surface charge density) $\sigma$. $\dd q = \sigma \dd a'$ where $\dd a'$ is an element of area. For a surface charge, the electric field is given by 
+  $$ \E{\r} \frac{1}{4\pi\epsilon_0} \int_{\mathcal{S}} \frac{\sigma (\r')}{\r_s^2} \hat{r_s} \dd a' $$
+
+ 3) Line charge distribution has a charge per unit length (linear charge density) $\\lambda$. $\dd q = \rho \dd l'$ where $\dd l'$ is an element of length. For a line charge. the electric field is given by 
+  $$ \E{\r} \frac{1}{4\pi\epsilon_0} \int_{\mathcal{V}} \frac{\lambda (\r')}{\r_s^2} \hat{r_s} \dd l' $$ 
+ 
+Note carefully the notation here - the same conventions are used as in @fig-definitions, except that now the source charge is $\dd q$. Therefore, $\r_s$ is the vector from $\dd q$ (and therefore from $\dd \tau'$, $\dd a'$ or $\dd l$) to the field point $\r$, while $\r'$ is the vector from the origin to $\dd q$.  
+
+
 
 ## Summary
 Electric charges create electric fields, which exert forces on other charges. Coulomb's Law describes the force between point charges. 
