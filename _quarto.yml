@@ -24,6 +24,10 @@ book:
     - L15_impedance.qmd 
     - summary.qmd
     - references.qmd
+    
+  crossref:
+    fig-labels: arabic
+    eq-labels: arabic 
 
 bibliography: references.bib
 
