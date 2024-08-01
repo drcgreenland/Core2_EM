@@ -5,6 +5,11 @@ book:
   title: "Electromagnetism"
   author: "Claire Greenland"
   date: "03/25/2024"
+  
+  crossref:
+    fig-labels: arabic
+    eq-labels: arabic 
+  
   chapters:
     - index.qmd
     - L1_electrostatics.qmd
@@ -24,10 +29,8 @@ book:
     - L15_impedance.qmd 
     - summary.qmd
     - references.qmd
-    
-  crossref:
-    fig-labels: arabic
-    eq-labels: arabic 
+
+
 
 bibliography: references.bib
 
